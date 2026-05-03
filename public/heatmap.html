@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maryland Budget Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Figtree:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --hdr:56px; --tabs:36px;
+  --bg:#0f0d06; --surf:#0f1523; --pan:#141b2d; --pan2:#1a2235;
+  --br:rgba(255,255,255,.07); --br2:rgba(255,255,255,.13);
+  --tx:#dde3f0; --mu:#5c6880; --dim:#2a3350;
+  --amb:#e8a020; --ambL:#f5c060;
+  --blu:#3b7dd8; --bluL:#6fa3e8;
+  --grn:#2ab87a; --red:#e05252;
+  --sans:'Figtree',sans-serif; --mono:'JetBrains Mono',monospace; --serif:'Playfair Display',serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;background:var(--bg)}
+body{font-family:var(--sans);color:var(--tx);font-size:14px}
+
+/* ── SHELL ── */
+#app{display:flex;flex-direction:column;height:100vh;width:100vw;overflow:hidden}
+
+/* ── HEADER ── */
+#hdr{
+  flex:0 0 var(--hdr);display:flex;align-items:center;
+  justify-content:space-between;padding:0 18px;
+  background:var(--surf);border-bottom:1px solid var(--br);gap:12px;overflow:hidden
+}
+.hd-t h1{font-family:var(--serif);font-size:1.1rem;color:var(--tx);white-space:nowrap}
+.hd-t p{font-family:var(--mono);font-size:9px;color:var(--mu);letter-spacing:.06em;margin-top:1px}
+.hd-c{display:flex;align-items:center;gap:12px;flex-shrink:0}
+
+.era-wrap{display:flex;background:var(--bg);border:1px solid var(--br2);border-radius:7px;overflow:hidden}
+.era-btn{padding:5px 12px;font-size:11.5px;font-weight:500;cursor:pointer;border:none;
+  background:transparent;color:var(--mu);transition:all .2s;
+  display:flex;flex-direction:column;align-items:center;gap:1px;line-height:1.3}
+.era-btn span{font-family:var(--mono);font-size:9px;opacity:.6}
+.era-btn.active.pre{color:var(--bluL);background:rgba(59,125,216,.14)}
+.era-btn.active.post{color:var(--ambL);background:rgba(232,160,32,.14)}
+
+.ctrl{display:flex;flex-direction:column;gap:3px}
+.cl{font-family:var(--mono);font-size:9px;color:var(--mu);letter-spacing:.08em;text-transform:uppercase}
+.cr{display:flex;align-items:center;gap:7px}
+input[type=range]{-webkit-appearance:none;height:3px;background:var(--br2);border-radius:2px;outline:none;cursor:pointer;width:100px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:13px;height:13px;border-radius:50%;background:var(--agc,var(--blu));cursor:pointer;transition:background .3s}
+.yl{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--agc,var(--bluL));min-width:50px;transition:color .3s}
+select{background:var(--bg);border:1px solid var(--br2);color:var(--tx);
+  font-family:var(--sans);font-size:12px;padding:5px 8px;border-radius:6px;cursor:pointer;outline:none;min-width:160px}
+
+/* ── TABS ── */
+#tabs{flex:0 0 var(--tabs);display:flex;align-items:flex-end;padding:0 18px;
+  background:var(--surf);border-bottom:1px solid var(--br);gap:2px}
+.tab{padding:6px 14px;font-size:12px;font-weight:500;cursor:pointer;
+  color:var(--mu);border-bottom:2px solid transparent;transition:all .18s;user-select:none}
+.tab:hover{color:var(--tx)}
+.tab.active{color:var(--tx);border-bottom-color:var(--agc,var(--blu))}
+
+/* ── VIEWS ── */
+/* Each view occupies the remaining height after header+tabs */
+.view{display:none;flex:1;min-height:0;overflow:hidden}
+.view.on{display:flex}
+
+/* ══ MAP VIEW ══ */
+#vmap{flex-direction:row}
+
+#map-wrap{flex:1;min-width:0;position:relative;overflow:hidden;background:var(--bg);display:flex;align-items:center;justify-content:center}
+#md-map{width:100%;height:100%;display:block}
+#loading{position:absolute;inset:0;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg);gap:10px}
+.spin{width:28px;height:28px;border:2px solid var(--br2);border-top-color:var(--blu);border-radius:50%;animation:rot .75s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.ltx{font-family:var(--mono);font-size:10.5px;color:var(--mu)}
+.era-badge{position:absolute;top:12px;left:16px;font-family:var(--mono);font-size:9.5px;
+  letter-spacing:.07em;padding:3px 8px;border-radius:4px;pointer-events:none}
+.era-badge.pre{color:var(--bluL);background:rgba(59,125,216,.11)}
+.era-badge.post{color:var(--ambL);background:rgba(232,160,32,.11)}
+.msrc{position:absolute;bottom:8px;left:14px;font-family:var(--mono);font-size:9px;color:var(--dim)}
+.county{stroke:rgba(255,255,255,.1);stroke-width:.6;cursor:pointer;transition:stroke .12s,stroke-width .12s}
+.county:hover{stroke:rgba(255,255,255,.55);stroke-width:1.8}
+.county.pin{stroke:#fff;stroke-width:2.2}
+
+#sb{flex:0 0 270px;background:var(--surf);border-left:1px solid var(--br);
+  display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden;
+  scrollbar-width:thin;scrollbar-color:var(--dim) transparent}
+.ss{padding:12px 14px;border-bottom:1px solid var(--br)}
+.sl{font-family:var(--mono);font-size:9px;color:var(--mu);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.sc{background:var(--pan);border-radius:7px;padding:9px 11px}
+.sc .sv{font-family:var(--mono);font-size:16px;font-weight:600;color:var(--tx);line-height:1}
+.sc .sm{font-size:10px;color:var(--mu);margin-top:3px}
+.bs{display:inline-flex;align-items:center;gap:3px;font-family:var(--mono);font-size:9.5px;padding:2px 6px;border-radius:3px;margin-top:5px}
+.bu{background:rgba(42,184,122,.12);color:var(--grn)} .bd{background:rgba(224,82,82,.12);color:var(--red)}
+#sels{display:none}
+.snm{font-family:var(--serif);font-size:.95rem;margin-bottom:8px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.sec{background:var(--pan2);border-radius:6px;padding:7px 9px}
+.sec .sv{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--tx);margin-top:2px}
+.sec .sm{font-size:10px;color:var(--mu)}
+.ai{margin-bottom:7px}
+.ah{display:flex;justify-content:space-between;margin-bottom:3px}
+.an{font-size:11px;color:var(--tx)} .av{font-family:var(--mono);font-size:10px;color:var(--mu)}
+.bt{height:4px;background:var(--pan2);border-radius:2px;overflow:hidden}
+.bf{height:100%;border-radius:2px;transition:width .5s cubic-bezier(.4,0,.2,1)}
+#lcv{display:block;width:100%;height:10px;border-radius:5px;margin:6px 0 4px}
+.lr{display:flex;justify-content:space-between}
+.ll{font-family:var(--mono);font-size:9.5px;color:var(--mu)}
+.yp{display:flex;flex-wrap:wrap;gap:4px}
+.ypp{font-family:var(--mono);font-size:10px;padding:3px 7px;border-radius:4px;
+  background:var(--pan);color:var(--mu);cursor:pointer;border:1px solid transparent;transition:all .15s}
+.ypp:hover{border-color:var(--br2);color:var(--tx)}
+.ypp.on{background:rgba(59,125,216,.14);color:var(--bluL);border-color:rgba(59,125,216,.28)}
+.ypp.on.post{background:rgba(232,160,32,.14);color:var(--ambL);border-color:rgba(232,160,32,.28)}
+.ypp.gr{opacity:.28;pointer-events:none}
+.dn{padding:10px 14px;font-size:9.5px;color:var(--dim);line-height:1.65}
+
+/* ══ EFFICIENCY VIEW ══ */
+#veff{flex-direction:row}
+
+/* left col: two chart panels stacked */
+.efl{flex:1;min-width:0;display:flex;flex-direction:column;overflow:hidden}
+.ecp{
+  flex:1;min-height:0;             /* flex child can shrink */
+  display:flex;flex-direction:column;
+  padding:12px 16px;
+  border-right:1px solid var(--br);border-bottom:1px solid var(--br);
+  overflow:hidden
+}
+.ecp:last-child{border-bottom:none}
+.eph{flex:0 0 auto;margin-bottom:6px}
+.eph .pt{font-size:12px;font-weight:600;color:var(--tx)}
+.eph .ps{font-size:10px;color:var(--mu);margin-top:2px}
+
+/* THE KEY: canvas wrapper is position:relative so Chart.js can measure it */
+.cbx{position:relative;flex:1;min-height:0;width:100%}
+.cbx canvas{position:absolute;top:0;left:0;width:100%!important;height:100%!important}
+
+.el{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;flex:0 0 auto}
+.eli{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--mu)}
+.eld{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+
+/* right col: two info panels stacked */
+.efr{flex:0 0 268px;display:flex;flex-direction:column;background:var(--surf);overflow:hidden}
+.eip{
+  flex:1;min-height:0;
+  display:flex;flex-direction:column;
+  padding:12px 14px;gap:10px;
+  border-bottom:1px solid var(--br);
+  overflow-y:auto;
+  scrollbar-width:thin;scrollbar-color:var(--dim) transparent
+}
+.eip:last-child{border-bottom:none}
+.eil{font-family:var(--mono);font-size:9px;color:var(--mu);letter-spacing:.1em;text-transform:uppercase;margin-bottom:5px}
+.eis{font-size:10px;color:var(--mu);margin-bottom:8px}
+.ri{display:flex;align-items:center;gap:6px;margin-bottom:5px}
+.rn{font-family:var(--mono);font-size:10px;color:var(--mu);width:14px;flex-shrink:0;text-align:right}
+.rnm{font-size:11px;color:var(--tx);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rbw{width:50px;flex-shrink:0}
+.rbb{height:3px;background:var(--dim);border-radius:2px}
+.rbf{height:100%;border-radius:2px;transition:width .4s}
+.rsc{font-family:var(--mono);font-size:10px;color:var(--mu);width:26px;text-align:right;flex-shrink:0}
+.qg2{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.qc{border-radius:6px;padding:7px 8px}
+.qc .ql{font-size:10px;font-weight:600;margin-bottom:2px} .qc .qd{font-size:10px;color:var(--mu);line-height:1.4}
+.qcg{background:rgba(42,184,122,.08);border:1px solid rgba(42,184,122,.18)} .qcg .ql{color:var(--grn)}
+.qcb{background:rgba(59,125,216,.08);border:1px solid rgba(59,125,216,.18)} .qcb .ql{color:var(--bluL)}
+.qca{background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.18)} .qca .ql{color:var(--amb)}
+.qcr{background:rgba(224,82,82,.08);border:1px solid rgba(224,82,82,.18)}  .qcr .ql{color:var(--red)}
+.srcl{font-size:10px;color:var(--mu);line-height:1.8}
+.cagr{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.cagr span{font-size:11px;color:var(--mu);flex-shrink:0}
+.cagr select{min-width:0;flex:1;font-size:11.5px}
+#eins{font-size:10.5px;color:var(--mu);line-height:1.75}
+
+/* ── TOOLTIP ── */
+#tt{position:fixed;z-index:9999;pointer-events:none;
+  background:rgba(8,13,24,.97);border:1px solid rgba(255,255,255,.13);
+  border-radius:10px;padding:11px 13px;opacity:0;transition:opacity .12s;
+  min-width:190px;max-width:235px;box-shadow:0 8px 30px rgba(0,0,0,.65)}
+#tt.on{opacity:1}
+.thd{font-family:var(--serif);font-size:13px;color:var(--tx);padding-bottom:7px;margin-bottom:7px;border-bottom:1px solid var(--br)}
+.tr{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px}
+.tk{font-family:var(--mono);font-size:9.5px;color:var(--mu);letter-spacing:.04em}
+.tv{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--tx)}
+.tv.up{color:var(--grn)} .tv.dn{color:var(--red)}
+.thr{border:none;border-top:1px solid var(--br);margin:6px 0}
+.tbar{height:3px;background:var(--dim);border-radius:2px;margin-top:8px}
+.tbf{height:100%;border-radius:2px}
+
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:var(--dim);border-radius:2px}
+</style>
+</head>
+<body>
+<div id="app">
+
+<!-- HEADER -->
+<header id="hdr">
+  <div class="hd-t">
+    <h1>Maryland Budget Intelligence</h1>
+    <p>MD DEPT. OF BUDGET &amp; MANAGEMENT · OPERATINGBUDGET.MARYLAND.GOV · FY2015–2026</p>
+  </div>
+  <div class="hd-c">
+    <div class="era-wrap">
+      <button class="era-btn pre active" id="bpre" onclick="setEra('pre')">Pre-COVID<span>FY 2015–2020</span></button>
+      <button class="era-btn post"       id="bpst" onclick="setEra('post')">Post-COVID<span>FY 2020–2026</span></button>
+    </div>
+    <div class="ctrl">
+      <div class="cl">Fiscal Year</div>
+      <div class="cr">
+        <input type="range" id="ysl" min="2015" max="2020" value="2018" step="1" oninput="onSl(this.value)">
+        <span class="yl" id="ylb">FY 2018</span>
+      </div>
+    </div>
+    <div class="ctrl">
+      <div class="cl">Agency</div>
+      <select id="agsel" onchange="onAg()">
+        <option value="all">All agencies (total)</option>
+        <option value="education">K-12 Education Aid</option>
+        <option value="health">Health &amp; Medicaid</option>
+        <option value="transportation">Transportation (MDOT)</option>
+        <option value="publicSafety">Public Safety &amp; Corrections</option>
+        <option value="humanServices">Human Services (DHS)</option>
+        <option value="environment">Environment &amp; Natural Resources</option>
+        <option value="higherEd">Higher Education (USM)</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<!-- TABS -->
+<div id="tabs">
+  <div class="tab active" id="tmap" onclick="swView('map')">Budget Map</div>
+  <div class="tab"        id="teff" onclick="swView('eff')">Efficiency Analysis</div>
+</div>
+
+<!-- MAP VIEW -->
+<div class="view on" id="vmap">
+  <div id="map-wrap">
+    <div id="loading"><div class="spin"></div><div class="ltx">Loading Maryland geography…</div></div>
+    <svg id="md-map"></svg>
+    <div class="era-badge pre" id="ebadge" style="transition:color .3s,background .3s">◆ PRE-COVID ERA</div>
+    <div class="msrc">Data: MD DBM · County distributions via state aid formulas</div>
+  </div>
+  <aside id="sb">
+    <div class="ss">
+      <div class="sl">State total — FY <span id="sbyr">2018</span></div>
+      <div class="sg">
+        <div class="sc"><div class="sv" id="scall">–</div><div class="sm">All agencies</div></div>
+        <div class="sc"><div class="sv" id="scag">–</div><div class="sm" id="scagl">Selected agency</div></div>
+      </div>
+      <div id="scbdg"></div>
+    </div>
+    <div class="ss" id="sels">
+      <div class="sl">Selected county</div>
+      <div class="snm" id="selnm">—</div>
+      <div class="seg">
+        <div class="sec"><div class="sm">Total spend</div><div class="sv" id="stot">—</div></div>
+        <div class="sec"><div class="sm">% of state</div><div class="sv" id="spct">—</div></div>
+        <div class="sec"><div class="sm">YoY change</div><div class="sv" id="syoy">—</div></div>
+        <div class="sec"><div class="sm">Per capita</div><div class="sv" id="scap">—</div></div>
+      </div>
+      <div style="margin-top:6px;font-size:10px;color:var(--mu)">Click county again to deselect</div>
+    </div>
+    <div class="ss">
+      <div class="sl">Agency breakdown — <span id="agsc">all counties</span></div>
+      <div id="agbars"></div>
+    </div>
+    <div class="ss">
+      <div class="sl">Spending scale</div>
+      <canvas id="lcv"></canvas>
+      <div class="lr"><span class="ll" id="llo">$0</span><span class="ll" id="lhi">–</span></div>
+      <div style="display:flex;align-items:center;gap:6px;margin-top:7px">
+        <div id="leg-agency-dot" style="width:9px;height:9px;border-radius:50%;background:#94a3c8;flex-shrink:0;transition:background .3s"></div>
+        <span id="leg-agency-name" style="font-family:var(--mono);font-size:9.5px;color:var(--mu)">All agencies</span>
+      </div>
+    </div>
+    <div class="ss">
+      <div class="sl">Quick year jump</div>
+      <div class="yp" id="ypills"></div>
+    </div>
+    <div class="dn">Figures from MD DBM Open Operating Budget. County distributions from state aid formulas. FY2025–26 reflect enacted/working budgets.</div>
+  </aside>
+</div>
+
+<!-- EFFICIENCY VIEW -->
+<div class="view" id="veff">
+  <div class="efl">
+    <div class="ecp">
+      <div class="eph">
+        <div class="pt">Agency spending vs outcome index (FY2024)</div>
+        <div class="ps">Bubble = share of total budget · Dashed lines at medians · Hover for details</div>
+      </div>
+      <div class="cbx"><canvas id="agC" role="img" aria-label="Agency spending vs outcome bubble chart"></canvas></div>
+      <div class="el" id="agleg"></div>
+    </div>
+    <div class="ecp">
+      <div class="eph" style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px">
+        <div>
+          <div class="pt">County efficiency — <span id="cagtit">K-12 Education</span></div>
+          <div class="ps">Bubble = county population · Color = quadrant · Hover for details</div>
+        </div>
+        <div class="cagr" style="flex-shrink:0">
+          <span>Agency:</span>
+          <select id="cagsel" onchange="updCty()">
+            <option value="education">K-12 Education</option>
+            <option value="health">Health &amp; Medicaid</option>
+            <option value="transportation">Transportation</option>
+            <option value="publicSafety">Public Safety</option>
+            <option value="humanServices">Human Services</option>
+            <option value="environment">Environment &amp; NR</option>
+            <option value="higherEd">Higher Education</option>
+          </select>
+        </div>
+      </div>
+      <div class="cbx"><canvas id="ctyC" role="img" aria-label="County efficiency scatter chart"></canvas></div>
+      <div class="el">
+        <div class="eli"><div class="eld" style="background:var(--grn)"></div>High efficiency</div>
+        <div class="eli"><div class="eld" style="background:var(--blu)"></div>High investment</div>
+        <div class="eli"><div class="eld" style="background:var(--amb)"></div>Underfunded</div>
+        <div class="eli"><div class="eld" style="background:var(--red)"></div>Cost concern</div>
+      </div>
+    </div>
+  </div>
+  <div class="efr">
+    <div class="eip">
+      <div>
+        <div class="eil">Agency efficiency ranking</div>
+        <div class="eis">Score = outcome index ÷ $B spent · FY2024</div>
+        <div id="agrank"></div>
+      </div>
+      <div>
+        <div class="eil">Quadrant guide</div>
+        <div class="qg2">
+          <div class="qc qcg"><div class="ql">↖ High efficiency</div><div class="qd">Strong outcomes, lean spend</div></div>
+          <div class="qc qcb"><div class="ql">↗ High investment</div><div class="qd">High spend, strong outcomes</div></div>
+          <div class="qc qca"><div class="ql">↙ Underfunded</div><div class="qd">Low spend, weak outcomes</div></div>
+          <div class="qc qcr"><div class="ql">↘ Cost concern</div><div class="qd">High spend, weak outcomes</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="eil">Outcome index sources</div>
+        <div class="srcl">Education: MSDE graduation rates<br>Health: MDH life expectancy &amp; uninsured<br>Transportation: MDOT pavement/bridge ratings<br>Public Safety: MSP crime rate per 100k<br>Human Services: poverty rate composite<br>Environment: Bay health &amp; air quality index<br>Higher Ed: USM graduation &amp; employment</div>
+      </div>
+    </div>
+    <div class="eip">
+      <div>
+        <div class="eil">Top 10 counties — <span id="ctyrklb">Education</span></div>
+        <div class="eis">Outcome pts ÷ $100M county spend</div>
+        <div id="ctyrk"></div>
+      </div>
+      <div>
+        <div class="eil">Key insight</div>
+        <div id="eins"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div id="tt"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const YRS=[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
+const AM={
+  education:   {l:'K-12 Education',  s:'Education',  c:'#3b7dd8'},
+  health:      {l:'Health & Medicaid',s:'Health',     c:'#a855a0'},
+  transportation:{l:'Transportation', s:'Transport',  c:'#2ab87a'},
+  publicSafety:{l:'Public Safety',   s:'Pub.Safety',  c:'#d97030'},
+  humanServices:{l:'Human Services', s:'Hum.Svcs',   c:'#e05252'},
+  environment: {l:'Environment & NR',s:'Environment', c:'#c49a0a'},
+  higherEd:    {l:'Higher Education',s:'Higher Ed',   c:'#7c5cbf'}
+};
+const AK=Object.keys(AM);
+
+// 3-stop heatmap per agency: [zero/background, mid, peak]
+// On dark bg: zero blends into background, peak = vivid agency signature color
+const HEAT={
+  all:           ['#080d18','#2a3a5c','#94a3c8'],  // neutral slate
+  education:     ['#080d18','#1e3a8a','#60a5fa'],  // navy → electric blue
+  health:        ['#080d18','#6b21a8','#e879f9'],  // deep violet → hot magenta
+  transportation:['#080d18','#065f46','#34d399'],  // dark forest → bright emerald
+  publicSafety:  ['#080d18','#92400e','#fbbf24'],  // deep brown → vivid amber
+  humanServices: ['#080d18','#7f1d1d','#f87171'],  // dark crimson → coral red
+  environment:   ['#080d18','#3f6212','#a3e635'],  // deep olive → lime green
+  higherEd:      ['#080d18','#4c1d95','#c084fc'],  // dark violet → soft purple
+};
+
+// Get the peak (brightest) color for the current agency — used for accents
+function agPeak(ag){return HEAT[ag]?HEAT[ag][2]:'#94a3c8'}
+const AT={
+  education:    [6600,6800,7000,7200,7500,7800,8100,8500,9200,10000,11000,11800],
+  health:       [9500,9800,10200,10500,11000,11500,12000,13500,14200,15000,16500,17200],
+  transportation:[4300,4500,4700,4800,5000,5200,5400,5200,5600,6100,6800,7100],
+  publicSafety: [1600,1700,1750,1800,1900,2000,2100,2200,2300,2600,2700,2800],
+  humanServices:[2900,3000,3100,3200,3300,3400,3500,4200,4500,4800,5000,5200],
+  environment:  [650,700,750,780,820,850,900,1000,1100,1200,1300,1400],
+  higherEd:     [3800,3900,4000,4100,4300,4450,4650,4900,5200,5600,5800,6000]
+};
+const ALL=YRS.map((_,i)=>AK.reduce((s,k)=>s+AT[k][i],0));
+const CT=[
+  {f:'24001',n:'Allegany',p:68106},{f:'24003',n:'Anne Arundel',p:588261},{f:'24005',n:'Baltimore Co.',p:854535},
+  {f:'24510',n:'Baltimore City',p:585708},{f:'24009',n:'Calvert',p:93781},{f:'24011',n:'Caroline',p:33406},
+  {f:'24013',n:'Carroll',p:172701},{f:'24015',n:'Cecil',p:103725},{f:'24017',n:'Charles',p:174998},
+  {f:'24019',n:'Dorchester',p:32261},{f:'24021',n:'Frederick',p:278837},{f:'24023',n:'Garrett',p:29014},
+  {f:'24025',n:'Harford',p:261327},{f:'24027',n:'Howard',p:336247},{f:'24029',n:'Kent',p:19581},
+  {f:'24031',n:'Montgomery',p:1062061},{f:'24033',n:"Prince George's",p:967201},{f:'24035',n:"Queen Anne's",p:52563},
+  {f:'24037',n:"St. Mary's",p:115117},{f:'24039',n:'Somerset',p:25616},{f:'24041',n:'Talbot',p:37181},
+  {f:'24043',n:'Washington',p:155474},{f:'24045',n:'Wicomico',p:103609},{f:'24047',n:'Worcester',p:53234}
+];
+const RW={
+  education:    [2.0,8.5,11.5,14.0,1.2,0.9,2.5,1.6,2.8,0.9,4.0,0.8,4.0,5.0,0.5,14.5,17.5,0.7,1.6,0.8,0.7,3.0,2.0,0.9],
+  health:       [2.5,7.5,10.0,20.0,1.0,1.0,1.5,2.0,2.5,1.5,3.0,0.8,2.5,2.0,0.6,12.0,18.0,0.7,1.5,1.5,1.0,4.0,2.5,0.9],
+  transportation:[2.5,8.5,11.0,15.0,1.2,0.8,2.0,1.5,2.5,0.8,5.0,1.0,4.0,4.0,0.5,14.0,13.0,0.8,2.0,0.5,0.8,4.0,2.0,1.6],
+  publicSafety: [2.5,7.0,10.0,22.0,1.0,0.8,2.0,1.5,2.5,1.0,4.0,0.8,3.5,2.5,0.5,12.0,15.0,0.7,1.5,1.0,0.7,3.5,2.5,1.0],
+  humanServices:[2.0,7.5,9.5,22.0,0.9,1.0,1.5,1.5,2.5,1.2,3.0,1.0,3.0,2.5,0.6,12.0,18.0,0.7,1.5,1.5,0.8,3.5,2.5,0.8],
+  environment:  [5.5,7.0,5.5,3.0,3.5,3.0,3.5,3.5,4.0,5.5,5.0,6.0,4.0,3.0,3.0,8.0,7.0,3.0,4.0,3.5,3.5,4.5,3.5,4.5],
+  higherEd:     [0.8,4.5,8.0,14.0,0.4,0.3,0.5,0.5,1.0,0.3,3.5,0.3,2.0,3.8,0.3,18.0,22.0,0.3,1.5,0.5,1.2,3.0,3.5,1.0]
+};
+const NW={};AK.forEach(k=>{const s=RW[k].reduce((a,b)=>a+b,0);NW[k]=RW[k].map(v=>v/s)});
+const OUT={
+  education:   [74,87,86,67,87,73,92,81,83,70,90,82,88,95,84,93,74,86,85,64,89,78,74,81],
+  health:      [64,82,77,61,83,67,81,74,78,66,83,72,80,91,76,89,67,79,81,58,85,71,69,77],
+  transportation:[65,80,76,72,72,63,74,69,72,62,78,67,77,85,67,82,74,69,70,61,69,72,66,64],
+  publicSafety:[65,76,70,51,82,65,84,78,76,63,81,87,80,87,83,78,61,80,81,59,86,67,62,73],
+  humanServices:[66,77,72,59,80,65,78,72,76,63,79,70,76,86,71,83,66,77,78,60,81,69,65,74],
+  environment: [72,78,71,60,82,73,75,74,78,79,80,88,76,79,76,83,74,82,80,74,82,77,73,80],
+  higherEd:    [60,74,78,72,58,52,62,59,66,54,72,55,68,82,60,88,85,57,68,53,65,70,72,60]
+};
+const AGO={education:78,health:74,transportation:78,publicSafety:73,humanServices:70,environment:77,higherEd:75};
+const INS={
+  education:`Blueprint for Maryland's Future drove large post-COVID increases. Prince George's and Baltimore City receive the most via equalization weights but show lower composite outcomes — the core equity vs. efficiency tension in state K-12 policy.`,
+  health:`Medicaid is federally matched (~50%), making Health the largest line at $15B. The high denominator structurally suppresses efficiency ratio. Outcomes reflect social determinants more than state spend alone.`,
+  transportation:`MDOT's consistent pavement and bridge ratings reflect predictable capital cycling. Suburban counties (Howard, Montgomery) score highest — lower road miles per capita and newer infrastructure stock.`,
+  publicSafety:`Despite large Baltimore City allocations, rural counties like Garrett and Carroll show the best crime-rate outcomes. The Corrections budget is concentrated in a few facilities, creating geographic mismatch.`,
+  humanServices:`Post-COVID ARPA funds inflated FY2021–22 Human Services spend. Rural Eastern Shore counties have proportionally high poverty rates, creating underfunded pockets despite lower absolute dollars.`,
+  environment:`Highest efficiency ratio by far — smallest budget ($1.2B) but strong Bay health and air quality indices. Chesapeake Bay Program funds are leveraged via federal 1:1 matches, amplifying outcomes.`,
+  higherEd:`USM spend concentrates in Prince George's (UMCP) and Montgomery (USG). Outcomes track closely with flagship university presence; community college transfer pipelines extend benefits statewide.`
+};
+
+let era='pre',curY=2018,curAg='all',pin=null,geo=null,cs=null,agCh=null,ctyCh=null,curV='map';
+
+const yi=y=>YRS.indexOf(y);
+const fM=m=>m>=1000?'$'+(m/1000).toFixed(m>=10000?1:2)+'B':'$'+Math.round(m)+'M';
+const fB=m=>'$'+(m/1000).toFixed(1)+'B';
+function sp(ci,y2,ag){return ag==='all'?AK.reduce((s,k)=>s+NW[k][ci]*AT[k][y2],0):NW[ag][ci]*AT[ag][y2]}
+function stT(y2,ag){return ag==='all'?ALL[y2]:AT[ag][y2]}
+function topA(ci,y2){let b=null,bv=-1;AK.forEach(k=>{const v=NW[k][ci]*AT[k][y2];if(v>bv){bv=v;b=k}});return b}
+
+const TT=document.getElementById('tt');
+function showTT(h,x,y){
+  TT.innerHTML=h;TT.classList.add('on');
+  const w=TT.offsetWidth,ht=TT.offsetHeight;
+  let tx=x+15,ty=y-10;
+  if(tx+w>window.innerWidth-10)tx=x-w-10;
+  if(ty+ht>window.innerHeight-10)ty=y-ht-6;
+  TT.style.left=tx+'px';TT.style.top=ty+'px';
+}
+function hideTT(){TT.classList.remove('on')}
+
+const svg=d3.select('#md-map');let proj,gp;
+async function initMap(){
+  try{
+    const us=await d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json');
+    const af=topojson.feature(us,us.objects.counties);
+    geo={type:'FeatureCollection',features:af.features.filter(f=>f.id.startsWith('24'))};
+    const wrap=document.getElementById('map-wrap');
+    const W=wrap.clientWidth,H=wrap.clientHeight;
+    svg.attr('width',W).attr('height',H);
+    proj=d3.geoMercator().fitSize([W*.94,H*.9],geo);
+    gp=d3.geoPath().projection(proj);
+    svg.selectAll('.county').data(geo.features).join('path')
+      .attr('class','county').attr('d',gp).attr('data-fips',d=>d.id)
+      .on('mousemove',mm).on('mouseleave',()=>hideTT()).on('click',mc);
+    document.getElementById('loading').style.display='none';
+    redraw();
+  }catch(e){
+    document.getElementById('loading').innerHTML=
+      `<div style="font-family:var(--mono);font-size:11px;color:var(--red);text-align:center;padding:24px">⚠ Map unavailable<br><small style="color:var(--mu)">Check internet connection</small></div>`;
+  }
+}
+
+function mm(ev,d){
+  const ci=CT.findIndex(c=>c.f===d.id);if(ci<0)return;
+  const y2=yi(curY),s=sp(ci,y2,curAg),st=stT(y2,curAg);
+  const prev=y2>0?sp(ci,y2-1,curAg):null,yoy=prev?((s-prev)/prev*100):null;
+  const cap=(s*1e6)/CT[ci].p,ta=topA(ci,y2),oc=curAg!=='all'?OUT[curAg][ci]:null;
+  showTT(`
+    <div class="thd">${CT[ci].n}</div>
+    <div class="tr"><span class="tk">SPEND FY${curY}</span><span class="tv">${fM(s)}</span></div>
+    <div class="tr"><span class="tk">% OF STATE</span><span class="tv">${(s/st*100).toFixed(2)}%</span></div>
+    <div class="tr"><span class="tk">PER CAPITA</span><span class="tv">${fM(cap)}</span></div>
+    ${yoy!=null?`<div class="tr"><span class="tk">YOY CHANGE</span><span class="tv ${yoy>=0?'up':'dn'}">${yoy>=0?'▲':'▼'}${Math.abs(yoy).toFixed(1)}%</span></div>`:''}
+    <div class="tr"><span class="tk">TOP AGENCY</span><span class="tv" style="font-size:9.5px;color:${AM[ta].c}">${AM[ta].l}</span></div>
+    ${oc!=null?`<hr class="thr"><div class="tr"><span class="tk">OUTCOME INDEX</span><span class="tv">${oc}/100</span></div>`:''}
+    <div class="tbar"><div class="tbf" style="width:${Math.min(100,s/st*100*6).toFixed(1)}%;background:${agPeak(curAg)}"></div></div>
+  `,ev.clientX,ev.clientY);
+}
+
+function mc(ev,d){
+  const ci=CT.findIndex(c=>c.f===d.id);if(ci<0)return;
+  if(pin===d.id){pin=null;svg.selectAll('.county').classed('pin',false);document.getElementById('sels').style.display='none';document.getElementById('agsc').textContent='all counties';}
+  else{pin=d.id;svg.selectAll('.county').classed('pin',f=>f.id===d.id);updSel();document.getElementById('agsc').textContent=CT[ci].n;}
+  updBars();
+}
+
+function buildCS(mx){
+  const [c0,c1,c2]=HEAT[curAg]||HEAT.all;
+  const i0=d3.interpolateRgb(c0,c1);
+  const i1=d3.interpolateRgb(c1,c2);
+  const interp=t=>{
+    if(t<=0)return c0;
+    const g=Math.pow(t,0.7);
+    return g<0.5?i0(g*2):i1((g-0.5)*2);
+  };
+  return d3.scaleSequential([0,mx],interp);
+}
+
+function redraw(){
+  if(!geo)return;
+  const y2=yi(curY),sps=CT.map((_,i)=>sp(i,y2,curAg)),mx=d3.max(sps);
+  cs=buildCS(mx);
+  svg.selectAll('.county').transition().duration(320)
+    .attr('fill',d=>{const ci=CT.findIndex(c=>c.f===d.id);return ci<0?'#141b2d':cs(sps[ci])});
+  updLeg(0,mx);updCards(y2);updBars();if(pin)updSel();updPills();
+}
+
+function updCards(y2){
+  const st=stT(y2,curAg),al=ALL[y2],prev=y2>0?stT(y2-1,curAg):null,pct=prev?((st-prev)/prev*100):null;
+  document.getElementById('sbyr').textContent=curY;
+  document.getElementById('scall').textContent=fB(al);
+  document.getElementById('scag').textContent=curAg==='all'?'—':fM(st);
+  document.getElementById('scagl').textContent=curAg==='all'?'Select agency':AM[curAg].s;
+  const bd=document.getElementById('scbdg');
+  bd.innerHTML=pct!=null?`<span class="bs ${pct>=0?'bu':'bd'}">${pct>=0?'▲':'▼'} ${Math.abs(pct).toFixed(1)}% vs FY${curY-1}</span>`:'';
+}
+function updBars(){
+  const y2=yi(curY),ci=pin?CT.findIndex(c=>c.f===pin):-1;
+  const vals=AK.map(k=>ci>=0?NW[k][ci]*AT[k][y2]:AT[k][y2]),mx=Math.max(...vals);
+  document.getElementById('agbars').innerHTML=AK.map((k,i)=>`
+    <div class="ai"><div class="ah"><span class="an">${AM[k].l}</span><span class="av">${fM(vals[i])}</span></div>
+    <div class="bt"><div class="bf" style="width:${(vals[i]/mx*100).toFixed(1)}%;background:${AM[k].c}"></div></div></div>`).join('');
+}
+function updSel(){
+  if(!pin)return;
+  const ci=CT.findIndex(c=>c.f===pin);if(ci<0)return;
+  const y2=yi(curY),s=sp(ci,y2,curAg),st=stT(y2,curAg),prev=y2>0?sp(ci,y2-1,curAg):null;
+  const yoy=prev?((s-prev)/prev*100):null,cap=(s*1e6)/CT[ci].p;
+  document.getElementById('sels').style.display='block';
+  document.getElementById('selnm').textContent=CT[ci].n+(CT[ci].f==='24510'?'':' County');
+  document.getElementById('stot').textContent=fM(s);
+  document.getElementById('spct').textContent=(s/st*100).toFixed(1)+'%';
+  document.getElementById('syoy').textContent=yoy!=null?(yoy>=0?'+':'')+yoy.toFixed(1)+'%':'—';
+  document.getElementById('scap').textContent=fM(cap);
+}
+function updLeg(mn,mx){
+  const c=document.getElementById('lcv');
+  c.width=c.offsetWidth||238;c.height=10;
+  const ctx=c.getContext('2d');
+  // Draw the same 3-stop heatmap gradient as the map
+  for(let x=0;x<c.width;x++){ctx.fillStyle=cs(mn+(mx-mn)*(x/c.width));ctx.fillRect(x,0,1,10);}
+  document.getElementById('llo').textContent=fM(mn);
+  document.getElementById('lhi').textContent=fM(mx);
+  // Inject the agency peak color as a CSS var so pills + badges can use it
+  document.documentElement.style.setProperty('--agc', agPeak(curAg));
+  // Update legend label color to match agency
+  document.getElementById('leg-agency-dot').style.background=agPeak(curAg);
+  document.getElementById('leg-agency-name').textContent=curAg==='all'?'All agencies':AM[curAg].l;
+  // Update era badge to show era + agency context
+  const eb=document.getElementById('ebadge');
+  eb.style.color=agPeak(curAg);
+  eb.style.background=agPeak(curAg)+'1a';
+}
+function updPills(){
+  const pre=[2015,2016,2017,2018,2019,2020],post=[2020,2021,2022,2023,2024,2025,2026],av=era==='pre'?pre:post;
+  const pk=agPeak(curAg);
+  document.getElementById('ypills').innerHTML=YRS.map(y=>{
+    const act=y===curY,inEra=av.includes(y);
+    const style=act?`style="background:${pk}22;color:${pk};border-color:${pk}55"`:'' ;
+    return `<div class="ypp ${!inEra?'gr':''}" ${style} onclick="jmpY(${y})">${y}</div>`;
+  }).join('');
+}
+
+function setEra(e){
+  era=e;
+  document.getElementById('bpre').className='era-btn pre'+(e==='pre'?' active':'');
+  document.getElementById('bpst').className='era-btn post'+(e==='post'?' active':'');
+  const sl=document.getElementById('ysl'),lb=document.getElementById('ylb');
+  sl.min=e==='pre'?2015:2020; sl.max=e==='pre'?2020:2026;
+  sl.className=e==='post'?'pr':'';lb.className='yl';
+  curY=Math.min(Math.max(curY,+sl.min),+sl.max); sl.value=curY; lb.textContent='FY '+curY;
+  const eb=document.getElementById('ebadge');
+  eb.textContent=(e==='pre'?'◆ PRE-COVID':'◆ POST-COVID')+' ERA';
+  redraw();
+}
+function onSl(v){curY=+v;document.getElementById('ylb').textContent='FY '+v;redraw();}
+function onAg(){curAg=document.getElementById('agsel').value;redraw();}
+function jmpY(y){
+  const pre=[2015,2016,2017,2018,2019,2020],post=[2020,2021,2022,2023,2024,2025,2026];
+  if(pre.includes(y)&&!post.includes(y))setEra('pre');
+  else if(post.includes(y)&&!pre.includes(y))setEra('post');
+  curY=y;document.getElementById('ysl').value=y;document.getElementById('ylb').textContent='FY '+y;redraw();
+}
+function swView(v){
+  curV=v;
+  document.getElementById('vmap').className='view'+(v==='map'?' on':'');
+  document.getElementById('veff').className='view'+(v==='eff'?' on':'');
+  document.getElementById('tmap').className='tab'+(v==='map'?' active':'');
+  document.getElementById('teff').className='tab'+(v==='eff'?' active':'');
+  if(v==='eff') requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    if(!agCh)buildAgCh();if(!ctyCh)updCty();
+    if(agCh)agCh.resize();if(ctyCh)ctyCh.resize();
+  }));
+}
+
+const GC='rgba(255,255,255,.06)',TC='rgba(180,200,230,.4)';
+const CTT2={backgroundColor:'rgba(8,13,24,.97)',borderColor:'rgba(255,255,255,.12)',borderWidth:1,
+  titleFont:{family:"'Playfair Display'",size:13},bodyFont:{family:"'JetBrains Mono'",size:11},padding:12};
+
+function buildAgCh(){
+  const y24=YRS.indexOf(2024),allB=AK.reduce((s,k)=>s+AT[k][y24],0);
+  const ds=AK.map(k=>{
+    const sB=AT[k][y24]/1000;
+    return{label:AM[k].l,data:[{x:sB,y:AGO[k],r:Math.sqrt(AT[k][y24]/allB)*52,eff:(AGO[k]/sB).toFixed(1)}],
+      backgroundColor:AM[k].c+'bb',borderColor:AM[k].c,borderWidth:1.5};
+  });
+  if(agCh)agCh.destroy();
+  agCh=new Chart(document.getElementById('agC'),{type:'bubble',data:{datasets:ds},options:{
+    responsive:true,maintainAspectRatio:false,layout:{padding:{top:20,right:20,bottom:6,left:8}},
+    scales:{
+      x:{title:{display:true,text:'Spending FY2024 ($B)',color:TC,font:{size:11}},min:0,max:17,grid:{color:GC},ticks:{color:TC,font:{size:10},callback:v=>'$'+v+'B'}},
+      y:{title:{display:true,text:'Outcome index (0–100)',color:TC,font:{size:11}},min:62,max:84,grid:{color:GC},ticks:{color:TC,font:{size:10}}}
+    },
+    plugins:{legend:{display:false},tooltip:{...CTT2,callbacks:{
+      title:c=>c[0].dataset.label,
+      label:c=>{const d=c.raw;return[`Spend: $${d.x.toFixed(1)}B`,`Outcome: ${d.y}/100`,`Efficiency: ${d.eff} pts/$B`];}
+    }}}
+  },plugins:[{id:'ql',afterDraw(ch){
+    const{ctx,scales:{x,y}}=ch;
+    const mx=x.getPixelForValue(5.3),my=y.getPixelForValue(75);
+    ctx.save();ctx.setLineDash([4,4]);ctx.strokeStyle='rgba(255,255,255,.1)';ctx.lineWidth=1;
+    ctx.beginPath();ctx.moveTo(mx,ch.chartArea.top);ctx.lineTo(mx,ch.chartArea.bottom);ctx.stroke();
+    ctx.beginPath();ctx.moveTo(ch.chartArea.left,my);ctx.lineTo(ch.chartArea.right,my);ctx.stroke();
+    ctx.restore();
+    ctx.font='9.5px monospace';ctx.fillStyle='rgba(255,255,255,.18)';
+    ctx.fillText('← High efficiency',ch.chartArea.left+5,ch.chartArea.top+13);
+    ctx.fillText('Cost concern →',mx+5,ch.chartArea.bottom-5);
+  }}]});
+
+  document.getElementById('agleg').innerHTML=AK.map(k=>`<div class="eli"><div class="eld" style="background:${AM[k].c}"></div>${AM[k].l}</div>`).join('');
+  const rk=AK.map(k=>({l:AM[k].l,c:AM[k].c,sc:AGO[k]/(AT[k][y24]/1000)})).sort((a,b)=>b.sc-a.sc);
+  const mx2=rk[0].sc;
+  document.getElementById('agrank').innerHTML=rk.map((r,i)=>`
+    <div class="ri"><span class="rn">${i+1}</span><span class="rnm" title="${r.l}">${r.l}</span>
+    <div class="rbw"><div class="rbb"><div class="rbf" style="width:${(r.sc/mx2*100).toFixed(0)}%;background:${r.c}"></div></div></div>
+    <span class="rsc">${Math.round(r.sc)}</span></div>`).join('');
+}
+
+function updCty(){
+  const ag=document.getElementById('cagsel').value;
+  document.getElementById('cagtit').textContent=AM[ag].l;
+  document.getElementById('ctyrklb').textContent=AM[ag].s;
+  document.getElementById('eins').textContent=INS[ag];
+  const y24=YRS.indexOf(2024),sps=CT.map((_,i)=>NW[ag][i]*AT[ag][y24]),oc=OUT[ag];
+  const sS=[...sps].sort((a,b)=>a-b),medS=sS[Math.floor(CT.length/2)];
+  const sO=[...oc].sort((a,b)=>a-b),medO=sO[Math.floor(CT.length/2)];
+  function qc(s,o){if(s<=medS&&o>=medO)return'#2ab87a';if(s>medS&&o>=medO)return'#3b7dd8';if(s<=medS&&o<medO)return'#c49a0a';return'#e05252';}
+  const pts=CT.map((c,i)=>({x:Math.round(sps[i]),y:oc[i],r:Math.max(4,Math.sqrt(c.p/1062061)*30),name:c.n,qc:qc(sps[i],oc[i])}));
+  if(ctyCh)ctyCh.destroy();
+  ctyCh=new Chart(document.getElementById('ctyC'),{type:'bubble',
+    data:{datasets:[{label:'Counties',data:pts,backgroundColor:pts.map(p=>p.qc+'bb'),borderColor:pts.map(p=>p.qc),borderWidth:1}]},
+    options:{responsive:true,maintainAspectRatio:false,layout:{padding:{top:20,right:20,bottom:6,left:8}},
+      scales:{
+        x:{title:{display:true,text:`${AM[ag].s} spend ($M)`,color:TC,font:{size:11}},grid:{color:GC},ticks:{color:TC,font:{size:10},callback:v=>'$'+Math.round(v)+'M'}},
+        y:{title:{display:true,text:'Outcome index (0–100)',color:TC,font:{size:11}},min:45,max:98,grid:{color:GC},ticks:{color:TC,font:{size:10}}}
+      },
+      plugins:{legend:{display:false},tooltip:{...CTT2,callbacks:{
+        title:c=>c[0].raw.name,
+        label:c=>{const d=c.raw;return[`Spend: $${Math.round(d.x)}M`,`Outcome: ${d.y}/100`,`Efficiency: ${(d.y/(d.x/100)).toFixed(1)} pts/$100M`];}
+      }}}
+    },plugins:[{id:'cql',afterDraw(ch){
+      const{ctx,scales:{x,y}}=ch;
+      const mx2=x.getPixelForValue(medS),my2=y.getPixelForValue(medO);
+      ctx.save();ctx.setLineDash([3,4]);ctx.strokeStyle='rgba(255,255,255,.1)';ctx.lineWidth=1;
+      ctx.beginPath();ctx.moveTo(mx2,ch.chartArea.top);ctx.lineTo(mx2,ch.chartArea.bottom);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(ch.chartArea.left,my2);ctx.lineTo(ch.chartArea.right,my2);ctx.stroke();
+      ctx.restore();
+    }}]});
+  const rk2=CT.map((c,i)=>({n:c.n,c:qc(sps[i],oc[i]),sc:oc[i]/(sps[i]/100)})).sort((a,b)=>b.sc-a.sc).slice(0,10);
+  const mx3=rk2[0].sc;
+  document.getElementById('ctyrk').innerHTML=rk2.map((r,i)=>`
+    <div class="ri"><span class="rn">${i+1}</span><span class="rnm" title="${r.n}">${r.n}</span>
+    <div class="rbw"><div class="rbb"><div class="rbf" style="width:${(r.sc/mx3*100).toFixed(0)}%;background:${r.c}"></div></div></div>
+    <span class="rsc">${Math.round(r.sc)}</span></div>`).join('');
+}
+
+window.addEventListener('resize',()=>{
+  if(geo){
+    const wr=document.getElementById('map-wrap'),W=wr.clientWidth,H=wr.clientHeight;
+    svg.attr('width',W).attr('height',H);
+    proj=d3.geoMercator().fitSize([W*.94,H*.9],geo);
+    gp=d3.geoPath().projection(proj);
+    svg.selectAll('.county').attr('d',gp);
+    if(cs)redraw();
+  }
+  if(agCh)agCh.resize();if(ctyCh)ctyCh.resize();
+});
+
+updPills();initMap();
+</script>
+</body>
+</html>

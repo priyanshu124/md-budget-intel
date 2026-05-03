@@ -1,0 +1,1144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maryland State Budget Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:       #f4f6f9;
+  --surface:  #ffffff;
+  --surf2:    #f0f2f6;
+  --surf3:    #e8ecf3;
+  --border:   #d4d9e3;
+  --border2:  #bcc3d1;
+  --tx:       #1a2138;
+  --tx2:      #3d4a62;
+  --mu:       #7a88a0;
+  --blue:     #1d4ed8;
+  --blue-lt:  #dbeafe;
+  --green:    #15803d;
+  --green-lt: #dcfce7;
+  --red:      #b91c1c;
+  --red-lt:   #fee2e2;
+  --amber:    #b45309;
+  --amber-lt: #fef3c7;
+  --shadow:   0 1px 4px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.05);
+  --shadow2:  0 2px 8px rgba(0,0,0,.1), 0 8px 32px rgba(0,0,0,.07);
+  --serif: 'Libre Baskerville', Georgia, serif;
+  --sans:  'DM Sans', system-ui, sans-serif;
+  --mono:  'DM Mono', 'Fira Code', monospace;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; overflow: hidden; background: var(--bg); }
+body { font-family: var(--sans); color: var(--tx); font-size: 13px; }
+#app { display: flex; flex-direction: column; height: 100vh; width: 100vw; overflow: hidden; }
+
+/* ── HEADER ── */
+#hdr {
+  flex: 0 0 52px; display: flex; align-items: center;
+  justify-content: space-between; padding: 0 18px;
+  background: var(--surface); border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,.06); gap: 14px;
+}
+.hd-title {
+  font-family: var(--serif); font-size: 1.05rem; font-weight: 700;
+  color: var(--tx); letter-spacing: -.01em; white-space: nowrap;
+}
+.hd-right { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+
+.ctrl { display: flex; flex-direction: column; gap: 2px; }
+.cl { font-family: var(--mono); font-size: 9px; color: var(--mu);
+  letter-spacing: .1em; text-transform: uppercase; }
+.cr { display: flex; align-items: center; gap: 8px; }
+input[type=range] {
+  -webkit-appearance: none; height: 3px; background: var(--surf3);
+  border-radius: 2px; outline: none; cursor: pointer; width: 90px;
+  border: 1px solid var(--border);
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%;
+  background: var(--blue); cursor: pointer; border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+.yl { font-family: var(--mono); font-size: 12px; font-weight: 500;
+  color: var(--blue); min-width: 52px; }
+select {
+  background: var(--surface); border: 1px solid var(--border); color: var(--tx);
+  font-family: var(--sans); font-size: 12px; padding: 5px 8px;
+  border-radius: 6px; cursor: pointer; outline: none; min-width: 170px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+select:focus { border-color: var(--blue); }
+
+/* ── TABS ── */
+#tabs {
+  flex: 0 0 36px; display: flex; align-items: flex-end; padding: 0 18px;
+  background: var(--surface); border-bottom: 1px solid var(--border); gap: 2px;
+}
+.tab {
+  padding: 7px 14px; font-size: 12px; font-weight: 500; cursor: pointer;
+  color: var(--mu); border-bottom: 2px solid transparent; transition: all .15s;
+  user-select: none; letter-spacing: .01em;
+}
+.tab:hover { color: var(--tx); }
+.tab.active { color: var(--blue); border-bottom-color: var(--blue); }
+
+/* ── VIEWS ── */
+.view { display: none; flex: 1; min-height: 0; overflow: hidden; }
+.view.on { display: flex; }
+
+/* ══ MAP VIEW ══ */
+#vmap { flex-direction: row; }
+#map-wrap { flex: 1; min-width: 0; position: relative; overflow: hidden;
+  background: #a8d5e8; display: flex; align-items: center; justify-content: center; }
+#md-map { width: 100%; height: 100%; display: block; cursor: grab; }
+#md-map:active { cursor: grabbing; }
+#loading {
+  position: absolute; inset: 0; z-index: 10; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; background: var(--bg); gap: 10px;
+}
+.spin { width: 28px; height: 28px; border: 2px solid var(--border);
+  border-top-color: var(--blue); border-radius: 50%; animation: rot .75s linear infinite; }
+@keyframes rot { to { transform: rotate(360deg); } }
+.ltx { font-family: var(--mono); font-size: 10px; color: var(--mu); }
+
+/* Map path styles */
+.state-bg { fill: #e8dfc0; stroke: #c4bca8; stroke-width: 0.8; pointer-events: none; }
+.dc-bg    { fill: #ddd8c0; stroke: #c4bca8; stroke-width: 0.8; pointer-events: none; }
+.county {
+  stroke: #b8c2d0; stroke-width: 0.6; cursor: pointer;
+  transition: stroke .1s, stroke-width .1s, filter .1s;
+}
+.county:hover { stroke: #1d4ed8; stroke-width: 1.6; filter: brightness(0.93); }
+.county.pin { stroke: #1d4ed8; stroke-width: 2; filter: brightness(0.88); }
+.county-label { font-family: var(--sans); font-size: 8px; fill: rgba(26,33,56,.7);
+  pointer-events: none; text-anchor: middle; }
+
+/* Layer toggle pills */
+#layer-controls {
+  position: absolute; top: 10px; left: 12px;
+  display: flex; gap: 5px; flex-wrap: wrap;
+}
+.layer-pill {
+  padding: 5px 11px; border-radius: 20px; font-size: 11px; font-weight: 500;
+  cursor: pointer; border: 1.5px solid var(--border);
+  background: var(--surface); color: var(--tx2);
+  box-shadow: var(--shadow); transition: all .15s; user-select: none;
+}
+.layer-pill.active {
+  background: var(--blue); color: white;
+  border-color: var(--blue); box-shadow: 0 2px 8px rgba(29,78,216,.25);
+}
+.layer-pill:hover:not(.active) { border-color: var(--blue); color: var(--blue); }
+.layer-pill input[type=checkbox] { width: 11px; height: 11px; accent-color: var(--blue); cursor: pointer; margin: 0; pointer-events: none; }
+.layer-pill.active input[type=checkbox] { accent-color: white; }
+.layer-dot { font-size: 8px; margin-left: 2px; }
+#zoom-controls { position: absolute; top: 10px; right: 12px; display: flex; flex-direction: column; gap: 4px; }
+.zoom-btn { width: 30px; height: 30px; background: var(--surface); border: 1px solid var(--border); border-radius: 7px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 300; color: var(--tx2); box-shadow: var(--shadow); transition: all .12s; user-select: none; line-height: 1; }
+.zoom-btn:hover { background: var(--blue); color: white; border-color: var(--blue); }
+.zoom-pct { font-family: var(--mono); font-size: 9px; color: var(--mu); background: var(--surface); border: 1px solid var(--border); border-radius: 5px; padding: 3px 0; text-align: center; box-shadow: var(--shadow); }
+
+/* ── SIDEBAR ── */
+#sb {
+  flex: 0 0 268px; background: var(--surface); border-left: 1px solid var(--border);
+  display: flex; flex-direction: column; overflow-y: auto; overflow-x: hidden;
+  scrollbar-width: thin; scrollbar-color: var(--border) transparent;
+  box-shadow: -2px 0 8px rgba(0,0,0,.04);
+}
+.ss { padding: 11px 13px; border-bottom: 1px solid var(--border); }
+.sl { font-family: var(--mono); font-size: 9px; color: var(--mu);
+  letter-spacing: .1em; text-transform: uppercase; margin-bottom: 7px; }
+.sg { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.sc {
+  background: var(--surf2); border-radius: 7px; padding: 8px 10px;
+  border: 1px solid var(--border);
+}
+.sc .sv { font-family: var(--mono); font-size: 15px; font-weight: 600;
+  color: var(--tx); line-height: 1; }
+.sc .sm { font-size: 10px; color: var(--mu); margin-top: 3px; }
+.bs { display: inline-flex; align-items: center; gap: 3px;
+  font-family: var(--mono); font-size: 9px; padding: 2px 6px;
+  border-radius: 3px; margin-top: 5px; }
+.bu { background: var(--green-lt); color: var(--green); }
+.bd { background: var(--red-lt); color: var(--red); }
+#sels { display: none; }
+.snm { font-family: var(--serif); font-size: .9rem; margin-bottom: 7px; color: var(--tx); }
+.seg { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+.sec { background: var(--surf2); border-radius: 6px; padding: 6px 8px;
+  border: 1px solid var(--border); }
+.sec .sv { font-family: var(--mono); font-size: 12px; font-weight: 600;
+  color: var(--tx); margin-top: 2px; }
+.sec .sm { font-size: 10px; color: var(--mu); }
+.ai { margin-bottom: 6px; }
+.ah { display: flex; justify-content: space-between; margin-bottom: 3px; }
+.an { font-size: 11px; color: var(--tx2); }
+.av { font-family: var(--mono); font-size: 10px; color: var(--mu); }
+.bt { height: 4px; background: var(--surf3); border-radius: 2px; overflow: hidden; }
+.bf { height: 100%; border-radius: 2px; transition: width .5s cubic-bezier(.4,0,.2,1); }
+.yp { display: flex; flex-wrap: wrap; gap: 4px; }
+.ypp {
+  font-family: var(--mono); font-size: 10px; padding: 3px 7px; border-radius: 4px;
+  background: var(--surf2); color: var(--mu); cursor: pointer;
+  border: 1px solid var(--border); transition: all .15s;
+}
+.ypp:hover { border-color: var(--blue); color: var(--blue); }
+.ypp.on { background: var(--blue-lt); color: var(--blue); border-color: #93c5fd; }
+.dn { padding: 9px 13px; font-size: 9.5px; color: var(--mu); line-height: 1.65; }
+.county-val-badge {
+  position: absolute; bottom: 36px; left: 12px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; padding: 5px 10px;
+  font-family: var(--mono); font-size: 9px; color: var(--mu);
+  box-shadow: var(--shadow); pointer-events: none;
+  display: flex; gap: 10px;
+}
+.cvb-item span { color: var(--tx); font-weight: 500; }
+
+/* ── MAP LEGEND ── */
+#map-legend {
+  position: absolute; bottom: 10px; left: 12px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 12px;
+  box-shadow: var(--shadow); min-width: 160px;
+}
+.leg-title { font-family: var(--mono); font-size: 9px; color: var(--mu);
+  letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
+.leg-bar { height: 8px; border-radius: 4px; margin-bottom: 4px; }
+.leg-range { display: flex; justify-content: space-between; }
+.leg-val { font-family: var(--mono); font-size: 9px; color: var(--mu); }
+
+/* ══ EFFICIENCY VIEW ══ */
+#veff { flex-direction: row; }
+.efl { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow: hidden; }
+.ecp {
+  flex: 1; min-height: 0;
+  display: flex; flex-direction: column;
+  padding: 12px 16px;
+  border-right: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  overflow: hidden; background: var(--surface);
+}
+.ecp:last-child { border-bottom: none; }
+.eph { flex: 0 0 auto; margin-bottom: 6px; }
+.eph .pt { font-size: 12px; font-weight: 600; color: var(--tx); }
+.eph .ps { font-size: 10px; color: var(--mu); margin-top: 1px; }
+.cbx { position: relative; flex: 1; min-height: 0; width: 100%; }
+.cbx canvas { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; }
+.el { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 5px; flex: 0 0 auto; }
+.eli { display: flex; align-items: center; gap: 4px; font-size: 10px; color: var(--tx2); }
+.eld { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.efr {
+  flex: 0 0 260px; display: flex; flex-direction: column;
+  background: var(--surface); overflow: hidden;
+  border-left: 1px solid var(--border);
+}
+.eip {
+  flex: 1; min-height: 0; display: flex; flex-direction: column;
+  padding: 11px 13px; gap: 10px;
+  border-bottom: 1px solid var(--border); overflow-y: auto;
+  scrollbar-width: thin; scrollbar-color: var(--border) transparent;
+}
+.eip:last-child { border-bottom: none; }
+.eil { font-family: var(--mono); font-size: 9px; color: var(--mu);
+  letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.eis { font-size: 10px; color: var(--mu); margin-bottom: 7px; }
+.ri { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; }
+.rn { font-family: var(--mono); font-size: 10px; color: var(--mu);
+  width: 14px; flex-shrink: 0; text-align: right; }
+.rnm { font-size: 11px; color: var(--tx); flex: 1; min-width: 0;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rbw { width: 48px; flex-shrink: 0; }
+.rbb { height: 3px; background: var(--surf3); border-radius: 2px; }
+.rbf { height: 100%; border-radius: 2px; transition: width .4s; }
+.rsc { font-family: var(--mono); font-size: 10px; color: var(--mu);
+  width: 24px; text-align: right; flex-shrink: 0; }
+.qg2 { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+.qc { border-radius: 6px; padding: 6px 8px; }
+.qc .ql { font-size: 10px; font-weight: 600; margin-bottom: 1px; }
+.qc .qd { font-size: 9.5px; color: var(--mu); line-height: 1.35; }
+.qcg { background: var(--green-lt); border: 1px solid #bbf7d0; }
+.qcg .ql { color: var(--green); }
+.qcb { background: var(--blue-lt); border: 1px solid #bfdbfe; }
+.qcb .ql { color: var(--blue); }
+.qca { background: var(--amber-lt); border: 1px solid #fde68a; }
+.qca .ql { color: var(--amber); }
+.qcr { background: var(--red-lt); border: 1px solid #fecaca; }
+.qcr .ql { color: var(--red); }
+.srcl { font-size: 10px; color: var(--mu); line-height: 1.75; }
+.cagr { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.cagr span { font-size: 11px; color: var(--mu); flex-shrink: 0; }
+.cagr select { min-width: 0; flex: 1; font-size: 11px; }
+#eins { font-size: 10px; color: var(--tx2); line-height: 1.7; }
+
+/* MFR trend badge */
+.mfr-pill {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 2px 7px; border-radius: 10px; font-family: var(--mono);
+  font-size: 9.5px; font-weight: 500;
+}
+.mfr-fav { background: var(--green-lt); color: var(--green); }
+.mfr-unf { background: var(--red-lt); color: var(--red); }
+.mfr-sta { background: var(--amber-lt); color: var(--amber); }
+
+/* ── TOOLTIP ── */
+#tt {
+  position: fixed; z-index: 9999; pointer-events: none;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; padding: 11px 13px; opacity: 0;
+  transition: opacity .12s; min-width: 190px; max-width: 240px;
+  box-shadow: var(--shadow2);
+}
+#tt.on { opacity: 1; }
+.thd { font-family: var(--serif); font-size: 13px; color: var(--tx);
+  padding-bottom: 7px; margin-bottom: 7px; border-bottom: 1px solid var(--border); }
+.tr { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+.tk { font-family: var(--mono); font-size: 9px; color: var(--mu); letter-spacing: .04em; }
+.tv { font-family: var(--mono); font-size: 11px; font-weight: 600; color: var(--tx); }
+.tv.up { color: var(--green); }
+.tv.dn { color: var(--red); }
+
+/* ── SOURCES FOOTER ── */
+#sources {
+  flex: 0 0 auto; background: var(--surf2); border-top: 1px solid var(--border);
+  padding: 5px 18px; display: flex; align-items: center; gap: 6px;
+  flex-wrap: wrap;
+}
+.src-label { font-family: var(--mono); font-size: 9px; color: var(--mu);
+  letter-spacing: .08em; text-transform: uppercase; flex-shrink: 0; }
+.src-item { font-size: 9.5px; color: var(--mu); }
+.src-item a { color: var(--blue); text-decoration: none; }
+.src-item a:hover { text-decoration: underline; }
+.src-sep { color: var(--border2); font-size: 10px; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+</style>
+</head>
+<body>
+<div id="app">
+
+<!-- HEADER -->
+<header id="hdr">
+  <div class="hd-title">Maryland State Budget Map</div>
+  <div class="hd-right">
+    <div class="ctrl">
+      <div class="cl">Fiscal Year</div>
+      <div class="cr">
+        <input type="range" id="ysl" min="2015" max="2026" value="2024" step="1" oninput="onSl(this.value)">
+        <span class="yl" id="ylb">FY 2024</span>
+      </div>
+    </div>
+    <div class="ctrl">
+      <div class="cl">Agency</div>
+      <select id="agsel" onchange="onAg()">
+        <option value="all">All Agencies (Total)</option>
+        <option value="k12_education">K-12 Education (MSDE)</option>
+        <option value="health_medicaid">Health &amp; Medicaid (MDH)</option>
+        <option value="transportation">Transportation (MDOT)</option>
+        <option value="higher_ed">Higher Education (USM)</option>
+        <option value="human_services">Human Services (DHS)</option>
+        <option value="public_safety">Public Safety &amp; Corrections</option>
+        <option value="judiciary">Judiciary</option>
+        <option value="state_police">Maryland State Police</option>
+        <option value="environment_nr">Environment &amp; Natural Resources</option>
+        <option value="budget_admin">Budget &amp; Administration</option>
+        <option value="all_other">All Other Agencies</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<!-- TABS -->
+<div id="tabs">
+  <div class="tab active" id="tmap" onclick="swView('map')">Budget Map</div>
+  <div class="tab"        id="teff" onclick="swView('eff')">Efficiency Analysis</div>
+</div>
+
+<!-- MAP VIEW -->
+<div class="view on" id="vmap">
+  <div id="map-wrap">
+    <div id="loading">
+      <div class="spin"></div>
+      <div class="ltx">Loading Maryland geography…</div>
+    </div>
+    <svg id="md-map"></svg>
+
+    <!-- Layer Toggle (multi-select; last clicked = primary fill) -->
+    <div id="layer-controls">
+      <div class="layer-pill active" id="pill-budget"  data-layer="budget"  onclick="toggleLayer('budget')"><input type="checkbox" id="chk-budget" checked> Budget Spending<span class="layer-dot" id="dot-budget">●</span></div>
+      <div class="layer-pill"        id="pill-poverty" data-layer="poverty" onclick="toggleLayer('poverty')"><input type="checkbox" id="chk-poverty"> Poverty Rate<span class="layer-dot" id="dot-poverty" style="display:none">●</span></div>
+      <div class="layer-pill"        id="pill-income"  data-layer="income"  onclick="toggleLayer('income')"><input type="checkbox" id="chk-income"> Median Income<span class="layer-dot" id="dot-income" style="display:none">●</span></div>
+      <div class="layer-pill"        id="pill-pop"     data-layer="pop"     onclick="toggleLayer('pop')"><input type="checkbox" id="chk-pop"> Population<span class="layer-dot" id="dot-pop" style="display:none">●</span></div>
+    </div>
+    <!-- Zoom Controls -->
+    <div id="zoom-controls">
+      <button class="zoom-btn" onclick="doZoom(1.5)" title="Zoom in">+</button>
+      <button class="zoom-btn" onclick="doZoom(1/1.5)" title="Zoom out">−</button>
+      <button class="zoom-btn" onclick="doZoomReset()" title="Reset" style="font-size:13px">⟳</button>
+      <div class="zoom-pct" id="zoom-pct">100%</div>
+    </div>
+
+    <!-- Map Legend -->
+    <div id="map-legend">
+      <div class="leg-title" id="leg-title">Budget Spending</div>
+      <canvas id="leg-canvas" width="150" height="8" style="border-radius:4px;display:block;margin-bottom:4px"></canvas>
+      <div class="leg-range">
+        <span class="leg-val" id="leg-lo">$0</span>
+        <span class="leg-val" id="leg-hi">—</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside id="sb">
+    <div class="ss">
+      <div class="sl">State total — FY <span id="sbyr">2024</span></div>
+      <div class="sg">
+        <div class="sc">
+          <div class="sv" id="scall">—</div>
+          <div class="sm">All agencies</div>
+        </div>
+        <div class="sc">
+          <div class="sv" id="scag">—</div>
+          <div class="sm" id="scagl">Selected agency</div>
+        </div>
+      </div>
+      <div id="scbdg"></div>
+    </div>
+    <div class="ss" id="sels">
+      <div class="sl">Selected county</div>
+      <div class="snm" id="selnm">—</div>
+      <div class="seg">
+        <div class="sec"><div class="sm">Total spend</div><div class="sv" id="stot">—</div></div>
+        <div class="sec"><div class="sm">% of state</div><div class="sv" id="spct">—</div></div>
+        <div class="sec"><div class="sm">YoY change</div><div class="sv" id="syoy">—</div></div>
+        <div class="sec"><div class="sm">Per capita</div><div class="sv" id="scap">—</div></div>
+      </div>
+      <div class="seg" style="margin-top:5px">
+        <div class="sec"><div class="sm">Poverty rate</div><div class="sv" id="spov">—</div></div>
+        <div class="sec"><div class="sm">Median income</div><div class="sv" id="sinc">—</div></div>
+      </div>
+      <div style="margin-top:6px;font-size:10px;color:var(--mu)">Click county again to deselect</div>
+    </div>
+    <div class="ss">
+      <div class="sl">Agency breakdown — <span id="agsc">all counties</span></div>
+      <div id="agbars"></div>
+    </div>
+    <div class="ss">
+      <div class="sl">Quick year jump</div>
+      <div class="yp" id="ypills"></div>
+    </div>
+    <div class="dn">FY2015–FY2026 from MD DBM Operating Budget [1]. County distributions are modeled estimates — no public county-level breakdown exists [3]. FY2025–26 reflect enacted/proposed budgets.<br><br>
+      <b style="color:#3d4a62">❓ Where does "All Other" $16.8B go? (FY2024)</b><br>
+      ~$4.2B Employee benefits &amp; health · ~$2.3B Pension/SRPS · ~$2.1B Debt service · ~$2.4B Local gov't aid · ~$0.8B Dept. of Labor · ~$0.5B Housing &amp; Comm. Dev. · ~$0.4B Commerce · ~$4.1B ~40 other agencies. A structural feature of MD budgeting — not a gap.
+    </div>
+  </aside>
+</div>
+
+<!-- EFFICIENCY VIEW -->
+<div class="view" id="veff">
+  <div class="efl">
+    <div class="ecp">
+      <div class="eph">
+        <div class="pt">MFR Performance Trend — Favorable vs Unfavorable Indicators (2015–2026)</div>
+        <div class="ps">Source: MD DBM Managing for Results Annual Performance Reports · All State Agencies · % of trackable KPIs</div>
+      </div>
+      <div class="cbx"><canvas id="mfrC" role="img" aria-label="MFR trend line chart"></canvas></div>
+      <div class="el">
+        <div class="eli"><div class="eld" style="background:#15803d"></div>Favorable (&gt;3% improvement)</div>
+        <div class="eli"><div class="eld" style="background:#b45309"></div>Stable (±3%)</div>
+        <div class="eli"><div class="eld" style="background:#b91c1c"></div>Unfavorable (&gt;3% decline)</div>
+      </div>
+    </div>
+    <div class="ecp">
+      <div class="eph" style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px">
+        <div>
+          <div class="pt">Agency budget vs MFR outcome index (FY2024)</div>
+          <div class="ps">Bubble size = share of total budget · Hover for details</div>
+        </div>
+        <div class="cagr" style="flex-shrink:0">
+          <span>Agency:</span>
+          <select id="cagsel" onchange="updCty()">
+            <option value="k12_education">K-12 Education</option>
+            <option value="health_medicaid">Health &amp; Medicaid</option>
+            <option value="transportation">Transportation</option>
+            <option value="public_safety">Public Safety</option>
+            <option value="human_services">Human Services</option>
+            <option value="environment_nr">Environment &amp; NR</option>
+            <option value="higher_ed">Higher Education</option>
+          </select>
+        </div>
+      </div>
+      <div class="cbx"><canvas id="ctyC" role="img" aria-label="Agency county efficiency scatter"></canvas></div>
+      <div class="el">
+        <div class="eli"><div class="eld" style="background:var(--green)"></div>High efficiency</div>
+        <div class="eli"><div class="eld" style="background:var(--blue)"></div>High investment</div>
+        <div class="eli"><div class="eld" style="background:var(--amber)"></div>Underfunded</div>
+        <div class="eli"><div class="eld" style="background:var(--red)"></div>Cost concern</div>
+      </div>
+    </div>
+  </div>
+  <div class="efr">
+    <div class="eip">
+      <div>
+        <div class="eil">MFR Efficiency — Latest Year (FY2026)</div>
+        <div class="eis">% of KPIs by performance status · Source: DBM MFR Annual Report 2026</div>
+        <div id="mfr-summary"></div>
+      </div>
+      <div>
+        <div class="eil">MFR Priority Areas — Moore-Miller Administration</div>
+        <div id="mfr-priority-bars"></div>
+      </div>
+      <div>
+        <div class="eil">Outcome index sources</div>
+        <div class="srcl">
+          Education: MSDE 4-yr graduation rates &amp; PARCC proficiency<br>
+          Health: MDH life expectancy, uninsured rate, infant mortality<br>
+          Transportation: MDOT pavement &amp; bridge condition ratings<br>
+          Public Safety: MSP Uniform Crime Report rate per 100k<br>
+          Human Services: DHS poverty composite &amp; SNAP utilization<br>
+          Environment: MDE Bay health index &amp; air quality<br>
+          Higher Ed: USM 6-yr graduation &amp; employment rates
+        </div>
+      </div>
+    </div>
+    <div class="eip">
+      <div>
+        <div class="eil">Top 10 counties by efficiency — <span id="ctyrklb">K-12 Education</span></div>
+        <div class="eis">Outcome pts ÷ $100M county spend · FY2024</div>
+        <div id="ctyrk"></div>
+      </div>
+      <div>
+        <div class="eil">Key insight</div>
+        <div id="eins"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /#app -->
+
+
+
+<div id="tt"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+// ══════════════════════════════════════════════════════════════
+//  REAL DATA — sourced from MD DBM and U.S. Census Bureau
+// ══════════════════════════════════════════════════════════════
+const DATA = {"years":[2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026],"budget":{"total_all_funds":[38576,40412,42036,43877,44779,46723,52688,58149,63077,65958,67300,69847],"agencies":{"k12_education":{"label":"K-12 Education (MSDE)","short":"K-12 Education","color":"#1d4ed8","values":[6604,6843,7086,7355,7641,7936,8218,8943,9521,10121,11024,11892]},"health_medicaid":{"label":"Health & Medicaid (MDH)","short":"Health/Medicaid","color":"#7e22ce","values":[9321,9743,10267,10812,11354,11876,12412,14203,15477,16183,17021,17854]},"transportation":{"label":"Transportation (MDOT)","short":"Transportation","color":"#065f46","values":[4312,4521,4743,4954,5112,5287,5421,5543,5876,6187,6632,7043]},"higher_ed":{"label":"Higher Education (USM/MHEC)","short":"Higher Ed","color":"#581c87","values":[3821,3943,4054,4176,4312,4454,4632,5012,5321,5612,5876,6154]},"human_services":{"label":"Human Services (DHS)","short":"Human Services","color":"#b45309","values":[2876,3012,3154,3287,3421,3565,4287,4876,5123,5287,5432,5587]},"public_safety":{"label":"Public Safety & Corrections","short":"Public Safety","color":"#991b1b","values":[1654,1712,1743,1798,1876,1954,2043,2187,2354,2543,2654,2732]},"judiciary":{"label":"Judiciary","short":"Judiciary","color":"#1e3a5f","values":[543,567,598,623,654,687,721,776,832,887,923,965]},"state_police":{"label":"Maryland State Police (MSP)","short":"State Police","color":"#374151","values":[398,412,432,453,469,487,503,521,543,567,587,609]},"environment_nr":{"label":"Environment & Natural Resources","short":"Env. & NR","color":"#14532d","values":[621,654,687,712,743,776,812,876,943,1012,1065,1121]},"budget_admin":{"label":"Budget & Administration","short":"Administration","color":"#4b5563","values":[487,512,534,557,578,601,625,676,721,756,784,812]}},"all_other":[7939,8503,8734,9151,8614,9100,12970,14537,16366,16803,15303,15066]},"counties":{"24001":{"name":"Allegany","pop":68106},"24003":{"name":"Anne Arundel","pop":588261},"24005":{"name":"Baltimore Co.","pop":854535},"24510":{"name":"Baltimore City","pop":585708},"24009":{"name":"Calvert","pop":93781},"24011":{"name":"Caroline","pop":33406},"24013":{"name":"Carroll","pop":172701},"24015":{"name":"Cecil","pop":103725},"24017":{"name":"Charles","pop":174998},"24019":{"name":"Dorchester","pop":32261},"24021":{"name":"Frederick","pop":278837},"24023":{"name":"Garrett","pop":29014},"24025":{"name":"Harford","pop":261327},"24027":{"name":"Howard","pop":336247},"24029":{"name":"Kent","pop":19581},"24031":{"name":"Montgomery","pop":1062061},"24033":{"name":"Prince George's","pop":967201},"24035":{"name":"Queen Anne's","pop":52563},"24037":{"name":"St. Mary's","pop":115117},"24039":{"name":"Somerset","pop":25616},"24041":{"name":"Talbot","pop":37181},"24043":{"name":"Washington","pop":155474},"24045":{"name":"Wicomico","pop":103609},"24047":{"name":"Worcester","pop":53234}},"county_poverty":{"24001":15.8,"24003":5.8,"24005":8.2,"24510":20.1,"24009":4.5,"24011":11.4,"24013":5.0,"24015":8.0,"24017":5.4,"24019":17.2,"24021":6.1,"24023":13.5,"24025":5.6,"24027":4.0,"24029":11.6,"24031":6.0,"24033":8.8,"24035":5.6,"24037":5.8,"24039":21.5,"24041":8.7,"24043":10.5,"24045":14.2,"24047":9.2},"county_income":{"24001":47892,"24003":97697,"24005":77560,"24510":54124,"24009":106423,"24011":61429,"24013":93787,"24015":76571,"24017":101255,"24019":56004,"24021":96688,"24023":54218,"24025":92760,"24027":124042,"24029":60175,"24031":112762,"24033":84356,"24035":95625,"24037":99527,"24039":46694,"24041":69087,"24043":64418,"24045":63131,"24047":62481},"mfr_overall":[{"year":2015,"favorable_pct":61.2,"stable_pct":15.3,"unfavorable_pct":23.5},{"year":2016,"favorable_pct":62.2,"stable_pct":21.6,"unfavorable_pct":16.2},{"year":2017,"favorable_pct":63.5,"stable_pct":8.1,"unfavorable_pct":28.4},{"year":2018,"favorable_pct":62.2,"stable_pct":14.9,"unfavorable_pct":22.9},{"year":2019,"favorable_pct":55.4,"stable_pct":18.9,"unfavorable_pct":25.7},{"year":2020,"favorable_pct":48.6,"stable_pct":23.0,"unfavorable_pct":28.4},{"year":2021,"favorable_pct":58.0,"stable_pct":19.0,"unfavorable_pct":23.0},{"year":2022,"favorable_pct":65.0,"stable_pct":10.0,"unfavorable_pct":25.0},{"year":2023,"favorable_pct":58.0,"stable_pct":14.5,"unfavorable_pct":27.5},{"year":2024,"favorable_pct":44.4,"stable_pct":16.7,"unfavorable_pct":38.9},{"year":2025,"favorable_pct":45.2,"stable_pct":30.6,"unfavorable_pct":24.2},{"year":2026,"favorable_pct":49.4,"stable_pct":27.2,"unfavorable_pct":23.5}],"mfr_priorities":{"hogan":{"Economic Development and Jobs":{"2015":75,"2016":73,"2017":55,"2018":73,"2019":65,"2020":45,"2021":64,"2022":55},"Fiscal Responsibility":{"2015":67,"2016":50,"2017":50,"2018":25,"2019":67,"2020":58,"2021":67,"2022":75},"Improved Quality of Life":{"2015":60,"2016":67,"2017":67,"2018":65,"2019":55,"2020":50,"2021":56,"2022":67},"Government Reform":{"2015":50,"2016":60,"2017":50,"2018":60,"2019":50,"2020":45,"2021":50,"2022":55},"Reduced Taxes and Fees":{"2015":70,"2016":60,"2017":50,"2018":55,"2019":55,"2020":40,"2021":55,"2022":60}},"moore":{"Ending Child Poverty":{"2023":0,"2024":100,"2025":0,"2026":57},"Student Success":{"2023":75,"2024":0,"2025":50,"2026":57},"Equitable Economy":{"2023":27,"2024":100,"2025":40,"2026":75},"Connecting to Jobs":{"2023":50,"2024":100,"2025":100,"2026":33},"Safer Communities":{"2023":63,"2024":100,"2025":40,"2026":29},"Affordable Housing":{"2023":63,"2024":100,"2025":67,"2026":56},"Infrastructure":{"2023":38,"2024":50,"2025":75,"2026":83},"Health Systems":{"2023":100,"2024":100,"2025":60,"2026":0},"Clean Energy":{"2023":63,"2024":100,"2025":33,"2026":83},"State of Service":{"2023":0,"2024":0,"2025":0,"2026":0}}}};
+
+const YRS  = DATA.years;                   // [2015..2026]
+const BAGT = DATA.budget.total_all_funds;  // total all-funds by year index
+const BAGS = DATA.budget.agencies;         // agency objects {label,short,color,values}
+const AK   = Object.keys(BAGS);            // agency keys
+
+// County metadata
+const CT = Object.entries(DATA.counties).map(([fips,d]) => ({
+  f: fips, n: d.name, p: d.pop
+}));
+const CT_POV = DATA.county_poverty;
+const CT_INC = DATA.county_income;
+
+// Normalized county weights per agency (using population-proportional proxy)
+// Weights reflect each county's share of total spend for a given agency
+// Based on population weights, adjusted for urban/rural concentration
+const RW = {
+  k12_education:   [1.7, 8.4, 11.3, 13.8, 1.2, 0.9, 2.5, 1.6, 2.8, 0.9, 4.0, 0.8, 4.0, 5.0, 0.5, 14.3, 17.3, 0.7, 1.6, 0.9, 0.7, 2.9, 2.1, 0.9],
+  health_medicaid: [2.4, 7.4, 9.9, 20.2, 0.9, 1.1, 1.5, 1.9, 2.5, 1.5, 3.0, 0.9, 2.5, 2.0, 0.7, 11.9, 18.1, 0.7, 1.5, 1.5, 1.0, 4.0, 2.5, 0.9],
+  transportation:  [2.4, 8.4, 10.8, 14.8, 1.2, 0.8, 2.0, 1.5, 2.5, 0.8, 5.0, 1.0, 4.0, 4.0, 0.5, 13.9, 13.0, 0.8, 2.0, 0.5, 0.8, 4.0, 2.0, 1.5],
+  higher_ed:       [0.8, 4.5, 7.9, 13.9, 0.4, 0.3, 0.5, 0.5, 1.0, 0.3, 3.5, 0.3, 2.0, 3.9, 0.3, 17.9, 21.9, 0.3, 1.5, 0.5, 1.2, 3.0, 3.5, 1.1],
+  human_services:  [2.0, 7.4, 9.4, 21.9, 0.8, 1.0, 1.5, 1.5, 2.5, 1.2, 3.0, 1.0, 3.0, 2.5, 0.6, 11.9, 17.9, 0.7, 1.5, 1.5, 0.8, 3.5, 2.5, 0.8],
+  public_safety:   [2.5, 6.9, 9.9, 21.9, 1.0, 0.8, 2.0, 1.5, 2.5, 1.0, 4.0, 0.8, 3.5, 2.5, 0.5, 11.9, 14.9, 0.7, 1.5, 1.0, 0.7, 3.5, 2.5, 1.0],
+  judiciary:       [2.0, 8.0, 10.5, 15.0, 1.0, 0.7, 2.0, 1.5, 2.5, 0.8, 4.0, 0.7, 3.5, 3.8, 0.5, 14.0, 16.0, 0.7, 1.5, 0.8, 0.8, 3.3, 2.0, 0.9],
+  state_police:    [3.0, 7.5, 10.0, 14.0, 1.2, 0.9, 2.2, 1.7, 2.8, 1.0, 4.5, 1.0, 4.0, 3.8, 0.6, 12.0, 13.5, 0.8, 1.8, 0.8, 0.8, 4.0, 2.2, 1.5],
+  environment_nr:  [5.4, 7.0, 5.5, 3.0, 3.5, 3.0, 3.5, 3.5, 4.0, 5.5, 5.0, 6.0, 4.0, 3.0, 3.0, 8.0, 7.0, 3.0, 4.0, 3.5, 3.5, 4.5, 3.5, 4.5],
+  budget_admin:    [2.0, 8.0, 10.0, 14.0, 1.2, 0.8, 2.0, 1.5, 2.5, 0.8, 4.0, 0.8, 3.8, 4.0, 0.5, 13.5, 14.0, 0.7, 1.8, 0.8, 0.8, 3.5, 2.0, 1.0],
+  all_other:       [2.0, 8.0, 10.5, 15.0, 1.0, 0.8, 2.0, 1.5, 2.5, 0.8, 4.0, 0.8, 3.8, 4.2, 0.5, 13.8, 14.5, 0.7, 1.8, 0.8, 0.8, 3.5, 2.0, 1.0],
+};
+const NW = {};
+[...AK, 'all_other'].forEach(k => {
+  const s = RW[k].reduce((a,b) => a+b, 0);
+  NW[k] = RW[k].map(v => v/s);
+});
+
+// Outcome indices per county per agency (0–100 composite index)
+const OUT = {
+  k12_education:   [74,87,86,67,87,73,92,81,83,70,90,82,88,95,84,93,74,86,85,64,89,78,74,81],
+  health_medicaid: [64,82,77,61,83,67,81,74,78,66,83,72,80,91,76,89,67,79,81,58,85,71,69,77],
+  transportation:  [65,80,76,72,72,63,74,69,72,62,78,67,77,85,67,82,74,69,70,61,69,72,66,64],
+  public_safety:   [65,76,70,51,82,65,84,78,76,63,81,87,80,87,83,78,61,80,81,59,86,67,62,73],
+  human_services:  [66,77,72,59,80,65,78,72,76,63,79,70,76,86,71,83,66,77,78,60,81,69,65,74],
+  environment_nr:  [72,78,71,60,82,73,75,74,78,79,80,88,76,79,76,83,74,82,80,74,82,77,73,80],
+  higher_ed:       [60,74,78,72,58,52,62,59,66,54,72,55,68,82,60,88,85,57,68,53,65,70,72,60],
+};
+const AGO = {
+  k12_education:78, health_medicaid:74, transportation:78, public_safety:73,
+  human_services:70, environment_nr:77, higher_ed:75
+};
+const INS = {
+  k12_education: `Blueprint for Maryland's Future drove large post-COVID increases. Prince George's and Baltimore City receive the most via equalization weights but show lower composite outcomes — the core equity vs. efficiency tension in state K-12 policy.`,
+  health_medicaid: `Medicaid is federally matched (~50%), making Health the largest line at $16.2B in FY2024. The high denominator structurally suppresses efficiency ratio. Outcomes reflect social determinants more than state spend alone.`,
+  transportation: `MDOT's consistent pavement and bridge ratings reflect predictable capital cycling. Suburban counties (Howard, Montgomery) score highest — lower road miles per capita and newer infrastructure stock.`,
+  public_safety: `Despite large Baltimore City allocations, rural counties like Garrett and Carroll show the best crime-rate outcomes. The Corrections budget is concentrated in a few facilities, creating geographic mismatch.`,
+  human_services: `Post-COVID ARPA funds inflated FY2021–22 Human Services spend. Rural Eastern Shore counties have proportionally high poverty rates, creating underfunded pockets despite lower absolute dollars.`,
+  environment_nr: `Highest efficiency ratio — smallest major budget (~$1B) but strong Bay health and air quality indices. Chesapeake Bay Program funds are leveraged via federal 1:1 matches, amplifying outcomes.`,
+  higher_ed: `USM spend concentrates in Prince George's (UMCP) and Montgomery (USG). Outcomes track closely with flagship university presence; community college transfer pipelines extend benefits statewide.`,
+};
+
+// All-other agency values by year index
+const ALL_OTHER_VALS = DATA.budget.all_other;
+
+// ── STATE MACHINE ──────────────────────────────────────────────
+let curY = 2024, curAg = 'all', pin = null;
+let geo = null, cs = null, svg = null, proj = null, gp = null;
+let agCh = null, ctyCh = null, mfrCh = null, curV = 'map';
+let effBuilt = false;
+
+const yi = y => YRS.indexOf(y);
+
+// Format helpers
+const fM = m => m >= 1000 ? '$' + (m/1000).toFixed(m>=10000?1:2) + 'B' : '$' + Math.round(m) + 'M';
+const fB = m => '$' + (m/1000).toFixed(1) + 'B';
+const fPct = v => v.toFixed(1) + '%';
+const fDollar = v => '$' + v.toLocaleString();
+
+// Get agency total for year index
+function agVal(ag, yi2) {
+  if (ag === 'all') return BAGT[yi2];
+  if (ag === 'all_other') return ALL_OTHER_VALS[yi2];
+  return BAGS[ag].values[yi2];
+}
+
+// County spend estimate
+function sp(ci, yi2, ag) {
+  if (ag === 'all') return AK.reduce((s,k) => s + NW[k][ci] * BAGS[k].values[yi2], 0)
+                         + NW['all_other'][ci] * ALL_OTHER_VALS[yi2];
+  if (ag === 'all_other') return NW['all_other'][ci] * ALL_OTHER_VALS[yi2];
+  return NW[ag][ci] * BAGS[ag].values[yi2];
+}
+
+function topAgency(ci, yi2) {
+  let best = null, bv = -1;
+  AK.forEach(k => { const v = NW[k][ci] * BAGS[k].values[yi2]; if (v>bv){bv=v;best=k;} });
+  return best;
+}
+
+// ── TOOLTIP ───────────────────────────────────────────────────
+const TT = document.getElementById('tt');
+function showTT(h, x, y) {
+  TT.innerHTML = h; TT.classList.add('on');
+  const w = TT.offsetWidth, ht = TT.offsetHeight;
+  let tx = x+15, ty = y-10;
+  if (tx+w > window.innerWidth-10) tx = x-w-10;
+  if (ty+ht > window.innerHeight-10) ty = y-ht-6;
+  TT.style.left = tx + 'px'; TT.style.top = ty + 'px';
+}
+function hideTT() { TT.classList.remove('on'); }
+
+// ── LAYER CONTROL (multi-select) ─────────────────────────────
+let primaryLayer = 'budget';
+const activeLayers = new Set(['budget']);
+
+function toggleLayer(layer) {
+  if (activeLayers.has(layer)) {
+    if (activeLayers.size === 1) return; // keep at least one
+    activeLayers.delete(layer);
+    if (primaryLayer === layer) primaryLayer = [...activeLayers][0];
+  } else {
+    activeLayers.add(layer);
+    primaryLayer = layer; // most recently activated drives the fill
+  }
+  ['budget','poverty','income','pop'].forEach(k => {
+    const pill = document.getElementById('pill-' + k);
+    const dot  = document.getElementById('dot-'  + k);
+    const chk  = document.getElementById('chk-'  + k);
+    if (pill) pill.classList.toggle('active', activeLayers.has(k));
+    if (dot)  dot.style.display = (primaryLayer === k && activeLayers.has(k)) ? '' : 'none';
+    if (chk)  chk.checked = activeLayers.has(k);
+  });
+  redraw();
+}
+
+function layerValue(ci) {
+  if (primaryLayer === 'budget')  return sp(ci, yi(curY), curAg);
+  if (primaryLayer === 'poverty') return CT_POV[CT[ci].f];
+  if (primaryLayer === 'income')  return CT_INC[CT[ci].f];
+  if (primaryLayer === 'pop')     return CT[ci].p;
+  return 0;
+}
+
+function layerColorScale(vals) {
+  const mx = d3.max(vals), mn = d3.min(vals);
+  if (primaryLayer === 'budget')  return d3.scaleSequential([mn, mx], d3.interpolateRgb('#dce8fa','#1d4ed8'));
+  if (primaryLayer === 'poverty') return d3.scaleSequential([mn, mx], d3.interpolateRgb('#fef9ec','#b45309'));
+  if (primaryLayer === 'income')  return d3.scaleSequential([mn, mx], d3.interpolateRgb('#f0fdf4','#15803d'));
+  if (primaryLayer === 'pop')     return d3.scaleSequential([mn, mx], d3.interpolateRgb('#eff6ff','#1e40af'));
+  return d3.scaleSequential([mn, mx], d3.interpolateBlues);
+}
+
+function layerFmt(v) {
+  if (primaryLayer === 'budget')  return fM(v);
+  if (primaryLayer === 'poverty') return v.toFixed(1) + '%';
+  if (primaryLayer === 'income')  return '$' + Math.round(v/1000) + 'k';
+  if (primaryLayer === 'pop')     return v >= 1e6 ? (v/1e6).toFixed(2)+'M' : Math.round(v/1000)+'k';
+  return v;
+}
+
+// ── MAP INIT ─────────────────────────────────────────────────
+svg = d3.select('#md-map');
+let mapGroup = null, zoomBeh = null;
+
+async function initMap() {
+  try {
+    const us = await d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json');
+    const statesGeo   = topojson.feature(us, us.objects.states);
+    const countiesGeo = topojson.feature(us, us.objects.counties);
+
+    geo = { type:'FeatureCollection', features: countiesGeo.features.filter(f => f.id.startsWith('24')) };
+
+    const neighborFIPS = new Set(['42','51','54','10','34','11']);
+    const neighborStates = { type:'FeatureCollection',
+      features: statesGeo.features.filter(f => neighborFIPS.has(String(f.id).padStart(2,'0'))) };
+
+    const wrap = document.getElementById('map-wrap');
+    const W = wrap.clientWidth, H = wrap.clientHeight;
+    svg.attr('width', W).attr('height', H);
+
+    const mdBounds = d3.geoBounds(geo);
+    const mdCenter = [(mdBounds[0][0]+mdBounds[1][0])/2, (mdBounds[0][1]+mdBounds[1][1])/2];
+    proj = d3.geoMercator().fitSize([W*0.72, H*0.72], geo).center(mdCenter);
+    proj = d3.geoMercator().center([-76.9, 38.95]).scale(proj.scale() * 1.05).translate([W*0.48, H*0.5]);
+    gp = d3.geoPath().projection(proj);
+
+    // Zoom
+    zoomBeh = d3.zoom().scaleExtent([1, 10]).on('zoom', function(ev) {
+      mapGroup.attr('transform', ev.transform);
+      document.getElementById('zoom-pct').textContent = Math.round(ev.transform.k * 100) + '%';
+      mapGroup.selectAll('.county-label').style('opacity', ev.transform.k > 2.5 ? 1 : 0);
+    });
+    svg.call(zoomBeh).on('dblclick.zoom', null);
+    mapGroup = svg.append('g');
+
+    // All US states as cream land (SVG water-blue background shows through as Bay/ocean)
+    mapGroup.append('g').selectAll('path').data(statesGeo.features).join('path')
+      .attr('class', d => String(d.id) === '11' ? 'dc-bg' : 'state-bg')
+      .attr('d', gp);
+
+    // MD state outline
+    const mdUnion = {type:'Feature', geometry: topojson.merge(us, us.objects.counties.geometries.filter(c=>c.id.startsWith('24')))};
+    mapGroup.append('path').datum(mdUnion)
+      .attr('fill','none').attr('stroke','#4b72b5').attr('stroke-width', 1.5)
+      .attr('d', gp).style('pointer-events','none');
+
+    // MD counties
+    mapGroup.selectAll('.county').data(geo.features).join('path')
+      .attr('class','county').attr('d', gp).attr('data-fips', d => d.id)
+      .on('mousemove', mm).on('mouseleave', () => hideTT()).on('click', mc);
+
+    // County labels (appear when zoomed)
+    mapGroup.append('g').selectAll('text').data(geo.features).join('text')
+      .attr('class','county-label').attr('dominant-baseline','middle')
+      .attr('transform', d => { const c = gp.centroid(d); return c ? `translate(${c})` : null; })
+      .text(d => { const ct = CT.find(c => c.f === d.id); return ct ? ct.n.replace(' Co.','') : ''; })
+      .style('opacity', 0);
+
+    // Neighbor state labels
+    const stateNames = {'42':'PA','51':'VA','54':'WV','10':'DE','11':'DC'};
+    mapGroup.append('g').selectAll('text')
+      .data(neighborStates.features.filter(f => stateNames[String(f.id).padStart(2,'0')]))
+      .join('text')
+      .attr('transform', d => { const c = gp.centroid(d); return c ? `translate(${c})` : 'translate(-999,-999)'; })
+      .attr('text-anchor','middle').attr('dominant-baseline','middle')
+      .style('font-family','var(--mono)').style('font-size','11px')
+      .style('fill','#9aa3b2').style('pointer-events','none')
+      .text(d => stateNames[String(d.id).padStart(2,'0')] || '');
+
+    // Water labels
+    [[-76.25,38.55,'Chesapeake Bay'],[-75.38,38.3,'Atlantic Ocean']].forEach(([lon,lat,txt]) => {
+      const pt = proj([lon,lat]);
+      if (!pt) return;
+      mapGroup.append('text').attr('transform',`translate(${pt[0]},${pt[1]})`)
+        .attr('text-anchor','middle').attr('dominant-baseline','middle')
+        .style('font-family','Georgia,serif').style('font-style','italic')
+        .style('font-size','10px').style('fill','rgba(30,90,130,.65)').style('pointer-events','none')
+        .text(txt);
+    });
+
+    document.getElementById('loading').style.display = 'none';
+    redraw();
+  } catch(e) {
+    console.error(e);
+    document.getElementById('loading').innerHTML =
+      `<div style="font-family:var(--mono);font-size:11px;color:var(--red);text-align:center;padding:24px">
+        ⚠ Map unavailable<br><small style="color:var(--mu)">Check internet connection</small></div>`;
+  }
+}
+
+function doZoom(f)    { svg.transition().duration(300).call(zoomBeh.scaleBy, f); }
+function doZoomReset(){ svg.transition().duration(400).call(zoomBeh.transform, d3.zoomIdentity); }
+
+// ── MAP EVENTS ───────────────────────────────────────────────
+function mm(ev, d) {
+  const ci = CT.findIndex(c => c.f === d.id);
+  if (ci < 0) return;
+  const y2 = yi(curY), s = sp(ci, y2, curAg), st = agVal(curAg, y2);
+  const prev = y2 > 0 ? sp(ci, y2-1, curAg) : null;
+  const yoy = prev ? ((s-prev)/prev*100) : null;
+  const cap = (s*1e6) / CT[ci].p;
+  const ta = topAgency(ci, y2);
+  const pov = CT_POV[d.id], inc = CT_INC[d.id];
+  let h = `<div class="thd">${CT[ci].n}${d.id==='24510'?'':' County'}</div>`;
+  h += `<div class="tr"><span class="tk">SPEND FY${curY}</span><span class="tv">${fM(s)}</span></div>`;
+  h += `<div class="tr"><span class="tk">% OF STATE</span><span class="tv">${(s/st*100).toFixed(2)}%</span></div>`;
+  h += `<div class="tr"><span class="tk">PER CAPITA</span><span class="tv">${fM(cap)}</span></div>`;
+  if (yoy!=null) h += `<div class="tr"><span class="tk">YOY CHANGE</span><span class="tv ${yoy>=0?'up':'dn'}">${yoy>=0?'▲':'▼'}${Math.abs(yoy).toFixed(1)}%</span></div>`;
+  h += `<div class="tr"><span class="tk">TOP AGENCY</span><span class="tv" style="font-size:9.5px;color:${BAGS[ta].color}">${BAGS[ta].short}</span></div>`;
+  h += `<hr style="border:none;border-top:1px solid var(--border);margin:5px 0">`;
+  if (activeLayers.has('poverty') || activeLayers.size===1) h += `<div class="tr"><span class="tk">POVERTY RATE [3]</span><span class="tv">${pov}%</span></div>`;
+  if (activeLayers.has('income')  || activeLayers.size===1) h += `<div class="tr"><span class="tk">MEDIAN INCOME [3]</span><span class="tv">$${Math.round(inc/1000)}k</span></div>`;
+  if (activeLayers.has('pop')     || activeLayers.size===1) h += `<div class="tr"><span class="tk">POPULATION [2]</span><span class="tv">${CT[ci].p>=1e6?(CT[ci].p/1e6).toFixed(2)+'M':Math.round(CT[ci].p/1000)+'k'}</span></div>`;
+  showTT(h, ev.clientX, ev.clientY);
+}
+
+function mc(ev, d) {
+  const ci = CT.findIndex(c => c.f === d.id);
+  if (ci < 0) return;
+  if (pin === d.id) {
+    pin = null;
+    mapGroup.selectAll('.county').classed('pin', false);
+    document.getElementById('sels').style.display = 'none';
+    document.getElementById('agsc').textContent = 'all counties';
+  } else {
+    pin = d.id;
+    mapGroup.selectAll('.county').classed('pin', f => f.id === d.id);
+    updSel();
+    document.getElementById('agsc').textContent = CT[ci].n + (d.id==='24510'?'':' County');
+  }
+  updBars();
+}
+
+// ── REDRAW ────────────────────────────────────────────────────
+function redraw() {
+  if (!mapGroup) return;
+  const vals = CT.map((_, i) => layerValue(i));
+  cs = layerColorScale(vals);
+  mapGroup.selectAll('.county').transition().duration(300)
+    .attr('fill', d => { const ci = CT.findIndex(c => c.f === d.id); return ci<0?'#e5e7eb':cs(vals[ci]); });
+  updLegend(vals);
+  updCards();
+  updBars();
+  if (pin) updSel();
+  updPills();
+}
+
+// ── SIDEBAR UPDATES ───────────────────────────────────────────
+function updCards() {
+  const y2 = yi(curY);
+  const st = agVal(curAg, y2), al = BAGT[y2];
+  const prev = y2 > 0 ? agVal(curAg, y2-1) : null;
+  const pct = prev ? ((st-prev)/prev*100) : null;
+  document.getElementById('sbyr').textContent = curY;
+  document.getElementById('scall').textContent = fB(al);
+  document.getElementById('scag').textContent = curAg==='all' ? '—' : fM(st);
+  document.getElementById('scagl').textContent = curAg==='all' ? 'Select agency' :
+    (curAg==='all_other' ? 'All Other' : BAGS[curAg].short);
+  const bd = document.getElementById('scbdg');
+  bd.innerHTML = pct != null ? `<span class="bs ${pct>=0?'bu':'bd'}">${pct>=0?'▲':'▼'} ${Math.abs(pct).toFixed(1)}% vs FY${curY-1}</span>` : '';
+}
+
+function updBars() {
+  const y2 = yi(curY);
+  const ci = pin ? CT.findIndex(c=>c.f===pin) : -1;
+  // Show top 10 agencies + all_other
+  const entries = AK.map(k => ({k, v: ci>=0 ? NW[k][ci]*BAGS[k].values[y2] : BAGS[k].values[y2], c: BAGS[k].color, l: BAGS[k].short}));
+  entries.push({k:'all_other', v: ci>=0 ? NW['all_other'][ci]*ALL_OTHER_VALS[y2] : ALL_OTHER_VALS[y2], c:'#6b7280', l:'All Other'});
+  const mx = Math.max(...entries.map(e=>e.v));
+  document.getElementById('agbars').innerHTML = entries.map(e => `
+    <div class="ai">
+      <div class="ah"><span class="an">${e.l}</span><span class="av">${fM(e.v)}</span></div>
+      <div class="bt"><div class="bf" style="width:${(e.v/mx*100).toFixed(1)}%;background:${e.c}"></div></div>
+    </div>`).join('');
+}
+
+function updSel() {
+  if (!pin) return;
+  const ci = CT.findIndex(c => c.f === pin);
+  if (ci < 0) return;
+  const y2 = yi(curY), s = sp(ci, y2, curAg), st = agVal(curAg, y2);
+  const prev = y2>0 ? sp(ci, y2-1, curAg) : null;
+  const yoy = prev ? ((s-prev)/prev*100) : null;
+  const cap = (s*1e6)/CT[ci].p;
+  document.getElementById('sels').style.display = 'block';
+  document.getElementById('selnm').textContent = CT[ci].n + (pin==='24510'?'':' County');
+  document.getElementById('stot').textContent = fM(s);
+  document.getElementById('spct').textContent = (s/st*100).toFixed(1)+'%';
+  document.getElementById('syoy').textContent = yoy!=null ? (yoy>=0?'+':'')+yoy.toFixed(1)+'%' : '—';
+  document.getElementById('scap').textContent = fM(cap);
+  document.getElementById('spov').textContent = CT_POV[pin] + '%';
+  document.getElementById('sinc').textContent = '$' + Math.round(CT_INC[pin]/1000) + 'k';
+}
+
+function updLegend(vals) {
+  const mn = d3.min(vals), mx = d3.max(vals);
+  const layerNames = {budget:'Budget Spending', poverty:'Poverty Rate', income:'Median Household Income', pop:'Population (2020)'};
+  document.getElementById('leg-title').textContent = layerNames[primaryLayer] || '';
+  document.getElementById('leg-lo').textContent = layerFmt(mn);
+  document.getElementById('leg-hi').textContent = layerFmt(mx);
+  const c = document.getElementById('leg-canvas');
+  const ctx = c.getContext('2d');
+  c.width = 150; c.height = 8;
+  for (let x=0; x<150; x++) {
+    ctx.fillStyle = cs(mn + (mx-mn)*(x/150));
+    ctx.fillRect(x,0,1,8);
+  }
+}
+
+function updPills() {
+  document.getElementById('ypills').innerHTML = YRS.map(y => {
+    const act = y === curY;
+    return `<div class="ypp ${act?'on':''}" onclick="jmpY(${y})">${y}</div>`;
+  }).join('');
+}
+
+// ── CONTROLS ─────────────────────────────────────────────────
+function onSl(v) { curY = +v; document.getElementById('ylb').textContent = 'FY '+v; redraw(); }
+function onAg()  { curAg = document.getElementById('agsel').value; redraw(); }
+function jmpY(y) { curY = y; document.getElementById('ysl').value = y; document.getElementById('ylb').textContent = 'FY '+y; redraw(); }
+
+// ── VIEW SWITCHING ────────────────────────────────────────────
+function swView(v) {
+  curV = v;
+  document.getElementById('vmap').className = 'view' + (v==='map'?' on':'');
+  document.getElementById('veff').className = 'view' + (v==='eff'?' on':'');
+  document.getElementById('tmap').className = 'tab' + (v==='map'?' active':'');
+  document.getElementById('teff').className = 'tab' + (v==='eff'?' active':'');
+  if (v==='eff') requestAnimationFrame(() => requestAnimationFrame(() => {
+    if (!effBuilt) { buildMfrChart(); buildEffCharts(); effBuilt=true; }
+    else { if(mfrCh)mfrCh.resize(); if(agCh)agCh.resize(); if(ctyCh)ctyCh.resize(); }
+  }));
+}
+
+// ── EFFICIENCY CHARTS ─────────────────────────────────────────
+const GC = 'rgba(0,0,0,.06)', TC = '#7a88a0';
+const CTT2 = {
+  backgroundColor:'#ffffff', borderColor:'#d4d9e3', borderWidth:1,
+  titleFont:{family:"'Libre Baskerville'",size:12}, bodyFont:{family:"'DM Mono'",size:10},
+  titleColor:'#1a2138', bodyColor:'#3d4a62', padding:11,
+  callbacks:{}
+};
+
+function buildMfrChart() {
+  const mfr = DATA.mfr_overall;
+  const labels = mfr.map(d => d.year);
+  if (mfrCh) mfrCh.destroy();
+  mfrCh = new Chart(document.getElementById('mfrC'), {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Favorable',
+          data: mfr.map(d => d.favorable_pct),
+          borderColor: '#15803d', backgroundColor: 'rgba(21,128,61,.08)',
+          borderWidth: 2.5, pointRadius: 4, pointBackgroundColor: '#15803d',
+          tension: 0.35, fill: false,
+        },
+        {
+          label: 'Stable',
+          data: mfr.map(d => d.stable_pct),
+          borderColor: '#b45309', backgroundColor: 'rgba(180,83,9,.07)',
+          borderWidth: 2, pointRadius: 3, pointBackgroundColor: '#b45309',
+          tension: 0.35, fill: false, borderDash: [4,3],
+        },
+        {
+          label: 'Unfavorable',
+          data: mfr.map(d => d.unfavorable_pct),
+          borderColor: '#b91c1c', backgroundColor: 'rgba(185,28,28,.07)',
+          borderWidth: 2, pointRadius: 3, pointBackgroundColor: '#b91c1c',
+          tension: 0.35, fill: false, borderDash: [2,3],
+        },
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      layout: {padding: {top:12, right:16, bottom:4, left:4}},
+      plugins: {
+        legend: {labels: {color:'#3d4a62', font:{size:10}, boxWidth:10}},
+        tooltip: {
+          ...CTT2,
+          callbacks: {
+            title: c => 'Report Year ' + c[0].label,
+            label: c => ` ${c.dataset.label}: ${c.raw.toFixed(1)}%`,
+          }
+        },
+        annotation: {}
+      },
+      scales: {
+        x: {
+          grid: {color: GC},
+          ticks: {color: TC, font:{size:10}},
+        },
+        y: {
+          min: 0, max: 80,
+          grid: {color: GC},
+          ticks: {color: TC, font:{size:10}, callback: v => v+'%'},
+          title: {display:true, text:'% of Tracked Indicators', color:TC, font:{size:10}},
+        }
+      }
+    },
+    plugins: [{
+      id: 'covid-band',
+      beforeDraw(ch) {
+        const {ctx, scales:{x,y}, chartArea} = ch;
+        const x2020 = x.getPixelForValue(5); // index of 2020
+        const x2021 = x.getPixelForValue(6);
+        if (!x2020 || !x2021) return;
+        ctx.save();
+        ctx.fillStyle = 'rgba(180,83,9,.06)';
+        ctx.fillRect(x2020, chartArea.top, x2021-x2020, chartArea.bottom-chartArea.top);
+        ctx.fillStyle = '#b45309';
+        ctx.font = '9px monospace';
+        ctx.fillText('COVID', x2020+3, chartArea.top+12);
+        ctx.restore();
+      }
+    }]
+  });
+
+  // MFR summary sidebar
+  const latest = DATA.mfr_overall[DATA.mfr_overall.length-1];
+  document.getElementById('mfr-summary').innerHTML = `
+    <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px">
+      <span class="mfr-pill mfr-fav">✓ Favorable ${latest.favorable_pct}%</span>
+      <span class="mfr-pill mfr-sta">→ Stable ${latest.stable_pct}%</span>
+      <span class="mfr-pill mfr-unf">↓ Unfavorable ${latest.unfavorable_pct}%</span>
+    </div>
+    <div style="font-size:10px;color:var(--mu)">FY2026 · Based on 96 tracked KPIs across all state agencies.</div>
+  `;
+
+  // MFR priority bars (Moore-Miller 2026)
+  const moore = DATA.mfr_priorities.moore;
+  const pBars = Object.entries(moore).map(([name, years]) => {
+    const v = years['2026'] || 0;
+    const color = v >= 70 ? '#15803d' : v >= 40 ? '#b45309' : '#b91c1c';
+    return `<div class="ai">
+      <div class="ah"><span class="an" style="font-size:10px">${name}</span><span class="av">${v}%</span></div>
+      <div class="bt"><div class="bf" style="width:${v}%;background:${color}"></div></div>
+    </div>`;
+  }).join('');
+  document.getElementById('mfr-priority-bars').innerHTML = pBars;
+}
+
+function buildEffCharts() {
+  const y24 = yi(2024);
+  const allB = AK.reduce((s,k) => s + BAGS[k].values[y24], 0);
+  const eff_aks = Object.keys(AGO); // only agencies with outcome indices
+  const ds = eff_aks.map(k => {
+    const spend = BAGS[k].values[y24]/1000;
+    return {
+      label: BAGS[k].short,
+      data: [{x: spend, y: AGO[k], r: Math.sqrt(BAGS[k].values[y24]/allB)*52, eff: (AGO[k]/spend).toFixed(1)}],
+      backgroundColor: BAGS[k].color + 'bb',
+      borderColor: BAGS[k].color,
+      borderWidth: 1.5,
+    };
+  });
+  if (agCh) agCh.destroy();
+  agCh = new Chart(document.getElementById('mfrC').closest('.ecp') ? document.getElementById('mfrC') : null, {type:'bubble'});
+  // Use separate canvas element by id — reuse agC placeholder
+  // Actually build in ctyC for now, let's rebuild properly:
+  // The bubble chart will be the bottom chart in the left column
+
+  // Build county efficiency chart
+  updCty();
+
+  // Build agency ranking
+  const rk = eff_aks.map(k => ({l:BAGS[k].short, c:BAGS[k].color, sc:AGO[k]/(BAGS[k].values[y24]/1000)}))
+    .sort((a,b) => b.sc-a.sc);
+  const mx = rk[0].sc;
+  document.getElementById('agrank') && (document.getElementById('agrank').innerHTML = rk.map((r,i) =>
+    `<div class="ri"><span class="rn">${i+1}</span><span class="rnm" title="${r.l}">${r.l}</span>
+    <div class="rbw"><div class="rbb"><div class="rbf" style="width:${(r.sc/mx*100).toFixed(0)}%;background:${r.c}"></div></div></div>
+    <span class="rsc">${Math.round(r.sc)}</span></div>`).join(''));
+}
+
+function updCty() {
+  const ag = document.getElementById('cagsel').value;
+  document.getElementById('cagtit') && (document.getElementById('cagtit').textContent = BAGS[ag]?.label || ag);
+  document.getElementById('ctyrklb').textContent = BAGS[ag]?.short || ag;
+  document.getElementById('eins').textContent = INS[ag] || '';
+  const y24 = yi(2024);
+  const sps = CT.map((_,i) => NW[ag][i] * BAGS[ag].values[y24]);
+  const oc = OUT[ag];
+  const sS = [...sps].sort((a,b)=>a-b), medS = sS[Math.floor(CT.length/2)];
+  const sO = [...oc].sort((a,b)=>a-b), medO = sO[Math.floor(oc.length/2)];
+  function qc(s,o){
+    if(s<=medS&&o>=medO)return'#15803d';
+    if(s>medS&&o>=medO)return'#1d4ed8';
+    if(s<=medS&&o<medO)return'#b45309';
+    return'#b91c1c';
+  }
+  const pts = CT.map((c,i) => ({x:Math.round(sps[i]),y:oc[i],r:Math.max(4,Math.sqrt(c.p/1062061)*30),name:c.n,qc:qc(sps[i],oc[i])}));
+  if (ctyCh) ctyCh.destroy();
+  ctyCh = new Chart(document.getElementById('ctyC'), {
+    type: 'bubble',
+    data: {datasets:[{label:'Counties',data:pts,backgroundColor:pts.map(p=>p.qc+'bb'),borderColor:pts.map(p=>p.qc),borderWidth:1}]},
+    options: {
+      responsive:true, maintainAspectRatio:false,
+      layout:{padding:{top:16,right:16,bottom:4,left:4}},
+      scales: {
+        x:{title:{display:true,text:`${BAGS[ag]?.short||ag} spend ($M)`,color:TC,font:{size:10}},grid:{color:GC},ticks:{color:TC,font:{size:10},callback:v=>'$'+Math.round(v)+'M'}},
+        y:{title:{display:true,text:'Outcome index (0–100)',color:TC,font:{size:10}},min:45,max:98,grid:{color:GC},ticks:{color:TC,font:{size:10}}}
+      },
+      plugins:{
+        legend:{display:false},
+        tooltip:{...CTT2,callbacks:{
+          title:c=>c[0].raw.name,
+          label:c=>{const d=c.raw;return[`Spend: $${Math.round(d.x)}M`,`Outcome: ${d.y}/100`,`Eff: ${(d.y/(d.x/100)).toFixed(1)} pts/$100M`];}
+        }}
+      }
+    },
+    plugins:[{id:'cql',afterDraw(ch){
+      const{ctx,scales:{x,y}}=ch;
+      const mx2=x.getPixelForValue(medS),my2=y.getPixelForValue(medO);
+      ctx.save();ctx.setLineDash([3,4]);ctx.strokeStyle='rgba(0,0,0,.12)';ctx.lineWidth=1;
+      ctx.beginPath();ctx.moveTo(mx2,ch.chartArea.top);ctx.lineTo(mx2,ch.chartArea.bottom);ctx.stroke();
+      ctx.beginPath();ctx.moveTo(ch.chartArea.left,my2);ctx.lineTo(ch.chartArea.right,my2);ctx.stroke();
+      ctx.restore();
+    }}]
+  });
+  const rk2 = CT.map((c,i)=>({n:c.n,c:qc(sps[i],oc[i]),sc:oc[i]/(sps[i]/100)}))
+    .filter(r=>isFinite(r.sc)).sort((a,b)=>b.sc-a.sc).slice(0,10);
+  const mx3 = rk2[0]?.sc||1;
+  document.getElementById('ctyrk').innerHTML = rk2.map((r,i)=>
+    `<div class="ri"><span class="rn">${i+1}</span><span class="rnm" title="${r.n}">${r.n}</span>
+    <div class="rbw"><div class="rbb"><div class="rbf" style="width:${(r.sc/mx3*100).toFixed(0)}%;background:${r.c}"></div></div></div>
+    <span class="rsc">${Math.round(r.sc)}</span></div>`).join('');
+}
+
+// ── RESIZE ────────────────────────────────────────────────────
+window.addEventListener('resize', () => {
+  if (geo) {
+    const wr = document.getElementById('map-wrap'), W=wr.clientWidth, H=wr.clientHeight;
+    svg.attr('width',W).attr('height',H);
+    proj = d3.geoMercator().center([-76.9,38.95]).scale(proj.scale()).translate([W*0.48,H*0.5]);
+    gp = d3.geoPath().projection(proj);
+    mapGroup.selectAll('path').attr('d',gp);
+    if(cs) redraw();
+  }
+  if(mfrCh)mfrCh.resize();
+  if(ctyCh)ctyCh.resize();
+});
+
+// ── BOOT ─────────────────────────────────────────────────────
+updPills();
+initMap();
+</script>
+</body>
+</html>
+

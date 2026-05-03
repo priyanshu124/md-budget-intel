@@ -1,0 +1,52 @@
+fips,name,fy,agency,amount_usd,source_label,source_url,vintage,notes
+# ══════════════════════════════════════════════════════════════════════════════
+# Maryland State Aid to Local Governments — per county, per agency, per fiscal year
+#
+# HOW TO FILL THIS FILE
+# ─────────────────────
+# Each row = one (county, fiscal year, agency) triple.
+# Replace PENDING with the dollar amount from the source workbook.
+# If genuinely unavailable, write NA and put a reason in notes.
+# NEVER write 0 unless the source literally reports zero — that breaks the audit.
+#
+# CANONICAL SOURCES (in order of preference)
+# ──────────────────────────────────────────
+# 1. MD DBM "State Aid to Local Governments" XLSX workbook — published annually ~3 weeks after budget enactment.
+#    FY26 Enacted:   https://dbm.maryland.gov/budget/Pages/operbudget/FY26StateAid.aspx
+#    FY27 Enacted:   https://dbm.maryland.gov/budget/Pages/operbudget/FY27StateAid.aspx
+#    FY28 Allowance: https://dbm.maryland.gov/budget/Pages/operbudget/FY28StateAid.aspx
+#    Each workbook has a "Summary by County" tab and agency-specific tabs.
+#
+# 2. MD DLS "Local Aid" PDF — published with the Fiscal Briefing Book.
+#    FY26: https://mgaleg.maryland.gov/pubs/budgetfiscal/2025fy-local-aid.pdf
+#    FY27: https://mgaleg.maryland.gov/pubs/budgetfiscal/2026fy-local-aid.pdf (check availability)
+#    Look for Exhibit B (State Aid Summary) and Exhibit 2 (County detail).
+#
+# 3. Agency-specific (use when DBM workbook lumps sub-agencies):
+#    • DDA county allocation:    MDH/DDA Annual Chapter 639 Report + LTSS regional data
+#    • BHA county allocation:    MDH/BHA Data Portal (https://bha.health.maryland.gov/Pages/data.aspx)
+#    • MDOT highway user revenue: MDOT CTP, Appendix B (https://www.mdot.maryland.gov/tso/pages/ctp.aspx)
+#    • DHCD rental/homeowner:     DHCD Annual Housing Production & Preservation Report
+#
+# AGENCY COLUMN VALUES (use these exact strings)
+# ──────────────────────────────────────────────
+#   k12, mdh, dda, bha, dhs, dpscs, mdot, dhcd
+#
+# VINTAGE COLUMN
+# ──────────────
+#   Use the FY label as published: "FY26 Enacted", "FY27 Enacted", "FY28 Allowance"
+#
+# ══════════════════════════════════════════════════════════════════════════════
+24001,Allegany,2027,k12,PENDING,MD DBM State Aid Workbook,https://dbm.maryland.gov/budget/Pages/operbudget/FY27StateAid.aspx,FY27 Enacted,
+24001,Allegany,2027,mdh,PENDING,MD DBM State Aid Workbook,https://dbm.maryland.gov/budget/Pages/operbudget/FY27StateAid.aspx,FY27 Enacted,
+24001,Allegany,2027,dda,PENDING,MDH DDA Chapter 639 Report,https://health.maryland.gov/dda/Pages/home.aspx,FY27,Manual entry — from DDA regional tables
+24001,Allegany,2027,bha,PENDING,MDH BHA Data Portal,https://bha.health.maryland.gov/Pages/data.aspx,FY27,
+24001,Allegany,2027,dhs,PENDING,MD DBM State Aid Workbook,https://dbm.maryland.gov/budget/Pages/operbudget/FY27StateAid.aspx,FY27 Enacted,
+24001,Allegany,2027,dpscs,PENDING,MD DBM State Aid Workbook,https://dbm.maryland.gov/budget/Pages/operbudget/FY27StateAid.aspx,FY27 Enacted,
+24001,Allegany,2027,mdot,PENDING,MDOT CTP Appendix B,https://www.mdot.maryland.gov/tso/pages/ctp.aspx,FY27 CTP,Highway user revenue portion
+24001,Allegany,2027,dhcd,PENDING,DHCD Annual Report,https://dhcd.maryland.gov/Pages/About-DHCD/AnnualReports.aspx,FY27,
+# ────── Row template repeats for all 24 counties × 3 years × 8 agencies = 576 rows ──────
+# ────── Fill the template by running: node data/warehouse/expand-aid-template.mjs ──────
+# ──────
+# Once filled, the validator at data/warehouse/validate.mjs will pass.
+# Until then, `npm run build` is blocked via the prebuild hook.

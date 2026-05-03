@@ -1,0 +1,6846 @@
+{
+  "_meta": {
+    "fetched_at": "2026-04-21T23:02:24.551Z",
+    "source": {
+      "publisher": "Maryland Department of Legislative Services",
+      "endpoint": "https://dls.maryland.gov/budget/state-aid-download/?YearSelection1=2026&YearSelection2=2027&County=0",
+      "publication": "Overview of State Aid to Local Governments Fiscal 2027 Allowance",
+      "publication_url": "https://dls.maryland.gov/pubs/prod/InterGovMatters/SteAidLocGov/Overview-of-State-Aid-to-Local-Governments-Fiscal-2027-Allowance.pdf"
+    },
+    "years_covered": [
+      "FY2026 Enacted",
+      "FY2027 Allowance"
+    ],
+    "categories_present": [
+      "Community Colleges",
+      "Education",
+      "Health",
+      "Libraries",
+      "Other",
+      "Public Safety",
+      "Shared Taxes",
+      "Transportation"
+    ],
+    "counties_covered": 24,
+    "total_line_items": 844,
+    "note": "Values are literally what the DLS download endpoint returned — USD amounts as published in the FY2027 State Aid book. No transformation other than dollar-string → number and aggregation by category."
+  },
+  "data": [
+    {
+      "fips": "24001",
+      "name": "Allegany",
+      "fy26_total_usd": 163767955,
+      "fy27_total_usd": 174117055,
+      "by_category": {
+        "Education": {
+          "fy26": 124991466,
+          "fy27": 130151644
+        },
+        "Libraries": {
+          "fy26": 1139601,
+          "fy27": 1129554
+        },
+        "Community Colleges": {
+          "fy26": 13495817,
+          "fy27": 13816756
+        },
+        "Health": {
+          "fy26": 5257545,
+          "fy27": 4659494
+        },
+        "Transportation": {
+          "fy26": 5134939,
+          "fy27": 5141152
+        },
+        "Public Safety": {
+          "fy26": 1527091,
+          "fy27": 1490997
+        },
+        "Shared Taxes": {
+          "fy26": 4106938,
+          "fy27": 4115485
+        },
+        "Other": {
+          "fy26": 8114558,
+          "fy27": 13611973
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 50698086,
+          "fy27": 52317933,
+          "change_pct": 3.2
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 28669730,
+          "fy27": 27933827,
+          "change_pct": -2.6
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 5982362,
+          "fy27": 6042186,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 268000,
+          "fy27": 286000,
+          "change_pct": 6.7
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 11350198,
+          "fy27": 13344342,
+          "change_pct": 17.6
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 1395477,
+          "fy27": 1190827,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 345162,
+          "fy27": 362146,
+          "change_pct": 4.9
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 95714,
+          "fy27": 86283,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 70426,
+          "fy27": 70426,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 8297356,
+          "fy27": 8631240,
+          "change_pct": 4
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 791750,
+          "fy27": 919492,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Guaranteed Tax Base",
+          "fy26": 5527061,
+          "fy27": 5281539,
+          "change_pct": -4.4
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 7055103,
+          "fy27": 7912163,
+          "change_pct": 12.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 293705,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transition Grants",
+          "fy26": 6726,
+          "fy27": 5174,
+          "change_pct": -23.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 3154866,
+          "fy27": 4599076,
+          "change_pct": 45.8
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 468254,
+          "fy27": 478530,
+          "change_pct": 2.2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 410115,
+          "fy27": 579053,
+          "change_pct": 41.2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 107375,
+          "fy27": 107407,
+          "change_pct": 0
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 912779,
+          "fy27": 917367,
+          "change_pct": 0.5
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 226822,
+          "fy27": 212187,
+          "change_pct": -6.5
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 9123724,
+          "fy27": 9397435,
+          "change_pct": 3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 388003,
+          "fy27": 364630,
+          "change_pct": -6
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 1965384,
+          "fy27": 2015954,
+          "change_pct": 2.6
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 2018706,
+          "fy27": 2038737,
+          "change_pct": 1
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 5257545,
+          "fy27": 4659494,
+          "change_pct": -11.4
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 4982670,
+          "fy27": 4985076,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 152269,
+          "fy27": 156076,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 806301,
+          "fy27": 809913,
+          "change_pct": 0.4
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 417179,
+          "fy27": 417179,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 303611,
+          "fy27": 263905,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Payment in Lieu of Taxes (PILOTS)",
+          "fy26": 993303,
+          "fy27": 1001850,
+          "change_pct": 0.9
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Gaming Impact Grants",
+          "fy26": 3113635,
+          "fy27": 3113635,
+          "change_pct": 0
+        },
+        {
+          "category": "Other",
+          "description": "Disparity Grant",
+          "fy26": 7298505,
+          "fy27": 13611973,
+          "change_pct": 86.5
+        },
+        {
+          "category": "Other",
+          "description": "Teachers Retirement Supplemental Grants",
+          "fy26": 816053,
+          "fy27": 0,
+          "change_pct": -100
+        }
+      ]
+    },
+    {
+      "fips": "24003",
+      "name": "Anne Arundel",
+      "fy26_total_usd": 808001020,
+      "fy27_total_usd": 832700836,
+      "by_category": {
+        "Education": {
+          "fy26": 682876662,
+          "fy27": 705645509
+        },
+        "Libraries": {
+          "fy26": 5905623,
+          "fy27": 6197863
+        },
+        "Community Colleges": {
+          "fy26": 52357528,
+          "fy27": 54127089
+        },
+        "Health": {
+          "fy26": 9454801,
+          "fy27": 9613817
+        },
+        "Transportation": {
+          "fy26": 14990475,
+          "fy27": 15004135
+        },
+        "Public Safety": {
+          "fy26": 13686115,
+          "fy27": 13383552
+        },
+        "Shared Taxes": {
+          "fy26": 28679816,
+          "fy27": 28728871
+        },
+        "Other": {
+          "fy26": 50000,
+          "fy27": 0
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 313248875,
+          "fy27": 325774208,
+          "change_pct": 4
+        },
+        {
+          "category": "Education",
+          "description": "Comparable Wage Index",
+          "fy26": 16047740,
+          "fy27": 16334319,
+          "change_pct": 1.8
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 107491862,
+          "fy27": 103939986,
+          "change_pct": -3.3
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 31611617,
+          "fy27": 31927733,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 2062000,
+          "fy27": 2067000,
+          "change_pct": 0.2
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 42048874,
+          "fy27": 48334960,
+          "change_pct": 14.9
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 11586353,
+          "fy27": 9887190,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - High Acuity Students",
+          "fy26": 0,
+          "fy27": 1000000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 33276587,
+          "fy27": 32856410,
+          "change_pct": -1.3
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 2282139,
+          "fy27": 2057261,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 25885,
+          "fy27": 25885,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 135756,
+          "fy27": 135756,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 85958985,
+          "fy27": 90609020,
+          "change_pct": 5.4
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 791750,
+          "fy27": 919492,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 17599487,
+          "fy27": 19368958,
+          "change_pct": 10.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 1626401,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 12212422,
+          "fy27": 14357961,
+          "change_pct": 17.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 2286589,
+          "fy27": 2621115,
+          "change_pct": 14.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 2517414,
+          "fy27": 3361904,
+          "change_pct": 33.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 61926,
+          "fy27": 62351,
+          "change_pct": 0.7
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 3234089,
+          "fy27": 3359027,
+          "change_pct": 3.9
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 2671534,
+          "fy27": 2838836,
+          "change_pct": 6.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 43359724,
+          "fy27": 44660516,
+          "change_pct": 3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 282672,
+          "fy27": 296032,
+          "change_pct": 4.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 2155348,
+          "fy27": 2157552,
+          "change_pct": 0.1
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 6559784,
+          "fy27": 7012989,
+          "change_pct": 6.9
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 9454801,
+          "fy27": 9613817,
+          "change_pct": 1.7
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 14608852,
+          "fy27": 14615905,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 264272,
+          "fy27": 270879,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Transportation",
+          "description": "Paratransit Grants",
+          "fy26": 117351,
+          "fy27": 117351,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 9097999,
+          "fy27": 9208662,
+          "change_pct": 1.2
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 1365880,
+          "fy27": 1365880,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Vehicle Theft Prevention",
+          "fy26": 72883,
+          "fy27": 71533,
+          "change_pct": -1.9
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 3149353,
+          "fy27": 2737477,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Payment in Lieu of Taxes (PILOTS)",
+          "fy26": 75000,
+          "fy27": 75000,
+          "change_pct": 0
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Gaming Impact Grants",
+          "fy26": 28604816,
+          "fy27": 28653871,
+          "change_pct": 0.2
+        },
+        {
+          "category": "Other",
+          "description": "Other Direct Aid",
+          "fy26": 50000,
+          "fy27": 0,
+          "change_pct": -100
+        }
+      ]
+    },
+    {
+      "fips": "24005",
+      "name": "Baltimore",
+      "fy26_total_usd": 1285723570,
+      "fy27_total_usd": 1323952707,
+      "by_category": {
+        "Education": {
+          "fy26": 1146269083,
+          "fy27": 1181826796
+        },
+        "Libraries": {
+          "fy26": 11914426,
+          "fy27": 12183009
+        },
+        "Community Colleges": {
+          "fy26": 82127792,
+          "fy27": 84720081
+        },
+        "Health": {
+          "fy26": 6818590,
+          "fy27": 8627258
+        },
+        "Transportation": {
+          "fy26": 15669278,
+          "fy27": 15687270
+        },
+        "Public Safety": {
+          "fy26": 21374401,
+          "fy27": 20658293
+        },
+        "Other": {
+          "fy26": 1550000,
+          "fy27": 250000
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 515844802,
+          "fy27": 531911013,
+          "change_pct": 3.1
+        },
+        {
+          "category": "Education",
+          "description": "Comparable Wage Index",
+          "fy26": 15759059,
+          "fy27": 15904140,
+          "change_pct": 0.9
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 211178247,
+          "fy27": 201238583,
+          "change_pct": -4.7
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 38225712,
+          "fy27": 38607969,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 4421000,
+          "fy27": 4408000,
+          "change_pct": -0.3
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 74255877,
+          "fy27": 86509491,
+          "change_pct": 16.5
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 27572677,
+          "fy27": 23529086,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 60258350,
+          "fy27": 59891138,
+          "change_pct": -0.6
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 2504629,
+          "fy27": 2257827,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 328416,
+          "fy27": 328416,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 1020052,
+          "fy27": 1020052,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 119296431,
+          "fy27": 121292888,
+          "change_pct": 1.7
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1583500,
+          "fy27": 1838984,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 51094328,
+          "fy27": 62624006,
+          "change_pct": 22.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 2972434,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transition Grants",
+          "fy26": 1920068,
+          "fy27": 1476975,
+          "change_pct": -23.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 14313335,
+          "fy27": 23959738,
+          "change_pct": 67.4
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 2734460,
+          "fy27": 3099518,
+          "change_pct": 13.4
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 902718,
+          "fy27": 1845595,
+          "change_pct": 104.4
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 78988,
+          "fy27": 79377,
+          "change_pct": 0.5
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 7824988,
+          "fy27": 8062432,
+          "change_pct": 3
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 4089438,
+          "fy27": 4120577,
+          "change_pct": 0.8
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 68831280,
+          "fy27": 70896218,
+          "change_pct": 3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 570584,
+          "fy27": 512560,
+          "change_pct": -10.2
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 3421502,
+          "fy27": 3284364,
+          "change_pct": -4
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 9304426,
+          "fy27": 10026939,
+          "change_pct": 7.8
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 6818590,
+          "fy27": 8627258,
+          "change_pct": 26.5
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 15243943,
+          "fy27": 15251302,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 425335,
+          "fy27": 435968,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 12720994,
+          "fy27": 12820493,
+          "change_pct": 0.8
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 1859540,
+          "fy27": 1859540,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Vehicle Theft Prevention",
+          "fy26": 649429,
+          "fy27": 637399,
+          "change_pct": -1.9
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 6144438,
+          "fy27": 5340861,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Other",
+          "description": "Teachers Retirement Supplemental Grants",
+          "fy26": 1500000,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Other",
+          "description": "Other Direct Aid",
+          "fy26": 50000,
+          "fy27": 250000,
+          "change_pct": 400
+        }
+      ]
+    },
+    {
+      "fips": "24009",
+      "name": "Calvert",
+      "fy26_total_usd": 147034741,
+      "fy27_total_usd": 151927967,
+      "by_category": {
+        "Education": {
+          "fy26": 128679235,
+          "fy27": 134105533
+        },
+        "Libraries": {
+          "fy26": 1418524,
+          "fy27": 1439239
+        },
+        "Community Colleges": {
+          "fy26": 5617671,
+          "fy27": 5694447
+        },
+        "Health": {
+          "fy26": 3425549,
+          "fy27": 2798761
+        },
+        "Transportation": {
+          "fy26": 3449264,
+          "fy27": 3454239
+        },
+        "Public Safety": {
+          "fy26": 1294498,
+          "fy27": 1285748
+        },
+        "Shared Taxes": {
+          "fy26": 3150000,
+          "fy27": 3150000
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 72522122,
+          "fy27": 75216451,
+          "change_pct": 3.7
+        },
+        {
+          "category": "Education",
+          "description": "Comparable Wage Index",
+          "fy26": 2692746,
+          "fy27": 2733366,
+          "change_pct": 1.5
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 14704081,
+          "fy27": 14659276,
+          "change_pct": -0.3
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 7449106,
+          "fy27": 7523597,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 347000,
+          "fy27": 344000,
+          "change_pct": -0.9
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 7906540,
+          "fy27": 9486424,
+          "change_pct": 20
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 837286,
+          "fy27": 714496,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 1023093,
+          "fy27": 1089516,
+          "change_pct": 6.5
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 64346,
+          "fy27": 58006,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 268720,
+          "fy27": 268720,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 10339,
+          "fy27": 10339,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 16633074,
+          "fy27": 16456785,
+          "change_pct": -1.1
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 791750,
+          "fy27": 919492,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 560424,
+          "fy27": 571576,
+          "change_pct": 2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 258454,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 1605376,
+          "fy27": 2919943,
+          "change_pct": 81.9
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 587584,
+          "fy27": 636249,
+          "change_pct": 8.3
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 333446,
+          "fy27": 412245,
+          "change_pct": 23.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 79748,
+          "fy27": 81052,
+          "change_pct": 1.6
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 629160,
+          "fy27": 660516,
+          "change_pct": 5
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 789364,
+          "fy27": 778723,
+          "change_pct": -1.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 4759774,
+          "fy27": 4761530,
+          "change_pct": 0
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 22157,
+          "fy27": 26438,
+          "change_pct": 19.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 219324,
+          "fy27": 208818,
+          "change_pct": -4.8
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 616416,
+          "fy27": 697661,
+          "change_pct": 13.2
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 3425549,
+          "fy27": 2798761,
+          "change_pct": -18.3
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 3236632,
+          "fy27": 3238194,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 136533,
+          "fy27": 139946,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Transportation",
+          "description": "Paratransit Grants",
+          "fy26": 76099,
+          "fy27": 76099,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 778042,
+          "fy27": 796335,
+          "change_pct": 2.4
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 309672,
+          "fy27": 309672,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 206784,
+          "fy27": 179741,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Instant Bingo",
+          "fy26": 3150000,
+          "fy27": 3150000,
+          "change_pct": 0
+        }
+      ]
+    },
+    {
+      "fips": "24011",
+      "name": "Caroline",
+      "fy26_total_usd": 105183193,
+      "fy27_total_usd": 110064488,
+      "by_category": {
+        "Education": {
+          "fy26": 90277650,
+          "fy27": 95785698
+        },
+        "Libraries": {
+          "fy26": 537157,
+          "fy27": 574069
+        },
+        "Community Colleges": {
+          "fy26": 3617728,
+          "fy27": 3397017
+        },
+        "Health": {
+          "fy26": 2186117,
+          "fy27": 2043191
+        },
+        "Transportation": {
+          "fy26": 2702901,
+          "fy27": 2704206
+        },
+        "Public Safety": {
+          "fy26": 845382,
+          "fy27": 824053
+        },
+        "Other": {
+          "fy26": 5016258,
+          "fy27": 4736254
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 35495846,
+          "fy27": 36578717,
+          "change_pct": 3.1
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 23262122,
+          "fy27": 22627553,
+          "change_pct": -2.7
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 3588377,
+          "fy27": 3624261,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 108000,
+          "fy27": 126000,
+          "change_pct": 16.7
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 4654603,
+          "fy27": 5460658,
+          "change_pct": 17.3
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 42621,
+          "fy27": 36370,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 4437009,
+          "fy27": 4382189,
+          "change_pct": -1.2
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 53597,
+          "fy27": 48316,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 87754,
+          "fy27": 87754,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 5523716,
+          "fy27": 5794399,
+          "change_pct": 4.9
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 791750,
+          "fy27": 919492,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Guaranteed Tax Base",
+          "fy26": 2132224,
+          "fy27": 2789017,
+          "change_pct": 30.8
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 4746068,
+          "fy27": 6084242,
+          "change_pct": 28.2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 281371,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transition Grants",
+          "fy26": 628433,
+          "fy27": 483410,
+          "change_pct": -23.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 3901947,
+          "fy27": 6012209,
+          "change_pct": 54.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 319857,
+          "fy27": 365167,
+          "change_pct": 14.2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 110016,
+          "fy27": 253345,
+          "change_pct": 130.3
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 108339,
+          "fy27": 108599,
+          "change_pct": 0.2
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 381651,
+          "fy27": 397083,
+          "change_pct": 4
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 155506,
+          "fy27": 176986,
+          "change_pct": 13.8
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 2642871,
+          "fy27": 2534514,
+          "change_pct": -4.1
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 42271,
+          "fy27": 41385,
+          "change_pct": -2.1
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 110663,
+          "fy27": 95358,
+          "change_pct": -13.8
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 414700,
+          "fy27": 398276,
+          "change_pct": -4
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 407223,
+          "fy27": 327484,
+          "change_pct": -19.6
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 2186117,
+          "fy27": 2043191,
+          "change_pct": -6.5
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 2702901,
+          "fy27": 2704206,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 328705,
+          "fy27": 330127,
+          "change_pct": 0.4
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 342716,
+          "fy27": 342716,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 173961,
+          "fy27": 151210,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Other",
+          "description": "Disparity Grant",
+          "fy26": 4673704,
+          "fy27": 4736254,
+          "change_pct": 1.3
+        },
+        {
+          "category": "Other",
+          "description": "Teachers Retirement Supplemental Grants",
+          "fy26": 342554,
+          "fy27": 0,
+          "change_pct": -100
+        }
+      ]
+    },
+    {
+      "fips": "24013",
+      "name": "Carroll",
+      "fy26_total_usd": 256262583,
+      "fy27_total_usd": 264722771,
+      "by_category": {
+        "Education": {
+          "fy26": 221300219,
+          "fy27": 229492285
+        },
+        "Libraries": {
+          "fy26": 2517311,
+          "fy27": 2586940
+        },
+        "Community Colleges": {
+          "fy26": 16642938,
+          "fy27": 17133476
+        },
+        "Health": {
+          "fy26": 4670593,
+          "fy27": 4452943
+        },
+        "Transportation": {
+          "fy26": 8343239,
+          "fy27": 8351249
+        },
+        "Public Safety": {
+          "fy26": 2788283,
+          "fy27": 2705878
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 126263051,
+          "fy27": 130767836,
+          "change_pct": 3.6
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 26651509,
+          "fy27": 26116543,
+          "change_pct": -2
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 13221394,
+          "fy27": 13353608,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 458000,
+          "fy27": 493000,
+          "change_pct": 7.6
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 16273089,
+          "fy27": 18060988,
+          "change_pct": 11
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 3130041,
+          "fy27": 2671014,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 2625962,
+          "fy27": 2387579,
+          "change_pct": -9.1
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 510268,
+          "fy27": 459988,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 19928,
+          "fy27": 19928,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 28346,
+          "fy27": 28346,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 24706636,
+          "fy27": 26340476,
+          "change_pct": 6.6
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1187625,
+          "fy27": 1379238,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 1172250,
+          "fy27": 953980,
+          "change_pct": -18.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 525660,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 2614280,
+          "fy27": 3994601,
+          "change_pct": 52.8
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 1100234,
+          "fy27": 1208230,
+          "change_pct": 9.8
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 727870,
+          "fy27": 1172427,
+          "change_pct": 61.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 80076,
+          "fy27": 80503,
+          "change_pct": 0.5
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 1350967,
+          "fy27": 1353410,
+          "change_pct": 0.2
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 1166344,
+          "fy27": 1233530,
+          "change_pct": 5.8
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 12828120,
+          "fy27": 13212963,
+          "change_pct": 3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 68680,
+          "fy27": 78112,
+          "change_pct": 13.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 572144,
+          "fy27": 551160,
+          "change_pct": -3.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 1605384,
+          "fy27": 1655954,
+          "change_pct": 3.2
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 1568610,
+          "fy27": 1635287,
+          "change_pct": 4.3
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 4670593,
+          "fy27": 4452943,
+          "change_pct": -4.7
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 8180788,
+          "fy27": 8184737,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 162451,
+          "fy27": 166512,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 1621505,
+          "fy27": 1641050,
+          "change_pct": 1.2
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 387235,
+          "fy27": 387235,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 779543,
+          "fy27": 677593,
+          "change_pct": -13.1
+        }
+      ]
+    },
+    {
+      "fips": "24015",
+      "name": "Cecil",
+      "fy26_total_usd": 192682408,
+      "fy27_total_usd": 195706682,
+      "by_category": {
+        "Education": {
+          "fy26": 165754561,
+          "fy27": 168708500
+        },
+        "Libraries": {
+          "fy26": 1651433,
+          "fy27": 1653680
+        },
+        "Community Colleges": {
+          "fy26": 10572706,
+          "fy27": 10935920
+        },
+        "Health": {
+          "fy26": 3399458,
+          "fy27": 3173503
+        },
+        "Transportation": {
+          "fy26": 4498055,
+          "fy27": 4503755
+        },
+        "Public Safety": {
+          "fy26": 2018367,
+          "fy27": 1943496
+        },
+        "Shared Taxes": {
+          "fy26": 4787828,
+          "fy27": 4787828
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 77163998,
+          "fy27": 78751017,
+          "change_pct": 2.1
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 32221353,
+          "fy27": 28531169,
+          "change_pct": -11.5
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 6765794,
+          "fy27": 6833452,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 323000,
+          "fy27": 231000,
+          "change_pct": -28.5
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 13873241,
+          "fy27": 16200338,
+          "change_pct": 16.8
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 1576954,
+          "fy27": 1345690,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 2244218,
+          "fy27": 2186005,
+          "change_pct": -2.6
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 745214,
+          "fy27": 671782,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 15727,
+          "fy27": 15727,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 16182556,
+          "fy27": 16575556,
+          "change_pct": 2.4
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 3958751,
+          "fy27": 4597460,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 4888426,
+          "fy27": 5468854,
+          "change_pct": 11.9
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 472667,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transition Grants",
+          "fy26": 31889,
+          "fy27": 24530,
+          "change_pct": -23.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 3917018,
+          "fy27": 6133213,
+          "change_pct": 56.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 518110,
+          "fy27": 522070,
+          "change_pct": 0.8
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Education Effort Index",
+          "fy26": 456935,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 306473,
+          "fy27": 528695,
+          "change_pct": 72.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 88237,
+          "fy27": 87942,
+          "change_pct": -0.3
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 1012859,
+          "fy27": 1029688,
+          "change_pct": 1.7
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 638574,
+          "fy27": 623992,
+          "change_pct": -2.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 7758901,
+          "fy27": 7991668,
+          "change_pct": 3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 8376,
+          "fy27": 10016,
+          "change_pct": 19.6
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 320160,
+          "fy27": 295506,
+          "change_pct": -7.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 1605384,
+          "fy27": 1655954,
+          "change_pct": 3.2
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 879885,
+          "fy27": 982776,
+          "change_pct": 11.7
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 3399458,
+          "fy27": 3173503,
+          "change_pct": -6.6
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 4354117,
+          "fy27": 4356219,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 143938,
+          "fy27": 147536,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 1011980,
+          "fy27": 1021030,
+          "change_pct": 0.9
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 364700,
+          "fy27": 364700,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 641687,
+          "fy27": 557766,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Gaming Impact Grants",
+          "fy26": 4787828,
+          "fy27": 4787828,
+          "change_pct": 0
+        }
+      ]
+    },
+    {
+      "fips": "24017",
+      "name": "Charles",
+      "fy26_total_usd": 329910679,
+      "fy27_total_usd": 345159385,
+      "by_category": {
+        "Education": {
+          "fy26": 303369212,
+          "fy27": 318516860
+        },
+        "Libraries": {
+          "fy26": 2278875,
+          "fy27": 2340879
+        },
+        "Community Colleges": {
+          "fy26": 10971618,
+          "fy27": 11687672
+        },
+        "Health": {
+          "fy26": 5299828,
+          "fy27": 4722399
+        },
+        "Transportation": {
+          "fy26": 5061625,
+          "fy27": 5067700
+        },
+        "Public Safety": {
+          "fy26": 2929521,
+          "fy27": 2823875
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 151329094,
+          "fy27": 156075673,
+          "change_pct": 3.1
+        },
+        {
+          "category": "Education",
+          "description": "Comparable Wage Index",
+          "fy26": 3911857,
+          "fy27": 3948715,
+          "change_pct": 0.9
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 55831193,
+          "fy27": 55676426,
+          "change_pct": -0.3
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 14262582,
+          "fy27": 14405208,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 1011000,
+          "fy27": 1162000,
+          "change_pct": 14.9
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 19202152,
+          "fy27": 22637892,
+          "change_pct": 17.9
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 1234627,
+          "fy27": 1053567,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 7889145,
+          "fy27": 7921374,
+          "change_pct": 0.4
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 1457381,
+          "fy27": 1313773,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 368947,
+          "fy27": 368947,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 39377,
+          "fy27": 39377,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 26750572,
+          "fy27": 29074583,
+          "change_pct": 8.7
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1187625,
+          "fy27": 1379238,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Guaranteed Tax Base",
+          "fy26": 2602342,
+          "fy27": 2672240,
+          "change_pct": 2.7
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 6117837,
+          "fy27": 6783314,
+          "change_pct": 10.9
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 943218,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 7705003,
+          "fy27": 12208790,
+          "change_pct": 58.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 1040655,
+          "fy27": 1177935,
+          "change_pct": 13.2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 389464,
+          "fy27": 522460,
+          "change_pct": 34.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 91141,
+          "fy27": 91348,
+          "change_pct": 0.2
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 1442457,
+          "fy27": 1489472,
+          "change_pct": 3.3
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 836418,
+          "fy27": 851407,
+          "change_pct": 1.8
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 9296574,
+          "fy27": 9768000,
+          "change_pct": 5.1
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 43276,
+          "fy27": 54237,
+          "change_pct": 25.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 428373,
+          "fy27": 428378,
+          "change_pct": 0
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 1203395,
+          "fy27": 1437057,
+          "change_pct": 19.4
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 5299828,
+          "fy27": 4722399,
+          "change_pct": -10.9
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 4913521,
+          "fy27": 4915893,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 148104,
+          "fy27": 151807,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 1466774,
+          "fy27": 1491284,
+          "change_pct": 1.7
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 443497,
+          "fy27": 443497,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Vehicle Theft Prevention",
+          "fy26": 28000,
+          "fy27": 27481,
+          "change_pct": -1.9
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 991250,
+          "fy27": 861613,
+          "change_pct": -13.1
+        }
+      ]
+    },
+    {
+      "fips": "24019",
+      "name": "Dorchester",
+      "fy26_total_usd": 83445596,
+      "fy27_total_usd": 85375198,
+      "by_category": {
+        "Education": {
+          "fy26": 67474810,
+          "fy27": 70065648
+        },
+        "Libraries": {
+          "fy26": 471422,
+          "fy27": 470075
+        },
+        "Community Colleges": {
+          "fy26": 2381698,
+          "fy27": 2509786
+        },
+        "Health": {
+          "fy26": 3005716,
+          "fy27": 2525237
+        },
+        "Transportation": {
+          "fy26": 3313229,
+          "fy27": 3318039
+        },
+        "Public Safety": {
+          "fy26": 938762,
+          "fy27": 911593
+        },
+        "Shared Taxes": {
+          "fy26": 714690,
+          "fy27": 750947
+        },
+        "Other": {
+          "fy26": 5145269,
+          "fy27": 4823873
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 24968220,
+          "fy27": 25844520,
+          "change_pct": 3.5
+        },
+        {
+          "category": "Education",
+          "description": "Foundation - Special Grants",
+          "fy26": 139385,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 14289230,
+          "fy27": 13484511,
+          "change_pct": -5.6
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 3275279,
+          "fy27": 3308032,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 73000,
+          "fy27": 84000,
+          "change_pct": 15.1
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 2872768,
+          "fy27": 3402324,
+          "change_pct": 18.4
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 241882,
+          "fy27": 206410,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 1790003,
+          "fy27": 1694732,
+          "change_pct": -5.3
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 49378,
+          "fy27": 44512,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 372770,
+          "fy27": 372770,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 5625,
+          "fy27": 5625,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 5035564,
+          "fy27": 5313657,
+          "change_pct": 5.5
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1187625,
+          "fy27": 1379238,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Guaranteed Tax Base",
+          "fy26": 977739,
+          "fy27": 1097288,
+          "change_pct": 12.2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 7515454,
+          "fy27": 8019116,
+          "change_pct": 6.7
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 187276,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transition Grants",
+          "fy26": 858985,
+          "fy27": 660758,
+          "change_pct": -23.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 2683129,
+          "fy27": 3906482,
+          "change_pct": 45.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 192815,
+          "fy27": 143396,
+          "change_pct": -25.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Education Effort Index",
+          "fy26": 645305,
+          "fy27": 926525,
+          "change_pct": 43.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 13740,
+          "fy27": 71836,
+          "change_pct": 422.8
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 95638,
+          "fy27": 95916,
+          "change_pct": 0.3
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 363541,
+          "fy27": 368534,
+          "change_pct": 1.4
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 107881,
+          "fy27": 101541,
+          "change_pct": -5.9
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 1743652,
+          "fy27": 1873283,
+          "change_pct": 7.4
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 27889,
+          "fy27": 30588,
+          "change_pct": 9.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 73011,
+          "fy27": 70480,
+          "change_pct": -3.5
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 273601,
+          "fy27": 294370,
+          "change_pct": 7.6
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 263545,
+          "fy27": 241065,
+          "change_pct": -8.5
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 3005716,
+          "fy27": 2525237,
+          "change_pct": -16
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 3131324,
+          "fy27": 3132836,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 131905,
+          "fy27": 135203,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Transportation",
+          "description": "Paratransit Grants",
+          "fy26": 50000,
+          "fy27": 50000,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 359855,
+          "fy27": 365096,
+          "change_pct": 1.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 331094,
+          "fy27": 331094,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 247813,
+          "fy27": 215403,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Payment in Lieu of Taxes (PILOTS)",
+          "fy26": 714690,
+          "fy27": 750947,
+          "change_pct": 5.1
+        },
+        {
+          "category": "Other",
+          "description": "Disparity Grant",
+          "fy26": 4990812,
+          "fy27": 4823873,
+          "change_pct": -3.3
+        },
+        {
+          "category": "Other",
+          "description": "Teachers Retirement Supplemental Grants",
+          "fy26": 154457,
+          "fy27": 0,
+          "change_pct": -100
+        }
+      ]
+    },
+    {
+      "fips": "24021",
+      "name": "Frederick",
+      "fy26_total_usd": 503112230,
+      "fy27_total_usd": 518044557,
+      "by_category": {
+        "Education": {
+          "fy26": 449942006,
+          "fy27": 464177313
+        },
+        "Libraries": {
+          "fy26": 3611002,
+          "fy27": 3583033
+        },
+        "Community Colleges": {
+          "fy26": 26638142,
+          "fy27": 27503098
+        },
+        "Health": {
+          "fy26": 5153997,
+          "fy27": 5059623
+        },
+        "Transportation": {
+          "fy26": 13194721,
+          "fy27": 13205289
+        },
+        "Public Safety": {
+          "fy26": 4572362,
+          "fy27": 4466201
+        },
+        "Other": {
+          "fy26": 0,
+          "fy27": 50000
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 237685593,
+          "fy27": 244241229,
+          "change_pct": 2.8
+        },
+        {
+          "category": "Education",
+          "description": "Comparable Wage Index",
+          "fy26": 5250474,
+          "fy27": 5280495,
+          "change_pct": 0.6
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 60201928,
+          "fy27": 58521210,
+          "change_pct": -2.8
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 18096891,
+          "fy27": 18277860,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 1459000,
+          "fy27": 1614000,
+          "change_pct": 10.6
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 30955259,
+          "fy27": 35454503,
+          "change_pct": 14.5
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 5934114,
+          "fy27": 5063864,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 18691342,
+          "fy27": 18012874,
+          "change_pct": -3.6
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 1321910,
+          "fy27": 1191651,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 571996,
+          "fy27": 571996,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 33177,
+          "fy27": 33177,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 48725898,
+          "fy27": 50107882,
+          "change_pct": 2.8
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 2375250,
+          "fy27": 2758476,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 5734225,
+          "fy27": 7000569,
+          "change_pct": 22.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 1022428,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 8776296,
+          "fy27": 12213165,
+          "change_pct": 39.2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 2315970,
+          "fy27": 2636432,
+          "change_pct": 13.8
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 702818,
+          "fy27": 1110973,
+          "change_pct": 58.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 83437,
+          "fy27": 82957,
+          "change_pct": -0.6
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 2067139,
+          "fy27": 2092337,
+          "change_pct": 1.2
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 1543863,
+          "fy27": 1490696,
+          "change_pct": -3.4
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 22624751,
+          "fy27": 23303494,
+          "change_pct": 3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 229040,
+          "fy27": 195000,
+          "change_pct": -14.9
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 1124643,
+          "fy27": 1103011,
+          "change_pct": -1.9
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 2659708,
+          "fy27": 2901593,
+          "change_pct": 9.1
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 5153997,
+          "fy27": 5059623,
+          "change_pct": -1.8
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 13023476,
+          "fy27": 13029763,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 171245,
+          "fy27": 175526,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 2760395,
+          "fy27": 2802973,
+          "change_pct": 1.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 674655,
+          "fy27": 674655,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 1137312,
+          "fy27": 988573,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Other",
+          "description": "Other Direct Aid",
+          "fy26": 0,
+          "fy27": 50000,
+          "change_pct": 0
+        }
+      ]
+    },
+    {
+      "fips": "24023",
+      "name": "Garrett",
+      "fy26_total_usd": 48993191,
+      "fy27_total_usd": 46949961,
+      "by_category": {
+        "Education": {
+          "fy26": 31166146,
+          "fy27": 29547023
+        },
+        "Libraries": {
+          "fy26": 304209,
+          "fy27": 283516
+        },
+        "Community Colleges": {
+          "fy26": 6832386,
+          "fy27": 6972348
+        },
+        "Health": {
+          "fy26": 2953264,
+          "fy27": 2503133
+        },
+        "Transportation": {
+          "fy26": 3156992,
+          "fy27": 3161671
+        },
+        "Public Safety": {
+          "fy26": 580062,
+          "fy27": 572114
+        },
+        "Shared Taxes": {
+          "fy26": 1749524,
+          "fy27": 1778885
+        },
+        "Other": {
+          "fy26": 2250608,
+          "fy27": 2131271
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 8908933,
+          "fy27": 8184433,
+          "change_pct": -8.1
+        },
+        {
+          "category": "Education",
+          "description": "Foundation - Special Grants",
+          "fy26": 1829866,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 5570957,
+          "fy27": 5518717,
+          "change_pct": -0.9
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 3967159,
+          "fy27": 4006831,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 61000,
+          "fy27": 68000,
+          "change_pct": 11.5
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 1501474,
+          "fy27": 1678600,
+          "change_pct": 11.8
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 63931,
+          "fy27": 54555,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 28931,
+          "fy27": 21955,
+          "change_pct": -24.1
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 230150,
+          "fy27": 207472,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 395615,
+          "fy27": 395615,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 7349,
+          "fy27": 7349,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 3619835,
+          "fy27": 3706802,
+          "change_pct": 2.4
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1583500,
+          "fy27": 1838984,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 1469937,
+          "fy27": 1832135,
+          "change_pct": 24.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 58049,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transition Grants",
+          "fy26": 780754,
+          "fy27": 600580,
+          "change_pct": -23.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 838596,
+          "fy27": 1175272,
+          "change_pct": 40.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 82844,
+          "fy27": 88009,
+          "change_pct": 6.2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 118627,
+          "fy27": 117505,
+          "change_pct": -0.9
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 44639,
+          "fy27": 40209,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 143761,
+          "fy27": 116378,
+          "change_pct": -19
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 160448,
+          "fy27": 167138,
+          "change_pct": 4.2
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 4187102,
+          "fy27": 4250368,
+          "change_pct": 1.5
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 142611,
+          "fy27": 125802,
+          "change_pct": -11.8
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 1845384,
+          "fy27": 1895954,
+          "change_pct": 2.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 657289,
+          "fy27": 700224,
+          "change_pct": 6.5
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 2953264,
+          "fy27": 2503133,
+          "change_pct": -15.2
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 3028327,
+          "fy27": 3029789,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 128665,
+          "fy27": 131882,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 207939,
+          "fy27": 205357,
+          "change_pct": -1.2
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 331094,
+          "fy27": 331094,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 41029,
+          "fy27": 35663,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Payment in Lieu of Taxes (PILOTS)",
+          "fy26": 1749524,
+          "fy27": 1778885,
+          "change_pct": 1.7
+        },
+        {
+          "category": "Other",
+          "description": "Disparity Grant",
+          "fy26": 2047408,
+          "fy27": 2131271,
+          "change_pct": 4.1
+        },
+        {
+          "category": "Other",
+          "description": "Teachers Retirement Supplemental Grants",
+          "fy26": 203200,
+          "fy27": 0,
+          "change_pct": -100
+        }
+      ]
+    },
+    {
+      "fips": "24025",
+      "name": "Harford",
+      "fy26_total_usd": 418925098,
+      "fy27_total_usd": 434300195,
+      "by_category": {
+        "Education": {
+          "fy26": 373203769,
+          "fy27": 388415728
+        },
+        "Libraries": {
+          "fy26": 4019564,
+          "fy27": 3946583
+        },
+        "Community Colleges": {
+          "fy26": 22574086,
+          "fy27": 23065495
+        },
+        "Health": {
+          "fy26": 6001605,
+          "fy27": 5847246
+        },
+        "Transportation": {
+          "fy26": 8507222,
+          "fy27": 8515823
+        },
+        "Public Safety": {
+          "fy26": 4618852,
+          "fy27": 4509320
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 185602722,
+          "fy27": 192485016,
+          "change_pct": 3.7
+        },
+        {
+          "category": "Education",
+          "description": "Comparable Wage Index",
+          "fy26": 6368030,
+          "fy27": 6463647,
+          "change_pct": 1.5
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 55851575,
+          "fy27": 53656885,
+          "change_pct": -3.9
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 16251928,
+          "fy27": 16414447,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 1164000,
+          "fy27": 1390000,
+          "change_pct": 19.4
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 29895402,
+          "fy27": 34806170,
+          "change_pct": 16.4
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 10952556,
+          "fy27": 9346341,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 5288529,
+          "fy27": 5144386,
+          "change_pct": -2.7
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 517289,
+          "fy27": 466316,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 25432,
+          "fy27": 25432,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 101611,
+          "fy27": 101611,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 39696081,
+          "fy27": 41070750,
+          "change_pct": 3.5
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1187625,
+          "fy27": 1379238,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 11701750,
+          "fy27": 13461439,
+          "change_pct": 15
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 858393,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 5241317,
+          "fy27": 9104650,
+          "change_pct": 73.7
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 1379646,
+          "fy27": 1507161,
+          "change_pct": 9.2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 1033928,
+          "fy27": 1505637,
+          "change_pct": 45.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 81955,
+          "fy27": 82602,
+          "change_pct": 0.8
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 2249143,
+          "fy27": 2277264,
+          "change_pct": 1.3
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 1770421,
+          "fy27": 1669319,
+          "change_pct": -5.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 18653246,
+          "fy27": 19212843,
+          "change_pct": 3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 21888,
+          "fy27": 22976,
+          "change_pct": 5
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 927226,
+          "fy27": 882186,
+          "change_pct": -4.9
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 2971726,
+          "fy27": 2947490,
+          "change_pct": -0.8
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 6001605,
+          "fy27": 5847246,
+          "change_pct": -2.6
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 8323944,
+          "fy27": 8327963,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 183278,
+          "fy27": 187860,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 2913154,
+          "fy27": 2943233,
+          "change_pct": 1
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 623596,
+          "fy27": 623596,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Vehicle Theft Prevention",
+          "fy26": 17000,
+          "fy27": 16685,
+          "change_pct": -1.9
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 1065102,
+          "fy27": 925806,
+          "change_pct": -13.1
+        }
+      ]
+    },
+    {
+      "fips": "24027",
+      "name": "Howard",
+      "fy26_total_usd": 535073252,
+      "fy27_total_usd": 553634848,
+      "by_category": {
+        "Education": {
+          "fy26": 470983522,
+          "fy27": 489392385
+        },
+        "Libraries": {
+          "fy26": 4287527,
+          "fy27": 4361844
+        },
+        "Community Colleges": {
+          "fy26": 40023658,
+          "fy27": 40824803
+        },
+        "Health": {
+          "fy26": 6282731,
+          "fy27": 5606590
+        },
+        "Transportation": {
+          "fy26": 6844375,
+          "fy27": 6851750
+        },
+        "Public Safety": {
+          "fy26": 6562153,
+          "fy27": 6508190
+        },
+        "Shared Taxes": {
+          "fy26": 89286,
+          "fy27": 89286
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 230455384,
+          "fy27": 241113772,
+          "change_pct": 4.6
+        },
+        {
+          "category": "Education",
+          "description": "Comparable Wage Index",
+          "fy26": 14189138,
+          "fy27": 14529516,
+          "change_pct": 2.4
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 51728969,
+          "fy27": 51760429,
+          "change_pct": 0.1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 22846652,
+          "fy27": 23075119,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 2397000,
+          "fy27": 2573000,
+          "change_pct": 7.3
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 29618220,
+          "fy27": 35055629,
+          "change_pct": 18.4
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 14636227,
+          "fy27": 12489793,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 15668843,
+          "fy27": 15209884,
+          "change_pct": -2.9
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 1178324,
+          "fy27": 1062214,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 344397,
+          "fy27": 344397,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 162479,
+          "fy27": 162479,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 73425419,
+          "fy27": 74207539,
+          "change_pct": 1.1
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 791750,
+          "fy27": 919492,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 3467660,
+          "fy27": 4066541,
+          "change_pct": 17.3
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 870260,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transition Grants",
+          "fy26": 27133,
+          "fy27": 20872,
+          "change_pct": -23.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 4730850,
+          "fy27": 7311624,
+          "change_pct": 54.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 2264707,
+          "fy27": 2429540,
+          "change_pct": 7.3
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 2109130,
+          "fy27": 2988609,
+          "change_pct": 41.7
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 66980,
+          "fy27": 67936,
+          "change_pct": 1.4
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 1311326,
+          "fy27": 1363732,
+          "change_pct": 4
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 2976201,
+          "fy27": 2998112,
+          "change_pct": 0.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 33922063,
+          "fy27": 34939725,
+          "change_pct": 3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 415296,
+          "fy27": 392648,
+          "change_pct": -5.5
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 1686216,
+          "fy27": 1595479,
+          "change_pct": -5.4
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 4000083,
+          "fy27": 3896951,
+          "change_pct": -2.6
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 6282731,
+          "fy27": 5606590,
+          "change_pct": -10.8
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 6239890,
+          "fy27": 6242903,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 174485,
+          "fy27": 178847,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Transportation",
+          "description": "Paratransit Grants",
+          "fy26": 430000,
+          "fy27": 430000,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 5005879,
+          "fy27": 5059294,
+          "change_pct": 1.1
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 682648,
+          "fy27": 682648,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Vehicle Theft Prevention",
+          "fy26": 61260,
+          "fy27": 60125,
+          "change_pct": -1.9
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 812366,
+          "fy27": 706123,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Gaming Impact Grants",
+          "fy26": 89286,
+          "fy27": 89286,
+          "change_pct": 0
+        }
+      ]
+    },
+    {
+      "fips": "24029",
+      "name": "Kent",
+      "fy26_total_usd": 21253370,
+      "fy27_total_usd": 21798253,
+      "by_category": {
+        "Education": {
+          "fy26": 15223064,
+          "fy27": 16115848
+        },
+        "Libraries": {
+          "fy26": 224951,
+          "fy27": 262388
+        },
+        "Community Colleges": {
+          "fy26": 1031094,
+          "fy27": 1062220
+        },
+        "Health": {
+          "fy26": 2619532,
+          "fy27": 2204406
+        },
+        "Transportation": {
+          "fy26": 1535962,
+          "fy27": 1536703
+        },
+        "Public Safety": {
+          "fy26": 618767,
+          "fy27": 616688
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 2240524,
+          "fy27": 2374083,
+          "change_pct": 6
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 3397154,
+          "fy27": 3400925,
+          "change_pct": 0.1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 2072045,
+          "fy27": 2101533,
+          "change_pct": 1.4
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 41000,
+          "fy27": 43000,
+          "change_pct": 4.9
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 889481,
+          "fy27": 1142320,
+          "change_pct": 28.4
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 111638,
+          "fy27": 95266,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 386955,
+          "fy27": 435445,
+          "change_pct": 12.5
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 27524,
+          "fy27": 24812,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 68171,
+          "fy27": 68171,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 2233529,
+          "fy27": 2354585,
+          "change_pct": 5.4
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1187625,
+          "fy27": 1379238,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 1502049,
+          "fy27": 1602761,
+          "change_pct": 6.7
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 23548,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transition Grants",
+          "fy26": 653309,
+          "fy27": 502545,
+          "change_pct": -23.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 318939,
+          "fy27": 497225,
+          "change_pct": 55.9
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 25821,
+          "fy27": 23468,
+          "change_pct": -9.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 17250,
+          "fy27": 43308,
+          "change_pct": 151.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 22502,
+          "fy27": 23163,
+          "change_pct": 2.9
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 135142,
+          "fy27": 138852,
+          "change_pct": 2.7
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 89809,
+          "fy27": 123536,
+          "change_pct": 37.6
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 745411,
+          "fy27": 783463,
+          "change_pct": 5.1
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 11922,
+          "fy27": 12793,
+          "change_pct": 7.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 31212,
+          "fy27": 29477,
+          "change_pct": -5.6
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 116964,
+          "fy27": 123114,
+          "change_pct": 5.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 125585,
+          "fy27": 113373,
+          "change_pct": -9.7
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 2619532,
+          "fy27": 2204406,
+          "change_pct": -15.8
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 1535962,
+          "fy27": 1536703,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 181419,
+          "fy27": 186453,
+          "change_pct": 2.8
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 341755,
+          "fy27": 341755,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Vehicle Theft Prevention",
+          "fy26": 48000,
+          "fy27": 47111,
+          "change_pct": -1.9
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 47593,
+          "fy27": 41369,
+          "change_pct": -13.1
+        }
+      ]
+    },
+    {
+      "fips": "24031",
+      "name": "Montgomery",
+      "fy26_total_usd": 1422984921,
+      "fy27_total_usd": 1440151678,
+      "by_category": {
+        "Education": {
+          "fy26": 1244481691,
+          "fy27": 1260913503
+        },
+        "Libraries": {
+          "fy26": 5978693,
+          "fy27": 6154283
+        },
+        "Community Colleges": {
+          "fy26": 90699033,
+          "fy27": 93401246
+        },
+        "Health": {
+          "fy26": 5065320,
+          "fy27": 6304474
+        },
+        "Transportation": {
+          "fy26": 54731217,
+          "fy27": 51441947
+        },
+        "Public Safety": {
+          "fy26": 21928967,
+          "fy27": 21836225
+        },
+        "Other": {
+          "fy26": 100000,
+          "fy27": 100000
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 458323008,
+          "fy27": 463034086,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Comparable Wage Index",
+          "fy26": 35758361,
+          "fy27": 35357283,
+          "change_pct": -1.1
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 205610966,
+          "fy27": 198854440,
+          "change_pct": -3.3
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 51535549,
+          "fy27": 52050904,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 6515000,
+          "fy27": 6454000,
+          "change_pct": -0.9
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 87819124,
+          "fy27": 102765200,
+          "change_pct": 17
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 19085199,
+          "fy27": 16286315,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 117583630,
+          "fy27": 112428920,
+          "change_pct": -4.4
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 4188280,
+          "fy27": 3775573,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 208932,
+          "fy27": 208932,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 81885,
+          "fy27": 81885,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 202986824,
+          "fy27": 206122842,
+          "change_pct": 1.5
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1187625,
+          "fy27": 1379238,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 28566818,
+          "fy27": 31851880,
+          "change_pct": 11.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 2340584,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transition Grants",
+          "fy26": 5013284,
+          "fy27": 3856373,
+          "change_pct": -23.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 9688678,
+          "fy27": 16970389,
+          "change_pct": 75.2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 4849022,
+          "fy27": 5120139,
+          "change_pct": 5.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 3086647,
+          "fy27": 4263570,
+          "change_pct": 38.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 48275,
+          "fy27": 47534,
+          "change_pct": -1.5
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 3958693,
+          "fy27": 4134283,
+          "change_pct": 4.4
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 2020000,
+          "fy27": 2020000,
+          "change_pct": 0
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 72466849,
+          "fy27": 74640855,
+          "change_pct": 3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 1699184,
+          "fy27": 1694568,
+          "change_pct": -0.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 3602221,
+          "fy27": 3460614,
+          "change_pct": -3.9
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 12930779,
+          "fy27": 13605209,
+          "change_pct": 5.2
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 5065320,
+          "fy27": 6304474,
+          "change_pct": 24.5
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 24012888,
+          "fy27": 24024480,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 407285,
+          "fy27": 417467,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Transportation",
+          "description": "Bus Rapid Transit Systems",
+          "fy26": 27000000,
+          "fy27": 27000000,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Purple Line Access",
+          "fy26": 3311044,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 16022186,
+          "fy27": 16406706,
+          "change_pct": 2.4
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 2121756,
+          "fy27": 2121756,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Vehicle Theft Prevention",
+          "fy26": 158100,
+          "fy27": 155171,
+          "change_pct": -1.9
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 3626925,
+          "fy27": 3152592,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Other",
+          "description": "Other Direct Aid",
+          "fy26": 100000,
+          "fy27": 100000,
+          "change_pct": 0
+        }
+      ]
+    },
+    {
+      "fips": "24033",
+      "name": "Prince George's",
+      "fy26_total_usd": 2105179101,
+      "fy27_total_usd": 2210680513,
+      "by_category": {
+        "Education": {
+          "fy26": 1855257806,
+          "fy27": 1959325713
+        },
+        "Libraries": {
+          "fy26": 11890245,
+          "fy27": 12317473
+        },
+        "Community Colleges": {
+          "fy26": 59662220,
+          "fy27": 61547550
+        },
+        "Health": {
+          "fy26": 8321371,
+          "fy27": 10038736
+        },
+        "Transportation": {
+          "fy26": 28941733,
+          "fy27": 25651617
+        },
+        "Public Safety": {
+          "fy26": 30069193,
+          "fy27": 29354209
+        },
+        "Shared Taxes": {
+          "fy26": 34454825,
+          "fy27": 34689111
+        },
+        "Other": {
+          "fy26": 76581708,
+          "fy27": 77756104
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 674160748,
+          "fy27": 708562682,
+          "change_pct": 5.1
+        },
+        {
+          "category": "Education",
+          "description": "Comparable Wage Index",
+          "fy26": 40874366,
+          "fy27": 42046109,
+          "change_pct": 2.9
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 357671493,
+          "fy27": 362449532,
+          "change_pct": 1.3
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 50854995,
+          "fy27": 51444932,
+          "change_pct": 1.2
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 4432000,
+          "fy27": 4832000,
+          "change_pct": 9
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 82364987,
+          "fy27": 99371357,
+          "change_pct": 20.6
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 19690940,
+          "fy27": 16803223,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 178629245,
+          "fy27": 175580929,
+          "change_pct": -1.7
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 994983,
+          "fy27": 1734704,
+          "change_pct": 74.3
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 251267,
+          "fy27": 251267,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 92720,
+          "fy27": 92720,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 141513241,
+          "fy27": 151311144,
+          "change_pct": 6.9
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 2375250,
+          "fy27": 2758476,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 136711216,
+          "fy27": 156793081,
+          "change_pct": 14.7
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 4604900,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transition Grants",
+          "fy26": 13328674,
+          "fy27": 10252826,
+          "change_pct": -23.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 30654325,
+          "fy27": 44174099,
+          "change_pct": 44.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 6433439,
+          "fy27": 3725841,
+          "change_pct": -42.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Education Effort Index",
+          "fy26": 106537053,
+          "fy27": 122233019,
+          "change_pct": 14.7
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 2990770,
+          "fy27": 4815475,
+          "change_pct": 61
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 87194,
+          "fy27": 88297,
+          "change_pct": 1.3
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 8837721,
+          "fy27": 9296757,
+          "change_pct": 5.2
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 3052524,
+          "fy27": 3020716,
+          "change_pct": -1
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 49675434,
+          "fy27": 51165697,
+          "change_pct": 3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 884928,
+          "fy27": 1176216,
+          "change_pct": 32.9
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 2469293,
+          "fy27": 2476499,
+          "change_pct": 0.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Other Community College Aid",
+          "fy26": 0,
+          "fy27": 250000,
+          "change_pct": 0
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 6632565,
+          "fy27": 6479138,
+          "change_pct": -2.3
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 8321371,
+          "fy27": 10038736,
+          "change_pct": 20.6
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 24822926,
+          "fy27": 24834910,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 357763,
+          "fy27": 366707,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Transportation",
+          "description": "Paratransit Grants",
+          "fy26": 450000,
+          "fy27": 450000,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Purple Line Access",
+          "fy26": 3311044,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 15245295,
+          "fy27": 15518915,
+          "change_pct": 1.8
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 1895207,
+          "fy27": 1895207,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Vehicle Theft Prevention",
+          "fy26": 835051,
+          "fy27": 819583,
+          "change_pct": -1.9
+        },
+        {
+          "category": "Public Safety",
+          "description": "Other Public Safety Aid",
+          "fy26": 4652699,
+          "fy27": 4652699,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 7440941,
+          "fy27": 6467805,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Gaming Impact Grants",
+          "fy26": 34454825,
+          "fy27": 34689111,
+          "change_pct": 0.7
+        },
+        {
+          "category": "Other",
+          "description": "Disparity Grant",
+          "fy26": 68267357,
+          "fy27": 74406104,
+          "change_pct": 9
+        },
+        {
+          "category": "Other",
+          "description": "Teachers Retirement Supplemental Grants",
+          "fy26": 4814351,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Other",
+          "description": "Local Impact Grants",
+          "fy26": 3000000,
+          "fy27": 3000000,
+          "change_pct": 0
+        },
+        {
+          "category": "Other",
+          "description": "Other Direct Aid",
+          "fy26": 500000,
+          "fy27": 350000,
+          "change_pct": -30
+        }
+      ]
+    },
+    {
+      "fips": "24035",
+      "name": "Queen Anne's",
+      "fy26_total_usd": 63559265,
+      "fy27_total_usd": 64755423,
+      "by_category": {
+        "Education": {
+          "fy26": 53107052,
+          "fy27": 54477569
+        },
+        "Libraries": {
+          "fy26": 534142,
+          "fy27": 554167
+        },
+        "Community Colleges": {
+          "fy26": 4045643,
+          "fy27": 4141516
+        },
+        "Health": {
+          "fy26": 2295562,
+          "fy27": 2004374
+        },
+        "Transportation": {
+          "fy26": 2709478,
+          "fy27": 2713997
+        },
+        "Public Safety": {
+          "fy26": 867388,
+          "fy27": 863800
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 23686535,
+          "fy27": 24256293,
+          "change_pct": 2.4
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 8149406,
+          "fy27": 8025809,
+          "change_pct": -1.5
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 4446571,
+          "fy27": 4491037,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 176000,
+          "fy27": 201000,
+          "change_pct": 14.2
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 3367863,
+          "fy27": 3989400,
+          "change_pct": 18.5
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 383583,
+          "fy27": 327330,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 1569518,
+          "fy27": 1555160,
+          "change_pct": -0.9
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 202237,
+          "fy27": 182309,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 304125,
+          "fy27": 304125,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 9034,
+          "fy27": 9034,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 7458493,
+          "fy27": 7235761,
+          "change_pct": -3
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1187625,
+          "fy27": 1379238,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 592920,
+          "fy27": 618621,
+          "change_pct": 4.3
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 119429,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 1130272,
+          "fy27": 1429803,
+          "change_pct": 26.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 114366,
+          "fy27": 227079,
+          "change_pct": 98.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 151252,
+          "fy27": 188277,
+          "change_pct": 24.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 53823,
+          "fy27": 53293,
+          "change_pct": -1
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 224076,
+          "fy27": 228359,
+          "change_pct": 1.9
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 310066,
+          "fy27": 325808,
+          "change_pct": 5.1
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 2947456,
+          "fy27": 3077930,
+          "change_pct": 4.4
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 47143,
+          "fy27": 50259,
+          "change_pct": 6.6
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 123417,
+          "fy27": 115803,
+          "change_pct": -6.2
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 462493,
+          "fy27": 483670,
+          "change_pct": 4.6
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 465134,
+          "fy27": 413854,
+          "change_pct": -11
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 2295562,
+          "fy27": 2004374,
+          "change_pct": -12.7
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 2578499,
+          "fy27": 2579744,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 130979,
+          "fy27": 134253,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 449313,
+          "fy27": 457101,
+          "change_pct": 1.7
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 331094,
+          "fy27": 331094,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 86981,
+          "fy27": 75605,
+          "change_pct": -13.1
+        }
+      ]
+    },
+    {
+      "fips": "24037",
+      "name": "St. Mary's",
+      "fy26_total_usd": 186020815,
+      "fy27_total_usd": 189256611,
+      "by_category": {
+        "Education": {
+          "fy26": 167936052,
+          "fy27": 171749993
+        },
+        "Libraries": {
+          "fy26": 1562128,
+          "fy27": 1612094
+        },
+        "Community Colleges": {
+          "fy26": 7115905,
+          "fy27": 6992804
+        },
+        "Health": {
+          "fy26": 4028698,
+          "fy27": 3559785
+        },
+        "Transportation": {
+          "fy26": 3716178,
+          "fy27": 3721356
+        },
+        "Public Safety": {
+          "fy26": 1661854,
+          "fy27": 1620579
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 87738628,
+          "fy27": 89421636,
+          "change_pct": 1.9
+        },
+        {
+          "category": "Education",
+          "description": "Comparable Wage Index",
+          "fy26": 3257735,
+          "fy27": 3249582,
+          "change_pct": -0.3
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 25349783,
+          "fy27": 24214172,
+          "change_pct": -4.5
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 8905383,
+          "fy27": 8994437,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 460000,
+          "fy27": 487000,
+          "change_pct": 5.9
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 10677884,
+          "fy27": 12470970,
+          "change_pct": 16.8
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 852407,
+          "fy27": 727400,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 2441051,
+          "fy27": 2340841,
+          "change_pct": -4.1
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 631740,
+          "fy27": 569490,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 15425,
+          "fy27": 15425,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 16703463,
+          "fy27": 16690858,
+          "change_pct": -0.1
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1187625,
+          "fy27": 1379238,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 2731811,
+          "fy27": 3572035,
+          "change_pct": 30.8
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 481962,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transition Grants",
+          "fy26": 2113268,
+          "fy27": 1625591,
+          "change_pct": -23.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 3383524,
+          "fy27": 4560015,
+          "change_pct": 34.8
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 631914,
+          "fy27": 732218,
+          "change_pct": 15.9
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 282726,
+          "fy27": 609400,
+          "change_pct": 115.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 85723,
+          "fy27": 85685,
+          "change_pct": 0
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 974977,
+          "fy27": 1003163,
+          "change_pct": 2.9
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 587151,
+          "fy27": 608931,
+          "change_pct": 3.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 6021598,
+          "fy27": 5841755,
+          "change_pct": -3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 28031,
+          "fy27": 32436,
+          "change_pct": 15.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 277467,
+          "fy27": 256191,
+          "change_pct": -7.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 788809,
+          "fy27": 862422,
+          "change_pct": 9.3
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 4028698,
+          "fy27": 3559785,
+          "change_pct": -11.6
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 3440479,
+          "fy27": 3442140,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 140699,
+          "fy27": 144216,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Transportation",
+          "description": "Paratransit Grants",
+          "fy26": 135000,
+          "fy27": 135000,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 954938,
+          "fy27": 962814,
+          "change_pct": 0.8
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 331094,
+          "fy27": 331094,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 375822,
+          "fy27": 326671,
+          "change_pct": -13.1
+        }
+      ]
+    },
+    {
+      "fips": "24039",
+      "name": "Somerset",
+      "fy26_total_usd": 65324532,
+      "fy27_total_usd": 67205004,
+      "by_category": {
+        "Education": {
+          "fy26": 49139840,
+          "fy27": 51934375
+        },
+        "Libraries": {
+          "fy26": 454542,
+          "fy27": 470098
+        },
+        "Community Colleges": {
+          "fy26": 1618797,
+          "fy27": 1697348
+        },
+        "Health": {
+          "fy26": 2104395,
+          "fy27": 1876293
+        },
+        "Transportation": {
+          "fy26": 1668105,
+          "fy27": 1672009
+        },
+        "Public Safety": {
+          "fy26": 760926,
+          "fy27": 737886
+        },
+        "Shared Taxes": {
+          "fy26": 684848,
+          "fy27": 802991
+        },
+        "Other": {
+          "fy26": 8893079,
+          "fy27": 8014004
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 16817408,
+          "fy27": 17417361,
+          "change_pct": 3.6
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 10913069,
+          "fy27": 10983862,
+          "change_pct": 0.6
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 2480435,
+          "fy27": 2505239,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 76000,
+          "fy27": 77000,
+          "change_pct": 1.3
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 3134283,
+          "fy27": 3435509,
+          "change_pct": 9.6
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 51145,
+          "fy27": 43644,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 1033705,
+          "fy27": 1109356,
+          "change_pct": 7.3
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 33561,
+          "fy27": 30254,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 344554,
+          "fy27": 344554,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 707,
+          "fy27": 707,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 3560819,
+          "fy27": 3309654,
+          "change_pct": -7.1
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 791750,
+          "fy27": 919492,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Guaranteed Tax Base",
+          "fy26": 1120715,
+          "fy27": 1948266,
+          "change_pct": 73.8
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 5434514,
+          "fy27": 5746379,
+          "change_pct": 5.7
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 153847,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 2865473,
+          "fy27": 3765440,
+          "change_pct": 31.4
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 95593,
+          "fy27": 109226,
+          "change_pct": 14.3
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Education Effort Index",
+          "fy26": 89666,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 33392,
+          "fy27": 78982,
+          "change_pct": 136.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 105204,
+          "fy27": 105450,
+          "change_pct": 0.2
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 344262,
+          "fy27": 351998,
+          "change_pct": 2.2
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 110280,
+          "fy27": 118100,
+          "change_pct": 7.1
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 1218659,
+          "fy27": 1270947,
+          "change_pct": 4.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 8502,
+          "fy27": 10094,
+          "change_pct": 18.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 49880,
+          "fy27": 54619,
+          "change_pct": 9.5
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 158125,
+          "fy27": 165150,
+          "change_pct": 4.4
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 183631,
+          "fy27": 196538,
+          "change_pct": 7
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 2104395,
+          "fy27": 1876293,
+          "change_pct": -10.8
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 1541754,
+          "fy27": 1542499,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 126351,
+          "fy27": 129510,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 231338,
+          "fy27": 232551,
+          "change_pct": 0.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 344139,
+          "fy27": 344139,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 185449,
+          "fy27": 161196,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Payment in Lieu of Taxes (PILOTS)",
+          "fy26": 684848,
+          "fy27": 802991,
+          "change_pct": 17.3
+        },
+        {
+          "category": "Other",
+          "description": "Disparity Grant",
+          "fy26": 8702079,
+          "fy27": 8014004,
+          "change_pct": -7.9
+        },
+        {
+          "category": "Other",
+          "description": "Teachers Retirement Supplemental Grants",
+          "fy26": 191000,
+          "fy27": 0,
+          "change_pct": -100
+        }
+      ]
+    },
+    {
+      "fips": "24041",
+      "name": "Talbot",
+      "fy26_total_usd": 39161791,
+      "fy27_total_usd": 40022424,
+      "by_category": {
+        "Education": {
+          "fy26": 29228039,
+          "fy27": 30310936
+        },
+        "Libraries": {
+          "fy26": 365149,
+          "fy27": 371712
+        },
+        "Community Colleges": {
+          "fy26": 2974998,
+          "fy27": 3074769
+        },
+        "Health": {
+          "fy26": 2185924,
+          "fy27": 1862392
+        },
+        "Transportation": {
+          "fy26": 3502747,
+          "fy27": 3513927
+        },
+        "Public Safety": {
+          "fy26": 904934,
+          "fy27": 888688
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 5820337,
+          "fy27": 5981008,
+          "change_pct": 2.8
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 7785538,
+          "fy27": 7468331,
+          "change_pct": -4.1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 2210749,
+          "fy27": 2232856,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 87000,
+          "fy27": 83000,
+          "change_pct": -4.6
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 1969022,
+          "fy27": 2306440,
+          "change_pct": 17.1
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 213102,
+          "fy27": 181851,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 2455536,
+          "fy27": 2418731,
+          "change_pct": -1.5
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 295602,
+          "fy27": 266474,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 2188,
+          "fy27": 2188,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 16489,
+          "fy27": 16489,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 4681848,
+          "fy27": 5072209,
+          "change_pct": 8.3
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1187625,
+          "fy27": 1379238,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 1590309,
+          "fy27": 1664329,
+          "change_pct": 4.7
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 45696,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 729643,
+          "fy27": 1062765,
+          "change_pct": 45.7
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 69331,
+          "fy27": 79818,
+          "change_pct": 15.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 41524,
+          "fy27": 68709,
+          "change_pct": 65.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 22500,
+          "fy27": 22500,
+          "change_pct": 0
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 141458,
+          "fy27": 146092,
+          "change_pct": 3.3
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 223691,
+          "fy27": 225620,
+          "change_pct": 0.9
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 2151681,
+          "fy27": 2268814,
+          "change_pct": 5.4
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 34415,
+          "fy27": 37047,
+          "change_pct": 7.6
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 90096,
+          "fy27": 85361,
+          "change_pct": -5.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 337626,
+          "fy27": 356524,
+          "change_pct": 5.6
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 361180,
+          "fy27": 327023,
+          "change_pct": -9.5
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 2185924,
+          "fy27": 1862392,
+          "change_pct": -14.8
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 3074901,
+          "fy27": 3076385,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 387846,
+          "fy27": 397542,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Transportation",
+          "description": "Paratransit Grants",
+          "fy26": 40000,
+          "fy27": 40000,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 393616,
+          "fy27": 399047,
+          "change_pct": 1.4
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 345563,
+          "fy27": 345563,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 165755,
+          "fy27": 144078,
+          "change_pct": -13.1
+        }
+      ]
+    },
+    {
+      "fips": "24043",
+      "name": "Washington",
+      "fy26_total_usd": 330156986,
+      "fy27_total_usd": 341772887,
+      "by_category": {
+        "Education": {
+          "fy26": 287485174,
+          "fy27": 299581578
+        },
+        "Libraries": {
+          "fy26": 2293728,
+          "fy27": 2356370
+        },
+        "Community Colleges": {
+          "fy26": 22811269,
+          "fy27": 22341993
+        },
+        "Health": {
+          "fy26": 4453062,
+          "fy27": 4401875
+        },
+        "Transportation": {
+          "fy26": 7589337,
+          "fy27": 7596871
+        },
+        "Public Safety": {
+          "fy26": 2767165,
+          "fy27": 2670541
+        },
+        "Other": {
+          "fy26": 2757251,
+          "fy27": 2823659
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 129580387,
+          "fy27": 133322482,
+          "change_pct": 2.9
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 65261716,
+          "fy27": 62588594,
+          "change_pct": -4.1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 9360342,
+          "fy27": 9453945,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 676000,
+          "fy27": 743000,
+          "change_pct": 9.9
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 18765509,
+          "fy27": 21939903,
+          "change_pct": 16.9
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 1065510,
+          "fy27": 909251,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 7414437,
+          "fy27": 7468550,
+          "change_pct": 0.7
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 821927,
+          "fy27": 740935,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 296461,
+          "fy27": 296461,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 4329,
+          "fy27": 4329,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 21371095,
+          "fy27": 22079936,
+          "change_pct": 3.3
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1583500,
+          "fy27": 1838984,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Guaranteed Tax Base",
+          "fy26": 5898260,
+          "fy27": 6579397,
+          "change_pct": 11.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 14360010,
+          "fy27": 17458068,
+          "change_pct": 21.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 758195,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 8013388,
+          "fy27": 10985080,
+          "change_pct": 37.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 1073353,
+          "fy27": 1315094,
+          "change_pct": 22.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Education Effort Index",
+          "fy26": 0,
+          "fy27": 276403,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 1079147,
+          "fy27": 1479939,
+          "change_pct": 37.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 97608,
+          "fy27": 97227,
+          "change_pct": -0.4
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 1667339,
+          "fy27": 1684182,
+          "change_pct": 1
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 626389,
+          "fy27": 672188,
+          "change_pct": 7.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 18404431,
+          "fy27": 17986437,
+          "change_pct": -2.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 137344,
+          "fy27": 129336,
+          "change_pct": -5.8
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 871998,
+          "fy27": 771719,
+          "change_pct": -11.5
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 1605384,
+          "fy27": 1655954,
+          "change_pct": 3.2
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 1792112,
+          "fy27": 1798547,
+          "change_pct": 0.4
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 4453062,
+          "fy27": 4401875,
+          "change_pct": -1.1
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 7431514,
+          "fy27": 7435102,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 157823,
+          "fy27": 161769,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 1472478,
+          "fy27": 1496905,
+          "change_pct": 1.7
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 369083,
+          "fy27": 369083,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 925604,
+          "fy27": 804553,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Other",
+          "description": "Disparity Grant",
+          "fy26": 2507251,
+          "fy27": 2823659,
+          "change_pct": 12.6
+        },
+        {
+          "category": "Other",
+          "description": "Other Direct Aid",
+          "fy26": 250000,
+          "fy27": 0,
+          "change_pct": -100
+        }
+      ]
+    },
+    {
+      "fips": "24045",
+      "name": "Wicomico",
+      "fy26_total_usd": 286913038,
+      "fy27_total_usd": 290367656,
+      "by_category": {
+        "Education": {
+          "fy26": 243338647,
+          "fy27": 250140343
+        },
+        "Libraries": {
+          "fy26": 1627104,
+          "fy27": 1628706
+        },
+        "Community Colleges": {
+          "fy26": 10848872,
+          "fy27": 11318073
+        },
+        "Health": {
+          "fy26": 5416478,
+          "fy27": 4692319
+        },
+        "Transportation": {
+          "fy26": 6230749,
+          "fy27": 6237501
+        },
+        "Public Safety": {
+          "fy26": 2463727,
+          "fy27": 2350057
+        },
+        "Other": {
+          "fy26": 16987461,
+          "fy27": 14000657
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 99624790,
+          "fy27": 101275991,
+          "change_pct": 1.7
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 59057404,
+          "fy27": 55892738,
+          "change_pct": -5.4
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 7291546,
+          "fy27": 7364461,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 198000,
+          "fy27": 183000,
+          "change_pct": -7.6
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 13670266,
+          "fy27": 16070857,
+          "change_pct": 17.6
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 8524,
+          "fy27": 7274,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 17844348,
+          "fy27": 17349841,
+          "change_pct": -2.8
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 259585,
+          "fy27": 234006,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 315271,
+          "fy27": 315271,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 16669818,
+          "fy27": 17353449,
+          "change_pct": 4.1
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1187625,
+          "fy27": 1379238,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Guaranteed Tax Base",
+          "fy26": 7070267,
+          "fy27": 7327177,
+          "change_pct": 3.6
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 9226532,
+          "fy27": 11516733,
+          "change_pct": 24.8
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 877470,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 8720075,
+          "fy27": 11991266,
+          "change_pct": 37.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 751266,
+          "fy27": 896543,
+          "change_pct": 19.3
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 452821,
+          "fy27": 870243,
+          "change_pct": 92.2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 109039,
+          "fy27": 108255,
+          "change_pct": -0.7
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 1299704,
+          "fy27": 1333113,
+          "change_pct": 2.6
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 327400,
+          "fy27": 295593,
+          "change_pct": -9.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 8228580,
+          "fy27": 8535903,
+          "change_pct": 3.7
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 57409,
+          "fy27": 67796,
+          "change_pct": 18.1
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 336796,
+          "fy27": 366829,
+          "change_pct": 8.9
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 1067686,
+          "fy27": 1109176,
+          "change_pct": 3.9
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 1158401,
+          "fy27": 1238369,
+          "change_pct": 6.9
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 5416478,
+          "fy27": 4692319,
+          "change_pct": -13.4
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 6078017,
+          "fy27": 6080951,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 152732,
+          "fy27": 156550,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 1139999,
+          "fy27": 1144161,
+          "change_pct": 0.4
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 422741,
+          "fy27": 422741,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 900987,
+          "fy27": 783155,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Other",
+          "description": "Disparity Grant",
+          "fy26": 16203542,
+          "fy27": 14000657,
+          "change_pct": -13.6
+        },
+        {
+          "category": "Other",
+          "description": "Teachers Retirement Supplemental Grants",
+          "fy26": 783919,
+          "fy27": 0,
+          "change_pct": -100
+        }
+      ]
+    },
+    {
+      "fips": "24047",
+      "name": "Worcester",
+      "fy26_total_usd": 61283651,
+      "fy27_total_usd": 62467006,
+      "by_category": {
+        "Education": {
+          "fy26": 41295700,
+          "fy27": 43283825
+        },
+        "Libraries": {
+          "fy26": 598718,
+          "fy27": 623979
+        },
+        "Community Colleges": {
+          "fy26": 3865591,
+          "fy27": 3901698
+        },
+        "Health": {
+          "fy26": 4352932,
+          "fy27": 3509792
+        },
+        "Transportation": {
+          "fy26": 4353981,
+          "fy27": 4359377
+        },
+        "Public Safety": {
+          "fy26": 1456853,
+          "fy27": 1376860
+        },
+        "Shared Taxes": {
+          "fy26": 5359876,
+          "fy27": 5411475
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 8864571,
+          "fy27": 9115099,
+          "change_pct": 2.8
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 10627478,
+          "fy27": 10567159,
+          "change_pct": -0.6
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 4090393,
+          "fy27": 4131297,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 120000,
+          "fy27": 139000,
+          "change_pct": 15.8
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 2972538,
+          "fy27": 3522880,
+          "change_pct": 18.5
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 8524,
+          "fy27": 7274,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 741362,
+          "fy27": 680611,
+          "change_pct": -8.2
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 154125,
+          "fy27": 138937,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 1902,
+          "fy27": 1902,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 8822237,
+          "fy27": 9188738,
+          "change_pct": 4.2
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 1187625,
+          "fy27": 1379238,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 2125184,
+          "fy27": 2220878,
+          "change_pct": 4.5
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 35080,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 1318996,
+          "fy27": 1943944,
+          "change_pct": 47.4
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 133858,
+          "fy27": 139389,
+          "change_pct": 4.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 65327,
+          "fy27": 80979,
+          "change_pct": 24
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 22500,
+          "fy27": 22500,
+          "change_pct": 0
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 202600,
+          "fy27": 207567,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 396118,
+          "fy27": 416412,
+          "change_pct": 5.1
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Community College Formula",
+          "fy26": 2925337,
+          "fy27": 2936903,
+          "change_pct": 0.4
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Grants for ESOL Programs",
+          "fy26": 20409,
+          "fy27": 23326,
+          "change_pct": 14.3
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Optional Retirement",
+          "fy26": 119734,
+          "fy27": 126213,
+          "change_pct": 5.4
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Small College Grants",
+          "fy26": 379572,
+          "fy27": 381628,
+          "change_pct": 0.5
+        },
+        {
+          "category": "Community Colleges",
+          "description": "Retirement - Community College",
+          "fy26": 420539,
+          "fy27": 433628,
+          "change_pct": 3.1
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 4352932,
+          "fy27": 3509792,
+          "change_pct": -19.4
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 4107448,
+          "fy27": 4109431,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 136533,
+          "fy27": 139946,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Transportation",
+          "description": "Paratransit Grants",
+          "fy26": 110000,
+          "fy27": 110000,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid",
+          "fy26": 753954,
+          "fy27": 710878,
+          "change_pct": -5.7
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 420622,
+          "fy27": 420622,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 282277,
+          "fy27": 245360,
+          "change_pct": -13.1
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Gaming Impact Grants",
+          "fy26": 5359876,
+          "fy27": 5411475,
+          "change_pct": 1
+        }
+      ]
+    },
+    {
+      "fips": "24510",
+      "name": "Baltimore City",
+      "fy26_total_usd": 1804715406,
+      "fy27_total_usd": 1889668678,
+      "by_category": {
+        "Education": {
+          "fy26": 1366328670,
+          "fy27": 1441677976
+        },
+        "Libraries": {
+          "fy26": 12660985,
+          "fy27": 12862400
+        },
+        "Health": {
+          "fy26": 10405080,
+          "fy27": 13070507
+        },
+        "Transportation": {
+          "fy26": 267235468,
+          "fy27": 267374477
+        },
+        "Public Safety": {
+          "fy26": 36272682,
+          "fy27": 39762289
+        },
+        "Shared Taxes": {
+          "fy26": 27370477,
+          "fy27": 27624239
+        },
+        "Other": {
+          "fy26": 84442044,
+          "fy27": 87296790
+        }
+      },
+      "line_items": [
+        {
+          "category": "Education",
+          "description": "Foundation Aid",
+          "fy26": 444499731,
+          "fy27": 463105525,
+          "change_pct": 4.2
+        },
+        {
+          "category": "Education",
+          "description": "Comparable Wage Index",
+          "fy26": 13788381,
+          "fy27": 14059884,
+          "change_pct": 2
+        },
+        {
+          "category": "Education",
+          "description": "Compensatory Aid",
+          "fy26": 337160964,
+          "fy27": 330128457,
+          "change_pct": -2.1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Regular",
+          "fy26": 23208008,
+          "fy27": 23448959,
+          "change_pct": 1
+        },
+        {
+          "category": "Education",
+          "description": "Student Transportation - Special Education",
+          "fy26": 2984000,
+          "fy27": 3289000,
+          "change_pct": 10.2
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Formula",
+          "fy26": 79753115,
+          "fy27": 93977223,
+          "change_pct": 17.8
+        },
+        {
+          "category": "Education",
+          "description": "Special Education - Nonpublic Placements",
+          "fy26": 8415370,
+          "fy27": 7181238,
+          "change_pct": -14.7
+        },
+        {
+          "category": "Education",
+          "description": "English Language Learners Grant",
+          "fy26": 70787810,
+          "fy27": 69500484,
+          "change_pct": -1.8
+        },
+        {
+          "category": "Education",
+          "description": "Teacher Development Grants",
+          "fy26": 4000,
+          "fy27": 4000,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Food Service",
+          "fy26": 650143,
+          "fy27": 586079,
+          "change_pct": -9.9
+        },
+        {
+          "category": "Education",
+          "description": "Innovative Programs",
+          "fy26": 355886,
+          "fy27": 355886,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Out-of-County Placements",
+          "fy26": 725,
+          "fy27": 725,
+          "change_pct": 0
+        },
+        {
+          "category": "Education",
+          "description": "Retirement - Teachers",
+          "fy26": 81908741,
+          "fy27": 88077657,
+          "change_pct": 7.5
+        },
+        {
+          "category": "Education",
+          "description": "Judy Hoyer Centers",
+          "fy26": 5542251,
+          "fy27": 6436444,
+          "change_pct": 16.1
+        },
+        {
+          "category": "Education",
+          "description": "Guaranteed Tax Base",
+          "fy26": 39636184,
+          "fy27": 41288225,
+          "change_pct": 4.2
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Concentration of Poverty",
+          "fy26": 166215181,
+          "fy27": 195047198,
+          "change_pct": 17.3
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transitional Instruction",
+          "fy26": 4045964,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Transition Grants",
+          "fy26": 12134981,
+          "fy27": 9334601,
+          "change_pct": -23.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Full Day PreKindergarten",
+          "fy26": 34099941,
+          "fy27": 49450049,
+          "change_pct": 45
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - College and Career Readiness",
+          "fy26": 2299665,
+          "fy27": 1583858,
+          "change_pct": -31.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Education Effort Index",
+          "fy26": 37669472,
+          "fy27": 42615435,
+          "change_pct": 13.1
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Career Ladder",
+          "fy26": 1067046,
+          "fy27": 2105427,
+          "change_pct": 97.3
+        },
+        {
+          "category": "Education",
+          "description": "Blueprint - Coordinators",
+          "fy26": 101111,
+          "fy27": 101622,
+          "change_pct": 0.5
+        },
+        {
+          "category": "Libraries",
+          "description": "Library Formula",
+          "fy26": 9811789,
+          "fy27": 9961916,
+          "change_pct": 1.5
+        },
+        {
+          "category": "Libraries",
+          "description": "Retirement - Libraries",
+          "fy26": 2849196,
+          "fy27": 2900484,
+          "change_pct": 1.8
+        },
+        {
+          "category": "Health",
+          "description": "Local Health Formula",
+          "fy26": 10405080,
+          "fy27": 13070507,
+          "change_pct": 25.6
+        },
+        {
+          "category": "Transportation",
+          "description": "Highway User Revenue",
+          "fy26": 266827720,
+          "fy27": 266956535,
+          "change_pct": 0
+        },
+        {
+          "category": "Transportation",
+          "description": "Elderly & Disabled Transportation Grants",
+          "fy26": 407748,
+          "fy27": 417942,
+          "change_pct": 2.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Fire and Rescue Aid",
+          "fy26": 1443442,
+          "fy27": 1443442,
+          "change_pct": 0
+        },
+        {
+          "category": "Public Safety",
+          "description": "Vehicle Theft Prevention",
+          "fy26": 178000,
+          "fy27": 174703,
+          "change_pct": -1.9
+        },
+        {
+          "category": "Public Safety",
+          "description": "Other Public Safety Aid",
+          "fy26": 18505679,
+          "fy27": 22855679,
+          "change_pct": 23.5
+        },
+        {
+          "category": "Public Safety",
+          "description": "Police Aid Enhancement",
+          "fy26": 16145561,
+          "fy27": 15288465,
+          "change_pct": -5.3
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Payment in Lieu of Taxes (PILOTS)",
+          "fy26": 1699074,
+          "fy27": 1699074,
+          "change_pct": 0
+        },
+        {
+          "category": "Shared Taxes",
+          "description": "Gaming Impact Grants",
+          "fy26": 25671403,
+          "fy27": 25925165,
+          "change_pct": 1
+        },
+        {
+          "category": "Other",
+          "description": "Disparity Grant",
+          "fy26": 79051790,
+          "fy27": 79051790,
+          "change_pct": 0
+        },
+        {
+          "category": "Other",
+          "description": "Teachers Retirement Supplemental Grants",
+          "fy26": 5023798,
+          "fy27": 0,
+          "change_pct": -100
+        },
+        {
+          "category": "Other",
+          "description": "Other Direct Aid",
+          "fy26": 366456,
+          "fy27": 8245000,
+          "change_pct": 2149.9
+        }
+      ]
+    }
+  ]
+}

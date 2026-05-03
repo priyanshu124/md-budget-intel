@@ -1,0 +1,1801 @@
+{
+  "_meta": {
+    "built_at": "2026-04-21T23:04:56.240Z",
+    "counties": 24,
+    "sources": [
+      {
+        "component": "demographics",
+        "publisher": "U.S. Census Bureau — American Community Survey 5-Year Estimates",
+        "citation": "U.S. Census Bureau, ACS 5-Year 2020-2024, Tables B01001, B01003, B17001, B19013.",
+        "endpoint": "https://api.census.gov/data/2024/acs/acs5?get=B01003_001E%2CB19013_001E%2CB17001_001E%2CB17001_002E%2CB01001_001E%2CB01001_003E%2CB01001_004E%2CB01001_005E%2CB01001_006E%2CB01001_027E%2CB01001_028E%2CB01001_029E%2CB01001_030E%2CB01001_020E%2CB01001_021E%2CB01001_022E%2CB01001_023E%2CB01001_024E%2CB01001_025E%2CB01001_044E%2CB01001_045E%2CB01001_046E%2CB01001_047E%2CB01001_048E%2CB01001_049E&for=county%3A*&in=state%3A24",
+        "vintage": "ACS 5-Year 2020-2024",
+        "audit_url_template": "https://data.census.gov/table?q=B19013&g=0500000US{fips}"
+      },
+      {
+        "component": "outcomes",
+        "datasets": [
+          {
+            "id": "5imf-t65z",
+            "name": "SHIP Life Expectancy 2010-2021",
+            "url": "https://opendata.maryland.gov/d/5imf-t65z"
+          },
+          {
+            "id": "c6t5-8ixv",
+            "name": "SHIP HS Graduation Rate 2010-2022",
+            "url": "https://opendata.maryland.gov/d/c6t5-8ixv"
+          },
+          {
+            "id": "eekg-2ryj",
+            "name": "SHIP Drug-Induced Death Rate 2009-2021",
+            "url": "https://opendata.maryland.gov/d/eekg-2ryj"
+          },
+          {
+            "id": "qwwu-cu4u",
+            "name": "SHIP Child Maltreatment Rate 2010-2022",
+            "url": "https://opendata.maryland.gov/d/qwwu-cu4u"
+          },
+          {
+            "id": "sy7q-56ei",
+            "name": "SHIP Cancer Mortality Rate 2009-2021",
+            "url": "https://opendata.maryland.gov/d/sy7q-56ei"
+          },
+          {
+            "id": "kv5a-92e7",
+            "name": "SHIP Affordable Housing 2010-2020",
+            "url": "https://opendata.maryland.gov/d/kv5a-92e7"
+          },
+          {
+            "id": "jwfa-fdxs",
+            "name": "Violent & Property Crime by County (last updated 2022, covers 1975-2020)",
+            "url": "https://opendata.maryland.gov/d/jwfa-fdxs"
+          },
+          {
+            "id": "63pe-mygy",
+            "name": "Choose MD — Education Compare Counties (last updated Dec 2019, treat as historical)",
+            "url": "https://opendata.maryland.gov/d/63pe-mygy"
+          }
+        ]
+      },
+      {
+        "component": "state_aid",
+        "publisher": "Maryland Department of Legislative Services",
+        "endpoint": "https://dls.maryland.gov/budget/state-aid-download/?YearSelection1=2026&YearSelection2=2027&County=0",
+        "publication": "Overview of State Aid to Local Governments Fiscal 2027 Allowance",
+        "publication_url": "https://dls.maryland.gov/pubs/prod/InterGovMatters/SteAidLocGov/Overview-of-State-Aid-to-Local-Governments-Fiscal-2027-Allowance.pdf"
+      },
+      {
+        "component": "housing",
+        "publisher": "U.S. Department of Housing and Urban Development (HUD), Office of Policy Development and Research",
+        "dataset": "ACS 5-Year CHAS Estimate Data by County",
+        "vintage": "2016-2020 ACS 5-year (HUD's current CHAS release; refreshes ~every 3 years)",
+        "endpoint": "https://services.arcgis.com/VTyQ9soqVukalItT/arcgis/rest/services/ACS_5YR_CHAS_Estimate_Data_by_County/FeatureServer/4/query",
+        "landing_page": "https://www.huduser.gov/portal/datasets/cp.html",
+        "data_dictionary": "https://hud.maps.arcgis.com/sharing/rest/content/items/86a2a7d4dad64929982b8582c3edd104/data"
+      }
+    ],
+    "fields_with_no_live_source": [
+      {
+        "field": "dda_waitlist_count",
+        "reason": "Only in DDA Ch.639 PDF — no API"
+      },
+      {
+        "field": "bha_treatment_capacity",
+        "reason": "HTML-only dashboard on BHA portal"
+      },
+      {
+        "field": "dhs_snap_participation_pct",
+        "reason": "Monthly PDF caseload reports"
+      },
+      {
+        "field": "mdot_hur_per_capita_usd",
+        "reason": "Only in MDOT CTP Appendix B PDF"
+      },
+      {
+        "field": "msde_proficiency_pct",
+        "reason": "Report Card is JS-rendered; no API"
+      }
+    ]
+  },
+  "data": [
+    {
+      "fips": "24001",
+      "name": "Allegany",
+      "population": 67452,
+      "median_hh_income": 59603,
+      "poverty_rate_pct": 16.85,
+      "mdh_life_exp_years": 74.2,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 90.8,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 50.2952,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 12.0938,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 155.376,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 98.2,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 331.4,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 13771,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 18.3,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 163767955,
+      "state_aid_fy27_usd": 174117055,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 124991466,
+          "fy27": 130151644
+        },
+        "Libraries": {
+          "fy26": 1139601,
+          "fy27": 1129554
+        },
+        "Community Colleges": {
+          "fy26": 13495817,
+          "fy27": 13816756
+        },
+        "Health": {
+          "fy26": 5257545,
+          "fy27": 4659494
+        },
+        "Transportation": {
+          "fy26": 5134939,
+          "fy27": 5141152
+        },
+        "Public Safety": {
+          "fy26": 1527091,
+          "fy27": 1490997
+        },
+        "Shared Taxes": {
+          "fy26": 4106938,
+          "fy27": 4115485
+        },
+        "Other": {
+          "fy26": 8114558,
+          "fy27": 13611973
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 2581,
+      "dhcd_renter_cost_burden_pct": 24.06,
+      "dhcd_renter_severe_burden_pct": 11.42,
+      "dhcd_cost_burdened_renters_count": 6585,
+      "dhcd_total_renter_households": 9305
+    },
+    {
+      "fips": "24003",
+      "name": "Anne Arundel",
+      "population": 598166,
+      "median_hh_income": 124911,
+      "poverty_rate_pct": 5.64,
+      "mdh_life_exp_years": 79.1,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 88.6,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 45.1252,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 2.99417,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 145.267,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 34.2,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 312.2,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 13648,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 40.9,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 808001020,
+      "state_aid_fy27_usd": 832700836,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 682876662,
+          "fy27": 705645509
+        },
+        "Libraries": {
+          "fy26": 5905623,
+          "fy27": 6197863
+        },
+        "Community Colleges": {
+          "fy26": 52357528,
+          "fy27": 54127089
+        },
+        "Health": {
+          "fy26": 9454801,
+          "fy27": 9613817
+        },
+        "Transportation": {
+          "fy26": 14990475,
+          "fy27": 15004135
+        },
+        "Public Safety": {
+          "fy26": 13686115,
+          "fy27": 13383552
+        },
+        "Shared Taxes": {
+          "fy26": 28679816,
+          "fy27": 28728871
+        },
+        "Other": {
+          "fy26": 50000,
+          "fy27": 0
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1392,
+      "dhcd_renter_cost_burden_pct": 25.88,
+      "dhcd_renter_severe_burden_pct": 10.53,
+      "dhcd_cost_burdened_renters_count": 55155,
+      "dhcd_total_renter_households": 57830
+    },
+    {
+      "fips": "24005",
+      "name": "Baltimore Co.",
+      "population": 850796,
+      "median_hh_income": 91768,
+      "poverty_rate_pct": 9.78,
+      "mdh_life_exp_years": 77.2,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 84.5,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 50.4441,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 3.80698,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 151.165,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 69.9,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 462.5,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 13880,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 38.6,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 1285723570,
+      "state_aid_fy27_usd": 1323952707,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 1146269083,
+          "fy27": 1181826796
+        },
+        "Libraries": {
+          "fy26": 11914426,
+          "fy27": 12183009
+        },
+        "Community Colleges": {
+          "fy26": 82127792,
+          "fy27": 84720081
+        },
+        "Health": {
+          "fy26": 6818590,
+          "fy27": 8627258
+        },
+        "Transportation": {
+          "fy26": 15669278,
+          "fy27": 15687270
+        },
+        "Public Safety": {
+          "fy26": 21374401,
+          "fy27": 20658293
+        },
+        "Other": {
+          "fy26": 1550000,
+          "fy27": 250000
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1556,
+      "dhcd_renter_cost_burden_pct": 28.6,
+      "dhcd_renter_severe_burden_pct": 13.37,
+      "dhcd_cost_burdened_renters_count": 90175,
+      "dhcd_total_renter_households": 114390
+    },
+    {
+      "fips": "24009",
+      "name": "Calvert",
+      "population": 94313,
+      "median_hh_income": 133922,
+      "poverty_rate_pct": 3.87,
+      "mdh_life_exp_years": 78.6,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 95,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 28.0631,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 3.5664,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 164.305,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 63,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 151.2,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 14062,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 31.1,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 147034741,
+      "state_aid_fy27_usd": 151927967,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 128679235,
+          "fy27": 134105533
+        },
+        "Libraries": {
+          "fy26": 1418524,
+          "fy27": 1439239
+        },
+        "Community Colleges": {
+          "fy26": 5617671,
+          "fy27": 5694447
+        },
+        "Health": {
+          "fy26": 3425549,
+          "fy27": 2798761
+        },
+        "Transportation": {
+          "fy26": 3449264,
+          "fy27": 3454239
+        },
+        "Public Safety": {
+          "fy26": 1294498,
+          "fy27": 1285748
+        },
+        "Shared Taxes": {
+          "fy26": 3150000,
+          "fy27": 3150000
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1611,
+      "dhcd_renter_cost_burden_pct": 23.97,
+      "dhcd_renter_severe_burden_pct": 8.6,
+      "dhcd_cost_burdened_renters_count": 7805,
+      "dhcd_total_renter_households": 5325
+    },
+    {
+      "fips": "24011",
+      "name": "Caroline",
+      "population": 33669,
+      "median_hh_income": 68457,
+      "poverty_rate_pct": 12.16,
+      "mdh_life_exp_years": 75.7,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 85.2,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 29.3,
+      "bha_drug_death_per_100k__vintage": "2013-2015",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 6.98413,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 164.333,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 82,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 189,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 13268,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 16.9,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 105183193,
+      "state_aid_fy27_usd": 110064488,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 90277650,
+          "fy27": 95785698
+        },
+        "Libraries": {
+          "fy26": 537157,
+          "fy27": 574069
+        },
+        "Community Colleges": {
+          "fy26": 3617728,
+          "fy27": 3397017
+        },
+        "Health": {
+          "fy26": 2186117,
+          "fy27": 2043191
+        },
+        "Transportation": {
+          "fy26": 2702901,
+          "fy27": 2704206
+        },
+        "Public Safety": {
+          "fy26": 845382,
+          "fy27": 824053
+        },
+        "Other": {
+          "fy26": 5016258,
+          "fy27": 4736254
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 3269,
+      "dhcd_renter_cost_burden_pct": 31.54,
+      "dhcd_renter_severe_burden_pct": 11.84,
+      "dhcd_cost_burdened_renters_count": 3835,
+      "dhcd_total_renter_households": 3565
+    },
+    {
+      "fips": "24013",
+      "name": "Carroll",
+      "population": 175321,
+      "median_hh_income": 118211,
+      "poverty_rate_pct": 5.21,
+      "mdh_life_exp_years": 78.5,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 93.1,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 37.8622,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 2.9703,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 154.667,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 41.3,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 111.3,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 13753,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 35.6,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 256262583,
+      "state_aid_fy27_usd": 264722771,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 221300219,
+          "fy27": 229492285
+        },
+        "Libraries": {
+          "fy26": 2517311,
+          "fy27": 2586940
+        },
+        "Community Colleges": {
+          "fy26": 16642938,
+          "fy27": 17133476
+        },
+        "Health": {
+          "fy26": 4670593,
+          "fy27": 4452943
+        },
+        "Transportation": {
+          "fy26": 8343239,
+          "fy27": 8351249
+        },
+        "Public Safety": {
+          "fy26": 2788283,
+          "fy27": 2705878
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1510,
+      "dhcd_renter_cost_burden_pct": 22.05,
+      "dhcd_renter_severe_burden_pct": 8.38,
+      "dhcd_cost_burdened_renters_count": 13505,
+      "dhcd_total_renter_households": 11530
+    },
+    {
+      "fips": "24015",
+      "name": "Cecil",
+      "population": 104960,
+      "median_hh_income": 92007,
+      "poverty_rate_pct": 10.85,
+      "mdh_life_exp_years": 74.2,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 89.4,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 81.2353,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 9.82429,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 164.341,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 84.7,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 264.8,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 13641,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 22.8,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 192682408,
+      "state_aid_fy27_usd": 195706682,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 165754561,
+          "fy27": 168708500
+        },
+        "Libraries": {
+          "fy26": 1651433,
+          "fy27": 1653680
+        },
+        "Community Colleges": {
+          "fy26": 10572706,
+          "fy27": 10935920
+        },
+        "Health": {
+          "fy26": 3399458,
+          "fy27": 3173503
+        },
+        "Transportation": {
+          "fy26": 4498055,
+          "fy27": 4503755
+        },
+        "Public Safety": {
+          "fy26": 2018367,
+          "fy27": 1943496
+        },
+        "Shared Taxes": {
+          "fy26": 4787828,
+          "fy27": 4787828
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1865,
+      "dhcd_renter_cost_burden_pct": 26.56,
+      "dhcd_renter_severe_burden_pct": 10.14,
+      "dhcd_cost_burdened_renters_count": 9905,
+      "dhcd_total_renter_households": 10100
+    },
+    {
+      "fips": "24017",
+      "name": "Charles",
+      "population": 170527,
+      "median_hh_income": 122816,
+      "poverty_rate_pct": 6.87,
+      "mdh_life_exp_years": 77.2,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 92.6,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 26.7574,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 2.03289,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 145.931,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 41.7,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 328.1,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 13857,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 28.9,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 329910679,
+      "state_aid_fy27_usd": 345159385,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 303369212,
+          "fy27": 318516860
+        },
+        "Libraries": {
+          "fy26": 2278875,
+          "fy27": 2340879
+        },
+        "Community Colleges": {
+          "fy26": 10971618,
+          "fy27": 11687672
+        },
+        "Health": {
+          "fy26": 5299828,
+          "fy27": 4722399
+        },
+        "Transportation": {
+          "fy26": 5061625,
+          "fy27": 5067700
+        },
+        "Public Safety": {
+          "fy26": 2929521,
+          "fy27": 2823875
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 2024,
+      "dhcd_renter_cost_burden_pct": 27.17,
+      "dhcd_renter_severe_burden_pct": 11.75,
+      "dhcd_cost_burdened_renters_count": 15595,
+      "dhcd_total_renter_households": 14015
+    },
+    {
+      "fips": "24019",
+      "name": "Dorchester",
+      "population": 32754,
+      "median_hh_income": 61839,
+      "poverty_rate_pct": 17.14,
+      "mdh_life_exp_years": 75,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 81.6,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 44.4732,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 10.7303,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 141.64,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 70.6,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 652.1,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 14700,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 20.8,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 83445596,
+      "state_aid_fy27_usd": 85375198,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 67474810,
+          "fy27": 70065648
+        },
+        "Libraries": {
+          "fy26": 471422,
+          "fy27": 470075
+        },
+        "Community Colleges": {
+          "fy26": 2381698,
+          "fy27": 2509786
+        },
+        "Health": {
+          "fy26": 3005716,
+          "fy27": 2525237
+        },
+        "Transportation": {
+          "fy26": 3313229,
+          "fy27": 3318039
+        },
+        "Public Safety": {
+          "fy26": 938762,
+          "fy27": 911593
+        },
+        "Shared Taxes": {
+          "fy26": 714690,
+          "fy27": 750947
+        },
+        "Other": {
+          "fy26": 5145269,
+          "fy27": 4823873
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 2607,
+      "dhcd_renter_cost_burden_pct": 31.6,
+      "dhcd_renter_severe_burden_pct": 13.29,
+      "dhcd_cost_burdened_renters_count": 4245,
+      "dhcd_total_renter_households": 4610
+    },
+    {
+      "fips": "24021",
+      "name": "Frederick",
+      "population": 287048,
+      "median_hh_income": 122002,
+      "poverty_rate_pct": 6,
+      "mdh_life_exp_years": 80.2,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 93.1,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 25.4068,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 4.2007,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 127.29,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 53.4,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 171.2,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 12682,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 40.6,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 503112230,
+      "state_aid_fy27_usd": 518044557,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 449942006,
+          "fy27": 464177313
+        },
+        "Libraries": {
+          "fy26": 3611002,
+          "fy27": 3583033
+        },
+        "Community Colleges": {
+          "fy26": 26638142,
+          "fy27": 27503098
+        },
+        "Health": {
+          "fy26": 5153997,
+          "fy27": 5059623
+        },
+        "Transportation": {
+          "fy26": 13194721,
+          "fy27": 13205289
+        },
+        "Public Safety": {
+          "fy26": 4572362,
+          "fy27": 4466201
+        },
+        "Other": {
+          "fy26": 0,
+          "fy27": 50000
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1805,
+      "dhcd_renter_cost_burden_pct": 25.15,
+      "dhcd_renter_severe_burden_pct": 10.39,
+      "dhcd_cost_burdened_renters_count": 23720,
+      "dhcd_total_renter_households": 23705
+    },
+    {
+      "fips": "24023",
+      "name": "Garrett",
+      "population": 28615,
+      "median_hh_income": 67688,
+      "poverty_rate_pct": 11.25,
+      "mdh_life_exp_years": 76.6,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 94,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 14.3,
+      "bha_drug_death_per_100k__vintage": "2013-2015",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 14.6369,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 117.723,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 48.1,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 222.2,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 14949,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 20.1,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 48993191,
+      "state_aid_fy27_usd": 46949961,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 31166146,
+          "fy27": 29547023
+        },
+        "Libraries": {
+          "fy26": 304209,
+          "fy27": 283516
+        },
+        "Community Colleges": {
+          "fy26": 6832386,
+          "fy27": 6972348
+        },
+        "Health": {
+          "fy26": 2953264,
+          "fy27": 2503133
+        },
+        "Transportation": {
+          "fy26": 3156992,
+          "fy27": 3161671
+        },
+        "Public Safety": {
+          "fy26": 580062,
+          "fy27": 572114
+        },
+        "Shared Taxes": {
+          "fy26": 1749524,
+          "fy27": 1778885
+        },
+        "Other": {
+          "fy26": 2250608,
+          "fy27": 2131271
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1641,
+      "dhcd_renter_cost_burden_pct": 22.6,
+      "dhcd_renter_severe_burden_pct": 9.85,
+      "dhcd_cost_burdened_renters_count": 2880,
+      "dhcd_total_renter_households": 3455
+    },
+    {
+      "fips": "24025",
+      "name": "Harford",
+      "population": 263757,
+      "median_hh_income": 112265,
+      "poverty_rate_pct": 7.14,
+      "mdh_life_exp_years": 78.2,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 88.7,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 40.4113,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 7.33151,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 152.392,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 64.8,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 160.7,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 13005,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 35.8,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 418925098,
+      "state_aid_fy27_usd": 434300195,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 373203769,
+          "fy27": 388415728
+        },
+        "Libraries": {
+          "fy26": 4019564,
+          "fy27": 3946583
+        },
+        "Community Colleges": {
+          "fy26": 22574086,
+          "fy27": 23065495
+        },
+        "Health": {
+          "fy26": 6001605,
+          "fy27": 5847246
+        },
+        "Transportation": {
+          "fy26": 8507222,
+          "fy27": 8515823
+        },
+        "Public Safety": {
+          "fy26": 4618852,
+          "fy27": 4509320
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1647,
+      "dhcd_renter_cost_burden_pct": 22.68,
+      "dhcd_renter_severe_burden_pct": 10.36,
+      "dhcd_cost_burdened_renters_count": 21565,
+      "dhcd_total_renter_households": 20960
+    },
+    {
+      "fips": "24027",
+      "name": "Howard",
+      "population": 336328,
+      "median_hh_income": 149763,
+      "poverty_rate_pct": 5.23,
+      "mdh_life_exp_years": 82.8,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 94.6,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 11.1315,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 2.56059,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 109.745,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 41.2,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 120.7,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 15449,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 61.4,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 535073252,
+      "state_aid_fy27_usd": 553634848,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 470983522,
+          "fy27": 489392385
+        },
+        "Libraries": {
+          "fy26": 4287527,
+          "fy27": 4361844
+        },
+        "Community Colleges": {
+          "fy26": 40023658,
+          "fy27": 40824803
+        },
+        "Health": {
+          "fy26": 6282731,
+          "fy27": 5606590
+        },
+        "Transportation": {
+          "fy26": 6844375,
+          "fy27": 6851750
+        },
+        "Public Safety": {
+          "fy26": 6562153,
+          "fy27": 6508190
+        },
+        "Shared Taxes": {
+          "fy26": 89286,
+          "fy27": 89286
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1646,
+      "dhcd_renter_cost_burden_pct": 23.68,
+      "dhcd_renter_severe_burden_pct": 10.67,
+      "dhcd_cost_burdened_renters_count": 27575,
+      "dhcd_total_renter_households": 33625
+    },
+    {
+      "fips": "24029",
+      "name": "Kent",
+      "population": 19346,
+      "median_hh_income": 80147,
+      "poverty_rate_pct": 9.66,
+      "mdh_life_exp_years": 76.4,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 92.7,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 26,
+      "bha_drug_death_per_100k__vintage": "2013-2015",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 6.33545,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 128.721,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 59.9,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 134.9,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 14814,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 34.2,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 21253370,
+      "state_aid_fy27_usd": 21798253,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 15223064,
+          "fy27": 16115848
+        },
+        "Libraries": {
+          "fy26": 224951,
+          "fy27": 262388
+        },
+        "Community Colleges": {
+          "fy26": 1031094,
+          "fy27": 1062220
+        },
+        "Health": {
+          "fy26": 2619532,
+          "fy27": 2204406
+        },
+        "Transportation": {
+          "fy26": 1535962,
+          "fy27": 1536703
+        },
+        "Public Safety": {
+          "fy26": 618767,
+          "fy27": 616688
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1127,
+      "dhcd_renter_cost_burden_pct": 33.41,
+      "dhcd_renter_severe_burden_pct": 12.81,
+      "dhcd_cost_burdened_renters_count": 2765,
+      "dhcd_total_renter_households": 2570
+    },
+    {
+      "fips": "24031",
+      "name": "Montgomery",
+      "population": 1065949,
+      "median_hh_income": 132450,
+      "poverty_rate_pct": 7.45,
+      "mdh_life_exp_years": 83.5,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 90.3,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 14.2249,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 2.61174,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 104.453,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 37.3,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 166.7,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 15829,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 59,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 1422984921,
+      "state_aid_fy27_usd": 1440151678,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 1244481691,
+          "fy27": 1260913503
+        },
+        "Libraries": {
+          "fy26": 5978693,
+          "fy27": 6154283
+        },
+        "Community Colleges": {
+          "fy26": 90699033,
+          "fy27": 93401246
+        },
+        "Health": {
+          "fy26": 5065320,
+          "fy27": 6304474
+        },
+        "Transportation": {
+          "fy26": 54731217,
+          "fy27": 51441947
+        },
+        "Public Safety": {
+          "fy26": 21928967,
+          "fy27": 21836225
+        },
+        "Other": {
+          "fy26": 100000,
+          "fy27": 100000
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1351,
+      "dhcd_renter_cost_burden_pct": 30.05,
+      "dhcd_renter_severe_burden_pct": 13.81,
+      "dhcd_cost_burdened_renters_count": 112035,
+      "dhcd_total_renter_households": 134070
+    },
+    {
+      "fips": "24033",
+      "name": "Prince George's",
+      "population": 959754,
+      "median_hh_income": 101798,
+      "poverty_rate_pct": 10.84,
+      "mdh_life_exp_years": 78.4,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 76.6,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 20.3411,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 3.96396,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 133.684,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 62.8,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 346.9,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 14850,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 32.7,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 2105179101,
+      "state_aid_fy27_usd": 2210680513,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 1855257806,
+          "fy27": 1959325713
+        },
+        "Libraries": {
+          "fy26": 11890245,
+          "fy27": 12317473
+        },
+        "Community Colleges": {
+          "fy26": 59662220,
+          "fy27": 61547550
+        },
+        "Health": {
+          "fy26": 8321371,
+          "fy27": 10038736
+        },
+        "Transportation": {
+          "fy26": 28941733,
+          "fy27": 25651617
+        },
+        "Public Safety": {
+          "fy26": 30069193,
+          "fy27": 29354209
+        },
+        "Shared Taxes": {
+          "fy26": 34454825,
+          "fy27": 34689111
+        },
+        "Other": {
+          "fy26": 76581708,
+          "fy27": 77756104
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 2303,
+      "dhcd_renter_cost_burden_pct": 34.15,
+      "dhcd_renter_severe_burden_pct": 15.04,
+      "dhcd_cost_burdened_renters_count": 107795,
+      "dhcd_total_renter_households": 125480
+    },
+    {
+      "fips": "24035",
+      "name": "Queen Anne's",
+      "population": 51825,
+      "median_hh_income": 112826,
+      "poverty_rate_pct": 6.44,
+      "mdh_life_exp_years": 79.3,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 94.2,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 47.4034,
+      "bha_drug_death_per_100k__vintage": "2018-2020",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 1.95131,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 142.997,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 41.9,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 186.1,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 13118,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 34.9,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 63559265,
+      "state_aid_fy27_usd": 64755423,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 53107052,
+          "fy27": 54477569
+        },
+        "Libraries": {
+          "fy26": 534142,
+          "fy27": 554167
+        },
+        "Community Colleges": {
+          "fy26": 4045643,
+          "fy27": 4141516
+        },
+        "Health": {
+          "fy26": 2295562,
+          "fy27": 2004374
+        },
+        "Transportation": {
+          "fy26": 2709478,
+          "fy27": 2713997
+        },
+        "Public Safety": {
+          "fy26": 867388,
+          "fy27": 863800
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1250,
+      "dhcd_renter_cost_burden_pct": 27.26,
+      "dhcd_renter_severe_burden_pct": 10.55,
+      "dhcd_cost_burdened_renters_count": 5180,
+      "dhcd_total_renter_households": 3865
+    },
+    {
+      "fips": "24037",
+      "name": "St. Mary's",
+      "population": 115126,
+      "median_hh_income": 119446,
+      "poverty_rate_pct": 7.98,
+      "mdh_life_exp_years": 77.3,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 90.1,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 29.0916,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 2.28934,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 161.333,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 61.5,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 188.5,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 12907,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 31.5,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 186020815,
+      "state_aid_fy27_usd": 189256611,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 167936052,
+          "fy27": 171749993
+        },
+        "Libraries": {
+          "fy26": 1562128,
+          "fy27": 1612094
+        },
+        "Community Colleges": {
+          "fy26": 7115905,
+          "fy27": 6992804
+        },
+        "Health": {
+          "fy26": 4028698,
+          "fy27": 3559785
+        },
+        "Transportation": {
+          "fy26": 3716178,
+          "fy27": 3721356
+        },
+        "Public Safety": {
+          "fy26": 1661854,
+          "fy27": 1620579
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1644,
+      "dhcd_renter_cost_burden_pct": 24.95,
+      "dhcd_renter_severe_burden_pct": 11.19,
+      "dhcd_cost_burdened_renters_count": 10300,
+      "dhcd_total_renter_households": 13080
+    },
+    {
+      "fips": "24039",
+      "name": "Somerset",
+      "population": 24822,
+      "median_hh_income": 64943,
+      "poverty_rate_pct": 16.36,
+      "mdh_life_exp_years": 74.5,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 81.4,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 23.9,
+      "bha_drug_death_per_100k__vintage": "2013-2015",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 7.84857,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 176.461,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 90.1,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 283,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 16563,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 15.7,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 65324532,
+      "state_aid_fy27_usd": 67205004,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 49139840,
+          "fy27": 51934375
+        },
+        "Libraries": {
+          "fy26": 454542,
+          "fy27": 470098
+        },
+        "Community Colleges": {
+          "fy26": 1618797,
+          "fy27": 1697348
+        },
+        "Health": {
+          "fy26": 2104395,
+          "fy27": 1876293
+        },
+        "Transportation": {
+          "fy26": 1668105,
+          "fy27": 1672009
+        },
+        "Public Safety": {
+          "fy26": 760926,
+          "fy27": 737886
+        },
+        "Shared Taxes": {
+          "fy26": 684848,
+          "fy27": 802991
+        },
+        "Other": {
+          "fy26": 8893079,
+          "fy27": 8014004
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 2707,
+      "dhcd_renter_cost_burden_pct": 36.84,
+      "dhcd_renter_severe_burden_pct": 17.86,
+      "dhcd_cost_burdened_renters_count": 3135,
+      "dhcd_total_renter_households": 3040
+    },
+    {
+      "fips": "24041",
+      "name": "Talbot",
+      "population": 37917,
+      "median_hh_income": 84811,
+      "poverty_rate_pct": 9.33,
+      "mdh_life_exp_years": 79,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 95,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 14.9,
+      "bha_drug_death_per_100k__vintage": "2013-2015",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 5.46771,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 122.913,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 38.7,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 294.7,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 12731,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 38.6,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 39161791,
+      "state_aid_fy27_usd": 40022424,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 29228039,
+          "fy27": 30310936
+        },
+        "Libraries": {
+          "fy26": 365149,
+          "fy27": 371712
+        },
+        "Community Colleges": {
+          "fy26": 2974998,
+          "fy27": 3074769
+        },
+        "Health": {
+          "fy26": 2185924,
+          "fy27": 1862392
+        },
+        "Transportation": {
+          "fy26": 3502747,
+          "fy27": 3513927
+        },
+        "Public Safety": {
+          "fy26": 904934,
+          "fy27": 888688
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1056,
+      "dhcd_renter_cost_burden_pct": 29.63,
+      "dhcd_renter_severe_burden_pct": 14.54,
+      "dhcd_cost_burdened_renters_count": 4980,
+      "dhcd_total_renter_households": 4955
+    },
+    {
+      "fips": "24043",
+      "name": "Washington",
+      "population": 155709,
+      "median_hh_income": 77747,
+      "poverty_rate_pct": 12.42,
+      "mdh_life_exp_years": 75.3,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 90.8,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 65.459,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 10.7428,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 154.208,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 79.2,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 316,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 13220,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 21.4,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 330156986,
+      "state_aid_fy27_usd": 341772887,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 287485174,
+          "fy27": 299581578
+        },
+        "Libraries": {
+          "fy26": 2293728,
+          "fy27": 2356370
+        },
+        "Community Colleges": {
+          "fy26": 22811269,
+          "fy27": 22341993
+        },
+        "Health": {
+          "fy26": 4453062,
+          "fy27": 4401875
+        },
+        "Transportation": {
+          "fy26": 7589337,
+          "fy27": 7596871
+        },
+        "Public Safety": {
+          "fy26": 2767165,
+          "fy27": 2670541
+        },
+        "Other": {
+          "fy26": 2757251,
+          "fy27": 2823659
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 2195,
+      "dhcd_renter_cost_burden_pct": 25.33,
+      "dhcd_renter_severe_burden_pct": 11.39,
+      "dhcd_cost_burdened_renters_count": 14280,
+      "dhcd_total_renter_households": 19850
+    },
+    {
+      "fips": "24045",
+      "name": "Wicomico",
+      "population": 104914,
+      "median_hh_income": 76210,
+      "poverty_rate_pct": 13.94,
+      "mdh_life_exp_years": 75,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 84.8,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 42.3063,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 6.03258,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 165.893,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 91.8,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 477.9,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 13843,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 26.8,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 286913038,
+      "state_aid_fy27_usd": 290367656,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 243338647,
+          "fy27": 250140343
+        },
+        "Libraries": {
+          "fy26": 1627104,
+          "fy27": 1628706
+        },
+        "Community Colleges": {
+          "fy26": 10848872,
+          "fy27": 11318073
+        },
+        "Health": {
+          "fy26": 5416478,
+          "fy27": 4692319
+        },
+        "Transportation": {
+          "fy26": 6230749,
+          "fy27": 6237501
+        },
+        "Public Safety": {
+          "fy26": 2463727,
+          "fy27": 2350057
+        },
+        "Other": {
+          "fy26": 16987461,
+          "fy27": 14000657
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 2768,
+      "dhcd_renter_cost_burden_pct": 29.56,
+      "dhcd_renter_severe_burden_pct": 14.72,
+      "dhcd_cost_burdened_renters_count": 11275,
+      "dhcd_total_renter_households": 16600
+    },
+    {
+      "fips": "24047",
+      "name": "Worcester",
+      "population": 53700,
+      "median_hh_income": 81745,
+      "poverty_rate_pct": 9.94,
+      "mdh_life_exp_years": 79.2,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 93.5,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 48.7,
+      "bha_drug_death_per_100k__vintage": "2015-2017",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 13.8202,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 129.794,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 74.2,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 448.4,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 17814,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 30.4,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 61283651,
+      "state_aid_fy27_usd": 62467006,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 41295700,
+          "fy27": 43283825
+        },
+        "Libraries": {
+          "fy26": 598718,
+          "fy27": 623979
+        },
+        "Community Colleges": {
+          "fy26": 3865591,
+          "fy27": 3901698
+        },
+        "Health": {
+          "fy26": 4352932,
+          "fy27": 3509792
+        },
+        "Transportation": {
+          "fy26": 4353981,
+          "fy27": 4359377
+        },
+        "Public Safety": {
+          "fy26": 1456853,
+          "fy27": 1376860
+        },
+        "Shared Taxes": {
+          "fy26": 5359876,
+          "fy27": 5411475
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 1163,
+      "dhcd_renter_cost_burden_pct": 30.08,
+      "dhcd_renter_severe_burden_pct": 13.22,
+      "dhcd_cost_burdened_renters_count": 6815,
+      "dhcd_total_renter_households": 5865
+    },
+    {
+      "fips": "24510",
+      "name": "Baltimore City",
+      "population": 573243,
+      "median_hh_income": 62177,
+      "poverty_rate_pct": 19.75,
+      "mdh_life_exp_years": 71,
+      "mdh_life_exp_years__vintage": "2019-2021",
+      "mdh_life_exp_years__source_url": "https://opendata.maryland.gov/resource/5imf-t65z.json?$limit=10000",
+      "k12_grad_rate_pct": 68.7,
+      "k12_grad_rate_pct__vintage": "2022",
+      "k12_grad_rate_pct__source_url": "https://opendata.maryland.gov/resource/c6t5-8ixv.json?$limit=10000",
+      "bha_drug_death_per_100k": 129.202,
+      "bha_drug_death_per_100k__vintage": "2019-2021",
+      "bha_drug_death_per_100k__source_url": "https://opendata.maryland.gov/resource/eekg-2ryj.json?$limit=10000",
+      "dhs_child_maltreat_per_1k": 10.3175,
+      "dhs_child_maltreat_per_1k__vintage": "2022",
+      "dhs_child_maltreat_per_1k__source_url": "https://opendata.maryland.gov/resource/qwwu-cu4u.json?$limit=10000",
+      "mdh_cancer_mort_per_100k": 183.244,
+      "mdh_cancer_mort_per_100k__vintage": "2019-2021",
+      "mdh_cancer_mort_per_100k__source_url": "https://opendata.maryland.gov/resource/sy7q-56ei.json?$limit=10000",
+      "dhcd_affordable_housing_pct": 91.9,
+      "dhcd_affordable_housing_pct__vintage": "2020",
+      "dhcd_affordable_housing_pct__source_url": "https://opendata.maryland.gov/resource/kv5a-92e7.json?$limit=10000",
+      "dpscs_violent_crime_per_100k": 1610.6,
+      "dpscs_violent_crime_per_100k__vintage": "2020",
+      "dpscs_violent_crime_per_100k__source_url": "https://opendata.maryland.gov/resource/jwfa-fdxs.json?$where=year >= '2020'&$limit=10000",
+      "k12_per_pupil_spend_usd": 15376,
+      "k12_per_pupil_spend_usd__vintage": "latest Choose MD",
+      "k12_per_pupil_spend_usd__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "edu_bachelors_pct": 31.2,
+      "edu_bachelors_pct__vintage": "latest Choose MD",
+      "edu_bachelors_pct__source_url": "https://opendata.maryland.gov/resource/63pe-mygy.json?$limit=200",
+      "state_aid_fy26_usd": 1804715406,
+      "state_aid_fy27_usd": 1889668678,
+      "state_aid_by_category": {
+        "Education": {
+          "fy26": 1366328670,
+          "fy27": 1441677976
+        },
+        "Libraries": {
+          "fy26": 12660985,
+          "fy27": 12862400
+        },
+        "Health": {
+          "fy26": 10405080,
+          "fy27": 13070507
+        },
+        "Transportation": {
+          "fy26": 267235468,
+          "fy27": 267374477
+        },
+        "Public Safety": {
+          "fy26": 36272682,
+          "fy27": 39762289
+        },
+        "Shared Taxes": {
+          "fy26": 27370477,
+          "fy27": 27624239
+        },
+        "Other": {
+          "fy26": 84442044,
+          "fy27": 87296790
+        }
+      },
+      "state_aid_fy27_per_capita_usd": 3296,
+      "dhcd_renter_cost_burden_pct": 35.82,
+      "dhcd_renter_severe_burden_pct": 18.83,
+      "dhcd_cost_burdened_renters_count": 86870,
+      "dhcd_total_renter_households": 137325
+    }
+  ]
+}

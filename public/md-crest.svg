@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 130" width="120" height="130">
+  <defs>
+    <clipPath id="shield">
+      <path d="M 8 4 Q 8 2 10 2 L 110 2 Q 112 2 112 4 L 112 70 Q 112 110 60 128 Q 8 110 8 70 Z"/>
+    </clipPath>
+    <pattern id="calvert" width="30" height="30" patternUnits="userSpaceOnUse">
+      <rect width="30" height="30" fill="#E8A317"/>
+      <rect width="15" height="15" fill="#000000"/>
+      <rect x="15" y="15" width="15" height="15" fill="#000000"/>
+    </pattern>
+  </defs>
+  <g clip-path="url(#shield)">
+    <!-- Top-left Calvert (gold/black) -->
+    <rect x="0" y="0" width="60" height="65" fill="url(#calvert)"/>
+    <!-- Bottom-right Calvert (gold/black) -->
+    <rect x="60" y="65" width="60" height="65" fill="url(#calvert)"/>
+
+    <!-- Top-right Crossland (red with white cross bottony) -->
+    <rect x="60" y="0" width="60" height="65" fill="#CE1126"/>
+    <rect x="86" y="0" width="8" height="65" fill="#FFFFFF"/>
+    <rect x="60" y="29" width="60" height="8" fill="#FFFFFF"/>
+
+    <!-- Bottom-left Crossland (red with white cross bottony) -->
+    <rect x="0" y="65" width="60" height="65" fill="#CE1126"/>
+    <rect x="26" y="65" width="8" height="65" fill="#FFFFFF"/>
+    <rect x="0" y="94" width="60" height="8" fill="#FFFFFF"/>
+
+    <!-- Cross bottony trefoil ends -->
+    <g fill="#FFFFFF">
+      <circle cx="90" cy="4" r="4.5"/><circle cx="86" cy="4" r="3"/><circle cx="94" cy="4" r="3"/>
+      <circle cx="90" cy="62" r="4.5"/><circle cx="86" cy="62" r="3"/><circle cx="94" cy="62" r="3"/>
+      <circle cx="62" cy="33" r="4.5"/><circle cx="62" cy="29" r="3"/><circle cx="62" cy="37" r="3"/>
+      <circle cx="118" cy="33" r="4.5"/><circle cx="118" cy="29" r="3"/><circle cx="118" cy="37" r="3"/>
+
+      <circle cx="30" cy="68" r="4.5"/><circle cx="26" cy="68" r="3"/><circle cx="34" cy="68" r="3"/>
+      <circle cx="30" cy="126" r="4.5"/><circle cx="26" cy="126" r="3"/><circle cx="34" cy="126" r="3"/>
+      <circle cx="2" cy="98" r="4.5"/><circle cx="2" cy="94" r="3"/><circle cx="2" cy="102" r="3"/>
+      <circle cx="58" cy="98" r="4.5"/><circle cx="58" cy="94" r="3"/><circle cx="58" cy="102" r="3"/>
+    </g>
+  </g>
+  <path d="M 8 4 Q 8 2 10 2 L 110 2 Q 112 2 112 4 L 112 70 Q 112 110 60 128 Q 8 110 8 70 Z" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+</svg>

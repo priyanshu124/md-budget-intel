@@ -1,0 +1,198 @@
+{
+  "built_at": "2026-04-22T02:30:14.378Z",
+  "datasets": [
+    {
+      "id": "population_timeseries",
+      "label": "County Population (annual)",
+      "publisher": "U.S. Census Bureau — American Community Survey 5-Year Estimates",
+      "variable": "B01003_001E",
+      "vintage_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "endpoints": {
+        "2015": "https://api.census.gov/data/2015/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2016": "https://api.census.gov/data/2016/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2017": "https://api.census.gov/data/2017/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2018": "https://api.census.gov/data/2018/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2019": "https://api.census.gov/data/2019/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2020": "https://api.census.gov/data/2020/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2021": "https://api.census.gov/data/2021/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2022": "https://api.census.gov/data/2022/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2023": "https://api.census.gov/data/2023/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2024": "https://api.census.gov/data/2024/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24"
+      },
+      "audit_url_template": "https://data.census.gov/table?q=B01003&g=0500000US{fips}",
+      "license": "Public domain (Title 13, U.S. Code)"
+    },
+    {
+      "id": "poverty_timeseries",
+      "label": "Poverty Rate (annual)",
+      "publisher": "U.S. Census Bureau — American Community Survey 5-Year Estimates",
+      "variables": [
+        "B17001_001E (universe)",
+        "B17001_002E (below poverty)"
+      ],
+      "derivation": "poverty_rate_pct = 100 * B17001_002E / B17001_001E",
+      "vintage_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "endpoints": {
+        "2015": "https://api.census.gov/data/2015/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2016": "https://api.census.gov/data/2016/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2017": "https://api.census.gov/data/2017/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2018": "https://api.census.gov/data/2018/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2019": "https://api.census.gov/data/2019/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2020": "https://api.census.gov/data/2020/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2021": "https://api.census.gov/data/2021/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2022": "https://api.census.gov/data/2022/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2023": "https://api.census.gov/data/2023/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2024": "https://api.census.gov/data/2024/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24"
+      },
+      "audit_url_template": "https://data.census.gov/table?q=B17001&g=0500000US{fips}",
+      "license": "Public domain"
+    },
+    {
+      "id": "median_income_timeseries",
+      "label": "Median Household Income (annual)",
+      "publisher": "U.S. Census Bureau — American Community Survey 5-Year Estimates",
+      "variable": "B19013_001E",
+      "vintage_years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "endpoints": {
+        "2015": "https://api.census.gov/data/2015/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2016": "https://api.census.gov/data/2016/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2017": "https://api.census.gov/data/2017/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2018": "https://api.census.gov/data/2018/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2019": "https://api.census.gov/data/2019/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2020": "https://api.census.gov/data/2020/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2021": "https://api.census.gov/data/2021/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2022": "https://api.census.gov/data/2022/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2023": "https://api.census.gov/data/2023/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24",
+        "2024": "https://api.census.gov/data/2024/acs/acs5?get=NAME,B01003_001E,B19013_001E,B17001_001E,B17001_002E&for=county:*&in=state:24"
+      },
+      "audit_url_template": "https://data.census.gov/table?q=B19013&g=0500000US{fips}",
+      "license": "Public domain",
+      "note": "Values in nominal dollars for each ACS vintage year — not inflation-adjusted by this pipeline."
+    },
+    {
+      "id": "state_aid_timeseries",
+      "label": "State Aid to Local Governments by Agency (FY2014 → FY2027)",
+      "publisher": "Maryland Department of Legislative Services",
+      "endpoints": [
+        {
+          "years": [
+            2014,
+            2015
+          ],
+          "url": "https://dls.maryland.gov/budget/state-aid-download/?YearSelection1=2014&YearSelection2=2015&County=0"
+        },
+        {
+          "years": [
+            2016,
+            2017
+          ],
+          "url": "https://dls.maryland.gov/budget/state-aid-download/?YearSelection1=2016&YearSelection2=2017&County=0"
+        },
+        {
+          "years": [
+            2018,
+            2019
+          ],
+          "url": "https://dls.maryland.gov/budget/state-aid-download/?YearSelection1=2018&YearSelection2=2019&County=0"
+        },
+        {
+          "years": [
+            2020,
+            2021
+          ],
+          "url": "https://dls.maryland.gov/budget/state-aid-download/?YearSelection1=2020&YearSelection2=2021&County=0"
+        },
+        {
+          "years": [
+            2022,
+            2023
+          ],
+          "url": "https://dls.maryland.gov/budget/state-aid-download/?YearSelection1=2022&YearSelection2=2023&County=0"
+        },
+        {
+          "years": [
+            2024,
+            2025
+          ],
+          "url": "https://dls.maryland.gov/budget/state-aid-download/?YearSelection1=2024&YearSelection2=2025&County=0"
+        },
+        {
+          "years": [
+            2026,
+            2027
+          ],
+          "url": "https://dls.maryland.gov/budget/state-aid-download/?YearSelection1=2026&YearSelection2=2027&County=0"
+        }
+      ],
+      "fiscal_years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027
+      ],
+      "agencies": [
+        "Community Colleges",
+        "Education",
+        "Health",
+        "Libraries",
+        "Other",
+        "Public Safety",
+        "Recreation / Environment",
+        "Shared Taxes",
+        "Transportation"
+      ],
+      "landing_page": "https://dls.maryland.gov/budget/state-aid-overview",
+      "publication_url_latest": "https://dls.maryland.gov/pubs/prod/InterGovMatters/SteAidLocGov/Overview-of-State-Aid-to-Local-Governments-Fiscal-2027-Allowance.pdf",
+      "license": "Public record — MD Gen. Provisions §4-101 et seq.",
+      "note": "CSV download that backs the printed 'Overview of State Aid to Local Governments' book each session. Values are nominal USD; no inflation adjustment."
+    }
+  ],
+  "covid_window": {
+    "pre_covid_benchmark_year": 2019,
+    "post_covid_benchmark_year": 2023,
+    "note": "Pre-/Post-COVID toggle maps benchmark years to ACS 5-Year 2019 vintage and ACS 5-Year 2023 vintage respectively. For state aid, pre=FY2019 and post=FY2023."
+  }
+}

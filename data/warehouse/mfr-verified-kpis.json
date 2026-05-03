@@ -1,0 +1,169 @@
+{
+  "_meta": {
+    "purpose": "Hand-verified MFR Key Performance Indicator values, extracted from the DBM Managing for Results Annual Performance Reports (2015–2026). Every value here was cross-checked against the underlying PDF on 2026-04-21. Use this file as the authoritative source for any site narrative that references an MFR KPI; do not hardcode MFR values elsewhere.",
+    "source_zip": "C:/Users/aarus/OneDrive/Desktop/MFRs all years for map.zip",
+    "extracted_pdfs": "data/warehouse/mfr-source/MFRs all years for map/",
+    "extracted_text": "data/warehouse/mfr-source/text/",
+    "audited_on": "2026-04-21",
+    "publisher": "Maryland Department of Budget and Management, Office of Budget Analysis",
+    "publication_hub": "https://dbm.maryland.gov/Pages/MFRPerformanceReport.aspx",
+    "report_year_note": "MFR uses 'Report Year' (RY) which typically corresponds to the state fiscal year ending in that calendar year. Most recent MFRs report RY2022–RY2026 to normalize across metrics.",
+    "assessment_transition_note": "Maryland replaced PARCC with MCAP starting school year 2018-2019. Pre-RY2019 proficiency percentages are NOT directly comparable to post-RY2019 values; the 2022 MFR report omitted RY2021 assessment data entirely for this reason."
+  },
+  "kpis": [
+    {
+      "id": "2.7",
+      "indicator": "Four-Year High School graduation rate (Cohort Rate)",
+      "agency": "MSDE",
+      "values_by_report_year": {
+        "2022": 87.2,
+        "2023": 86.3,
+        "2024": 85.8,
+        "2025": 87.6,
+        "2026": null
+      },
+      "unit": "percent",
+      "higher_is_favorable": true,
+      "source": "2026 MFR Annual Performance Report, Priority 2, KPI 2.7 (MSDE); cross-checked against 2025 MFR Report KPI 2.7",
+      "source_pdf": "2026-MFR-Annual-Performance-Report.pdf",
+      "source_page_hint": "Priority 2 — Students up for success",
+      "historical_narrative_value_2016": {
+        "value": 86.4,
+        "note": "From 2020 MFR narrative p.16: 'from 86.4% in 2016 to 87.1% in 2020'."
+      }
+    },
+    {
+      "id": "2.5",
+      "indicator": "Percent of grade 3 students scoring at or above Proficient on the Grade 3 English Language Arts (ELA) assessment (MCAP)",
+      "agency": "MSDE",
+      "values_by_report_year": {
+        "2022": null,
+        "2023": 45.8,
+        "2024": 48.0,
+        "2025": 46.5,
+        "2026": 50.0
+      },
+      "unit": "percent",
+      "higher_is_favorable": true,
+      "source": "2026 MFR Annual Performance Report, Priority 2, KPI 2.5",
+      "source_pdf": "2026-MFR-Annual-Performance-Report.pdf",
+      "source_note": "No assessment scores in RY2021. RY2022 values omitted from 2026 MFR because they used a three-level grading system (MCAP changed to four-level beginning RY2023)."
+    },
+    {
+      "id": "2.6",
+      "indicator": "Percent of kindergarten students scoring at the Demonstrating Readiness level on the Kindergarten Readiness Assessment (KRA)",
+      "agency": "MSDE",
+      "values_by_report_year": {
+        "2022": null,
+        "2023": 39.6,
+        "2024": 41.6,
+        "2025": 44.1,
+        "2026": null
+      },
+      "unit": "percent",
+      "higher_is_favorable": true,
+      "source": "2026 MFR Annual Performance Report, Priority 2, KPI 2.6",
+      "source_pdf": "2026-MFR-Annual-Performance-Report.pdf",
+      "source_note": "Data for 2024-2025 school year (RY2026) unavailable — MSDE suspended KRA to train LEAs on new assessment for 2025-2026."
+    },
+    {
+      "id": "grade_4_ela",
+      "indicator": "Grade 4 ELA — Percent scoring Proficient or above (MCAP)",
+      "agency": "MSDE",
+      "values_by_report_year": {
+        "2022": 41.2,
+        "2023": 41.8,
+        "2024": 42.3,
+        "2025": 42.5
+      },
+      "unit": "percent",
+      "higher_is_favorable": true,
+      "source": "2024 MFR Annual Performance Report, MSDE detail table (page referencing Grade 3-8 proficiency by subject)",
+      "source_pdf": "2024-MFR-Annual-Performance-Report.pdf"
+    },
+    {
+      "id": "grade_4_math",
+      "indicator": "Grade 4 Math — Percent scoring Proficient or above (MCAP)",
+      "agency": "MSDE",
+      "values_by_report_year": {
+        "2022": 24.6,
+        "2023": 27.4,
+        "2024": 28.6,
+        "2025": 28.9
+      },
+      "unit": "percent",
+      "higher_is_favorable": true,
+      "source": "2024 MFR Annual Performance Report, MSDE detail table",
+      "source_pdf": "2024-MFR-Annual-Performance-Report.pdf",
+      "hallucination_note": "Earlier site copy showed Grade 4 Math 2024 = 38% — not supported by any MFR. MFR reports 28.6% for RY2024. 10-point discrepancy was removed from EducationStoryChart.tsx on 2026-04-21."
+    },
+    {
+      "id": "2.11",
+      "indicator": "Percent of students that are chronically absent",
+      "agency": "MSDE",
+      "values_by_report_year": {
+        "2022": 30.9,
+        "2023": 29.8,
+        "2024": 26.7,
+        "2025": 25.2
+      },
+      "unit": "percent",
+      "higher_is_favorable": false,
+      "source": "2026 MFR Annual Performance Report, Priority 2, KPI 2.11 (detail table); 2025 MFR confirms RY2025 actual",
+      "source_pdf": "2026-MFR-Annual-Performance-Report.pdf",
+      "target_values": {
+        "2026": 15.0,
+        "2027": 15.0
+      },
+      "source_note": "Metric first appeared in post-pandemic MFRs; pre-RY2020 baselines not reported in the MFR series. 2026 MFR footnote points readers to MSDE's 2027 MFR Report for newer per-student variants."
+    },
+    {
+      "id": "1.3",
+      "indicator": "Number of individuals enrolled in Supplemental Nutrition Assistance Program (SNAP)",
+      "agency": "DHS",
+      "values_by_report_year": {
+        "2025": 692966,
+        "2026": 681165
+      },
+      "unit": "individuals",
+      "higher_is_favorable": null,
+      "source": "2026 MFR Annual Performance Report, Priority 1, KPI 1.3",
+      "source_pdf": "2026-MFR-Annual-Performance-Report.pdf",
+      "source_note": "MFR flags this as a 'variable' metric (has both favorable and unfavorable aspects)."
+    },
+    {
+      "id": "3.9",
+      "indicator": "Total employment",
+      "agency": "DoL",
+      "values_by_report_year": {
+        "2022": 2512624,
+        "2023": 2581194,
+        "2024": 2641021,
+        "2025": 2705183,
+        "2026": 2764497
+      },
+      "unit": "persons",
+      "higher_is_favorable": true,
+      "source": "2026 MFR Annual Performance Report, Priority 3, KPI 3.9",
+      "source_pdf": "2026-MFR-Annual-Performance-Report.pdf"
+    }
+  ],
+  "hallucinations_found_and_corrected": [
+    {
+      "file": "components/charts/EducationStoryChart.tsx",
+      "date_corrected": "2026-04-21",
+      "original_claims": [
+        { "label": "Grade 4 Reading 2016", "chart_value": "38%",   "mfr_value": "not in MFR (pre-MCAP)", "severity": "unsupported" },
+        { "label": "Grade 4 Reading 2024", "chart_value": "41%",   "mfr_value": "42.3%",                 "severity": "minor_off" },
+        { "label": "Grade 4 Math 2016",    "chart_value": "42%",   "mfr_value": "not in MFR (pre-MCAP)", "severity": "unsupported" },
+        { "label": "Grade 4 Math 2024",    "chart_value": "38%",   "mfr_value": "28.6%",                 "severity": "major_fabrication_10pt" },
+        { "label": "HS Grad Rate 2016",    "chart_value": "87.6%", "mfr_value": "86.4%",                 "severity": "minor_off" },
+        { "label": "HS Grad Rate 2024",    "chart_value": "86.2%", "mfr_value": "85.8%",                 "severity": "minor_off" },
+        { "label": "Chronic Absenteeism 2016", "chart_value": "20%", "mfr_value": "not in MFR (metric post-pandemic)", "severity": "unsupported" },
+        { "label": "Chronic Absenteeism 2024", "chart_value": "34%", "mfr_value": "26.7%",              "severity": "major_fabrication_7pt" },
+        { "label": "Deck claim: math dropped 4 points", "chart_value": "−4pt", "mfr_value": "+4.3pt (improved)", "severity": "directionally_wrong" }
+      ],
+      "correction": "Replaced outcome strip with four MFR-verified KPIs over the RY2022→RY2025 window (HS Grad, Grade 3 ELA, KRA, Chronic Absenteeism); rewrote deck to match MFR narrative and acknowledge shorter comparison window."
+    }
+  ]
+}

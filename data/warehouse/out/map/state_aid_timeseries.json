@@ -1,0 +1,3633 @@
+{
+  "years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027
+  ],
+  "agencies": [
+    "Community Colleges",
+    "Education",
+    "Health",
+    "Libraries",
+    "Other",
+    "Public Safety",
+    "Recreation / Environment",
+    "Shared Taxes",
+    "Transportation"
+  ],
+  "by_fips": {
+    "24001": {
+      "2014": {
+        "Education": 84300516,
+        "Libraries": 899991,
+        "Community Colleges": 7644019,
+        "Health": 1050926,
+        "Transportation": 1929790,
+        "Public Safety": 1154824,
+        "Recreation / Environment": 360000,
+        "Shared Taxes": 1028208,
+        "Other": 9099776,
+        "_total": 107468050
+      },
+      "2015": {
+        "Education": 84938066,
+        "Libraries": 909171,
+        "Community Colleges": 7705749,
+        "Health": 1050926,
+        "Transportation": 1780410,
+        "Public Safety": 1162788,
+        "Recreation / Environment": 360000,
+        "Shared Taxes": 1199867,
+        "Other": 9101183,
+        "_total": 108208160
+      },
+      "2016": {
+        "Education": 85191854,
+        "Libraries": 921686,
+        "Community Colleges": 7854883,
+        "Health": 1099100,
+        "Transportation": 2007420,
+        "Public Safety": 1121727,
+        "Shared Taxes": 1403356,
+        "Other": 9157844,
+        "_total": 108757870
+      },
+      "2017": {
+        "Education": 87052329,
+        "Libraries": 923661,
+        "Community Colleges": 8399899,
+        "Health": 1407995,
+        "Transportation": 1986935,
+        "Public Safety": 1240022,
+        "Shared Taxes": 1650834,
+        "Other": 9165285,
+        "_total": 111826960
+      },
+      "2018": {
+        "Education": 88280075,
+        "Libraries": 946302,
+        "Community Colleges": 7987786,
+        "Health": 1407995,
+        "Transportation": 2183778,
+        "Public Safety": 1201530,
+        "Shared Taxes": 2329778,
+        "Other": 9154601,
+        "_total": 113491845
+      },
+      "2019": {
+        "Education": 90404817,
+        "Libraries": 967719,
+        "Community Colleges": 8041394,
+        "Health": 1536198,
+        "Transportation": 2612218,
+        "Public Safety": 3050678,
+        "Shared Taxes": 3742950,
+        "Other": 9156954,
+        "_total": 119512928
+      },
+      "2020": {
+        "Education": 94924261,
+        "Libraries": 999431,
+        "Community Colleges": 8295090,
+        "Health": 1947439,
+        "Transportation": 2730842,
+        "Public Safety": 1735215,
+        "Shared Taxes": 2861003,
+        "Other": 9126023,
+        "_total": 122619304
+      },
+      "2021": {
+        "Education": 97224210,
+        "Libraries": 1023101,
+        "Community Colleges": 8525887,
+        "Health": 3706930,
+        "Transportation": 2991351,
+        "Public Safety": 1221498,
+        "Shared Taxes": 3460256,
+        "Other": 9148692,
+        "_total": 127301925
+      },
+      "2022": {
+        "Education": 99377613,
+        "Libraries": 1031114,
+        "Community Colleges": 9380445,
+        "Health": 4527133,
+        "Transportation": 3188623,
+        "Public Safety": 1982751,
+        "Shared Taxes": 3721260,
+        "Other": 9128118,
+        "_total": 132337057
+      },
+      "2023": {
+        "Education": 103255006,
+        "Libraries": 1030020,
+        "Community Colleges": 10765076,
+        "Health": 4494209,
+        "Transportation": 3200413,
+        "Public Safety": 1613182,
+        "Shared Taxes": 3747042,
+        "Other": 9126962,
+        "_total": 137231910
+      },
+      "2024": {
+        "Education": 104025180,
+        "Libraries": 1050109,
+        "Community Colleges": 11585418,
+        "Health": 6667286,
+        "Transportation": 3900285,
+        "Public Safety": 1646237,
+        "Shared Taxes": 4243518,
+        "Other": 7340126,
+        "_total": 140458159
+      },
+      "2025": {
+        "Education": 120287039,
+        "Libraries": 1087749,
+        "Community Colleges": 12229389,
+        "Health": 4994329,
+        "Transportation": 4442516,
+        "Public Safety": 5558360,
+        "Shared Taxes": 4033619,
+        "Other": 9122889,
+        "_total": 161755890
+      },
+      "2026": {
+        "Education": 124991466,
+        "Libraries": 1139601,
+        "Community Colleges": 13495817,
+        "Health": 5257545,
+        "Transportation": 5134939,
+        "Public Safety": 1527091,
+        "Shared Taxes": 4106938,
+        "Other": 8114558,
+        "_total": 163767955
+      },
+      "2027": {
+        "Education": 130151644,
+        "Libraries": 1129554,
+        "Community Colleges": 13816756,
+        "Health": 4659494,
+        "Transportation": 5141152,
+        "Public Safety": 1490997,
+        "Shared Taxes": 4115485,
+        "Other": 13611973,
+        "_total": 174117055
+      }
+    },
+    "24003": {
+      "2014": {
+        "Education": 387101230,
+        "Libraries": 3463004,
+        "Community Colleges": 34547797,
+        "Health": 3507325,
+        "Transportation": 5028880,
+        "Public Safety": 9355454,
+        "Recreation / Environment": 0,
+        "Shared Taxes": 19276693,
+        "Other": 311943,
+        "_total": 462592326
+      },
+      "2015": {
+        "Education": 395406894,
+        "Libraries": 3498823,
+        "Community Colleges": 35092049,
+        "Health": 3507325,
+        "Transportation": 4561038,
+        "Public Safety": 8474716,
+        "Recreation / Environment": 60000,
+        "Shared Taxes": 17976753,
+        "Other": 288501,
+        "_total": 468866099
+      },
+      "2016": {
+        "Education": 404105433,
+        "Libraries": 3766749,
+        "Community Colleges": 35818333,
+        "Health": 3872663,
+        "Transportation": 4982967,
+        "Public Safety": 7742135,
+        "Shared Taxes": 19489379,
+        "Other": 307675,
+        "_total": 480085334
+      },
+      "2017": {
+        "Education": 420735929,
+        "Libraries": 3847250,
+        "Community Colleges": 36092733,
+        "Health": 4170821,
+        "Transportation": 4921099,
+        "Public Safety": 10679593,
+        "Shared Taxes": 24238309,
+        "Other": 320083,
+        "_total": 505005817
+      },
+      "2018": {
+        "Education": 418038278,
+        "Libraries": 3878641,
+        "Community Colleges": 36509797,
+        "Health": 4170821,
+        "Transportation": 5919425,
+        "Public Safety": 10204504,
+        "Shared Taxes": 28374658,
+        "Other": 422489,
+        "_total": 507518613
+      },
+      "2019": {
+        "Education": 431399555,
+        "Libraries": 3982114,
+        "Community Colleges": 36375593,
+        "Health": 4318309,
+        "Transportation": 8008208,
+        "Public Safety": 11071467,
+        "Shared Taxes": 27748676,
+        "Other": 427028,
+        "_total": 523330950
+      },
+      "2020": {
+        "Education": 461988679,
+        "Libraries": 4190774,
+        "Community Colleges": 36658852,
+        "Health": 4790100,
+        "Transportation": 7900857,
+        "Public Safety": 14531660,
+        "Shared Taxes": 25555175,
+        "Other": 414677,
+        "_total": 556030774
+      },
+      "2021": {
+        "Education": 483899145,
+        "Libraries": 4204805,
+        "Community Colleges": 37589725,
+        "Health": 5208624,
+        "Transportation": 8616249,
+        "Public Safety": 16420150,
+        "Shared Taxes": 28361156,
+        "Other": 438453,
+        "_total": 584738307
+      },
+      "2022": {
+        "Education": 499065215,
+        "Libraries": 4353359,
+        "Community Colleges": 41011209,
+        "Health": 5773969,
+        "Transportation": 9154491,
+        "Public Safety": 10486603,
+        "Shared Taxes": 29647993,
+        "Other": 406090,
+        "_total": 599898929
+      },
+      "2023": {
+        "Education": 535134378,
+        "Libraries": 4539157,
+        "Community Colleges": 47754364,
+        "Health": 8612404,
+        "Transportation": 9497554,
+        "Public Safety": 13831801,
+        "Shared Taxes": 29376327,
+        "Other": 412654,
+        "_total": 649158639
+      },
+      "2024": {
+        "Education": 601443540,
+        "Libraries": 4755319,
+        "Community Colleges": 51067472,
+        "Health": 11102475,
+        "Transportation": 11509574,
+        "Public Safety": 13315261,
+        "Shared Taxes": 29176498,
+        "Other": 433450,
+        "_total": 722803589
+      },
+      "2025": {
+        "Education": 634970508,
+        "Libraries": 5312878,
+        "Community Colleges": 51309856,
+        "Health": 9155089,
+        "Transportation": 13333775,
+        "Public Safety": 17132800,
+        "Shared Taxes": 28944075,
+        "Other": 433537,
+        "_total": 760592518
+      },
+      "2026": {
+        "Education": 682876662,
+        "Libraries": 5905623,
+        "Community Colleges": 52357528,
+        "Health": 9454801,
+        "Transportation": 14990475,
+        "Public Safety": 13686115,
+        "Shared Taxes": 28679816,
+        "Other": 50000,
+        "_total": 808001020
+      },
+      "2027": {
+        "Education": 705645509,
+        "Libraries": 6197863,
+        "Community Colleges": 54127089,
+        "Health": 9613817,
+        "Transportation": 15004135,
+        "Public Safety": 13383552,
+        "Shared Taxes": 28728871,
+        "Other": 0,
+        "_total": 832700836
+      }
+    },
+    "24005": {
+      "2014": {
+        "Education": 664408396,
+        "Libraries": 7525501,
+        "Community Colleges": 46223215,
+        "Health": 4812353,
+        "Transportation": 5382177,
+        "Public Safety": 12001850,
+        "Shared Taxes": 176922,
+        "Other": 3548241,
+        "_total": 744078655
+      },
+      "2015": {
+        "Education": 683200735,
+        "Libraries": 7820363,
+        "Community Colleges": 47874832,
+        "Health": 4812353,
+        "Transportation": 4439387,
+        "Public Safety": 11755533,
+        "Shared Taxes": 0,
+        "Other": 3532638,
+        "_total": 763435841
+      },
+      "2016": {
+        "Education": 706198085,
+        "Libraries": 8099168,
+        "Community Colleges": 47961940,
+        "Health": 5367061,
+        "Transportation": 5175186,
+        "Public Safety": 14034902,
+        "Shared Taxes": 209093,
+        "Other": 3517654,
+        "_total": 790563089
+      },
+      "2017": {
+        "Education": 728134968,
+        "Libraries": 8276520,
+        "Community Colleges": 50478742,
+        "Health": 5421144,
+        "Transportation": 5117377,
+        "Public Safety": 15183665,
+        "Shared Taxes": 0,
+        "Other": 3554466,
+        "_total": 816166882
+      },
+      "2018": {
+        "Education": 742250780,
+        "Libraries": 8551831,
+        "Community Colleges": 51162982,
+        "Health": 5421144,
+        "Transportation": 6415605,
+        "Public Safety": 15042679,
+        "Other": 3655477,
+        "_total": 832500498
+      },
+      "2019": {
+        "Education": 770919613,
+        "Libraries": 8779149,
+        "Community Colleges": 51349920,
+        "Health": 5518725,
+        "Transportation": 9102287,
+        "Public Safety": 14728565,
+        "Other": 3629891,
+        "_total": 864028150
+      },
+      "2020": {
+        "Education": 823921031,
+        "Libraries": 9099985,
+        "Community Colleges": 52546399,
+        "Health": 5668282,
+        "Transportation": 8694565,
+        "Public Safety": 15446167,
+        "Other": 4053884,
+        "_total": 919430313
+      },
+      "2021": {
+        "Education": 854956436,
+        "Libraries": 9174556,
+        "Community Colleges": 54041226,
+        "Health": 5900513,
+        "Transportation": 9473458,
+        "Public Safety": 17359111,
+        "Other": 4096260,
+        "_total": 955001560
+      },
+      "2022": {
+        "Education": 883012880,
+        "Libraries": 9211320,
+        "Community Colleges": 58580058,
+        "Health": 5929538,
+        "Transportation": 10145456,
+        "Public Safety": 19305355,
+        "Other": 4075858,
+        "_total": 990260465
+      },
+      "2023": {
+        "Education": 930826913,
+        "Libraries": 9976940,
+        "Community Colleges": 71517496,
+        "Health": 6983220,
+        "Transportation": 10597963,
+        "Public Safety": 22460460,
+        "Other": 4080745,
+        "_total": 1056443737
+      },
+      "2024": {
+        "Education": 1003325022,
+        "Libraries": 10346723,
+        "Community Colleges": 82475840,
+        "Health": 7570992,
+        "Transportation": 11980141,
+        "Public Safety": 22170556,
+        "Other": 4104644,
+        "_total": 1141973918
+      },
+      "2025": {
+        "Education": 1069181970,
+        "Libraries": 11183564,
+        "Community Colleges": 81165157,
+        "Health": 6814011,
+        "Transportation": 13809360,
+        "Public Safety": 23833877,
+        "Other": 4507645,
+        "_total": 1210495584
+      },
+      "2026": {
+        "Education": 1146269083,
+        "Libraries": 11914426,
+        "Community Colleges": 82127792,
+        "Health": 6818590,
+        "Transportation": 15669278,
+        "Public Safety": 21374401,
+        "Other": 1550000,
+        "_total": 1285723570
+      },
+      "2027": {
+        "Education": 1181826796,
+        "Libraries": 12183009,
+        "Community Colleges": 84720081,
+        "Health": 8627258,
+        "Transportation": 15687270,
+        "Public Safety": 20658293,
+        "Other": 250000,
+        "_total": 1323952707
+      }
+    },
+    "24009": {
+      "2014": {
+        "Education": 96377842,
+        "Libraries": 737014,
+        "Community Colleges": 2711708,
+        "Health": 425570,
+        "Transportation": 1247727,
+        "Public Safety": 1034328,
+        "Shared Taxes": 1082994,
+        "Other": 224430,
+        "_total": 103841613
+      },
+      "2015": {
+        "Education": 96270319,
+        "Libraries": 770913,
+        "Community Colleges": 2842125,
+        "Health": 425570,
+        "Transportation": 1111959,
+        "Public Safety": 1668304,
+        "Shared Taxes": 1655241,
+        "Other": 220691,
+        "_total": 104965122
+      },
+      "2016": {
+        "Education": 93669154,
+        "Libraries": 798906,
+        "Community Colleges": 2963870,
+        "Health": 489112,
+        "Transportation": 1269102,
+        "Public Safety": 1008047,
+        "Shared Taxes": 2007945,
+        "Other": 277465,
+        "_total": 102483601
+      },
+      "2017": {
+        "Education": 97797897,
+        "Libraries": 850886,
+        "Community Colleges": 3058965,
+        "Health": 602595,
+        "Transportation": 1262676,
+        "Public Safety": 1286753,
+        "Shared Taxes": 2155136,
+        "Other": 428492,
+        "_total": 107443400
+      },
+      "2018": {
+        "Education": 94840152,
+        "Libraries": 849086,
+        "Community Colleges": 3120912,
+        "Health": 602595,
+        "Transportation": 1481945,
+        "Public Safety": 1090877,
+        "Shared Taxes": 2283057,
+        "Other": 395620,
+        "_total": 104664244
+      },
+      "2019": {
+        "Education": 95532514,
+        "Libraries": 889290,
+        "Community Colleges": 3259859,
+        "Health": 658153,
+        "Transportation": 1935529,
+        "Public Safety": 1400038,
+        "Shared Taxes": 2250413,
+        "Other": 188059,
+        "_total": 106113855
+      },
+      "2020": {
+        "Education": 105220318,
+        "Libraries": 944866,
+        "Community Colleges": 3202023,
+        "Health": 880792,
+        "Transportation": 1939223,
+        "Public Safety": 1683935,
+        "Shared Taxes": 2214141,
+        "Other": 436386,
+        "_total": 116521684
+      },
+      "2021": {
+        "Education": 107743192,
+        "Libraries": 998074,
+        "Community Colleges": 3251303,
+        "Health": 1113965,
+        "Transportation": 1902405,
+        "Public Safety": 1387100,
+        "Shared Taxes": 3009391,
+        "Other": 392912,
+        "_total": 119798342
+      },
+      "2022": {
+        "Education": 110313401,
+        "Libraries": 1006449,
+        "Community Colleges": 3392886,
+        "Health": 1930423,
+        "Transportation": 2063210,
+        "Public Safety": 1985691,
+        "Shared Taxes": 3087863,
+        "Other": 770268,
+        "_total": 124550191
+      },
+      "2023": {
+        "Education": 117019706,
+        "Libraries": 1040223,
+        "Community Colleges": 5550588,
+        "Health": 2968632,
+        "Transportation": 2185827,
+        "Public Safety": 1335680,
+        "Shared Taxes": 2926238,
+        "Other": 401336,
+        "_total": 133428230
+      },
+      "2024": {
+        "Education": 125866339,
+        "Libraries": 1099567,
+        "Community Colleges": 6075255,
+        "Health": 4151320,
+        "Transportation": 2747324,
+        "Public Safety": 1269471,
+        "Shared Taxes": 3222613,
+        "Other": 400609,
+        "_total": 144832498
+      },
+      "2025": {
+        "Education": 105842887,
+        "Libraries": 1301063,
+        "Community Colleges": 5642836,
+        "Health": 3223494,
+        "Transportation": 3059522,
+        "Public Safety": 2497655,
+        "Shared Taxes": 3184066,
+        "Other": 389077,
+        "_total": 125140600
+      },
+      "2026": {
+        "Education": 128679235,
+        "Libraries": 1418524,
+        "Community Colleges": 5617671,
+        "Health": 3425549,
+        "Transportation": 3449264,
+        "Public Safety": 1294498,
+        "Shared Taxes": 3150000,
+        "_total": 147034741
+      },
+      "2027": {
+        "Education": 134105533,
+        "Libraries": 1439239,
+        "Community Colleges": 5694447,
+        "Health": 2798761,
+        "Transportation": 3454239,
+        "Public Safety": 1285748,
+        "Shared Taxes": 3150000,
+        "_total": 151927967
+      }
+    },
+    "24011": {
+      "2014": {
+        "Education": 50859953,
+        "Libraries": 392523,
+        "Community Colleges": 1868389,
+        "Health": 597446,
+        "Transportation": 1090086,
+        "Public Safety": 1072613,
+        "Recreation / Environment": 50000,
+        "Shared Taxes": 60255,
+        "Other": 2816890,
+        "_total": 58808155
+      },
+      "2015": {
+        "Education": 53180785,
+        "Libraries": 411790,
+        "Community Colleges": 1845156,
+        "Health": 597446,
+        "Transportation": 939972,
+        "Public Safety": 584591,
+        "Recreation / Environment": 60000,
+        "Shared Taxes": 1129,
+        "Other": 2816890,
+        "_total": 60437759
+      },
+      "2016": {
+        "Education": 54863763,
+        "Libraries": 414095,
+        "Community Colleges": 1904135,
+        "Health": 620257,
+        "Transportation": 940827,
+        "Public Safety": 603968,
+        "Shared Taxes": 73822,
+        "Other": 2816890,
+        "_total": 62237757
+      },
+      "2017": {
+        "Education": 56897010,
+        "Libraries": 435307,
+        "Community Colleges": 1820022,
+        "Health": 725829,
+        "Transportation": 928848,
+        "Public Safety": 669142,
+        "Shared Taxes": 0,
+        "Other": 2818890,
+        "_total": 64295048
+      },
+      "2018": {
+        "Education": 59051741,
+        "Libraries": 447438,
+        "Community Colleges": 1803438,
+        "Health": 725829,
+        "Transportation": 1077930,
+        "Public Safety": 653468,
+        "Other": 2850888,
+        "_total": 66610732
+      },
+      "2019": {
+        "Education": 61377132,
+        "Libraries": 470257,
+        "Community Colleges": 1901042,
+        "Health": 784810,
+        "Transportation": 1392819,
+        "Public Safety": 1460443,
+        "Other": 2934790,
+        "_total": 70321293
+      },
+      "2020": {
+        "Education": 68563747,
+        "Libraries": 481669,
+        "Community Colleges": 2010158,
+        "Health": 1002659,
+        "Transportation": 1450052,
+        "Public Safety": 680305,
+        "Other": 4484955,
+        "_total": 78673545
+      },
+      "2021": {
+        "Education": 69679534,
+        "Libraries": 477497,
+        "Community Colleges": 2104781,
+        "Health": 1077620,
+        "Transportation": 1590311,
+        "Public Safety": 1235899,
+        "Other": 4122262,
+        "_total": 80287904
+      },
+      "2022": {
+        "Education": 71521459,
+        "Libraries": 506215,
+        "Community Colleges": 2262468,
+        "Health": 1128797,
+        "Transportation": 1721544,
+        "Public Safety": 695666,
+        "Other": 4745518,
+        "_total": 82581667
+      },
+      "2023": {
+        "Education": 73104336,
+        "Libraries": 496262,
+        "Community Colleges": 2367653,
+        "Health": 1994163,
+        "Transportation": 1731509,
+        "Public Safety": 766718,
+        "Other": 4750519,
+        "_total": 85211160
+      },
+      "2024": {
+        "Education": 82470411,
+        "Libraries": 525350,
+        "Community Colleges": 2945983,
+        "Health": 2588612,
+        "Transportation": 2082363,
+        "Public Safety": 791742,
+        "Other": 5387553,
+        "_total": 96792014
+      },
+      "2025": {
+        "Education": 85518333,
+        "Libraries": 543267,
+        "Community Colleges": 3006368,
+        "Health": 2093608,
+        "Transportation": 2378514,
+        "Public Safety": 1000346,
+        "Other": 4781374,
+        "_total": 99321810
+      },
+      "2026": {
+        "Education": 90277650,
+        "Libraries": 537157,
+        "Community Colleges": 3617728,
+        "Health": 2186117,
+        "Transportation": 2702901,
+        "Public Safety": 845382,
+        "Other": 5016258,
+        "_total": 105183193
+      },
+      "2027": {
+        "Education": 95785698,
+        "Libraries": 574069,
+        "Community Colleges": 3397017,
+        "Health": 2043191,
+        "Transportation": 2704206,
+        "Public Safety": 824053,
+        "Other": 4736254,
+        "_total": 110064488
+      }
+    },
+    "24013": {
+      "2014": {
+        "Education": 158010432,
+        "Libraries": 1705136,
+        "Community Colleges": 8827172,
+        "Health": 1371051,
+        "Transportation": 2899998,
+        "Public Safety": 1983504,
+        "Recreation / Environment": 0,
+        "Shared Taxes": 17351,
+        "Other": 183129,
+        "_total": 174997773
+      },
+      "2015": {
+        "Education": 155683430,
+        "Libraries": 1718855,
+        "Community Colleges": 9014864,
+        "Health": 1371051,
+        "Transportation": 2601495,
+        "Public Safety": 1910585,
+        "Recreation / Environment": 36000,
+        "Shared Taxes": 0,
+        "Other": 151640,
+        "_total": 172487920
+      },
+      "2016": {
+        "Education": 151342048,
+        "Libraries": 1773322,
+        "Community Colleges": 9386604,
+        "Health": 1467782,
+        "Transportation": 2944150,
+        "Public Safety": 1852279,
+        "Shared Taxes": 17035,
+        "Other": 151950,
+        "_total": 168935170
+      },
+      "2017": {
+        "Education": 156692799,
+        "Libraries": 1842148,
+        "Community Colleges": 9509767,
+        "Health": 1667149,
+        "Transportation": 3000431,
+        "Public Safety": 2064267,
+        "Shared Taxes": 0,
+        "Other": 160889,
+        "_total": 174937450
+      },
+      "2018": {
+        "Education": 151141837,
+        "Libraries": 1847754,
+        "Community Colleges": 9590991,
+        "Health": 1667149,
+        "Transportation": 3392446,
+        "Public Safety": 2036583,
+        "Other": 160104,
+        "_total": 169836864
+      },
+      "2019": {
+        "Education": 153324677,
+        "Libraries": 1902021,
+        "Community Colleges": 9911332,
+        "Health": 1796826,
+        "Transportation": 4286496,
+        "Public Safety": 2065862,
+        "Other": 150275,
+        "_total": 173437489
+      },
+      "2020": {
+        "Education": 161584306,
+        "Libraries": 1969132,
+        "Community Colleges": 10196371,
+        "Health": 2307715,
+        "Transportation": 4482507,
+        "Public Safety": 2395792,
+        "Other": 478192,
+        "_total": 183414015
+      },
+      "2021": {
+        "Education": 164890715,
+        "Libraries": 2023074,
+        "Community Colleges": 10573584,
+        "Health": 2408025,
+        "Transportation": 4890755,
+        "Public Safety": 5264561,
+        "Other": 528434,
+        "_total": 190579148
+      },
+      "2022": {
+        "Education": 168526683,
+        "Libraries": 2046997,
+        "Community Colleges": 11458499,
+        "Health": 2990292,
+        "Transportation": 5113812,
+        "Public Safety": 3858463,
+        "Other": 487910,
+        "_total": 194482656
+      },
+      "2023": {
+        "Education": 177403534,
+        "Libraries": 2152477,
+        "Community Colleges": 13916522,
+        "Health": 4171526,
+        "Transportation": 5327686,
+        "Public Safety": 2370392,
+        "Other": 489349,
+        "_total": 205831486
+      },
+      "2024": {
+        "Education": 199701206,
+        "Libraries": 2194576,
+        "Community Colleges": 15570197,
+        "Health": 5495860,
+        "Transportation": 6380217,
+        "Public Safety": 2419035,
+        "Other": 511815,
+        "_total": 232272906
+      },
+      "2025": {
+        "Education": 210907693,
+        "Libraries": 2339914,
+        "Community Colleges": 15447719,
+        "Health": 4481150,
+        "Transportation": 7332259,
+        "Public Safety": 3017054,
+        "Other": 518094,
+        "_total": 244043883
+      },
+      "2026": {
+        "Education": 221300219,
+        "Libraries": 2517311,
+        "Community Colleges": 16642938,
+        "Health": 4670593,
+        "Transportation": 8343239,
+        "Public Safety": 2788283,
+        "_total": 256262583
+      },
+      "2027": {
+        "Education": 229492285,
+        "Libraries": 2586940,
+        "Community Colleges": 17133476,
+        "Health": 4452943,
+        "Transportation": 8351249,
+        "Public Safety": 2705878,
+        "_total": 264722771
+      }
+    },
+    "24015": {
+      "2014": {
+        "Education": 110081483,
+        "Libraries": 1096638,
+        "Community Colleges": 6181607,
+        "Health": 898571,
+        "Transportation": 1621777,
+        "Public Safety": 2781929,
+        "Recreation / Environment": 91500,
+        "Shared Taxes": 3334930,
+        "Other": 611920,
+        "_total": 126700355
+      },
+      "2015": {
+        "Education": 114523405,
+        "Libraries": 1124751,
+        "Community Colleges": 6389468,
+        "Health": 898571,
+        "Transportation": 1437763,
+        "Public Safety": 1249351,
+        "Recreation / Environment": 91500,
+        "Shared Taxes": 3490689,
+        "Other": 587565,
+        "_total": 129793063
+      },
+      "2016": {
+        "Education": 113005690,
+        "Libraries": 1147329,
+        "Community Colleges": 6517179,
+        "Health": 975421,
+        "Transportation": 1641436,
+        "Public Safety": 1242043,
+        "Shared Taxes": 3686816,
+        "Other": 407704,
+        "_total": 128623618
+      },
+      "2017": {
+        "Education": 119801774,
+        "Libraries": 1187406,
+        "Community Colleges": 6741702,
+        "Health": 1123764,
+        "Transportation": 1625000,
+        "Public Safety": 1345946,
+        "Shared Taxes": 3992903,
+        "Other": 597104,
+        "_total": 136415599
+      },
+      "2018": {
+        "Education": 120033542,
+        "Libraries": 1202760,
+        "Community Colleges": 6820029,
+        "Health": 1123764,
+        "Transportation": 1865302,
+        "Public Safety": 1302181,
+        "Shared Taxes": 4289364,
+        "Other": 801719,
+        "_total": 137438661
+      },
+      "2019": {
+        "Education": 120768643,
+        "Libraries": 1243660,
+        "Community Colleges": 7130581,
+        "Health": 1223669,
+        "Transportation": 2368276,
+        "Public Safety": 4228803,
+        "Shared Taxes": 4265775,
+        "Other": 1340905,
+        "_total": 142570312
+      },
+      "2020": {
+        "Education": 125298205,
+        "Libraries": 1319609,
+        "Community Colleges": 7434072,
+        "Health": 1608120,
+        "Transportation": 2454066,
+        "Public Safety": 1567868,
+        "Shared Taxes": 3231590,
+        "Other": 1707660,
+        "_total": 144621190
+      },
+      "2021": {
+        "Education": 127498114,
+        "Libraries": 1352082,
+        "Community Colleges": 7730445,
+        "Health": 1769688,
+        "Transportation": 2558541,
+        "Public Safety": 1355400,
+        "Shared Taxes": 4901690,
+        "Other": 2086403,
+        "_total": 149252363
+      },
+      "2022": {
+        "Education": 130362674,
+        "Libraries": 1370877,
+        "Community Colleges": 8257514,
+        "Health": 2288974,
+        "Transportation": 2894599,
+        "Public Safety": 3657762,
+        "Shared Taxes": 5251739,
+        "Other": 1708241,
+        "_total": 155792380
+      },
+      "2023": {
+        "Education": 132813894,
+        "Libraries": 1433177,
+        "Community Colleges": 9470639,
+        "Health": 3042454,
+        "Transportation": 2643322,
+        "Public Safety": 1803431,
+        "Shared Taxes": 4965787,
+        "Other": 1719393,
+        "_total": 157892097
+      },
+      "2024": {
+        "Education": 153808282,
+        "Libraries": 1490386,
+        "Community Colleges": 10542739,
+        "Health": 3982039,
+        "Transportation": 3348155,
+        "Public Safety": 1875621,
+        "Shared Taxes": 4982663,
+        "Other": 1216200,
+        "_total": 181246085
+      },
+      "2025": {
+        "Education": 157977251,
+        "Libraries": 1534735,
+        "Community Colleges": 9834798,
+        "Health": 3252681,
+        "Transportation": 3880811,
+        "Public Safety": 3108322,
+        "Shared Taxes": 5014376,
+        "Other": 137591,
+        "_total": 184740565
+      },
+      "2026": {
+        "Education": 165754561,
+        "Libraries": 1651433,
+        "Community Colleges": 10572706,
+        "Health": 3399458,
+        "Transportation": 4498055,
+        "Public Safety": 2018367,
+        "Shared Taxes": 4787828,
+        "_total": 192682408
+      },
+      "2027": {
+        "Education": 168708500,
+        "Libraries": 1653680,
+        "Community Colleges": 10935920,
+        "Health": 3173503,
+        "Transportation": 4503755,
+        "Public Safety": 1943496,
+        "Shared Taxes": 4787828,
+        "_total": 195706682
+      }
+    },
+    "24017": {
+      "2014": {
+        "Education": 180902183,
+        "Libraries": 1249676,
+        "Community Colleges": 9213868,
+        "Health": 1108607,
+        "Transportation": 1771332,
+        "Public Safety": 2271448,
+        "Recreation / Environment": 330000,
+        "Shared Taxes": 19663,
+        "Other": 457378,
+        "_total": 197324155
+      },
+      "2015": {
+        "Education": 183892447,
+        "Libraries": 1395736,
+        "Community Colleges": 9648828,
+        "Health": 1108607,
+        "Transportation": 1380129,
+        "Public Safety": 1675736,
+        "Recreation / Environment": 330000,
+        "Shared Taxes": 0,
+        "Other": 420349,
+        "_total": 199851832
+      },
+      "2016": {
+        "Education": 183683392,
+        "Libraries": 1387670,
+        "Community Colleges": 10146368,
+        "Health": 1233141,
+        "Transportation": 1662742,
+        "Public Safety": 1612666,
+        "Shared Taxes": 31849,
+        "Other": 700958,
+        "_total": 200458786
+      },
+      "2017": {
+        "Education": 190277920,
+        "Libraries": 1551065,
+        "Community Colleges": 10646241,
+        "Health": 1453079,
+        "Transportation": 1576130,
+        "Public Safety": 5717722,
+        "Shared Taxes": 0,
+        "Other": 471283,
+        "_total": 211693440
+      },
+      "2018": {
+        "Education": 193035571,
+        "Libraries": 1606846,
+        "Community Colleges": 10714722,
+        "Health": 1453079,
+        "Transportation": 2001425,
+        "Public Safety": 1761617,
+        "Other": 495260,
+        "_total": 211068520
+      },
+      "2019": {
+        "Education": 205781962,
+        "Libraries": 1696117,
+        "Community Colleges": 10595381,
+        "Health": 1570553,
+        "Transportation": 2788499,
+        "Public Safety": 2041891,
+        "Other": 422690,
+        "_total": 224897093
+      },
+      "2020": {
+        "Education": 221539576,
+        "Libraries": 1735947,
+        "Community Colleges": 10686185,
+        "Health": 1667362,
+        "Transportation": 2721929,
+        "Public Safety": 1968256,
+        "Other": 8520,
+        "_total": 240327775
+      },
+      "2021": {
+        "Education": 226422246,
+        "Libraries": 1753276,
+        "Community Colleges": 10812418,
+        "Health": 2832216,
+        "Transportation": 2909626,
+        "Public Safety": 3324281,
+        "Other": 8547,
+        "_total": 248062610
+      },
+      "2022": {
+        "Education": 234727959,
+        "Libraries": 1824247,
+        "Community Colleges": 11884065,
+        "Health": 4275553,
+        "Transportation": 3282024,
+        "Public Safety": 3031547,
+        "Other": 570638,
+        "_total": 259596033
+      },
+      "2023": {
+        "Education": 244462583,
+        "Libraries": 1909881,
+        "Community Colleges": 10220553,
+        "Health": 4723445,
+        "Transportation": 3123761,
+        "Public Safety": 2855485,
+        "Other": 576316,
+        "_total": 267872024
+      },
+      "2024": {
+        "Education": 281248986,
+        "Libraries": 2002649,
+        "Community Colleges": 10854147,
+        "Health": 6254069,
+        "Transportation": 4023274,
+        "Public Safety": 2727013,
+        "Other": 583696,
+        "_total": 307693834
+      },
+      "2025": {
+        "Education": 295509961,
+        "Libraries": 2152398,
+        "Community Colleges": 11009784,
+        "Health": 5039941,
+        "Transportation": 4489653,
+        "Public Safety": 4806779,
+        "Other": 599927,
+        "_total": 323608443
+      },
+      "2026": {
+        "Education": 303369212,
+        "Libraries": 2278875,
+        "Community Colleges": 10971618,
+        "Health": 5299828,
+        "Transportation": 5061625,
+        "Public Safety": 2929521,
+        "_total": 329910679
+      },
+      "2027": {
+        "Education": 318516860,
+        "Libraries": 2340879,
+        "Community Colleges": 11687672,
+        "Health": 4722399,
+        "Transportation": 5067700,
+        "Public Safety": 2823875,
+        "_total": 345159385
+      }
+    },
+    "24019": {
+      "2014": {
+        "Education": 39061844,
+        "Libraries": 314661,
+        "Community Colleges": 1534979,
+        "Health": 487575,
+        "Transportation": 1280891,
+        "Public Safety": 710213,
+        "Recreation / Environment": 49500,
+        "Shared Taxes": 8281,
+        "Other": 2331603,
+        "_total": 45779547
+      },
+      "2015": {
+        "Education": 41530133,
+        "Libraries": 309889,
+        "Community Colleges": 1381498,
+        "Health": 487575,
+        "Transportation": 1082990,
+        "Public Safety": 866053,
+        "Recreation / Environment": 110250,
+        "Shared Taxes": 14269,
+        "Other": 2331603,
+        "_total": 48114260
+      },
+      "2016": {
+        "Education": 43745540,
+        "Libraries": 331621,
+        "Community Colleges": 1419128,
+        "Health": 512765,
+        "Transportation": 1211584,
+        "Public Safety": 650924,
+        "Shared Taxes": 26825,
+        "Other": 2331603,
+        "_total": 50229990
+      },
+      "2017": {
+        "Education": 44545367,
+        "Libraries": 341809,
+        "Community Colleges": 1422705,
+        "Health": 620986,
+        "Transportation": 1220979,
+        "Public Safety": 737416,
+        "Shared Taxes": 0,
+        "Other": 2336603,
+        "_total": 51225865
+      },
+      "2018": {
+        "Education": 46579165,
+        "Libraries": 357613,
+        "Community Colleges": 1421311,
+        "Health": 620986,
+        "Transportation": 1361635,
+        "Public Safety": 707297,
+        "Other": 2366707,
+        "_total": 53414714
+      },
+      "2019": {
+        "Education": 47967281,
+        "Libraries": 371814,
+        "Community Colleges": 1471635,
+        "Health": 691977,
+        "Transportation": 1735035,
+        "Public Safety": 989100,
+        "Other": 2493212,
+        "_total": 55720054
+      },
+      "2020": {
+        "Education": 54342845,
+        "Libraries": 394480,
+        "Community Colleges": 1351506,
+        "Health": 976926,
+        "Transportation": 1831666,
+        "Public Safety": 892566,
+        "Shared Taxes": 585173,
+        "Other": 2348331,
+        "_total": 62723493
+      },
+      "2021": {
+        "Education": 54593007,
+        "Libraries": 397916,
+        "Community Colleges": 1422491,
+        "Health": 961725,
+        "Transportation": 1854317,
+        "Public Safety": 3047109,
+        "Shared Taxes": 525886,
+        "Other": 4328084,
+        "_total": 67130535
+      },
+      "2022": {
+        "Education": 57690612,
+        "Libraries": 401839,
+        "Community Colleges": 1478698,
+        "Health": 2001033,
+        "Transportation": 2130687,
+        "Public Safety": 699518,
+        "Shared Taxes": 645197,
+        "Other": 4065594,
+        "_total": 69113178
+      },
+      "2023": {
+        "Education": 59297844,
+        "Libraries": 429125,
+        "Community Colleges": 1796563,
+        "Health": 2595410,
+        "Transportation": 2050994,
+        "Public Safety": 1078721,
+        "Shared Taxes": 689957,
+        "Other": 4164271,
+        "_total": 72102885
+      },
+      "2024": {
+        "Education": 61317902,
+        "Libraries": 437135,
+        "Community Colleges": 2015724,
+        "Health": 3703171,
+        "Transportation": 2552211,
+        "Public Safety": 1026447,
+        "Shared Taxes": 697725,
+        "Other": 4254701,
+        "_total": 76005016
+      },
+      "2025": {
+        "Education": 67077563,
+        "Libraries": 462391,
+        "Community Colleges": 1896434,
+        "Health": 2836826,
+        "Transportation": 2981856,
+        "Public Safety": 1747361,
+        "Shared Taxes": 707047,
+        "Other": 4756897,
+        "_total": 82466375
+      },
+      "2026": {
+        "Education": 67474810,
+        "Libraries": 471422,
+        "Community Colleges": 2381698,
+        "Health": 3005716,
+        "Transportation": 3313229,
+        "Public Safety": 938762,
+        "Shared Taxes": 714690,
+        "Other": 5145269,
+        "_total": 83445596
+      },
+      "2027": {
+        "Education": 70065648,
+        "Libraries": 470075,
+        "Community Colleges": 2509786,
+        "Health": 2525237,
+        "Transportation": 3318039,
+        "Public Safety": 911593,
+        "Shared Taxes": 750947,
+        "Other": 4823873,
+        "_total": 85375198
+      }
+    },
+    "24021": {
+      "2014": {
+        "Education": 261885124,
+        "Libraries": 2075533,
+        "Community Colleges": 11130061,
+        "Health": 1684858,
+        "Transportation": 4412754,
+        "Public Safety": 5466379,
+        "Recreation / Environment": 42000,
+        "Shared Taxes": 123399,
+        "Other": 501798,
+        "_total": 287321906
+      },
+      "2015": {
+        "Education": 266244184,
+        "Libraries": 2157677,
+        "Community Colleges": 11347922,
+        "Health": 1684858,
+        "Transportation": 4035758,
+        "Public Safety": 3436134,
+        "Recreation / Environment": 72000,
+        "Shared Taxes": 0,
+        "Other": 504569,
+        "_total": 289483102
+      },
+      "2016": {
+        "Education": 263702411,
+        "Libraries": 2211489,
+        "Community Colleges": 11472494,
+        "Health": 1815569,
+        "Transportation": 4629211,
+        "Public Safety": 2754504,
+        "Shared Taxes": 119601,
+        "Other": 458558,
+        "_total": 287163837
+      },
+      "2017": {
+        "Education": 267455673,
+        "Libraries": 2301528,
+        "Community Colleges": 12318305,
+        "Health": 2033245,
+        "Transportation": 4607942,
+        "Public Safety": 3847181,
+        "Shared Taxes": 0,
+        "Other": 499435,
+        "_total": 293063309
+      },
+      "2018": {
+        "Education": 271993337,
+        "Libraries": 2344630,
+        "Community Colleges": 12964059,
+        "Health": 2033245,
+        "Transportation": 5194949,
+        "Public Safety": 2991312,
+        "Other": 540114,
+        "_total": 298061646
+      },
+      "2019": {
+        "Education": 281890256,
+        "Libraries": 2410624,
+        "Community Colleges": 13144438,
+        "Health": 2170544,
+        "Transportation": 6425426,
+        "Public Safety": 3769839,
+        "Other": 530998,
+        "_total": 310342125
+      },
+      "2020": {
+        "Education": 302394909,
+        "Libraries": 2511631,
+        "Community Colleges": 14186601,
+        "Health": 2679432,
+        "Transportation": 6993973,
+        "Public Safety": 3415351,
+        "Other": 1313776,
+        "_total": 333495673
+      },
+      "2021": {
+        "Education": 316108115,
+        "Libraries": 2538596,
+        "Community Colleges": 14543675,
+        "Health": 2847951,
+        "Transportation": 7692221,
+        "Public Safety": 11291841,
+        "Other": 1330111,
+        "_total": 356352510
+      },
+      "2022": {
+        "Education": 325042557,
+        "Libraries": 2666068,
+        "Community Colleges": 16141172,
+        "Health": 3226332,
+        "Transportation": 8368845,
+        "Public Safety": 4506004,
+        "Other": 1317345,
+        "_total": 361268323
+      },
+      "2023": {
+        "Education": 365414100,
+        "Libraries": 2889921,
+        "Community Colleges": 19266500,
+        "Health": 4628641,
+        "Transportation": 8412817,
+        "Public Safety": 4045225,
+        "Other": 1321827,
+        "_total": 405979031
+      },
+      "2024": {
+        "Education": 405096941,
+        "Libraries": 2938523,
+        "Community Colleges": 21529833,
+        "Health": 6035324,
+        "Transportation": 10239282,
+        "Public Safety": 4233957,
+        "Other": 1296405,
+        "_total": 451370265
+      },
+      "2025": {
+        "Education": 431870843,
+        "Libraries": 3209682,
+        "Community Colleges": 24341001,
+        "Health": 4966103,
+        "Transportation": 11819103,
+        "Public Safety": 8681435,
+        "Other": 1780491,
+        "_total": 486668658
+      },
+      "2026": {
+        "Education": 449942006,
+        "Libraries": 3611002,
+        "Community Colleges": 26638142,
+        "Health": 5153997,
+        "Transportation": 13194721,
+        "Public Safety": 4572362,
+        "Other": 0,
+        "_total": 503112230
+      },
+      "2027": {
+        "Education": 464177313,
+        "Libraries": 3583033,
+        "Community Colleges": 27503098,
+        "Health": 5059623,
+        "Transportation": 13205289,
+        "Public Safety": 4466201,
+        "Other": 50000,
+        "_total": 518044557
+      }
+    },
+    "24023": {
+      "2014": {
+        "Education": 24847950,
+        "Libraries": 215495,
+        "Community Colleges": 3910608,
+        "Health": 494747,
+        "Transportation": 1273013,
+        "Public Safety": 435618,
+        "Shared Taxes": 542011,
+        "Other": 2614789,
+        "_total": 34334231
+      },
+      "2015": {
+        "Education": 24392448,
+        "Libraries": 219723,
+        "Community Colleges": 4191452,
+        "Health": 494747,
+        "Transportation": 1017282,
+        "Public Safety": 467960,
+        "Shared Taxes": 263688,
+        "Other": 2615943,
+        "_total": 33663243
+      },
+      "2016": {
+        "Education": 24095007,
+        "Libraries": 236936,
+        "Community Colleges": 4383245,
+        "Health": 515526,
+        "Transportation": 1161648,
+        "Public Safety": 483352,
+        "Shared Taxes": 670409,
+        "Other": 2616122,
+        "_total": 34162245
+      },
+      "2017": {
+        "Education": 25544875,
+        "Libraries": 247706,
+        "Community Colleges": 4381157,
+        "Health": 639306,
+        "Transportation": 1145908,
+        "Public Safety": 532228,
+        "Shared Taxes": 0,
+        "Other": 2636434,
+        "_total": 35127614
+      },
+      "2018": {
+        "Education": 24478233,
+        "Libraries": 257184,
+        "Community Colleges": 4428089,
+        "Health": 639306,
+        "Transportation": 1342451,
+        "Public Safety": 526243,
+        "Shared Taxes": 0,
+        "Other": 2620418,
+        "_total": 34291924
+      },
+      "2019": {
+        "Education": 25270596,
+        "Libraries": 272030,
+        "Community Colleges": 4498554,
+        "Health": 710014,
+        "Transportation": 1724797,
+        "Public Safety": 658211,
+        "Shared Taxes": 1491021,
+        "Other": 2623320,
+        "_total": 37248543
+      },
+      "2020": {
+        "Education": 26594344,
+        "Libraries": 284609,
+        "Community Colleges": 4670299,
+        "Health": 987173,
+        "Transportation": 1734371,
+        "Public Safety": 1482176,
+        "Shared Taxes": 1489466,
+        "Other": 2600100,
+        "_total": 39842538
+      },
+      "2021": {
+        "Education": 27552976,
+        "Libraries": 293773,
+        "Community Colleges": 4832245,
+        "Health": 1425495,
+        "Transportation": 1881188,
+        "Public Safety": 1870411,
+        "Shared Taxes": 1338562,
+        "Other": 2601585,
+        "_total": 41796235
+      },
+      "2022": {
+        "Education": 28804253,
+        "Libraries": 301553,
+        "Community Colleges": 5077567,
+        "Health": 2007810,
+        "Transportation": 2011825,
+        "Public Safety": 1374944,
+        "Shared Taxes": 1697478,
+        "Other": 2585091,
+        "_total": 43860521
+      },
+      "2023": {
+        "Education": 28605104,
+        "Libraries": 302913,
+        "Community Colleges": 5853068,
+        "Health": 2498341,
+        "Transportation": 2025079,
+        "Public Safety": 633578,
+        "Shared Taxes": 1714176,
+        "Other": 2585430,
+        "_total": 44217689
+      },
+      "2024": {
+        "Education": 30387385,
+        "Libraries": 301899,
+        "Community Colleges": 6620376,
+        "Health": 3608795,
+        "Transportation": 2401374,
+        "Public Safety": 587575,
+        "Shared Taxes": 1728971,
+        "Other": 2586609,
+        "_total": 48222984
+      },
+      "2025": {
+        "Education": 31265058,
+        "Libraries": 312863,
+        "Community Colleges": 5922082,
+        "Health": 2789147,
+        "Transportation": 2752009,
+        "Public Safety": 1035404,
+        "Shared Taxes": 1738914,
+        "Other": 2587510,
+        "_total": 48402987
+      },
+      "2026": {
+        "Education": 31166146,
+        "Libraries": 304209,
+        "Community Colleges": 6832386,
+        "Health": 2953264,
+        "Transportation": 3156992,
+        "Public Safety": 580062,
+        "Shared Taxes": 1749524,
+        "Other": 2250608,
+        "_total": 48993191
+      },
+      "2027": {
+        "Education": 29547023,
+        "Libraries": 283516,
+        "Community Colleges": 6972348,
+        "Health": 2503133,
+        "Transportation": 3161671,
+        "Public Safety": 572114,
+        "Shared Taxes": 1778885,
+        "Other": 2131271,
+        "_total": 46949961
+      }
+    },
+    "24025": {
+      "2014": {
+        "Education": 232717269,
+        "Libraries": 2662871,
+        "Community Colleges": 12586617,
+        "Health": 1935591,
+        "Transportation": 2977789,
+        "Public Safety": 5349192,
+        "Recreation / Environment": 68250,
+        "Shared Taxes": 126937,
+        "Other": 134915,
+        "_total": 258559431
+      },
+      "2015": {
+        "Education": 234721982,
+        "Libraries": 2740740,
+        "Community Colleges": 13307928,
+        "Health": 1935591,
+        "Transportation": 2654335,
+        "Public Safety": 3577290,
+        "Recreation / Environment": 85750,
+        "Shared Taxes": 0,
+        "Other": 140397,
+        "_total": 259164013
+      },
+      "2016": {
+        "Education": 231986449,
+        "Libraries": 2788894,
+        "Community Colleges": 13430990,
+        "Health": 2083651,
+        "Transportation": 3053614,
+        "Public Safety": 3214627,
+        "Shared Taxes": 153185,
+        "Other": 127945,
+        "_total": 256839355
+      },
+      "2017": {
+        "Education": 235127937,
+        "Libraries": 2906013,
+        "Community Colleges": 14202504,
+        "Health": 2308603,
+        "Transportation": 3053693,
+        "Public Safety": 3521143,
+        "Shared Taxes": 0,
+        "Other": 131754,
+        "_total": 261251647
+      },
+      "2018": {
+        "Education": 234299405,
+        "Libraries": 2860988,
+        "Community Colleges": 14296385,
+        "Health": 2308603,
+        "Transportation": 3558271,
+        "Public Safety": 3445424,
+        "Other": 188771,
+        "_total": 260957847
+      },
+      "2019": {
+        "Education": 239127711,
+        "Libraries": 2951294,
+        "Community Colleges": 15085632,
+        "Health": 2460920,
+        "Transportation": 4515159,
+        "Public Safety": 3816870,
+        "Other": 188906,
+        "_total": 268146492
+      },
+      "2020": {
+        "Education": 256503814,
+        "Libraries": 3076390,
+        "Community Colleges": 14851499,
+        "Health": 2978815,
+        "Transportation": 4626097,
+        "Public Safety": 7626910,
+        "Other": 339244,
+        "_total": 290002769
+      },
+      "2021": {
+        "Education": 264148133,
+        "Libraries": 3028039,
+        "Community Colleges": 15342576,
+        "Health": 3588948,
+        "Transportation": 5052069,
+        "Public Safety": 5187687,
+        "Other": 328951,
+        "_total": 296676403
+      },
+      "2022": {
+        "Education": 271382799,
+        "Libraries": 3032902,
+        "Community Colleges": 16653375,
+        "Health": 3750671,
+        "Transportation": 5313731,
+        "Public Safety": 5083089,
+        "Other": 351539,
+        "_total": 305568106
+      },
+      "2023": {
+        "Education": 291864351,
+        "Libraries": 3211978,
+        "Community Colleges": 19962599,
+        "Health": 5466528,
+        "Transportation": 5502158,
+        "Public Safety": 4255343,
+        "Other": 365780,
+        "_total": 330628737
+      },
+      "2024": {
+        "Education": 329311895,
+        "Libraries": 3444152,
+        "Community Colleges": 21633372,
+        "Health": 7075328,
+        "Transportation": 6494568,
+        "Public Safety": 4479821,
+        "Other": 353947,
+        "_total": 372793083
+      },
+      "2025": {
+        "Education": 360064775,
+        "Libraries": 3766115,
+        "Community Colleges": 21663730,
+        "Health": 5777889,
+        "Transportation": 7541794,
+        "Public Safety": 6019434,
+        "Other": 381273,
+        "_total": 405215010
+      },
+      "2026": {
+        "Education": 373203769,
+        "Libraries": 4019564,
+        "Community Colleges": 22574086,
+        "Health": 6001605,
+        "Transportation": 8507222,
+        "Public Safety": 4618852,
+        "_total": 418925098
+      },
+      "2027": {
+        "Education": 388415728,
+        "Libraries": 3946583,
+        "Community Colleges": 23065495,
+        "Health": 5847246,
+        "Transportation": 8515823,
+        "Public Safety": 4509320,
+        "_total": 434300195
+      }
+    },
+    "24027": {
+      "2014": {
+        "Education": 276509713,
+        "Libraries": 2584302,
+        "Community Colleges": 18298828,
+        "Health": 1358560,
+        "Transportation": 2496392,
+        "Public Safety": 5730226,
+        "Recreation / Environment": 100000,
+        "Shared Taxes": 78712,
+        "Other": 332203,
+        "_total": 307488936
+      },
+      "2015": {
+        "Education": 280861372,
+        "Libraries": 2796316,
+        "Community Colleges": 19146201,
+        "Health": 1358560,
+        "Transportation": 2064896,
+        "Public Safety": 4240503,
+        "Recreation / Environment": 300000,
+        "Shared Taxes": 89286,
+        "Other": 315016,
+        "_total": 311172150
+      },
+      "2016": {
+        "Education": 286892109,
+        "Libraries": 2883363,
+        "Community Colleges": 20674552,
+        "Health": 1529332,
+        "Transportation": 2510006,
+        "Public Safety": 4191987,
+        "Shared Taxes": 255913,
+        "Other": 316248,
+        "_total": 319253510
+      },
+      "2017": {
+        "Education": 300384344,
+        "Libraries": 3099708,
+        "Community Colleges": 22615025,
+        "Health": 1733685,
+        "Transportation": 2248049,
+        "Public Safety": 5465248,
+        "Shared Taxes": 89286,
+        "Other": 308213,
+        "_total": 335943558
+      },
+      "2018": {
+        "Education": 301227922,
+        "Libraries": 3040922,
+        "Community Colleges": 23005990,
+        "Health": 1733685,
+        "Transportation": 2933920,
+        "Public Safety": 4490415,
+        "Shared Taxes": 89286,
+        "Other": 412254,
+        "_total": 336934394
+      },
+      "2019": {
+        "Education": 316550021,
+        "Libraries": 3124468,
+        "Community Colleges": 23718082,
+        "Health": 1851364,
+        "Transportation": 4006289,
+        "Public Safety": 4570279,
+        "Shared Taxes": 89286,
+        "Other": 397271,
+        "_total": 354307060
+      },
+      "2020": {
+        "Education": 343901244,
+        "Libraries": 3294934,
+        "Community Colleges": 25047404,
+        "Health": 2323989,
+        "Transportation": 3900823,
+        "Public Safety": 6712270,
+        "Shared Taxes": 89286,
+        "Other": 452498,
+        "_total": 385722448
+      },
+      "2021": {
+        "Education": 355095665,
+        "Libraries": 3258456,
+        "Community Colleges": 25609952,
+        "Health": 2384303,
+        "Transportation": 4247467,
+        "Public Safety": 5372707,
+        "Shared Taxes": 89286,
+        "Other": 492980,
+        "_total": 396550816
+      },
+      "2022": {
+        "Education": 362976650,
+        "Libraries": 3263107,
+        "Community Colleges": 29095569,
+        "Health": 3165133,
+        "Transportation": 4516427,
+        "Public Safety": 5936672,
+        "Shared Taxes": 89286,
+        "Other": 1266481,
+        "_total": 410309325
+      },
+      "2023": {
+        "Education": 387752179,
+        "Libraries": 3357514,
+        "Community Colleges": 34578133,
+        "Health": 5379487,
+        "Transportation": 4544795,
+        "Public Safety": 6479544,
+        "Shared Taxes": 89286,
+        "Other": 1271528,
+        "_total": 443452466
+      },
+      "2024": {
+        "Education": 415855676,
+        "Libraries": 3470622,
+        "Community Colleges": 38311543,
+        "Health": 7534939,
+        "Transportation": 5274409,
+        "Public Safety": 6455395,
+        "Shared Taxes": 89286,
+        "Other": 1298950,
+        "_total": 478290820
+      },
+      "2025": {
+        "Education": 448202874,
+        "Libraries": 3966686,
+        "Community Colleges": 38986876,
+        "Health": 5972441,
+        "Transportation": 6090956,
+        "Public Safety": 7113209,
+        "Shared Taxes": 89286,
+        "Other": 1304363,
+        "_total": 511726691
+      },
+      "2026": {
+        "Education": 470983522,
+        "Libraries": 4287527,
+        "Community Colleges": 40023658,
+        "Health": 6282731,
+        "Transportation": 6844375,
+        "Public Safety": 6562153,
+        "Shared Taxes": 89286,
+        "_total": 535073252
+      },
+      "2027": {
+        "Education": 489392385,
+        "Libraries": 4361844,
+        "Community Colleges": 40824803,
+        "Health": 5606590,
+        "Transportation": 6851750,
+        "Public Safety": 6508190,
+        "Shared Taxes": 89286,
+        "_total": 553634848
+      }
+    },
+    "24029": {
+      "2014": {
+        "Education": 12817373,
+        "Libraries": 148739,
+        "Community Colleges": 669083,
+        "Health": 382647,
+        "Transportation": 681322,
+        "Public Safety": 804847,
+        "Recreation / Environment": 30000,
+        "Other": 69789,
+        "_total": 15603800
+      },
+      "2015": {
+        "Education": 11820585,
+        "Libraries": 157030,
+        "Community Colleges": 663836,
+        "Health": 382647,
+        "Transportation": 602210,
+        "Public Safety": 597218,
+        "Recreation / Environment": 30000,
+        "Other": 0,
+        "_total": 14253526
+      },
+      "2016": {
+        "Education": 11160748,
+        "Libraries": 160240,
+        "Community Colleges": 690339,
+        "Health": 402595,
+        "Transportation": 542775,
+        "Public Safety": 534715,
+        "_total": 13491412
+      },
+      "2017": {
+        "Education": 11565761,
+        "Libraries": 169172,
+        "Community Colleges": 630723,
+        "Health": 546006,
+        "Transportation": 537121,
+        "Public Safety": 593758,
+        "_total": 14042541
+      },
+      "2018": {
+        "Education": 11095902,
+        "Libraries": 178150,
+        "Community Colleges": 603960,
+        "Health": 546006,
+        "Transportation": 622823,
+        "Public Safety": 573426,
+        "Other": 5000,
+        "_total": 13625267
+      },
+      "2019": {
+        "Education": 12245883,
+        "Libraries": 186580,
+        "Community Colleges": 623682,
+        "Health": 624305,
+        "Transportation": 801440,
+        "Public Safety": 1586452,
+        "Other": 117900,
+        "_total": 16186242
+      },
+      "2020": {
+        "Education": 11959229,
+        "Libraries": 190057,
+        "Community Colleges": 623973,
+        "Health": 855312,
+        "Transportation": 833172,
+        "Public Safety": 956687,
+        "Other": 339,
+        "_total": 15418769
+      },
+      "2021": {
+        "Education": 12248578,
+        "Libraries": 196545,
+        "Community Colleges": 632302,
+        "Health": 1277396,
+        "Transportation": 908845,
+        "Public Safety": 1471674,
+        "Other": 9661,
+        "_total": 16745001
+      },
+      "2022": {
+        "Education": 13207497,
+        "Libraries": 197256,
+        "Community Colleges": 664031,
+        "Health": 1882272,
+        "Transportation": 976906,
+        "Public Safety": 2190905,
+        "Other": 5000,
+        "_total": 19123867
+      },
+      "2023": {
+        "Education": 12822711,
+        "Libraries": 190387,
+        "Community Colleges": 713101,
+        "Health": 2329760,
+        "Transportation": 986542,
+        "Public Safety": 602330,
+        "Other": 5000,
+        "_total": 17649831
+      },
+      "2024": {
+        "Education": 14199534,
+        "Libraries": 217905,
+        "Community Colleges": 929910,
+        "Health": 3193198,
+        "Transportation": 1184684,
+        "Public Safety": 602120,
+        "Other": 255000,
+        "_total": 20582351
+      },
+      "2025": {
+        "Education": 14958876,
+        "Libraries": 235442,
+        "Community Colleges": 1030222,
+        "Health": 2742505,
+        "Transportation": 1363641,
+        "Public Safety": 1569184,
+        "Other": 5000,
+        "_total": 21904870
+      },
+      "2026": {
+        "Education": 15223064,
+        "Libraries": 224951,
+        "Community Colleges": 1031094,
+        "Health": 2619532,
+        "Transportation": 1535962,
+        "Public Safety": 618767,
+        "_total": 21253370
+      },
+      "2027": {
+        "Education": 16115848,
+        "Libraries": 262388,
+        "Community Colleges": 1062220,
+        "Health": 2204406,
+        "Transportation": 1536703,
+        "Public Safety": 616688,
+        "_total": 21798253
+      }
+    },
+    "24031": {
+      "2014": {
+        "Education": 762041919,
+        "Libraries": 4773820,
+        "Community Colleges": 53212650,
+        "Health": 3388360,
+        "Transportation": 8342312,
+        "Public Safety": 17500118,
+        "Recreation / Environment": 0,
+        "Shared Taxes": 94796,
+        "Other": 1008638,
+        "_total": 850362613
+      },
+      "2015": {
+        "Education": 785331895,
+        "Libraries": 5550428,
+        "Community Colleges": 55221458,
+        "Health": 3388360,
+        "Transportation": 7658570,
+        "Public Safety": 18529455,
+        "Recreation / Environment": 45000,
+        "Shared Taxes": 0,
+        "Other": 1038523,
+        "_total": 876763689
+      },
+      "2016": {
+        "Education": 796298238,
+        "Libraries": 5997780,
+        "Community Colleges": 58483466,
+        "Health": 3925949,
+        "Transportation": 8913519,
+        "Public Safety": 16950537,
+        "Shared Taxes": 85807,
+        "Other": 944840,
+        "_total": 891600136
+      },
+      "2017": {
+        "Education": 829378366,
+        "Libraries": 6047725,
+        "Community Colleges": 60919349,
+        "Health": 3967534,
+        "Transportation": 8853156,
+        "Public Safety": 18347425,
+        "Shared Taxes": 0,
+        "Other": 1019137,
+        "_total": 928532692
+      },
+      "2018": {
+        "Education": 841441904,
+        "Libraries": 6229639,
+        "Community Colleges": 61691074,
+        "Health": 3967534,
+        "Transportation": 10225508,
+        "Public Safety": 18251300,
+        "Other": 942957,
+        "_total": 942749916
+      },
+      "2019": {
+        "Education": 875919338,
+        "Libraries": 4698153,
+        "Community Colleges": 60464780,
+        "Health": 4038950,
+        "Transportation": 13165429,
+        "Public Safety": 18897188,
+        "Other": 1069691,
+        "_total": 978253529
+      },
+      "2020": {
+        "Education": 931432317,
+        "Libraries": 5744307,
+        "Community Colleges": 63219583,
+        "Health": 4148406,
+        "Transportation": 13615391,
+        "Public Safety": 20410514,
+        "Other": 1363089,
+        "_total": 1039933607
+      },
+      "2021": {
+        "Education": 971628303,
+        "Libraries": 5289398,
+        "Community Colleges": 64278337,
+        "Health": 4222528,
+        "Transportation": 14860684,
+        "Public Safety": 21175424,
+        "Other": 1524045,
+        "_total": 1082978719
+      },
+      "2022": {
+        "Education": 997698049,
+        "Libraries": 5281451,
+        "Community Colleges": 69283178,
+        "Health": 4422260,
+        "Transportation": 15910096,
+        "Public Safety": 20346828,
+        "Other": 1459042,
+        "_total": 1114400904
+      },
+      "2023": {
+        "Education": 1025188718,
+        "Libraries": 5079667,
+        "Community Colleges": 81421526,
+        "Health": 5201183,
+        "Transportation": 30436433,
+        "Public Safety": 21533567,
+        "Other": 1464984,
+        "_total": 1170326078
+      },
+      "2024": {
+        "Education": 1100187859,
+        "Libraries": 5357519,
+        "Community Colleges": 85994993,
+        "Health": 5608034,
+        "Transportation": 18926637,
+        "Public Safety": 21706825,
+        "Other": 1579204,
+        "_total": 1239361071
+      },
+      "2025": {
+        "Education": 1174141570,
+        "Libraries": 5629402,
+        "Community Colleges": 86687290,
+        "Health": 5055934,
+        "Transportation": 48787366,
+        "Public Safety": 27328294,
+        "Other": 1879324,
+        "_total": 1349509180
+      },
+      "2026": {
+        "Education": 1244481691,
+        "Libraries": 5978693,
+        "Community Colleges": 90699033,
+        "Health": 5065320,
+        "Transportation": 54731217,
+        "Public Safety": 21928967,
+        "Other": 100000,
+        "_total": 1422984921
+      },
+      "2027": {
+        "Education": 1260913503,
+        "Libraries": 6154283,
+        "Community Colleges": 93401246,
+        "Health": 6304474,
+        "Transportation": 51441947,
+        "Public Safety": 21836225,
+        "Other": 100000,
+        "_total": 1440151678
+      }
+    },
+    "24033": {
+      "2014": {
+        "Education": 1043646458,
+        "Libraries": 8491496,
+        "Community Colleges": 30682091,
+        "Health": 5599065,
+        "Transportation": 8795391,
+        "Public Safety": 20520279,
+        "Recreation / Environment": 0,
+        "Shared Taxes": 1013418,
+        "Other": 32084630,
+        "_total": 1150832828
+      },
+      "2015": {
+        "Education": 1102781273,
+        "Libraries": 8656455,
+        "Community Colleges": 31831491,
+        "Health": 5599065,
+        "Transportation": 8205391,
+        "Public Safety": 22009296,
+        "Recreation / Environment": 431250,
+        "Shared Taxes": 1053571,
+        "Other": 32113133,
+        "_total": 1212680925
+      },
+      "2016": {
+        "Education": 1152950620,
+        "Libraries": 8965813,
+        "Community Colleges": 33028668,
+        "Health": 6227909,
+        "Transportation": 9602436,
+        "Public Safety": 20891079,
+        "Shared Taxes": 1116995,
+        "Other": 33419814,
+        "_total": 1266203334
+      },
+      "2017": {
+        "Education": 1206939861,
+        "Libraries": 9321739,
+        "Community Colleges": 36004880,
+        "Health": 6335996,
+        "Transportation": 10706596,
+        "Public Safety": 21827553,
+        "Shared Taxes": 12227555,
+        "Other": 37028447,
+        "_total": 1340392627
+      },
+      "2018": {
+        "Education": 1219876426,
+        "Libraries": 9410561,
+        "Community Colleges": 36311165,
+        "Health": 6335996,
+        "Transportation": 10809536,
+        "Public Safety": 21890783,
+        "Shared Taxes": 23998943,
+        "Other": 41407622,
+        "_total": 1370041032
+      },
+      "2019": {
+        "Education": 1255158494,
+        "Libraries": 9547765,
+        "Community Colleges": 38487855,
+        "Health": 6465328,
+        "Transportation": 13425417,
+        "Public Safety": 21920549,
+        "Shared Taxes": 26945105,
+        "Other": 44643505,
+        "_total": 1416594018
+      },
+      "2020": {
+        "Education": 1337000860,
+        "Libraries": 9773687,
+        "Community Colleges": 39043533,
+        "Health": 6708450,
+        "Transportation": 14311089,
+        "Public Safety": 22901657,
+        "Shared Taxes": 14737776,
+        "Other": 46812877,
+        "_total": 1491289929
+      },
+      "2021": {
+        "Education": 1397714316,
+        "Libraries": 9896330,
+        "Community Colleges": 40318203,
+        "Health": 8049520,
+        "Transportation": 15800041,
+        "Public Safety": 23483424,
+        "Shared Taxes": 26388415,
+        "Other": 50656944,
+        "_total": 1572307193
+      },
+      "2022": {
+        "Education": 1446043193,
+        "Libraries": 10045747,
+        "Community Colleges": 45406814,
+        "Health": 7707972,
+        "Transportation": 16729407,
+        "Public Safety": 26042451,
+        "Shared Taxes": 35200394,
+        "Other": 47716444,
+        "_total": 1634892422
+      },
+      "2023": {
+        "Education": 1457826407,
+        "Libraries": 11091053,
+        "Community Colleges": 51081508,
+        "Health": 8445374,
+        "Transportation": 16543010,
+        "Public Safety": 28254445,
+        "Shared Taxes": 38071950,
+        "Other": 55151728,
+        "_total": 1666465475
+      },
+      "2024": {
+        "Education": 1655312170,
+        "Libraries": 11043201,
+        "Community Colleges": 53447543,
+        "Health": 9254656,
+        "Transportation": 19109353,
+        "Public Safety": 27876218,
+        "Shared Taxes": 34631218,
+        "Other": 110641396,
+        "_total": 1921315755
+      },
+      "2025": {
+        "Education": 1733947397,
+        "Libraries": 11201610,
+        "Community Colleges": 54425818,
+        "Health": 7392361,
+        "Transportation": 22576564,
+        "Public Safety": 30297008,
+        "Shared Taxes": 34665507,
+        "Other": 84489363,
+        "_total": 1978995628
+      },
+      "2026": {
+        "Education": 1855257806,
+        "Libraries": 11890245,
+        "Community Colleges": 59662220,
+        "Health": 8321371,
+        "Transportation": 28941733,
+        "Public Safety": 30069193,
+        "Shared Taxes": 34454825,
+        "Other": 76581708,
+        "_total": 2105179101
+      },
+      "2027": {
+        "Education": 1959325713,
+        "Libraries": 12317473,
+        "Community Colleges": 61547550,
+        "Health": 10038736,
+        "Transportation": 25651617,
+        "Public Safety": 29354209,
+        "Shared Taxes": 34689111,
+        "Other": 77756104,
+        "_total": 2210680513
+      }
+    },
+    "24035": {
+      "2014": {
+        "Education": 38758890,
+        "Libraries": 278327,
+        "Community Colleges": 2086025,
+        "Health": 464787,
+        "Transportation": 1003164,
+        "Public Safety": 651275,
+        "Recreation / Environment": 90000,
+        "Shared Taxes": 13021,
+        "Other": 868717,
+        "_total": 44214206
+      },
+      "2015": {
+        "Education": 39697634,
+        "Libraries": 286833,
+        "Community Colleges": 2141664,
+        "Health": 464787,
+        "Transportation": 799683,
+        "Public Safety": 1833165,
+        "Recreation / Environment": 90000,
+        "Shared Taxes": 0,
+        "Other": 0,
+        "_total": 45313766
+      },
+      "2016": {
+        "Education": 39817485,
+        "Libraries": 300443,
+        "Community Colleges": 2124871,
+        "Health": 495836,
+        "Transportation": 916986,
+        "Public Safety": 672973,
+        "Shared Taxes": 46630,
+        "Other": 0,
+        "_total": 44375224
+      },
+      "2017": {
+        "Education": 40802972,
+        "Libraries": 333242,
+        "Community Colleges": 2265395,
+        "Health": 574849,
+        "Transportation": 910318,
+        "Public Safety": 816988,
+        "Shared Taxes": 0,
+        "Other": 8000,
+        "_total": 45711764
+      },
+      "2018": {
+        "Education": 41107359,
+        "Libraries": 345623,
+        "Community Colleges": 2191775,
+        "Health": 574849,
+        "Transportation": 1097734,
+        "Public Safety": 734063,
+        "Other": 10000,
+        "_total": 46061403
+      },
+      "2019": {
+        "Education": 42237271,
+        "Libraries": 359197,
+        "Community Colleges": 2439529,
+        "Health": 629921,
+        "Transportation": 1474793,
+        "Public Safety": 1192330,
+        "Other": 124900,
+        "_total": 48457941
+      },
+      "2020": {
+        "Education": 43817214,
+        "Libraries": 383658,
+        "Community Colleges": 2449304,
+        "Health": 839250,
+        "Transportation": 1465233,
+        "Public Safety": 3000143,
+        "Other": 12000,
+        "_total": 51966802
+      },
+      "2021": {
+        "Education": 45216851,
+        "Libraries": 394191,
+        "Community Colleges": 2536598,
+        "Health": 830511,
+        "Transportation": 1532950,
+        "Public Safety": 3073706,
+        "Other": 12000,
+        "_total": 53596807
+      },
+      "2022": {
+        "Education": 47019021,
+        "Libraries": 393742,
+        "Community Colleges": 2702142,
+        "Health": 1283135,
+        "Transportation": 1803840,
+        "Public Safety": 2027810,
+        "Other": 10000,
+        "_total": 55239690
+      },
+      "2023": {
+        "Education": 48825460,
+        "Libraries": 393709,
+        "Community Colleges": 3104395,
+        "Health": 2029243,
+        "Transportation": 1685751,
+        "Public Safety": 908889,
+        "Other": 499023,
+        "_total": 57446470
+      },
+      "2024": {
+        "Education": 50336012,
+        "Libraries": 403544,
+        "Community Colleges": 3676748,
+        "Health": 2752600,
+        "Transportation": 2063260,
+        "Public Safety": 881076,
+        "Other": 811652,
+        "_total": 60924892
+      },
+      "2025": {
+        "Education": 52523311,
+        "Libraries": 473381,
+        "Community Colleges": 3539376,
+        "Health": 2412366,
+        "Transportation": 2406727,
+        "Public Safety": 1192587,
+        "Other": 487650,
+        "_total": 63035398
+      },
+      "2026": {
+        "Education": 53107052,
+        "Libraries": 534142,
+        "Community Colleges": 4045643,
+        "Health": 2295562,
+        "Transportation": 2709478,
+        "Public Safety": 867388,
+        "_total": 63559265
+      },
+      "2027": {
+        "Education": 54477569,
+        "Libraries": 554167,
+        "Community Colleges": 4141516,
+        "Health": 2004374,
+        "Transportation": 2713997,
+        "Public Safety": 863800,
+        "_total": 64755423
+      }
+    },
+    "24037": {
+      "2014": {
+        "Education": 107476555,
+        "Libraries": 902818,
+        "Community Colleges": 3058712,
+        "Health": 900093,
+        "Transportation": 1344449,
+        "Public Safety": 1243062,
+        "Shared Taxes": 114818,
+        "Other": 246563,
+        "_total": 115287070
+      },
+      "2015": {
+        "Education": 111052979,
+        "Libraries": 941597,
+        "Community Colleges": 3194639,
+        "Health": 900093,
+        "Transportation": 1143484,
+        "Public Safety": 1550773,
+        "Shared Taxes": 3419,
+        "Other": 241783,
+        "_total": 119028767
+      },
+      "2016": {
+        "Education": 113187278,
+        "Libraries": 968755,
+        "Community Colleges": 3230811,
+        "Health": 965505,
+        "Transportation": 1271858,
+        "Public Safety": 1149063,
+        "Shared Taxes": 121554,
+        "Other": 58865,
+        "_total": 120953689
+      },
+      "2017": {
+        "Education": 115020998,
+        "Libraries": 1032711,
+        "Community Colleges": 3351948,
+        "Health": 1064771,
+        "Transportation": 1278727,
+        "Public Safety": 1275951,
+        "Shared Taxes": 0,
+        "Other": 0,
+        "_total": 123025106
+      },
+      "2018": {
+        "Education": 118285409,
+        "Libraries": 1097117,
+        "Community Colleges": 3569687,
+        "Health": 1064771,
+        "Transportation": 1541326,
+        "Public Safety": 1240659,
+        "Other": 33225,
+        "_total": 126832194
+      },
+      "2019": {
+        "Education": 121020377,
+        "Libraries": 1147653,
+        "Community Colleges": 3610830,
+        "Health": 1121792,
+        "Transportation": 2054807,
+        "Public Safety": 2618983,
+        "Other": 188496,
+        "_total": 131762938
+      },
+      "2020": {
+        "Education": 128774943,
+        "Libraries": 1190141,
+        "Community Colleges": 3779905,
+        "Health": 1347144,
+        "Transportation": 2060166,
+        "Public Safety": 1550957,
+        "Other": 0,
+        "_total": 138703256
+      },
+      "2021": {
+        "Education": 131301736,
+        "Libraries": 1217985,
+        "Community Colleges": 3825207,
+        "Health": 1393211,
+        "Transportation": 1967335,
+        "Public Safety": 1659081,
+        "Other": 2507,
+        "_total": 141367062
+      },
+      "2022": {
+        "Education": 134889159,
+        "Libraries": 1233547,
+        "Community Colleges": 3582774,
+        "Health": 1897634,
+        "Transportation": 2207055,
+        "Public Safety": 1404960,
+        "Other": 16265,
+        "_total": 145231394
+      },
+      "2023": {
+        "Education": 142742596,
+        "Libraries": 1246831,
+        "Community Colleges": 6837714,
+        "Health": 3576838,
+        "Transportation": 2316244,
+        "Public Safety": 1642941,
+        "Other": 5000,
+        "_total": 158368164
+      },
+      "2024": {
+        "Education": 160468166,
+        "Libraries": 1289867,
+        "Community Colleges": 7499483,
+        "Health": 4765445,
+        "Transportation": 2857445,
+        "Public Safety": 1843519,
+        "Other": 6516,
+        "_total": 178730441
+      },
+      "2025": {
+        "Education": 163373767,
+        "Libraries": 1393382,
+        "Community Colleges": 7323134,
+        "Health": 3828887,
+        "Transportation": 3295954,
+        "Public Safety": 1944320,
+        "Other": 6522,
+        "_total": 181165966
+      },
+      "2026": {
+        "Education": 167936052,
+        "Libraries": 1562128,
+        "Community Colleges": 7115905,
+        "Health": 4028698,
+        "Transportation": 3716178,
+        "Public Safety": 1661854,
+        "_total": 186020815
+      },
+      "2027": {
+        "Education": 171749993,
+        "Libraries": 1612094,
+        "Community Colleges": 6992804,
+        "Health": 3559785,
+        "Transportation": 3721356,
+        "Public Safety": 1620579,
+        "_total": 189256611
+      }
+    },
+    "24039": {
+      "2014": {
+        "Education": 30399175,
+        "Libraries": 335709,
+        "Community Colleges": 811449,
+        "Health": 478674,
+        "Transportation": 699183,
+        "Public Safety": 1404384,
+        "Shared Taxes": 53392,
+        "Other": 5469109,
+        "_total": 39651075
+      },
+      "2015": {
+        "Education": 31639985,
+        "Libraries": 337970,
+        "Community Colleges": 825701,
+        "Health": 478674,
+        "Transportation": 572749,
+        "Public Safety": 524765,
+        "Shared Taxes": 7118,
+        "Other": 5467249,
+        "_total": 39854211
+      },
+      "2016": {
+        "Education": 31195405,
+        "Libraries": 347152,
+        "Community Colleges": 817739,
+        "Health": 495525,
+        "Transportation": 653111,
+        "Public Safety": 514074,
+        "Shared Taxes": 75430,
+        "Other": 5527187,
+        "_total": 39625623
+      },
+      "2017": {
+        "Education": 32045598,
+        "Libraries": 348930,
+        "Community Colleges": 995503,
+        "Health": 578533,
+        "Transportation": 633713,
+        "Public Safety": 724627,
+        "Shared Taxes": 0,
+        "Other": 5555094,
+        "_total": 40881998
+      },
+      "2018": {
+        "Education": 34683970,
+        "Libraries": 356582,
+        "Community Colleges": 965286,
+        "Health": 578533,
+        "Transportation": 736126,
+        "Public Safety": 549162,
+        "Shared Taxes": 0,
+        "Other": 5466074,
+        "_total": 43335733
+      },
+      "2019": {
+        "Education": 35762977,
+        "Libraries": 372012,
+        "Community Colleges": 943736,
+        "Health": 643105,
+        "Transportation": 936773,
+        "Public Safety": 842733,
+        "Shared Taxes": 467265,
+        "Other": 5767835,
+        "_total": 45736436
+      },
+      "2020": {
+        "Education": 39314680,
+        "Libraries": 391879,
+        "Community Colleges": 1027776,
+        "Health": 891071,
+        "Transportation": 951009,
+        "Public Safety": 2289422,
+        "Shared Taxes": 467334,
+        "Other": 5966970,
+        "_total": 51300141
+      },
+      "2021": {
+        "Education": 40798037,
+        "Libraries": 394615,
+        "Community Colleges": 1109622,
+        "Health": 934678,
+        "Transportation": 1028509,
+        "Public Safety": 1470092,
+        "Shared Taxes": 419987,
+        "Other": 6543488,
+        "_total": 52699028
+      },
+      "2022": {
+        "Education": 43196803,
+        "Libraries": 404105,
+        "Community Colleges": 1388304,
+        "Health": 1654265,
+        "Transportation": 1099062,
+        "Public Safety": 821002,
+        "Shared Taxes": 534834,
+        "Other": 7314196,
+        "_total": 56412571
+      },
+      "2023": {
+        "Education": 43863330,
+        "Libraries": 400312,
+        "Community Colleges": 1580468,
+        "Health": 1895485,
+        "Transportation": 1102865,
+        "Public Safety": 663915,
+        "Shared Taxes": 552813,
+        "Other": 7185894,
+        "_total": 57245082
+      },
+      "2024": {
+        "Education": 46703798,
+        "Libraries": 411294,
+        "Community Colleges": 1662802,
+        "Health": 2395599,
+        "Transportation": 1297784,
+        "Public Safety": 696760,
+        "Shared Taxes": 589771,
+        "Other": 7794536,
+        "_total": 61552344
+      },
+      "2025": {
+        "Education": 48522284,
+        "Libraries": 427956,
+        "Community Colleges": 1620608,
+        "Health": 2002484,
+        "Transportation": 1476888,
+        "Public Safety": 2083251,
+        "Shared Taxes": 607347,
+        "Other": 7403372,
+        "_total": 64144190
+      },
+      "2026": {
+        "Education": 49139840,
+        "Libraries": 454542,
+        "Community Colleges": 1618797,
+        "Health": 2104395,
+        "Transportation": 1668105,
+        "Public Safety": 760926,
+        "Shared Taxes": 684848,
+        "Other": 8893079,
+        "_total": 65324532
+      },
+      "2027": {
+        "Education": 51934375,
+        "Libraries": 470098,
+        "Community Colleges": 1697348,
+        "Health": 1876293,
+        "Transportation": 1672009,
+        "Public Safety": 737886,
+        "Shared Taxes": 802991,
+        "Other": 8014004,
+        "_total": 67205004
+      }
+    },
+    "24041": {
+      "2014": {
+        "Education": 15638648,
+        "Libraries": 244728,
+        "Community Colleges": 1850664,
+        "Health": 365495,
+        "Transportation": 1242283,
+        "Public Safety": 760052,
+        "Recreation / Environment": 150000,
+        "Other": 0,
+        "_total": 20251870
+      },
+      "2015": {
+        "Education": 16476143,
+        "Libraries": 249383,
+        "Community Colleges": 1992224,
+        "Health": 365495,
+        "Transportation": 1093703,
+        "Public Safety": 719670,
+        "Recreation / Environment": 150000,
+        "Other": 520600,
+        "_total": 21567218
+      },
+      "2016": {
+        "Education": 16818214,
+        "Libraries": 249762,
+        "Community Colleges": 2015881,
+        "Health": 387626,
+        "Transportation": 1523581,
+        "Public Safety": 702713,
+        "Other": 493018,
+        "_total": 22190795
+      },
+      "2017": {
+        "Education": 17296252,
+        "Libraries": 274068,
+        "Community Colleges": 2001456,
+        "Health": 485995,
+        "Transportation": 1519579,
+        "Public Safety": 1444000,
+        "Other": 523963,
+        "_total": 23545313
+      },
+      "2018": {
+        "Education": 17032630,
+        "Libraries": 271969,
+        "Community Colleges": 2077537,
+        "Health": 485995,
+        "Transportation": 1666837,
+        "Public Safety": 736346,
+        "Other": 564972,
+        "_total": 22836286
+      },
+      "2019": {
+        "Education": 18661023,
+        "Libraries": 283642,
+        "Community Colleges": 2093154,
+        "Health": 525250,
+        "Transportation": 1943871,
+        "Public Safety": 783580,
+        "Other": 117900,
+        "_total": 24408420
+      },
+      "2020": {
+        "Education": 20127811,
+        "Libraries": 286620,
+        "Community Colleges": 2050409,
+        "Health": 678255,
+        "Transportation": 2043100,
+        "Public Safety": 942929,
+        "Other": 0,
+        "_total": 26129124
+      },
+      "2021": {
+        "Education": 21592218,
+        "Libraries": 289911,
+        "Community Colleges": 2176071,
+        "Health": 743834,
+        "Transportation": 1943629,
+        "Public Safety": 2711317,
+        "Other": 10000,
+        "_total": 29466980
+      },
+      "2022": {
+        "Education": 23024605,
+        "Libraries": 285099,
+        "Community Colleges": 2385633,
+        "Health": 946887,
+        "Transportation": 2223214,
+        "Public Safety": 1754867,
+        "Other": 486474,
+        "_total": 31106779
+      },
+      "2023": {
+        "Education": 22579800,
+        "Libraries": 297287,
+        "Community Colleges": 2666925,
+        "Health": 1917027,
+        "Transportation": 2035674,
+        "Public Safety": 931013,
+        "Other": 5000,
+        "_total": 30432726
+      },
+      "2024": {
+        "Education": 25288407,
+        "Libraries": 296516,
+        "Community Colleges": 3218050,
+        "Health": 2671231,
+        "Transportation": 2795908,
+        "Public Safety": 906141,
+        "Other": 489202,
+        "_total": 35665455
+      },
+      "2025": {
+        "Education": 27032358,
+        "Libraries": 330907,
+        "Community Colleges": 2951208,
+        "Health": 2068207,
+        "Transportation": 3229424,
+        "Public Safety": 2565665,
+        "Other": 5000,
+        "_total": 38182769
+      },
+      "2026": {
+        "Education": 29228039,
+        "Libraries": 365149,
+        "Community Colleges": 2974998,
+        "Health": 2185924,
+        "Transportation": 3502747,
+        "Public Safety": 904934,
+        "_total": 39161791
+      },
+      "2027": {
+        "Education": 30310936,
+        "Libraries": 371712,
+        "Community Colleges": 3074769,
+        "Health": 1862392,
+        "Transportation": 3513927,
+        "Public Safety": 888688,
+        "_total": 40022424
+      }
+    },
+    "24043": {
+      "2014": {
+        "Education": 178453306,
+        "Libraries": 1573780,
+        "Community Colleges": 9737933,
+        "Health": 1535761,
+        "Transportation": 2730632,
+        "Public Safety": 3846333,
+        "Recreation / Environment": 240000,
+        "Shared Taxes": 116546,
+        "Other": 1710922,
+        "_total": 199945213
+      },
+      "2015": {
+        "Education": 183628680,
+        "Libraries": 1638920,
+        "Community Colleges": 10167842,
+        "Health": 1535761,
+        "Transportation": 2537512,
+        "Public Safety": 1952412,
+        "Recreation / Environment": 270000,
+        "Shared Taxes": 0,
+        "Other": 1712440,
+        "_total": 203443567
+      },
+      "2016": {
+        "Education": 182585367,
+        "Libraries": 1672060,
+        "Community Colleges": 10334726,
+        "Health": 1625337,
+        "Transportation": 3003358,
+        "Public Safety": 1695901,
+        "Shared Taxes": 115553,
+        "Other": 1686875,
+        "_total": 202719177
+      },
+      "2017": {
+        "Education": 186240595,
+        "Libraries": 1754677,
+        "Community Colleges": 10949061,
+        "Health": 1797019,
+        "Transportation": 2821553,
+        "Public Safety": 1938742,
+        "Shared Taxes": 0,
+        "Other": 1774483,
+        "_total": 207276130
+      },
+      "2018": {
+        "Education": 191241824,
+        "Libraries": 1793571,
+        "Community Colleges": 10893068,
+        "Health": 1797019,
+        "Transportation": 3191410,
+        "Public Safety": 1852435,
+        "Other": 1849451,
+        "_total": 212618778
+      },
+      "2019": {
+        "Education": 196244695,
+        "Libraries": 1865342,
+        "Community Colleges": 11099840,
+        "Health": 1948406,
+        "Transportation": 3946429,
+        "Public Safety": 2059961,
+        "Other": 2109981,
+        "_total": 219274654
+      },
+      "2020": {
+        "Education": 213106440,
+        "Libraries": 1914824,
+        "Community Colleges": 11290907,
+        "Health": 2500689,
+        "Transportation": 4110308,
+        "Public Safety": 4634434,
+        "Other": 2295511,
+        "_total": 239853113
+      },
+      "2021": {
+        "Education": 218221756,
+        "Libraries": 1961761,
+        "Community Colleges": 11642614,
+        "Health": 3660594,
+        "Transportation": 4571302,
+        "Public Safety": 3786521,
+        "Other": 8071447,
+        "_total": 251915995
+      },
+      "2022": {
+        "Education": 226321878,
+        "Libraries": 1989700,
+        "Community Colleges": 13239364,
+        "Health": 3136281,
+        "Transportation": 4749442,
+        "Public Safety": 2620524,
+        "Other": 8621063,
+        "_total": 260678252
+      },
+      "2023": {
+        "Education": 230231784,
+        "Libraries": 2099051,
+        "Community Colleges": 15877716,
+        "Health": 4067776,
+        "Transportation": 4857309,
+        "Public Safety": 2723900,
+        "Other": 4127808,
+        "_total": 263985344
+      },
+      "2024": {
+        "Education": 256759943,
+        "Libraries": 2136730,
+        "Community Colleges": 18257223,
+        "Health": 5252924,
+        "Transportation": 5827175,
+        "Public Safety": 2803006,
+        "Other": 3226112,
+        "_total": 294263113
+      },
+      "2025": {
+        "Education": 269466961,
+        "Libraries": 2222825,
+        "Community Colleges": 18406904,
+        "Health": 4296038,
+        "Transportation": 6659094,
+        "Public Safety": 3421460,
+        "Other": 2977763,
+        "_total": 307451045
+      },
+      "2026": {
+        "Education": 287485174,
+        "Libraries": 2293728,
+        "Community Colleges": 22811269,
+        "Health": 4453062,
+        "Transportation": 7589337,
+        "Public Safety": 2767165,
+        "Other": 2757251,
+        "_total": 330156986
+      },
+      "2027": {
+        "Education": 299581578,
+        "Libraries": 2356370,
+        "Community Colleges": 22341993,
+        "Health": 4401875,
+        "Transportation": 7596871,
+        "Public Safety": 2670541,
+        "Other": 2823659,
+        "_total": 341772887
+      }
+    },
+    "24045": {
+      "2014": {
+        "Education": 136008576,
+        "Libraries": 1101661,
+        "Community Colleges": 5618019,
+        "Health": 1053146,
+        "Transportation": 2277223,
+        "Public Safety": 1360022,
+        "Recreation / Environment": 10000,
+        "Shared Taxes": 6986,
+        "Other": 8221680,
+        "_total": 155657313
+      },
+      "2015": {
+        "Education": 141534768,
+        "Libraries": 1156136,
+        "Community Colleges": 5666844,
+        "Health": 1053146,
+        "Transportation": 2064303,
+        "Public Safety": 2303637,
+        "Recreation / Environment": 30000,
+        "Shared Taxes": 5018,
+        "Other": 8538748,
+        "_total": 162352600
+      },
+      "2016": {
+        "Education": 145912791,
+        "Libraries": 1174078,
+        "Community Colleges": 5697651,
+        "Health": 1132005,
+        "Transportation": 2346505,
+        "Public Safety": 1363029,
+        "Shared Taxes": 28540,
+        "Other": 9249776,
+        "_total": 166904375
+      },
+      "2017": {
+        "Education": 153666279,
+        "Libraries": 1226915,
+        "Community Colleges": 5771994,
+        "Health": 1307152,
+        "Transportation": 2535676,
+        "Public Safety": 1931830,
+        "Shared Taxes": 0,
+        "Other": 9538129,
+        "_total": 175977975
+      },
+      "2018": {
+        "Education": 157150617,
+        "Libraries": 1272685,
+        "Community Colleges": 5881442,
+        "Health": 1307152,
+        "Transportation": 2668054,
+        "Public Safety": 1453316,
+        "Other": 10094541,
+        "_total": 179827807
+      },
+      "2019": {
+        "Education": 161442214,
+        "Libraries": 1320457,
+        "Community Colleges": 6351792,
+        "Health": 1417913,
+        "Transportation": 3193257,
+        "Public Safety": 1543381,
+        "Other": 10694219,
+        "_total": 185963233
+      },
+      "2020": {
+        "Education": 175966410,
+        "Libraries": 1377127,
+        "Community Colleges": 6664030,
+        "Health": 1859521,
+        "Transportation": 3414807,
+        "Public Safety": 3593619,
+        "Other": 11379630,
+        "_total": 204255144
+      },
+      "2021": {
+        "Education": 181078912,
+        "Libraries": 1375440,
+        "Community Colleges": 6908203,
+        "Health": 2214696,
+        "Transportation": 3792440,
+        "Public Safety": 1754813,
+        "Other": 14250450,
+        "_total": 211374954
+      },
+      "2022": {
+        "Education": 188494497,
+        "Libraries": 1416345,
+        "Community Colleges": 7374802,
+        "Health": 2851686,
+        "Transportation": 4068912,
+        "Public Safety": 3418541,
+        "Other": 13604475,
+        "_total": 221229258
+      },
+      "2023": {
+        "Education": 193014584,
+        "Libraries": 1428123,
+        "Community Colleges": 8563382,
+        "Health": 4756478,
+        "Transportation": 4161529,
+        "Public Safety": 2353958,
+        "Other": 13630399,
+        "_total": 227908453
+      },
+      "2024": {
+        "Education": 205111401,
+        "Libraries": 1496899,
+        "Community Colleges": 9987543,
+        "Health": 6440959,
+        "Transportation": 4847089,
+        "Public Safety": 2294599,
+        "Other": 16950509,
+        "_total": 247128999
+      },
+      "2025": {
+        "Education": 217601722,
+        "Libraries": 1562943,
+        "Community Colleges": 9503533,
+        "Health": 5132068,
+        "Transportation": 5546138,
+        "Public Safety": 3907513,
+        "Other": 14864818,
+        "_total": 258118735
+      },
+      "2026": {
+        "Education": 243338647,
+        "Libraries": 1627104,
+        "Community Colleges": 10848872,
+        "Health": 5416478,
+        "Transportation": 6230749,
+        "Public Safety": 2463727,
+        "Other": 16987461,
+        "_total": 286913038
+      },
+      "2027": {
+        "Education": 250140343,
+        "Libraries": 1628706,
+        "Community Colleges": 11318073,
+        "Health": 4692319,
+        "Transportation": 6237501,
+        "Public Safety": 2350057,
+        "Other": 14000657,
+        "_total": 290367656
+      }
+    },
+    "24047": {
+      "2014": {
+        "Education": 26012481,
+        "Libraries": 376087,
+        "Community Colleges": 2241278,
+        "Health": 393250,
+        "Transportation": 1727073,
+        "Public Safety": 929022,
+        "Recreation / Environment": 44100,
+        "Shared Taxes": 2818362,
+        "Other": 145746,
+        "_total": 34687399
+      },
+      "2015": {
+        "Education": 26094131,
+        "Libraries": 394946,
+        "Community Colleges": 2353291,
+        "Health": 393250,
+        "Transportation": 1526737,
+        "Public Safety": 957431,
+        "Recreation / Environment": 10000,
+        "Shared Taxes": 2830385,
+        "Other": 143046,
+        "_total": 34703217
+      },
+      "2016": {
+        "Education": 26098907,
+        "Libraries": 402140,
+        "Community Colleges": 2391526,
+        "Health": 441996,
+        "Transportation": 1560725,
+        "Public Safety": 991628,
+        "Shared Taxes": 3784988,
+        "Other": 199709,
+        "_total": 35871619
+      },
+      "2017": {
+        "Education": 26640378,
+        "Libraries": 405652,
+        "Community Colleges": 2553930,
+        "Health": 703788,
+        "Transportation": 1492482,
+        "Public Safety": 1698993,
+        "Shared Taxes": 3476271,
+        "Other": 235158,
+        "_total": 37206652
+      },
+      "2018": {
+        "Education": 26256212,
+        "Libraries": 393498,
+        "Community Colleges": 2613238,
+        "Health": 703788,
+        "Transportation": 1828889,
+        "Public Safety": 1149573,
+        "Shared Taxes": 3898217,
+        "Other": 190819,
+        "_total": 37034234
+      },
+      "2019": {
+        "Education": 27103505,
+        "Libraries": 400010,
+        "Community Colleges": 2742877,
+        "Health": 791121,
+        "Transportation": 2309207,
+        "Public Safety": 1418960,
+        "Shared Taxes": 4473496,
+        "Other": 340625,
+        "_total": 39579801
+      },
+      "2020": {
+        "Education": 28404448,
+        "Libraries": 407689,
+        "Community Colleges": 2719638,
+        "Health": 1166801,
+        "Transportation": 2422588,
+        "Public Safety": 1248304,
+        "Shared Taxes": 3417980,
+        "Other": 211387,
+        "_total": 39998835
+      },
+      "2021": {
+        "Education": 29932407,
+        "Libraries": 434830,
+        "Community Colleges": 2787920,
+        "Health": 1701539,
+        "Transportation": 2509106,
+        "Public Safety": 4800512,
+        "Shared Taxes": 4791214,
+        "Other": 282285,
+        "_total": 47239813
+      },
+      "2022": {
+        "Education": 31238139,
+        "Libraries": 456413,
+        "Community Colleges": 3030390,
+        "Health": 2972626,
+        "Transportation": 2705668,
+        "Public Safety": 2134289,
+        "Shared Taxes": 5381317,
+        "Other": 237099,
+        "_total": 48155941
+      },
+      "2023": {
+        "Education": 33508943,
+        "Libraries": 483502,
+        "Community Colleges": 3588805,
+        "Health": 3647157,
+        "Transportation": 2719861,
+        "Public Safety": 1491852,
+        "Shared Taxes": 5599579,
+        "Other": 228163,
+        "_total": 51267862
+      },
+      "2024": {
+        "Education": 36936070,
+        "Libraries": 489719,
+        "Community Colleges": 3740657,
+        "Health": 5410052,
+        "Transportation": 3349058,
+        "Public Safety": 1506908,
+        "Shared Taxes": 5379192,
+        "Other": 232889,
+        "_total": 57044545
+      },
+      "2025": {
+        "Education": 39882918,
+        "Libraries": 546177,
+        "Community Colleges": 3535877,
+        "Health": 4085197,
+        "Transportation": 3886103,
+        "Public Safety": 3244499,
+        "Shared Taxes": 5317624,
+        "Other": 227450,
+        "_total": 60725845
+      },
+      "2026": {
+        "Education": 41295700,
+        "Libraries": 598718,
+        "Community Colleges": 3865591,
+        "Health": 4352932,
+        "Transportation": 4353981,
+        "Public Safety": 1456853,
+        "Shared Taxes": 5359876,
+        "_total": 61283651
+      },
+      "2027": {
+        "Education": 43283825,
+        "Libraries": 623979,
+        "Community Colleges": 3901698,
+        "Health": 3509792,
+        "Transportation": 4359377,
+        "Public Safety": 1376860,
+        "Shared Taxes": 5411475,
+        "_total": 62467006
+      }
+    },
+    "24510": {
+      "2014": {
+        "Education": 974250810,
+        "Libraries": 8168999,
+        "Health": 7448751,
+        "Transportation": 131505120,
+        "Public Safety": 11430604,
+        "Shared Taxes": 5370978,
+        "Other": 90886547,
+        "_total": 1229061809
+      },
+      "2015": {
+        "Education": 979733624,
+        "Libraries": 8299415,
+        "Health": 7448751,
+        "Transportation": 138093135,
+        "Public Safety": 11567524,
+        "Shared Taxes": 10873687,
+        "Other": 90840763,
+        "_total": 1246856899
+      },
+      "2016": {
+        "Education": 951367382,
+        "Libraries": 8328460,
+        "Health": 8143710,
+        "Transportation": 144591904,
+        "Public Safety": 11682816,
+        "Shared Taxes": 13095387,
+        "Other": 90936540,
+        "_total": 1228146199
+      },
+      "2017": {
+        "Education": 944533183,
+        "Libraries": 8513074,
+        "Health": 8218630,
+        "Transportation": 142831819,
+        "Public Safety": 14094580,
+        "Shared Taxes": 20375573,
+        "Other": 88852613,
+        "_total": 1227419472
+      },
+      "2018": {
+        "Education": 918085494,
+        "Libraries": 11471871,
+        "Health": 8218630,
+        "Transportation": 146530628,
+        "Public Safety": 13302749,
+        "Shared Taxes": 26439333,
+        "Other": 90485293,
+        "_total": 1214533998
+      },
+      "2019": {
+        "Education": 923614553,
+        "Libraries": 11604268,
+        "Health": 8366564,
+        "Transportation": 153002469,
+        "Public Safety": 14009147,
+        "Shared Taxes": 29113671,
+        "Other": 87422222,
+        "_total": 1227132894
+      },
+      "2020": {
+        "Education": 970078592,
+        "Libraries": 11974344,
+        "Health": 8593298,
+        "Transportation": 146174991,
+        "Public Safety": 18773173,
+        "Shared Taxes": 20316833,
+        "Other": 88817842,
+        "_total": 1264729073
+      },
+      "2021": {
+        "Education": 986209336,
+        "Libraries": 12039982,
+        "Health": 8777841,
+        "Transportation": 160370222,
+        "Public Safety": 16963637,
+        "Shared Taxes": 26726857,
+        "Other": 91409063,
+        "_total": 1302496938
+      },
+      "2022": {
+        "Education": 1035449733,
+        "Libraries": 12100542,
+        "Health": 8815066,
+        "Transportation": 172618806,
+        "Public Safety": 27503710,
+        "Shared Taxes": 27669580,
+        "Other": 88522902,
+        "_total": 1372680339
+      },
+      "2023": {
+        "Education": 1186189990,
+        "Libraries": 12223080,
+        "Health": 10689790,
+        "Transportation": 171532864,
+        "Public Safety": 36883814,
+        "Shared Taxes": 27901748,
+        "Other": 89032987,
+        "_total": 1534454273
+      },
+      "2024": {
+        "Education": 1184671078,
+        "Libraries": 12145160,
+        "Health": 11515051,
+        "Transportation": 204027024,
+        "Public Safety": 39680257,
+        "Shared Taxes": 27292367,
+        "Other": 102768601,
+        "_total": 1582099538
+      },
+      "2025": {
+        "Education": 1245403634,
+        "Libraries": 12482910,
+        "Health": 10393438,
+        "Transportation": 237214574,
+        "Public Safety": 40541962,
+        "Shared Taxes": 27319105,
+        "Other": 90657807,
+        "_total": 1664013430
+      },
+      "2026": {
+        "Education": 1366328670,
+        "Libraries": 12660985,
+        "Health": 10405080,
+        "Transportation": 267235468,
+        "Public Safety": 36272682,
+        "Shared Taxes": 27370477,
+        "Other": 84442044,
+        "_total": 1804715406
+      },
+      "2027": {
+        "Education": 1441677976,
+        "Libraries": 12862400,
+        "Health": 13070507,
+        "Transportation": 267374477,
+        "Public Safety": 39762289,
+        "Shared Taxes": 27624239,
+        "Other": 87296790,
+        "_total": 1889668678
+      }
+    }
+  }
+}

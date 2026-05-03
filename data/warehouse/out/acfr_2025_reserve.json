@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "id": "acfr_2025_reserve",
+    "label": "ACFR 2025 Reserve Fund History",
+    "citation": "Comptroller of Maryland · ACFR 2025 · p.46",
+    "fetched_at": "2026-04-22T01:50:23.528Z",
+    "hash": "c14cdf294fab"
+  },
+  "data": {
+    "_stub": true,
+    "note": "Manual file missing at ./manual/acfr_reserve.json. Populate it to enable live data."
+  }
+}

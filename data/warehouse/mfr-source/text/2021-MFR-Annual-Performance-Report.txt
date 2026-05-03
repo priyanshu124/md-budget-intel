@@ -1,0 +1,1967 @@
+               MANAGING FOR RESULTS
+         ANNUAL PERFORMANCE REPORT
+
+                                     Prepared for
+
+THE SENATE BUDGET AND TAXATION COMMITTEE
+
+                                          And
+
+      THE HOUSE APPROPRIATIONS COMMITTEE
+
+                                In Accordance With
+                    State Finance and Procurement Article
+
+                                    Section 3-1002
+
+        DEPARTMENT OF BUDGET AND MANAGEMENT
+                    DAVID R. BRINKLEY, SECRETARY
+
+                                   JANUARY 2021
+                                              TABLE OF CONTENTS
+
+EXECUTIVE SUMMARY ........................................................................................................................ i
+1. ECONOMIC DEVELOPMENT AND JOBS .................................................................................. 1
+
+   Performance Detail ­ Economic Development and Jobs ....................................................................... 4
+2. REDUCED TAXES AND FEES ...................................................................................................... 1
+3. FISCAL RESPONSIBILITY ............................................................................................................. 9
+
+   Performance Detail ­ Fiscal Responsibility .......................................................................................... 12
+4. GOVERNMENT REFORM ........................................................................................................... 13
+5. IMPROVED QUALITY OF LIFE.................................................................................................. 17
+
+   Significant Performance Trends ­ Education ....................................................................................... 17
+   Significant Performance Trends ­ Public Safety ................................................................................... 20
+   Significant Performance Trends ­ Health and Human Services............................................................ 22
+   Significant Performance Trends ­ Environment .................................................................................. 26
+   Performance Detail ­ Improved Quality of Life................................................................................... 30
+                                               EXECUTIVE SUMMARY
+
+The State Finance & Procurement Article, §3-1002 (E) requires the Department of Budget and Management (DBM) to
+provide an annual report to the Senate Budget and Taxation Committee and the House Appropriations Committee
+discussing the State's progress toward achieving the goals outlined in the Managing for Results (MFR) State Comprehensive
+Plan (the State Plan). The attached report is submitted in response to that requirement.
+
+Data concerning each of the performance measures included in the State Plan are presented within the following Hogan
+Administration priority areas:
+ Economic Development and Jobs (11 metrics)
+ Reduced Taxes and Fees
+ Fiscal Responsibility (6 metrics)
+ Government Reform
+ Improved Quality of Life (57 metrics)
+
+As shown in the following table, performance for each measure has been categorized as favorable, stable, or unfavorable
+based on the most recent five years of data.1 Five years of comparable data are not available for all measures. The percent
+change for measures with less than five years of data is calculated using available data (all percentages are rounded to establish
+categories).
+
+                                          Strongly Favorable Performance (Change >10%)
+                                          Favorable Performance (3% to 10%)
+                                          Stable Performance (-2% to 2%)
+                                          Unfavorable Performance (-3% to -10%)
+                                          Strongly Unfavorable Performance (< -10%)
+
+The following chart summarizes overall performance for measures in the State Plan. From report year 2017 to 2021, more
+than half of the measures are moving in a favorable direction, 58%. Performance is stable for 19% of measures and, when
+combined, 77% of measures are either moving in a favorable direction or are stable. When comparing the data from 2020
+to 2021, 76% of measures are either favorable or stable. As discussed throughout the report, certain measures in report year
+2021 were impacted by the COVID-19 pandemic.
+
+  Strongly           Strongly
+Unfavorable          Favorable
+
+    16%                 27%
+
+Unfavorable
+     7%
+
+             Stable
+             19%
+
+                     Favorable
+                        31%
+
+Both a summary table and a detailed presentation of performance trends are included in the following pages for each priority
+area. Note that the majority of exhibits and discussion refer to "report years" 2017 to 2021, as opposed to fiscal or calendar
+years, in order to normalize data for comparison.
+
+1 For determining trends when the beginning value is zero, the difference between zero and the ending value is calculated rather than a percent
+change.
+
+                                                                                                                                          i|Page
+                              1. ECONOMIC DEVELOPMENT AND JOBS
+
+Performance Overview                                           in Maryland directly tied to the federal government, and
+                                                               even more indirectly impacted by the federal government2,
+    Performance Status        Number of   Percent              a large part of slow GDP growth in Maryland was related
+   (percentages are rounded)  Indicators                       to the pullback in federal spending between calendar years
+                                           36.4%               2011 and 20143. However, in the following four years,
+Favorable (Change >10%)             4      27.3%               Maryland's growth has steadily rebounded, narrowing the
+Favorable (3% to 10%)               3      9.1%                gap between it and the national average. Maryland
+Stable (-2% to 2%)                  1      0.0%                continues to have positive annual GDP growth.
+Unfavorable (-3% to -10%)           0      27.3%
+Unfavorable (< -10%)                3                          Exhibit 1.1 Annual Gross Domestic Product Growth, Maryland
+                                           100%                         and the United States, Report Years 2008-2021
+Total                              11
+                                                                 5.0%
+In the area of Economic Development and Jobs, 73% of
+Maryland indicators either performed favorably or held           4.0%
+stable between the 2017 and 2021 report years. The next
+section highlights and explains the factors behind               3.0%
+significant trends, but particularly notable favorable trends
+were seen in the following areas:                                2.0%
+
+ annual growth in total real gross domestic product              1.0%
+    increased by 7.1%, from $349 billion to $374 billion,
+                                                                 0.0%
+ the State Economic Momentum Index rating grew
+    from -0.07 to 0.31,                                         -1.0%
+
+ the ratio between Maryland's unemployment rate and             -2.0%
+    the United States' dropped from 0.923 to 0.827, and
+                                                                -3.0%
+ the percent of State Highway Administration Network
+    in overall preferred maintenance condition increased       2008
+    from 78.8% to 87.2%.                                           2009
+                                                                       2010
+                                                                           2011
+                                                                                2012
+                                                                                    2013
+                                                                                        2014
+                                                                                             2015
+                                                                                                 2016
+                                                                                                     2017
+                                                                                                          2018
+                                                                                                              2019
+                                                                                                                  2020
+                                                                                                                       2021
+
+                                                               MD GDP  US GDP
+
+The following section discusses significant trends in
+performance.
+
+Significant Performance Trends                                 Indicator 1.2: State Economic Momentum Index
+
+Indicator 1.1: Maryland's growth in total real gross           The Index of State Economic Momentum, developed by
+domestic product (GDP) (in millions of chained                 Federal Funds Information for States (FFIS), ranks states
+[2012] dollars)                                                based on their most recent performance in three key
+                                                               measures of economic vitality: personal income growth,
+Total real GDP by state is an inflation-adjusted measure of    employment growth, and population growth. Measures of
+each state's production, wherever sold, that is based on       the three components are averaged, the national average is
+national prices for the goods and services produced within     set at zero, and each state's score is then expressed as a
+that state. The all industry total includes all private        percentage above or below the national average.
+industries and government. Over the period of report year
+2017 to 2021, Maryland's total real gross domestic product     In December 2020, Maryland was ranked 16th among
+grew by 7.1%.                                                  states, with a value of 0.31. Despite the economic
+                                                               challenges of 2020, Maryland ranked above the national
+Exhibit 1.1 displays the Maryland and nationwide GDP           average. Comprising this overall value, Maryland ranked as
+growth over the past decade. It shows that Maryland's          follows:
+economy generally performed more strongly than the U.S.
+as a whole from calendar years 2008 to 2011, but that trend    a. 20th on change in personal income with 7.0%, just
+reversed in 2012. With about 5% of jobs and 11% of wages           below the national average of 7.1%,
+
+2 Maryland Department of Legislative Services. 2016. Spending  3 Maryland Board of Revenue Estimates. 2016. Estimated
+Affordability Briefing, October 25, 2016.                      Maryland Revenues, December 8, 2016.
+
+                                                                                                                    1|Page
+b. 18th in employment growth rate with -4.4%,                     the COVID-19 pandemic. In response, Governor Hogan
+    compared to the national average of -5.8%, and                has dedicated $250 million Rainy Day funds in FY 2021 for
+                                                                  small business relief. The resources were distributed both
+c. 19th in state population as a share of the national            in the form of small business grants and in funding sent
+    population, gaining 0.0% in population.                       directly to counties for the aid of hotels and restaurants for
+                                                                  rent, equipment purchases, sanitation services, PPE
+Indicator 1.3: Maryland Port Administration (MPA)                 purchases, and infrastructure improvements in order to
+total general cargo tonnage (millions)                            stay open and keep Marylanders working throughout the
+                                                                  pandemic.
+The annual total tonnage moving across MPA's terminals
+is a gross outcome measure of the attractiveness of MPA's         Indicator 1.6. Percent of MD State Highway
+infrastructure and facilities. Key investments in MPA have        Administration (SHA) Network in overall preferred
+landed it repeatedly at the top of rankings among all U.S.        maintenance condition
+ports.
+                                                                  The overall condition of the State Highway Administration
+MPA's general cargo (i.e. foreign and domestic waterborne         Network reflects how well asset management strategies,
+cargo) tonnage set a new fiscal year record high in 2018 for      improved operations, and technology have sustained the
+the 8th consecutive year, at 11 million tons, and maintained      quality and safety of existing roadways.5 A Composite
+this tonnage in 2019. In FY 2020, total tonnage declined          Level of Service is assessed using the Maryland Condition
+slightly to 10.4 million tons due to the impact of the            Assessment Reporting System (MCARS). Twenty-one
+COVID-19 pandemic. Despite this slight decline, the Port          maintenance elements in four categories are assessed. The
+continues to be an economic engine for Maryland,                  categories are shoulder, drainage, traffic control/safety,
+generating about 15,300 direct jobs, with nearly 140,000          and roadside. Actual maintenance conditions are
+jobs overall linked to Port activities.4                          compared against desired conditions.6 Between report year
+                                                                  2017 and 2021, the State's performance has improved from
+Thanks to Governor Hogan and Maryland's congressional             78.8% to 87.2%.
+delegation's provision of matching federal funds, in 2019
+the State secured $125 million as part of the federal             Indicator 1.7: Ratio between Maryland's
+Infrastructure for Rebuilding America (INFRA) Grant               unemployment rate and the U.S. rate
+Program to use toward the reconstruction of the Howard
+Street Tunnel to add double-stacked container shipping            The ratio between Maryland's unemployment rate and the
+capability to and from the Port of Baltimore. The                 national rate has narrowed in recent years as the State's
+completion of this project is expected to increase container      economy aligned closer to the nationwide experience in the
+volumes at the Port by 100,000 annually. This increase in         economic expansion. Exhibit 1.2 compares the Maryland
+container volume is estimated to create 7,290 jobs in             and U.S. employment rate over the past decade. In
+Maryland and result in $1 billion annually in personal            December 2019, Maryland's unemployment rate reached
+income, local consumption, and business revenues as well          its lowest point in 11 years at 3.5%. Report year 2021
+as $65 million annually in state and local taxes.                 includes the onset of the COVID-19 pandemic resulting in
+                                                                  an increase in unemployment nationally and statewide.
+Indicator 1.5: Total State sales tax revenue attributable         Maryland's unemployment rate in report year 2021 was 1.3
+to tourism (millions)                                             percentage points lower than the national unemployment
+                                                                  rate.
+This performance measurement reflects revenue collected
+by the Comptroller in tourism-related sales tax categories        6 Managing for Results Performance Measure Profile Fiscal Year 2012,
+such as restaurants, hotels, air travel, and recreational         State Highway Administration, Maryland Department of
+activities. Total sales tax revenue attributable to tourism fell  Transportation.
+in FY 2020 to $391.1 million from a five-year high of
+$499.0 in FY 2019.                                                                                                             2|Page
+
+The health of this indicator is driven by the annual number
+of visitors. Tourism nationwide was negatively impacted by
+
+4 "Port of Baltimore Continues Climb From COVID-19 Lows With
+Strong October," Maryland Port Administration Press Release
+November 30, 2020.
+5 2012 Annual Attainment Report on Transportation System
+Performance, Maryland Department of Transportation.
+ Exhibit 1.2 Maryland and United States Unemployment Rate,     Indicator 1.10: Homeownership
+                    Report Years 2010-2021
+                                                               Homeownership rates are another key economic measure,
+    10.0%                                                      with higher rates indicating market stability. Exhibit 1.3
+     9.0%                                                      displays that Maryland's homeownership rates have
+     8.0%                                                      historically exceeded the U.S. rate. Maryland's
+     7.0%                                                      homeownership rate increased by 2 percent in the last year
+     6.0%                                                      and has exceeded the U.S. rate by an average of 2.8
+     5.0%                                                      percentage points since report year 2017.
+     4.0%
+     3.0%                                                       Exhibit 1.3 Maryland and United States Homeownership Rate,
+                                                                                   Report Years 2017-2021
+                            MD Unemployment Rate
+                            US Unemployment Rate               70.0%
+                                                               69.0%
+Indicator 1.9: Annual percent change in Maryland per           68.0%
+capita personal income (estimated)                             67.0%
+                                                               66.0%
+Annual estimates of per capita personal income are an          65.0%
+indicator of economic well-being of the residents of a state.  64.0%
+Maryland's per capita personal income has significantly        63.0%
+exceeded (by $4,000 to $10,000) the national per capita        62.0%
+personal income for the past fifteen years. Maryland has a     61.0%
+large Federal employment base, as well as an economic
+concentration in industries such as information and                        2017 2018 2019 2020 2021
+professional services that frequently require college and
+advanced degrees, and therefore pay higher salaries.           Maryland  U.S.
+Maryland averaged a 3.4% annual increase in per capita
+personal income from report year 2017 to report year 2021.
+
+                                                                               3|Page
+Performance Detail ­ Economic Development and Jobs
+
+Key Performance Area 1 ­ Data by Report Year
+
+        Indicator             Agency/     2017     2018      2019      2020      2021   4 Year Specific
+                            Data Source  349,147   359,988   365,857   368,810          Change Target
+1.1. Maryland's growth      U.S.
+in total real gross         Commerce        -0.07      0.17     -0.57     -0.50  374,039 7.1% N/A
+domestic product (in        BEA               9.8      10.3      11.0      11.0
+millions of chained                          23.8      25.1      26.4    27.1*   0.31 542.9%   N/A
+[2012] dollars) (CY 2015    FFIS                    $468.9    $479.8   $499.0*
+- 2019)                     MDOT          $450.6    78.6%     85.7%     85.6%    10.4 6.1% N/A
+1.2. State Economic                       78.8%
+Momentum Index (CY          MDOT                    0.9195    1.0654    1.0067   27.0 13.3% N/A
+2016 - 2020)                              0.9239      N/A     76.9%     75.9%
+1.3. Maryland Port          Commerce        N/A                                  $391.1 -13.2% N/A
+Administration total        Comptroller             3.46%     2.96%     3.21%
+general cargo tonnage,      MDOT          4.28%     66.5%     66.9%     66.6%    87.2%  10.7%  Maintain
+(millions) (FY 2016 -                     67.1%                                                    at or
+2020)                       U.S.
+1.4. Annual BWI             DOL/BLS                                                               above
+Marshall passenger                                                                                  84%
+growth rate - Number of     Labor
+passengers (millions)                                                            0.8275 -10.4% N/A
+(CY 2015 - 2019)            U.S.
+1.5. Total State sales tax  Commerce                                             80.5% 4.7%    72%
+revenue attributable to     BEA
+tourism (millions) (FY      U.S. Census                                          3.08% -28.0% N/A
+2015 - 2019)                                                                     68.8% 2.5% N/A
+1.6. Percent of MD State
+Highway Administration
+network in overall
+preferred maintenance
+condition (CY 2015 -
+2019)
+1.7. Ratio between
+Maryland's
+unemployment rate and
+the U.S. rate (FY 2016 -
+2020)
+1.8. Employment Rate
+of WIOA adult program
+participants employed
+during the 2nd quarter
+after exit (FY 2016 -
+2020)*
+1.9. Annual percent
+change in Maryland per
+capita personal income
+(CY 2015 - CY 2019)**
+1.10. Homeownership
+(CY 2015 - CY 2019)
+
+                                                                                        4|Page
+        Indicator          Agency/    2017    2018    2019     2020     2021  4 Year Specific
+                         Data Source  11,305  22,168    9,573    5,394        Change Target
+1.11. Number of jobs     Commerce
+created/retained                                                        4,709 -58.3% N/A
+through Department of
+Commerce facility
+attraction and business
+technical assistance
+activities (FY 2016 -
+2020)
+
+* Numbers have been updated since last year's report.
+** Department of Labor no longer collects the prior metric. Maryland began collecting Workforce Innovation and Opportunity
+Act (WIOA) data during FY 2017, but only began to report on these new measures in FY 2018. The Department of Workforce
+Development and Adult Learning (DWDAL) changed the measures to reflect the federal law in a previous submission.
+
+                                                                              5|Page
+2. REDUCED TAXES AND FEES
+
+Performance Discussion                                               undergraduate student loan debt and have at least
+                                                                     $5,000 in outstanding undergraduate debt (2016)
+As said by Governor Hogan, "Reducing and eliminating              Establishing the Maryland Small Business Retirement
+taxes, tolls, and fees not only helps to streamline state            and Savings Program and exempting participating
+government, it has a direct impact on the livelihood of              employers from paying annual filing fees (2016)
+Maryland citizens. Our goal is to make it easier to live,         Reducing the annual interest rate on tax deficiencies
+work, and retire in our state, and continue to change                and refunds, from the current rate of 13% to 9% by
+Maryland for the better."7                                           2020, lowering the interest rate burden on taxpayers
+                                                                     (2016)
+While tax and fee reductions do not easily lend themselves        Exempting retired law enforcement, fire, rescue or
+to performance metrics, this section of the Performance              emergency personnel from tax on the first $15,000 of
+Report highlights the steps the Hogan Administration has             retirement income specific to their service as a first
+taken to reduce taxes and fees.                                      responder (2017)
+                                                                  Establishing the More Jobs for Marylanders program
+Tax Reductions                                                       to provide new manufacturing companies located in
+                                                                     specific counties a ten-year tax credit against their
+Taxes in Maryland are set in statute, and therefore the              income, property, and sales taxes (2017)
+Administration requires cooperation from the General
+Assembly to enact tax relief legislation. The FY 2022            For the 2018 Legislative Session, the Hogan
+budget marks the seventh year in a row of no tax or fee          Administration introduced legislation to protect
+increases proposed by the Governor.                              Marylanders from an increased tax burden as a result of the
+                                                                 federal Tax Cuts and Jobs Act of 2017 by decoupling the
+From 2015 to 2017, the Governor introduced a number of           State income tax from specified amendments to the federal
+tax relief bills, including legislation:                         Internal Revenue Code that result in increased State
+                                                                 revenues. The General Assembly did not pass this
+ Exempting all military retirement income from the               legislation, but Governor Hogan did sign legislation to
+    income tax with a four-year phase-in                         increase the State standard deduction in tax year 2018 from
+                                                                 $2,000 to $2,250 for single taxpayers and from $4,000 to
+ Exempting any retired law enforcement, fire, rescue or          $4,500 for taxpayers filing jointly.
+    emergency personnel from tax on retirement income
+    specific to their service as a first responder               The Hogan Administration also introduced and the
+                                                                 General Assembly passed Small Business Relief Tax Credit
+ Repealing the "rain tax"                                        legislation to help small businesses with implementation of
+ Eliminating the personal property income tax for                new paid sick leave requirements. Additional tax relief
+                                                                 legislation passed in 2018 included:
+    businesses that have less than $10,000 in personal
+    property                                                      The Hometown Heroes and Veterans Act of 2018,
+ Repealing the automatic gas tax increases passed in                 which increased from $10,000 to $15,000 the
+    20138                                                            maximum amount of military retirement income that
+ Introducing tax incentives for manufacturers and the                can be excluded from Maryland income tax liability,
+    State's cybersecurity industry.
+                                                                  Repeal of the minimum age requirement for the
+The Governor signed the following measures into law:                 Earned Income Tax Credit, and,
+
+ An increase in the military retirement income                    An increase to $7,000 in the value of the subtraction
+    exemption (2015)                                                 modification for volunteer fire, rescue or emergency
+                                                                     medical services personnel.
+ Repeal of the "rain tax" (2015)
+ Establishing a tax credit for aerospace, electronics, or        During the 2019 Legislative Session, the Hogan
+                                                                 Administration proposed additional tax relief legislation,
+    defense contract businesses to encourage the                 including doubling the deduction for contributions to 529
+    development of these industries in Maryland (2016)           trusts and investment plans; increasing to 100% the
+ Establishing a new tax credit of up to $5,000 for
+    individuals who have incurred $20,000 or more in
+
+7 "Governor Larry Hogan Announces Additional $60 Million in Fee  8 "Governor Hogan Unveils Tax Relief Measures," Governor
+Cuts," Governor Hogan Press Release May 12, 2016.                Hogan Press Release February 4, 2015.
+
+                                                                                                                      6|Page
+deduction on student loan interest; expanding the types of                 families and $300 for individuals who filed for the
+retirement investments defined as retirement income                        Earned Income Tax Credit (EITC), followed by a
+excluded from taxation; expanding the More Jobs for                        second-round stimulus for EITC filers that would
+Marylanders tax credit to include Opportunity Zones; and                   provide an additional $250 for eligible families and
+expanding the Hometown Heroes tax credit.                                  $150 for individuals. This relief will directly help
+                                                                           more than 400,000 Marylanders. Similar to federal
+The Opportunity Zone Incentive legislation ultimately                      stimulus payments, no application for relief is
+passed by the General Assembly and signed by Governor                      necessary. ($270 million)
+Hogan extended the "More Jobs for Marylanders"                         Repeals all state and local income taxes on
+program for two more years and authorized up to $200                       unemployment benefits, providing further
+million in additional tax credits and refunds.                             support and assistance for Marylanders who have
+                                                                           lost their jobs. ($180 million)
+Additional tax relief legislation enacted by the General               Supports small businesses with sales tax credits of
+Assembly and supported by the Hogan Administration in                      up to $3,000 per month for four months-- for a
+2019 included an expansion of the child and dependent                      total of up to $12,000--freeing-up much needed
+care tax credit, and the extension of the job creation tax                 resources to protect payrolls and sustain
+credit to January 2022.                                                    operations. This relief will directly help more than
+                                                                           55,000 Maryland small businesses. ($300 million)
+The Administration also announced in November 2019                     Extends unemployment tax relief for small
+that for the fifth straight year, Maryland employers would                 businesses, staving off sudden and substantial tax
+receive the lowest possible unemployment insurance (UI)                    hikes in 2021. ($218 million)
+tax rates allowed under state law.                                     Safeguards Maryland businesses against any tax
+                                                                           increase triggered by the use of state loan or grant
+During the 2020 Legislative Session, the Hogan                             funds. ($40 million)
+Administration proposed the largest tax reduction in
+Maryland in more than two decades: an elimination of State        Fee Reductions
+income tax for retiree income up to $50,000. The
+Retirement Tax Reduction Act of 2020 would have                   In May 2015, the Hogan Administration rolled back tolls
+lowered taxes for more than 230,000 Marylanders and               statewide, saving Maryland citizens $270 million over the
+provided more than $1 billion in tax relief.9 The General         next five years. In May 2018, the cost of an EZPass
+Assembly did not pass this legislation.                           transponder for new customers was completely eliminated,
+                                                                  saving Marylanders approximately $46 million over 5 years.
+In keeping his promise to prevent new or increased taxes,         In a third round of historic toll relief, Governor Hogan
+especially in light of the economic turmoil created by the        announced in July 2019 that the Maryland Transportation
+pandemic, Governor Hogan vetoed two bills passed by the           Authority (MDTA) Board would consider new tolling
+General Assembly during the 2020 Legislative Session that         options to save Marylanders an additional $28 million over
+would increase taxes on the purchase of digital products,         the next five years. These three actions result in a total of
+digital advertising, tobacco, and e-cigarette products.           up to $344 million in toll relief savings for Marylanders.
+
+The 2021 Legislative Session is unprecedented for the             On September 15, 2015, the Governor announced that
+number and magnitude of challenges that need to be                eight agencies would reduce or completely eliminate
+quickly addressed as Marylanders cope with the impacts of         hundreds of individual fees previously levied by Maryland's
+the COVID-19 pandemic. In response, the Hogan                     government, saving Marylanders an estimated $51 million
+Administration has proposed the Recovery for the                  over five years.10 Major fees reduced include:
+Economy, Livelihoods, Industries, Entrepreneurs, and
+Families (RELIEF) Act, a $1 billion tax relief and direct          Reduction to $1 for homeless identification cards
+stimulus package that:                                             Elimination of $1.50 monthly EZ-Pass fees
+                                                                   $4 reduction in vehicle emissions test fees for self-
+     Provides direct stimulus payments for low-to-
+         moderate income Marylanders, with benefits of up             service kiosk customers
+         to $750 for families and $450 for individuals. This
+         relief begins with immediate payments of $500 for        10 "Governor Hogan Eliminates or Cuts Fees Statewide," Governor
+                                                                  Hogan Press Release September 15, 2015.
+9 "Governor Hogan Announces More Than $1 Billion in Tax Relief
+for Maryland Retirees," Governor Hogan Press Release January 16,                                                               7|Page
+2020.
+ 10% reduction in numerous business license fees                  As of FY 2018, the Administration had delivered more
+    associated with the sale and registration of new and          than $1.2 billion in tax, toll, and fee relief.12
+    used motor vehicles                                           Reduced Health Insurance Premiums
+                                                                  In September 2020, the Maryland Insurance
+ Reduction or elimination of outdoor advertising fees             Commissioner approved an average 11.9% premium rate
+ $10 reduction in MVA's vehicle title correction fee              decrease for individual health insurance plans with an
+ A range of business license fees in the Prevention &             effective date of January 1, 2021. For the third consecutive
+                                                                  year, all individual insurance rates in Maryland under the
+    Health Promotion Administration                               Affordable Care Act (ACA) experienced significant
+ Food manufacturing and processing license fees                   decreases.
+ Reduction in the three-year controlled dangerous
+                                                                       2019: -13.2%
+    substance (CDS) registration fee                                   2020: -10.3%
+ $2,000 reduction in ambulatory surgery center fees                    2021: -11.9%
+ Multiple reductions in real estate broker, salesperson,          The lower rates reflect the impact of the State Reinsurance
+                                                                  Program, which has helped to stabilize the individual
+    and home appraisal license fees                               health insurance market after years of major premium
+ Numerous fees associated with financial regulations              increases. The three-year cumulative impact is a rate
+ $65 reduction in annual license fee for veterinarians            decrease of 31.4% versus 2018 premiums.13
+ 20% across-the-board reduction in lab fees for animal
+                                                                  13 "Governor Hogan Announces Third Consecutive Year of Lower
+    health diagnostics (115 individual fees)                      Individual Health Insurance Premiums," Governor Hogan Press
+ Elimination or reduction of business fees associated             Release September 15, 2020
+
+    with asbestos contractor licenses                                                                                          8|Page
+ Elimination of license fees for underground storage
+
+    tank technicians, removers, and inspectors
+ Elimination of the state park boat launch fee for
+
+    seniors with Golden Age Pass
+ Elimination of child support income tax intercept fee
+
+Since this initial action, the Hogan Administration has
+continued its work in reducing the burden of fees on State
+residents and businesses with the following actions:
+
+ Introduction and passage of 2016 legislation reducing
+    the fee for certified copies of birth and death
+    certificates from $24 to $10
+
+ Support of the passage of 2016 legislation eliminating
+    the Maryland Health Insurance Plan (MHIP) and the
+    assessment fee on hospital rates that was in place to
+    pay for the operation and administration of the
+    program; individuals who used to be covered under
+    the MHIP program are now eligible to get insurance
+    through the Maryland Health Benefit Exchange, and
+    the elimination of the assessment will lower hospital
+    costs for residents throughout Maryland
+
+ In May 2016, the Hogan Administration announced
+    155 additional fee reductions and eliminations across
+    state government, including reduced admission to
+    state parks for veterans, cuts to the child support
+    collection fee, and a $15 million cut to the surcharge
+    paid by every single Marylander who gets a phone bill
+    each month11
+
+11 "Governor Larry Hogan Announces Additional $60 Million in Fee
+Cuts," Governor Hogan Press Release May 12, 2016.
+12 "Governor Larry Hogan Saves Marylanders $46 Million by
+Permanently Eliminating E-ZPass Transponder Fee," Governor
+Hogan Press Release May 23, 2018.
+                                3. FISCAL RESPONSIBILITY
+
+Performance Overview                                          the continued triple-A bond ratings given by the bond
+                                                              rating agencies for Maryland's GO bond issuances. The
+    Performance Status        Number of   Percent             Hogan Administration has continually proposed limiting
+   (percentages are rounded)  Indicators                      capital budget borrowing either at or below the limit
+                                           16.7%              recommended by the legislature's Spending Affordability
+Favorable (Change >10%)             1      16.7%              Committee in order to begin to bend the curve back
+Favorable (3% to 10%)               1      50.0%              towards sustainable, affordable levels.
+Stable (-2% to 2%)                  3      0.0%
+Unfavorable (-3% to -10%)           0      16.7%              Indicator 3.3: Asset to liability ratio for the Maryland
+Unfavorable (< -10%)                1                         State Retirement and Pension System (funded ratio)
+                                    6      100%
+Total                                                         The funded ratio measures the ability of the Maryland State
+                                                              Retirement and Pension System to pay all projected
+In the area of Fiscal Responsibility, five out of six         retirement benefits as they become due. The funded ratio
+indicators either performed favorably or held stable          is the primary measure of funding progress, and the System
+between the 2017 and 2021 report years. The next section      is fully funded if the funded ratio is greater than or equal
+highlights and explains the factors behind significant        to 100%. When analyzing the overall funded status, it is
+performance trends.                                           important to keep in mind that a funding plan is over a
+                                                              long horizon in which fluctuations in the market are
+Significant Performance Trends                                expected.
+
+Indicator 3.1: Bond ratings from three nationally             Pension reform legislation was passed during the 2011
+recognized bond rating agencies for each issuance of          Legislative Session with the goal of improving the funded
+State general obligation (GO) bonds                           ratio of the System. Exhibit 3.1 shows that the results of
+                                                              that reform are starting to be realized. The funding level
+Maryland uses the proceeds from the issuance of GO            has steadily ticked up to 72.9% in report year 2021 from a
+bonds to finance capital projects such as schools,            low of 64.1% in report year 2011.
+community colleges, university projects, and hospitals. A
+triple-A rating, the highest possible rating, means that the     Exhibit 3.1 Maryland State Retirement and Pension System
+State has an extremely strong capacity to meet financial                   Funded Ratio, Report Years 2001-2021
+commitments. Maryland has consistently maintained
+triple-A bond ratings from all three nationally recognized     110%
+rating agencies, each of which has acknowledged
+Maryland's strong financial management; diverse, wealthy       100%
+economy; strong debt oversight; and moderate debt
+burden. Retention of the triple-A rating allows the State to     90%
+save millions of taxpayer dollars resulting from the low
+interest rates achieved because of these ratings.
+
+Indicator 3.2: Capital debt service as a percent of           80%
+
+State revenue
+
+Capital debt service as a percent of State revenue measures   70%
+
+whether the State can pay the debt service, and considers
+
+the ability of the State to manage debt over time to achieve
+
+goals. Tax supported debt is tracked by the Capital Debt      60%
+
+Affordability Committee (CDAC). Under criteria imposed
+
+by CDAC, debt service on State tax-supported debt may         50%
+not exceed 8% of revenues.
+
+While staying below the 8% threshold, the debt to revenue     40%
+
+ratio increased by 2.3% from the 2017 to 2021 report due
+
+to increased debt service costs from prior issuances.
+
+Maintaining debt below the threshold has contributed to
+
+                                                                   9|Page
+Indicator 3.4: Difference between the actual rate of            Indicator 3.6: Projected percentage of ongoing
+return for the composite portfolio and the actuarial            revenues covering ongoing spending based on the
+return assumption set by the State Retirement Agency            Governor's 5-year plan
+(SRA) Board of Trustees over one year
+                                                                The Budget Highlights document each year includes a 5-
+The State pension system, including over 300,000 active         year general fund budget projection showing how much of
+and retired members, is funded through three sources of         projected revenues will cover projected expenditures over
+income: (1) State government contributions, (2)                 the next five years. The last five years has shown stability
+contributions from employees in the system, and (3)             in this metric, changing very little from 93.9% in report
+investment returns. Employee contribution rates are set in      year 2017 to 93.8% in report year 2021.
+statute, but when the Board of Trustees is determining how
+much the State budget should include in order to move the       When Governor Hogan took office in 2015, he inherited a
+system towards full funding, they must make certain             large looming budget gap. Quick action was taken to
+assumptions regarding how much investment income the            resolve the budget deficit, and by the time the fiscal 2017
+system will collect. If that assumption is exceeded, the State  budget was introduced in January 2016 it was in full
+can contribute less in future years, but if investment returns  structural balance as shown by the 100.1% value on this
+fall short the system is short-funded and the State budget      metric in the 2015 Performance Report.
+has to make up the difference in future years. The System's
+portfolio returned 3.57% on investments for FY 2020.            The fiscal 2018 budget, however, faced growth in Medicaid
+Although the fiscal year earnings fell short of the plan's      spending, softening revenues, and new mandated spending
+7.40% assumed actuarial return rate, they exceeded the          enacted in the 2016 and 2017 sessions. Due to a
+policy benchmark of 3.14%. The policy benchmark is a            combination of these factors, at the end of the 2017 session
+standard for comparing a portfolio's performance in the         a three-quarter billion-dollar structural gap was estimated
+market from which the manager selects securities. The           for fiscal 2019, significantly larger than the budget as
+fund's performance raised the system's assets to $54.8          introduced by the Administration.
+billion, an increase of $563 million over last year.
+                                                                With a cash surplus of $91 million in fiscal 2018 coming
+Exhibit 3.2 shows the degree to which the system either         out of the 2017 session, Governor Hogan set out a fiscally
+fell below (-%), met (0%), or exceeded (+%) this                prudent course of action to once again shore up the State's
+assumption over the past seventeen years. In ten of the         finances. He directed state agencies to find spending
+years, returns were strong. However, the impact of the          efficiencies at the end of FY 2017 and prepare budget
+recession and slow recovery can clearly be seen in the years    reduction options for FY 2018 to ensure that the budget
+where the System failed to hit its investment target.           would stay in balance. State agencies were successful in
+                                                                turning back $246 million to the General Fund at the end
+  Exhibit 3.2 Pension System Investment Performance Above or    of FY 2017, $90 million more than estimated. The State
+      Below Return Assumptions, Report Years 2005-2021          was able to close FY 2017 with a balance of $258 million -
+                                                                - nearly three times greater than expected -- a direct result
+   15%                                                          of agency actions, along with slightly higher than estimated
+                                                                revenues.
+   10%
+                                                                Despite higher than expected revenues at the end of FY
+     5%                                                         2017, revenue collections grew at a slower pace than
+                                                                expected at the beginning of FY 2018; therefore, the
+     0%                                                         Administration moved forward with implementing a plan
+                                                                to make mid-year budget reductions. The Administration
+    -5%                                                         set forth an $80 million plan to help offset potential
+                                                                revenue reductions, which was approved by the Board of
+  -10%                                                          Public Works. Shortly after, the Board of Revenue
+                                                                Estimates revised General Fund revenues downward by
+  -15%                                                          $53 million. In December 2017, the Board revised
+                                                                revenues downward by another $73 million for FY 2018.
+  -20%
+                                                                The Administration then began finalizing work on the
+  -25%                                                          fiscal 2019 budget in a much better position than had these
+                                                                actions not been taken, and the magnitude of reductions
+  -30%
+                                                                                                                            10 | P a g e
+2005
+   2006
+       2007
+          2008
+             2009
+                 2010
+                     2011
+                        2012
+                           2013
+                               2014
+                                  2015
+                                      2016
+                                          2017
+                                             2018
+                                                2019
+                                                    2020
+                                                       2021
+needed to balance the fiscal 2019 budget was lessened.         Facing a dire economic outlook, Governor Hogan froze
+Governor Hogan was able to resolve the remaining fiscal        state spending and hiring and implemented a series of
+2019 budget shortfall through thoughtful cost containment      targeted but significant reductions as part of a larger budget
+strategies including limiting growth of legislative mandates,  balancing plan to prevent a massive shortfall in the final
+realizing favorable trends in Medicaid and employee health     days of FY 2020. Initial estimates had reflected potential
+insurance spending, and using bond premiums to offset          revenue losses of up to $2.8 billion in FY 2020, $2.6 billion
+debt service costs.                                            in FY 2021, and a massive $4 billion in FY 2022 -- a drop
+                                                               that would have completely wiped out the past six years of
+The State closed FY 2018 with a surplus of $589 million--      economic growth.
+nearly $400 million larger than estimated. The budget
+surplus was primarily the result of higher than estimated      Instead, FY 2020 ended roughly $100 million short of
+revenues, and secondarily because state agencies returned      budgeted revenues, and the most recent projections
+more funds to the Treasury than estimated for the fourth       estimate that the combined loss, while still significant, will
+consecutive year. When combined with moderating en-            be only $921 million over the next two fiscal years. Further,
+rollment in entitlement programs such as Medicaid and          as a result of the Governor's actions to curtail agency
+Temporary Assistance for Needy Families, this set the          spending, federal stimulus which helped to support
+stage for a smoother than anticipated short-term budget        individuals and small businesses, and the prudent use of
+outlook than just one year prior.                              the Coronavirus Relief Fund, the State closed FY 2020
+                                                               with a fund balance of $703 million, $357 million higher
+The State general fund budget was structurally balanced in     than expected.
+FY 2018 and FY 2019. Due to higher than estimated
+revenues, the FY 2019 budget closed with a fund balance        The FY 2022 budget as introduced provides record
+of $974.2 million--almost $256 million higher than             investments for all key budget priorities without
+expected.                                                      jeopardizing economic recovery.
+
+The outlook on the FY 2020 budget was positive and by
+mid-year it was estimated to close with a fund balance of
+$414 million. However, in March of 2020, the first known
+cases of the coronavirus were identified in Maryland.
+Governor Hogan acted quickly, implementing scientifically
+proven social distancing guidelines in an attempt to control
+the spread of the disease and to ultimately save
+Marylanders' lives. This public health crisis was coupled
+with historic economic decline.
+
+                                                               11 | P a g e
+Performance Detail ­ Fiscal Responsibility
+
+Key Performance Area 3 ­ Data by Report Year
+
+         Indicator           Agency/    2017           2018    2019    2020    2021    4 Year    Specific
+                           Data Source    AAA            AAA     AAA     AAA     AAA   Change    Target
+3.1. Bond rating from all  Treasurer's                                                           Maintain
+three nationally           Office       7.27%          7.53%   7.62%*  7.53%*                No
+recognized bond rating                  70.5%          71.8%    72.5%   72.5%            change      AAA
+agencies for each          CDAC          -6.4%           2.5%   0.56%  -0.99%
+issuance of State General                                                      7.44%   2.3%      At or
+Obligation bonds           State           23%            23%     24%     26%  72.9%             below
+(maintain AAA rating)      Retirement   93.9%          93.8%    92.0%   93.2%
+(CY 2016 - CY 2020)        and Pension                                                              8%
+3.2. Capital debt service  System
+as a percent of State      State                                                       3.4%        100%
+revenue (FY 2016 - FY      Retirement                                                            funded
+2020)                      and Pension                                                           by 2039
+3.3. Asset to liability    System
+ratio for the MD State                                                         -3.83%  40.1% 0.0% or
+Retirement and Pension     DBM                                                                       higher
+System (funded ratio)
+(FY 2016 ­ FY 2020)        DBM                                                 28% 21.7%         N/A
+3.4. Difference between
+the actual rate of return                                                      93.8% -0.1%       N/A
+for the composite
+portfolio and the
+actuarial return
+assumption set by the
+SRA Board of Trustees
+over one year (FY 2016 -
+FY 2020)
+3.5. Percent of repeat
+audit findings for State
+agencies (FY 2016 - FY
+2020)
+3.6. Projected percentage
+of ongoing revenues
+covering ongoing
+spending based on the
+Governor's 5-year plan
+included in the budget
+allowance (FY 2018 - FY
+2022)
+
+* Numbers have been updated since last year's report.
+
+                                                                                                 12 | P a g e
+4. GOVERNMENT REFORM
+
+Performance Discussion                                            analysis of proposed regulations (HB 157). Though this
+                                                                  Governor's legislation was not passed by the General
+Another major principle of the Hogan Administration is            Assembly, a different version (CH 212 of 2019) requires
+reform: "We must improve our State government's ability           this training and was signed by the Governor.
+to be more responsive to, and to better serve and represent
+all of our citizens." It is difficult to measure reform efforts;  Procurement Reform
+therefore, this section of the Performance Report
+highlights the steps the Hogan Administration has taken to        In February 2016, Governor Hogan signed Executive
+reform State government in Maryland to date.                      Order 01.01.2016.05, establishing the Commission to
+                                                                  Modernize State Procurement, a bipartisan commission
+Regulatory Reform                                                 that conducted a comprehensive review of Maryland's
+                                                                  procurement code and regulations. Due to an outdated
+In July 2015, the Governor signed Executive Order                 approach, as well as a lack of modern technology, the
+01.01.2015.20, establishing the Regulatory Reform                 State's existing process for procurement was unpredictable
+Commission. The Commission was tasked with resolving              and discouraged full participation among Maryland citizens
+regulatory issues that impact Maryland's business                 and the business community. "Over the past year, it has
+environment, while still continuing to protect the health,        become apparent that Maryland's procurement system is a
+safety, and welfare of Marylanders. The Commission's              patchwork of archaic laws and processes that are
+initial report was submitted December 2, 2015, based on           inefficient, ineffective, and result in wasted taxpayer
+input from more than 500 citizens obtained through six            dollars," said Governor Hogan. "By modernizing the way
+public outreach meetings, as well as departmental meetings        Maryland deals with procurement, we will create a
+and commission research. The second of the                        predictable, consistent, and transparent system, and get the
+Commission's three reports was released in December               best value for every dollar we spend ­ exactly what
+2016 and highlighted over 180 regulations which were              Marylanders expect and deserve."
+subsequently eliminated or streamlined by the
+Administration.                                                   In December 2016, the 19-member Commission released
+                                                                  its final report, including 57 recommendations, and
+In December 2017, the Hogan Administration announced              unveiled a new website (procurement.maryland.gov), as a
+the third and final report of the Regulatory Reform               comprehensive communications portal providing online
+Commission, identifying an additional 657 regulations for         access to Maryland procurement information for all
+elimination or streamlining. Among those identified for           policymakers, vendors, and citizens.
+reform were:
+                                                                  During the 2017 Legislative Session, the Hogan
+ the repeal of over 200 obsolete regulations in the               Administration introduced and the General Assembly
+    Maryland Department of Health,                                passed a three-bill package implementing the
+                                                                  Commission's recommended reforms, including:
+ the repeal of a $500 fee charged to towing companies
+    applying for a permit by the Maryland Transportation           increasing the agency small procurement dollar
+    Authority, and                                                    threshold from $25,000 to $50,000,
+
+ allowing the Maryland Department of the                           eliminating the statutory preference for competitive
+    Environment to issue one single permit for toxic                  sealed bidding, allowing multiple other procurement
+    substances and pesticide application rather than two              strategies at the agencies' discretion, and
+    separate permits under current regulations.
+                                                                   increasing the Small Business Reserve Program goal
+In addition, the Governor signed Executive Order                      and making the goal applicable to all state agencies
+01.01.2017.33, mandating that all state agencies use new,
+more precise guidance formulated by the Advisory Council          The Administration also supported other significant
+on the Impact of Regulations on Small Business when               procurement reform legislation passed by the General
+estimating the compliance cost and economic impact of             Assembly, including the creation of a Chief Procurement
+regulations affecting Maryland small business.                    Officer for the State and the consolidation of all non-
+                                                                  transportation State agency procurement into the
+During the 2019 Legislative Session, the Hogan                    Department of General Services. This merged Office of
+Administration introduced legislation requiring the               State Procurement was effective in FY 2020, and the
+Department of Budget and Management to facilitate                 Hogan Administration has invested to expand the office as
+training for State agencies regarding economic impact             it continues efforts to modernize state procurement
+
+                                                                                                                        13 | P a g e
+practices, get the best value for taxpayers, and make it               strengthens financial disclosure requirements for State
+easier for vendors to work with the State.                                officials to include spouses and all major business
+                                                                          activities, and,
+Enhancing Customer Service
+                                                                       establishes the Citizens' Advisory Board for
+In June 2016, Governor Hogan launched the Customer                        Legislative Ethics to offer recommendations to
+Service Initiative, a continuous program designed to foster               changes in public ethics laws.
+improvements in customer service across Maryland state
+agencies. The initiative focuses on three core deliverables:          Government Efficiency and Transparency
+a renewed focus on a strong service culture in state
+agencies, improved customer service training for state                The Hogan Administration has taken multiple steps to
+employees, and the establishment of new service                       enhance the efficiency of State services. Maryland's
+performance metrics which will allow the Administration               government is the smallest it has been since 1984 and is at
+and all Marylanders to track improvements in customer                 its lowest level per capita since 1972.
+service over time.
+                                                                      In July 2015 the Governor announced the closure of the
+A key provision of the initiative is a requirement for every          Baltimore City Detention Center, ending a long history of
+state agency to develop and maintain a plan to continually            corruption, deteriorating conditions, and waste. In the fall
+improve service delivery, including minimum response                  of 2015, the Administration began the consolidation of (a)
+times for phone, written, and in-person inquiries and                 certain human resources functions, which were spread
+services. These plans were initially due by October 1, 2016,          inefficiently throughout a multitude of agencies, under the
+are required to be resubmitted each fall for review, and will         Department of Budget and Management's Office of
+be reviewed annually by the Governor's Customer Service               Personnel Services and Benefits and (b) certain
+Workgroup.                                                            information technology functions, which were also
+                                                                      widespread, under the Department of Information of
+To solicit direct feedback from the public, in November               Technology. This consolidation annually saves State tax
+2016 the Workgroup launched an online survey where                    dollars and improves efficiency.
+citizens can rate an agency's service. The data collected by
+the survey will allow the State to track customer service             The Governor's Office of Performance Improvement
+performance among agencies and make targeted                          (GOPI) was established in October 2015 (Executive Order
+improvements as needed. In FY 2020, the State received                01.01.2015.26) to improve business processes throughout
+70,762 survey responses with an overall average customer              Maryland State agencies through greater accountability.
+satisfaction rating of 81%. The Hogan-Rutherford                      GOPI strives to increase the responsiveness and level of
+Administration has received an overall customer                       customer service of State agencies and departments;
+satisfaction rating of 81% or higher each year.14                     regularly reviews procedures, rules, and regulations of State
+                                                                      agencies and departments to increase their efficiency and
+Ethics Reform                                                         effectiveness; and promotes business process
+                                                                      improvement strategies to make government more
+In January 2017, Governor Hogan introduced major                      efficient and responsive to taxpayers.
+legislation representing the first significant overhaul of
+State ethics law in 15 years.15 The Public Integrity Act of           GOPI also helps to curate the Maryland Open Data Portal.
+2017 was passed on a bipartisan basis by the General                  Since 2015 the State has nearly tripled the number of
+Assembly. Among other provisions, the legislation:                    datasets (more than 1,000) available on the portal,
+                                                                      providing constituents with more self-service access to
+ bans former State legislators, governors, and all other              state data than ever before. In 2018, GOPI launched a new
+    State constitutional officers from lobbying for one-              Data Analytics initiative to support state agencies with
+    year after leaving office,                                        improved access to business intelligence tools and to drive
+                                                                      better management insights. As a result of this work, there
+ requires ethics disclosures made by State officials be               are currently a dozen analytics apps available to state
+    made available online to the public for free,                     agencies through a secure portal.
+
+ increases the mandatory fine for State officials found               In May 2016, the Governor signed Executive Order
+    guilty of bribery,                                                01.01.2016.06, rescinding 72 obsolete executive orders
+
+14 Governor's Annual Customer Service Initiative Annual Report 2020.  15 "Governor Larry Hogan Announces Integrity in Government
+                                                                      Initiative" Governor Hogan Press Release January 19, 2017.
+
+                                                                                                                                  14 | P a g e
+issued by previous administrations over the last 46 years.   requiring the Motor Vehicle Administration to
+The removal of almost five decades of gubernatorial             establish a program to assist veterans and members of
+directives that are either outdated or superseded by            the military transitioning out of military service to
+legislation reflects the ongoing effort of the Hogan            obtain a commercial driver's license, and
+Administration to modernize and streamline state
+government, including the removal of archaic and             limiting the amount of a bond that a small business has
+duplicative regulations.                                        to post to proceed with an appeal or verdict.
+
+In another important step in fiscal transparency and        In addition, the Department of Commerce was renamed in
+keeping the Governor's promise to make State                October 2015 and has since (1) placed more of its team
+government accessible and convenient, the Governor          members in customer-facing positions, (2) worked to
+unveiled the Maryland Transparency Portal                   expand its team of business representatives who can assist
+(mtp.maryland.gov) in August 2019. The website makes        businesses with everything from expanding and finding a
+navigating the State budget easy to understand for all      new location to financing assistance and navigating
+constituents, with searchable databases of payments the     regulations, (3) started hiring more regional and strategic
+State makes to vendors as well as grants and loans awarded  industry representatives and putting more emphasis on
+by State agencies. The level of budget detail provided on   core and growing industries in Maryland including life
+the website is more than required by law to be published    sciences, cybersecurity, manufacturing, and aerospace and
+in the annual budget books ­ a user can navigate down to    defense, and (4) begun plans to add a liaison to the State's
+individual subprograms (such as a specific State Park) and  higher education community, which combines two of the
+subobjects (such as vehicle purchases or office supplies).  main ingredients for Maryland's economic success--highly
+                                                            educated workers and cutting-edge research.16 The end
+Oversight and Review of Quasi-Governmental                  result is a Department that better serves both Maryland's
+Agencies                                                    businesses and its citizens.
+
+In December 2020, Governor Hogan issued an Executive        Information Technology Enhancements
+Order to establish the State Transparency and
+Accountability Reform Commission. The Commission will       In December 2017, the Maryland Department of
+review and investigate the operations of at least 14 of     Information Technology (DoIT) completed a Hogan
+Maryland's quasi-governmental agencies and make             Administration initiative to launch an online portal that
+recommendations regarding standards for oversight and       allows Maryland residents and visitors to find information
+accountability measures. Its recommendations may include    on state-issued licenses and permits through a single
+term limits, requirements for financial and conflict-of-    website called Maryland OneStop. This is a major
+interest disclosures, independent audits and reports, and   improvement over the preexisting situation where public
+other standards to promote efficiency, effectiveness, and   applicants had to navigate through a myriad of web pages
+ethical conduct. Findings must be reported to the           within the agency site to find relevant information such as
+Governor and General Assembly on or before December         license requirements, the application cost, approval
+1, 2021.                                                    criteria, etc. Through the OneStop project, paper-based
+                                                            processes will be upgraded to electronic forms that citizens
+Other Improvements to the State's Business Climate          can fill and submit online, pay any associated fees, and
+                                                            check the status of their requests. As a result, the licenses
+The Governor has introduced and supported a number of       will be easier to apply for and processing costs will drop,
+bills which would improve Maryland's business climate. In   resulting in savings to the taxpayers of Maryland.
+May 2015 he signed several such bills into law, including
+legislation:                                                Since fiscal 2017, the Department of Human Services
+                                                            (DHS) has been working with DoIT to develop MD
+ establishing the Advisory Council on the Impact of         THINK, which will replace all of DHS's legacy IT systems
+    Regulations on Small Business,                          and integrate them with the human services systems at the
+                                                            Department of Juvenile Services, the Maryland Health
+ establishing the State Customer Service and Business       Benefit Exchange, and the Maryland Department of
+    Development Efforts Training Program to improve         Health. This is a shift from program-centric systems to a
+    customer service provided by state agencies to          client-centric platform. MD THINK will include a cloud-
+    businesses and customers in the State,                  based shared infrastructure and a data repository. This
+
+16 "Governor Larry Hogan Announces Formation of Maryland                                                                15 | P a g e
+Department of Commerce," Press Release, October 1, 2015.
+allows for a modular approach to systems in which an          self-check the status of their submissions, receive
+agency can develop an application that is much more           automated and individualized communications from the
+adaptable to changing requirements.                           Department of Assessments and Taxation, and more easily
+                                                              facilitate necessary corrections or updates based on those
+The Hogan Administration continues to work to identify        submissions. Customers will have access to an online,
+aging systems in need of replacement to dramatically          interactive help guide and receive an instant receipt when
+improve processes for Marylanders. The Cloud Revenue          working with the application, providing better customer
+Integrated System (CRIS) will allow tax credit applicants to  service to the applicants.
+
+                                                              16 | P a g e
+                                5. IMPROVED QUALITY OF LIFE
+
+Performance Overview                                            Public Safety
+
+    Performance Status          Number of   Percent                o Youth recidivism, or the percent of Department
+   (percentages are rounded)    Indicators                              of Juvenile Services (DJS) youth re-adjudicated
+                                             26.3%                      within one year after release from all residential
+Favorable (Change >10%)              15      33.3%                      placements fell by 5.4%.
+Favorable (3% to 10%)                19      17.5%
+Stable (-2% to 2%)                   10      8.8%                  o The Part I crime offense rate per 100,000 went
+Unfavorable (-3% to -10%)             5      14.0%                      from 2,652 to 2,412, a decline of 9.0%.
+Unfavorable (< -10%)                  8      100%
+                                                                   o The number of offenders under Department of
+Total                                57                                 Public Safety and Correctional Services (DPSCS)
+                                                                        jurisdiction declined by 11%.
+The final major Hogan Administration priority, improving
+quality of life, encompasses many areas of performance             o The rate of referral for non-violent and violent
+across the State. Overall, 77.2% of related indicators either           youth felony offenses decreased by 31%.
+performed favorably or held stable between the 2017 and
+2021 report years. These indicators can be broken down          Health and Human Services
+into four different categories: (1) Education, (2) Public
+Safety, (3) Health and Human Services, and (4)                     o Maryland's uninsured rate was reduced by more
+Environment.                                                            than half in the past eight years, from 14.1% to
+                                                                        6.0%.
+Education and Public Safety metrics have performed
+particularly well in recent years, with 93% and 86%                o The rate of new HIV diagnoses dropped 22.3%.
+respectively showing favorable or stable trends. Health and        o The rate of live births to adolescents between 15
+Human Services metrics also show promise, with 84%
+performing favorably or holding stable. The                             and 19 plummeted by 20.8 % in the past five years.
+Environmental metrics represent an area for improvement            o The infant mortality rate for all races dropped
+in the State's overall performance, with 50% of metrics
+showing unfavorable outcomes.                                           from 6.7 per 1,000 to 5.9, a decline of 11.9%.
+
+The next section highlights and explains the factors behind     Environment
+significant performing trends in each category, but
+particularly notable favorable trends were seen in the             o Maryland's recycling rate increased by 7%, from
+following areas:                                                        42.9% to 45.9%.
+
+ Education                                                         o The total number of acres preserved by all land
+                                                                        preservation programs grew by 10.5%.
+    o The percent of students receiving grades 3, 4, or 5
+         on AP Exams increased from 62.0% to 69.4%.                o The estimated nitrogen load to the Chesapeake
+                                                                        Bay dropped by 9.8%.
+    o The percent of bachelor's degrees awarded to
+         racial/ethnic minorities at public and private            o Percent of vehicles registered in the State that are
+         Maryland colleges and universities jumped by                   alternative fuel, electric, or hybrid-electric
+         12.9%.                                                         increased by 9.2%.
+
+    o The four-year transfer and graduation rate of first-         o The number of children under 6 years of age with
+         time community college students has increased                  elevated blood lead levels dropped by 29.5%.
+         from 33.1% to 39.6%.
+                                                               The following section discusses significant trends in
+    o The number of higher education graduates in              performance.
+         science, technology, engineering, and math
+         (STEM) fields grew by 24.9%, from 15,039 to           Significant Performance Trends ­ Education
+         18,780.
+                                                               Indicator 5.2: Percent of AP exams with a passing
+                                                               score of 3 or above
+
+                                                               Maryland high schools have experienced a large increase in
+                                                               the amount of passing Advanced Placement (AP) exam
+                                                               scores. These exams test students in advanced level topics
+                                                               on a score of 1 to 5, with a score of 3 or higher typically
+                                                               being accepted as college credit to many nation-wide
+                                                               colleges and universities.17 Students in the state
+
+17 AP Students, College Board.
+
+                                                               17 | P a g e
+experienced an increase in the rate of passing scores from          Completion of high school program requirements
+62.0% in 2016 to 69.4% in 2020, a jump of 12.0%.                    indicates students' readiness for post-secondary education
+                                                                    and/or employment.22 At the same time, failure to
+At the nation-wide level, the State had the 8th highest             complete high school is closely linked with decreased
+passing student body score in calendar year 2020,18                 employment opportunities, low pay, and limited paths to
+showing a state-wide educational trend that places high             advancement.23 Unemployment rates of high school
+emphasis on excellence, dedication, and improvement.                dropouts are more than three times higher than that of
+Students with AP credit moving into their college career            individuals with bachelor's degrees.24
+can have quicker graduation rates and movement into the
+workforce.19                                                        Indicators 5.8 and 5.10: Higher education completion
+
+Indicator 5.3: Prekindergarten enrollment                                Indicator 5.8: Six year graduation rate of first-time,
+                                                                             full-time students at public four-year colleges and
+Prekindergarten enrollment in the State has grown from                       universities
+31,868 students in 2016 to 32,203 students in 2020, an
+increase of 1.1%. In FY 2021, the Hogan Administration                   Indicator 5.10: Four-year transfer and graduation
+dedicated $110.7 million in funding to support and expand                    rate of first-time community college students
+prekindergarten. Under the Hogan Administration, state
+funding to expand access to prekindergarten education has           Graduation rates of those pursuing higher education after
+increased substantially.                                            high school in the State have also increased in recent years.
+                                                                    From report years 2017 to 2021, the six-year graduation
+Numerous studies have shown that prekindergarten                    rate for those in four-year colleges and universities has
+programs have beneficial and lasting impacts on all                 increased by 7.6% while the transfer and graduation rate
+children, with an additional emphasis on those from low-            for those at community colleges has increased by 19.8%.
+income and disadvantaged families.20 Children enrolled in
+prekindergarten programs are less likely to be held back            Part of this growth rate can be attributed to low tuition and
+through middle and elementary school, and have                      fee costs at public institutions for State residents. In FY
+statistically higher high school graduation rates.21 The            2006, Maryland's resident tuition and fees at public four-
+Hogan Administration acknowledges difficulties that                 year colleges and universities were the 8th highest in the
+disadvantaged families face with accessibility to                   United States.25 Since then, the State has incorporated
+prekindergarten programs and is investing in meaningful             many initiatives and financial investments to cap tuition
+ways to help all families.                                          growth for in-state undergraduate students in the
+                                                                    University System of Maryland (USM). From 2011 to 2021,
+Indicators 5.4 and 5.5: High school completion                      Maryland's public four-year in-state tuition and fees
+                                                                    increased by a total of 14.1%, while the national average
+ Indicator 5.4: High school graduation rate                         growth rate during this same time was 17.4%, a stark
+ Indicator 5.5: Percent of high school dropouts                     difference that shows the continuing commitment and
+                                                                    investment that the State has made in its students.
+High school graduation rates have declined slightly in
+recent years, from 87.0% in report year 2017 to 86.9% in            In addition, from 2015 to 2021, strategic investments in the
+report year 2021, a decrease of 0.1%. At the same time,             State's community colleges has slowed tuition growth,
+high school dropout rates have increased slightly, from             making the growth rate of in-district tuition at public two-
+8.1% in report year 2017 to 8.4% in report year 2021.               year community colleges in the State the 20th lowest in the
+                                                                    nation.26
+
+18 AP Program Participation and Performance Data 2018, Retrieved    24 US Bureau of Labor Statistics, 2017. Retrieved from:
+from                                                                https://www.bls.gov/opub/ted/2017/unemployment-rate-2-point-5-
+https://research.collegeboard.org/programs/ap/data/participation/a  percent-for-college-grads-7-point-7-percent-for-high-school-dropouts-
+p-2018                                                              january-2017.htm
+19 "Are AP Students More Likely to Graduate from College on Time?"  25 College Board, Tuition and Fees by Sector and State over Time,
+College Board, 2013.                                                Retrieved from https://trends.collegeboard.org/college-
+20 The Current State of Scientific Knowledge on Pre-Kindergarten    pricing/figures-tables/tuition-fees-sector-state-over-time
+Effects, 2017.                                                      26 College Board, in-district tuition and fees at public two-year
+21 The Current State of Scientific Knowledge on Pre-Kindergarten    institutions by state, retrieved from
+Effects, 2017.                                                      https://research.collegeboard.org/trends/college-pricing/figures-
+22 Maryland Results for Child Well Being, 2009.                     tables/published-district-tuition-and-fees-public-two-year-institutions-
+23 Maryland Results for Child Well Being, 2009.                     state
+
+                                                                                                                                18 | P a g e
+Exhibit 5.1 compares the average public four-year in-state              In addition, MHEC will continue to work with the
+tuition and fees for Maryland to the nationwide average.                Historically Black Colleges and Universities (HBCUs) to
+Of note, the state-wide average for Maryland has remained               revise and refine the summer bridge programs and other
+slightly below the national average since 2012.                         initiatives.
+
+Exhibit 5.1 Average Public Four-Year In-State Tuition and Fees          Indicator 5.10: Four-year transfer and graduation rate
+        for Maryland Compared to the National Average,                  of first-time community college students
+         Report Years 2005 ­ 2021, in 2018 Dollars.27
+                                                                        Maryland has made significant progress in eliminating
+     $11,000                                                            barriers to community college transfers to Maryland four-
+                                                                        year campuses, including facilitating strong articulation
+$10,000                                                                 agreements related to the transfer of credits. The
+                                                                        percentage of first-time community college students who
+$9,000                                                                  transferred to four-year institutions and graduated grew
+                                                                        from 33.1% in FY 2016 to 39.6% in FY 2020, a 19.8%
+$8,000                                                                  increase.
+
+$7,000                                                                  Community colleges play a pivotal role in Maryland's
+                                                                        efforts to improve degree completion and workforce
+$6,000                                                                  penetration. MHEC continues to work collaboratively with
+                                                                        higher education institutions to support these initiatives.
+         2005                                                           FY 2022 will mark the third year of the Maryland
+            2006                                                        Community College Promise Scholarships program. The
+                2007                                                    program provides eligible Maryland high school graduates
+                   2008                                                 and GED recipients with need-based scholarships that
+                       2009                                             help pay for tuition and mandatory fees incurred while
+                           2010                                         pursuing associate degrees, certificate or licensure
+                              2011                                      programs, and registered apprenticeship programs at
+                                  2012                                  community colleges. The FY 2022 budget has allocated
+                                     2013                               $15 million for the program, which will provide awards to
+                                         2014                           an estimated 7,000 students.
+                                             2015
+                                                2016                    Indicator 5.13: Number of graduates in science,
+                                                    2017                technology, engineering, math (STEM) from
+                                                        2018            Maryland's public and private higher educational
+                                                           2019         institutions
+                                                               2020
+                                                                  2021  The number of graduates in science, technology,
+                                                                        engineering, and math (STEM) from Maryland's public
+         State of Maryland Average  National Average                    and private higher educational institutions has increased
+                                                                        from 15,039 in FY 2016 to 18,780 in FY 2020, a jump of
+Indicator 5.9: Percent of bachelor's degrees awarded                    24.9%. STEM graduates are particularly important for a
+to racial/ethnic minorities at public and private                       developing workforce and STEM job concentration has
+Maryland colleges and universities                                      been noted as remarkably high in the State since 2015.28
+
+From report years 2017 to 2021, the percent of bachelor's               To continue this trend, the State has continually included
+degrees awarded to racial/ethnic minorities at public and               investments into the University System of Maryland for
+private Maryland colleges and universities increased by                 STEM initiatives and has emphasized the need to have a
+12.9%, from 39.3% to 44.4%.                                             workforce that is not only competitive but remarkably
+                                                                        educated in the ever-changing needs of this century. In
+The Maryland Higher Education Commission (MHEC)                         fact, the Governor's Workforce Development Initiative at
+continues to work with the Segmental Advisory Council
+and representatives of its member campuses to discuss the               28 Maryland Commission on Higher Education, 2017-2021 State Plan
+merits and outcomes of plans designated to increase the                 for Postsecondary Education, Retrieved from
+degree attainment rate of minority students. MHEC's work                http://www.mhec.state.md.us/About/Documents/2017.2021%20Ma
+on near completers, reverse transfers, and course redesign              ryland%20State%20Plan%20for%20Higher%20Education.pdf
+is expected to increase degree attainment, particularity for
+students from minority backgrounds.                                                                                                 19 | P a g e
+
+27 College Board, Tuition and Fees by Sector and State over Time,
+Retrieved from https://trends.collegeboard.org/college-
+pricing/figures-tables/tuition-fees-sector-state-over-time
+USM, which began with $2 million in FY 2019 and reached                Exhibit 5.2 Homicide Rate (for adult and children) per 100,000
+$32 million in FY 2021, aims to fill critical workforce needs                      Population, Report Years 2017 ­ 2021
+across the State by developing and expanding certain
+programs at USM institutions. Programs supported by the                10.0
+initiative are expected to produce over 3,400 additional                 9.0
+degrees upon full completion.                                            8.0
+                                                                         7.0
+In FY 2022, the State has committed over $1.9 million to                 6.0
+provide graduates from the Pathways in Technology Early                  5.0
+College High School (P-TECH) Program with a high                         4.0
+school diploma and a two-year postsecondary degree in a                  3.0
+STEM field from an accredited community college. Two                     2.0
+high schools have students who have completed the six-
+year P-TECH program: Carver Vocational-Technical High                                   Adult        Youth
+School and Paul Laurence Dunbar High School in
+Baltimore City. At Carver and Dunbar, 93% and 100% of                  Indicator 5.17: Traffic fatality rate per 100 million
+P-TECH respectively earned their high school diplomas.                 miles traveled
+Almost half (42%) of P-TECH students that earned their
+high school diplomas in 2020 are continuing their                      The State of Maryland has consistently achieved a lower
+education at 4-year colleges.                                          traffic fatality rate than the national average, as shown in
+                                                                       Exhibit 5.3. From report year 2020 to 2021, Maryland's
+The Hogan Administration has recognized that these                     traffic fatality rate increased slightly from 0.86 to 0.88, a
+investments in STEM education are not only worthwhile,                 2.7% change.
+but necessary to make a growing and competitive
+workforce in the State for years to come.                              Exhibit 5.3 Traffic Fatality Rate per 100 Million Miles Traveled,
+                                                                                          Report Years 2017 ­ 2021
+Significant Performance Trends ­ Public Safety
+                                                                       1.5
+Indicator 5.15: Homicide rate per 100,000
+                                                                       1.4
+The rate of homicides in Maryland declined significantly
+from 2006 through 2013, with an overall drop of 36%                    1.3
+among adults and nearly 25% in the children and youth
+homicide metrics. However, both metrics reversed trends                1.2
+in 2016. This trend mirrors nationwide data, where murder
+rates grew nationally in 2015 and in 2016.29 Only the adult            1.1
+homicide rate saw a slight improvement with the numbers
+beginning to decline slightly in report year 2020. From                1.0
+report year 2020 to report year 2021, adult homicides
+declined by 3.2%, meanwhile the youth homicide rate                    0.9
+increased by 28.2%.
+                                                                       0.8
+Exhibit 5.2 displays both youth and adult homicide trends
+in Maryland through time.                                              0.7
+
+                                                                            2017  2018         2019  2020   2021
+
+                                                                                        MD           US
+
+                                                                       To address traffic safety challenges, the Maryland
+                                                                       Department of Transportation worked with multiple
+                                                                       agencies and jurisdictions to develop a five-year, statewide
+                                                                       coordinated safety plan known as the Maryland Strategic
+                                                                       Highway Safety Plan (SHSP) 2016-2020, which provides a
+                                                                       framework for reducing transportation fatalities and
+                                                                       serious injuries on all public roads. This plan aims to
+                                                                       reduce statewide traffic fatalities per 100 million miles
+
+29 Federal Bureau of Investigation, 2017 Report - Crime in the United
+States.
+
+                                                                                                            20 | P a g e
+traveled to 0.64 or fewer by calendar year 2020 and 0.53 by      The Violence Prevention Initiative (VPI) continues to be a
+calendar year 2030.30                                            primary strategy to track and supervise the State's most
+                                                                 violent offenders in a community setting.32 The Initiative
+Recently enacted legislation has enhanced traffic safety.        has been enhanced to include drug treatment, mental
+Improvements include combating driving under the                 health counseling, family counseling, and job readiness
+influence of alcohol and drugs, establishment of a task          training.
+force to study bicycle safety in Maryland, utilizing speed
+cameras in school and work zones, banning text messaging         Following the tragedy on September 11, 2001, the
+and hand held cell phone use in moving vehicles, providing       Maryland Coordination and Analysis Center (MCAC) was
+clearance for bicycles and emergency vehicles, and               formed which coordinates the efforts of federal, state and
+strengthening the graduated licensing process.31                 local agencies to gather, analyze, and share intelligence
+                                                                 information with law enforcement, public health, and
+Indicator 5.18: Part I crime rate (offenses per 100,000          emergency responder personnel.
+population)
+                                                                 The Department of Public Safety and Correctional
+Part I crimes include murder, rape, robbery, aggravated          Services has also implemented a network of police officers
+assault, breaking or entering, larceny-theft, motor vehicle      and community supervision agents who work together to
+theft, and arson. Overall, the Part I crime rate declined by     exchange real time information to respond effectively to
+44.4% since 2004. Exhibit 5.4 shows a decrease of 9%             non-compliant offender behavior.33
+from report years 2017 to 2021.
+                                                                 Indicator 5.19: Offenders under Correctional
+            Exhibit 5.4 Maryland Part I Crime Rate,              Jurisdiction
+                    Report Years 2017 - 2021
+                                                                 Incarcerated offenders under Department of Public Safety
+ 3000                                                            and Correctional Services jurisdiction have continued to
+ 2900                                                            decline. As shown in Exhibit 5.5, offenders in correctional
+ 2800                                                            institutions have declined by 11% since report year 2017.
+ 2700                                                            Currently, the number of incarcerated offenders is at its
+ 2600                                                            lowest level since 1992.
+ 2500
+ 2400                                                             Exhibit 5.5 Maryland Offenders under Correctional Jurisdiction,
+ 2300                                                                                Report Years 2017-2021
+ 2200
+ 2100                                                              20,500
+ 2000                                                              20,000
+                                                                   19,500
+             2017 2018 2019 2020 2021                              19,000
+                                                                   18,500
+Maryland is fighting and solving crime through a variety of        18,000
+strategies including increasing inter-agency cooperation,          17,500
+aligning State resources with the priorities of local              17,000
+governments at increased levels, enhancing warrant service         16,500
+to swiftly remove offenders from the streets, expanding
+efforts to reduce illegal gun possession and use, and            Over this time period the Maryland General Assembly
+improving use of technology such as DNA Fingerprinting,          passed the Justice Reinvestment Act (JRA), which is a
+License Plate Recognition, Crime Mapping, Crime
+Analysis, and the Public Safety Dashboard.                       September 28, 2010, Maryland Department of Transportation fiscal
+                                                                 years 2011, 2012, and 2013 MFR Performance Discussions.
+30 Maryland Department of Transportation, 2015 Report - The      32 Fiscal year 2015 MFR Performance Discussion, Department of Public
+Maryland Strategic Highway Safety Plan, Retrieved from           Safety and Correctional Services.
+https://www.roads.maryland.gov/mdotsha/pages/index.aspx?PageId   33 Fiscal year 2014 and 2015 MFR Performance Discussion, Department
+=240                                                             of Public Safety and Correctional Services.
+31 Maryland Department of Transportation, 2010, 2011, and 2017
+Annual Attainment Reports on Transportation System Performance,                                                              21 | P a g e
+Maryland Department of Transportation, e-mail correspondence,
+nationwide, data-driven approach to public safety seeking        DJS is collaborating with other child-serving local and
+to reduce corrections spending and reinvest savings in           State agencies to improve outcomes for youth. DJS
+evidence-based strategies to decrease crime and reduce           initiatives include: the Juvenile Detention Alternatives
+recidivism. Key provisions of the bill include the               Initiative, in which DJS works with courts to identify
+elimination of mandatory minimum sentences for certain           community alternatives to detention, the Youth Crossover
+drug convictions, enhanced administrative release                Model, in which DJS and the Department of Human
+procedures, and greater emphasis on drug treatment               Services coordinate services for youth in both systems, and
+diversionary programs for defendants while expanding             the Under 13 Initiative, which provides wraparound
+penalties for violent offenders and high-level drug              services to pre-teens who have had contact with DJS.
+traffickers.34 As the Justice Reinvestment Act matures, it
+will manifest further decreases to correctional populations.     Significant Performance Trends ­ Health and
+                                                                 Human Services
+Indicator 5.21: Rate of referral for non-violent and
+violent felony offenses per 100,000 youth between ages           Indicator 5.25: Maryland's uninsured rate
+11 and 1735                                                      (estimated), individuals under 65
+
+Involvement in felony offenses increases the risk of injury      The uninsured rate for individuals under 65 in Maryland
+or death, and continued criminal activity into adulthood.        declined by 20% since calendar year 2015 as only 6%
+The referrals for violent and non-violent offenses for           remain uninsured in 2019.
+youths declined by 31% since 2013 and has maintained that
+rate of decline from report year 2017 through 2021.              This significant improvement in metric performance
+Juvenile referrals include adult court transfers, citizen        reflects a national trend and can be attributed largely to the
+referrals (such as parents or teachers), police arrests and      Affordable Care Act. The State's Reinsurance Program has
+violations of probation. Exhibit 5.6 shows positive trends       also contributed to stabilizing the uninsured rate as it has
+in this measure over the report period.                          helped lower health insurance premiums in the individual
+                                                                 market in Maryland, with a decline of 31.4% over the past
+ Exhibit 5.6 Rate of Referral for Violent and Non-violent Youth  three years.
+              Felonies (per 100,000), 2017 - 2021
+                                                                 Indicators 5.27 and 5.28: High school student health
+ 950
+                                                                  Indicator 5.27: Cumulative percent change from the
+ 900                                                                 calendar year 2000 baseline for underage high school
+                                                                     students who ever smoked a whole cigarette
+ 850
+                                                                  Indicator 5.28: Percent of public-school students in
+ 800                                                                 grades nine through twelve who are current drinkers
+
+ 750                                                             The first measure estimates the proportion of underage
+                                                                 high school students who have ever smoked a whole
+ 700                                                             cigarette and is from a survey administered every two years.
+                                                                 The percent change from the calendar year 2000 baseline
+ 650                                                             for underage high school students who ever smoked a
+                                                                 whole cigarette is on a steady downward trend, with a
+ 600                                                             decline of 212.1% since the start of the survey.
+            2017 2018 2019 2020 2021
+                                                                 The Maryland Cigarette Restitution Fund Tobacco Use
+Success in assessing the needs of juveniles (physical and        Prevention and Cessation Program utilizes a
+mental health services, drug abuse services, improved            comprehensive tobacco-use prevention strategy that
+education, or social services) and treating troubled             includes "school-based programs, community-based
+juveniles for their needs are important factors in               programs, youth access enforcement, tobacco-use
+preventing juvenile crime.
+
+34 Governor's Office of Crime Control and Prevention, "Governor  35 This metric was previously reported as juveniles ages 10 to 17 and
+Larry Hogan Announces Implementation of Justice Reinvestment     has been updated to track juveniles 11 to 17. Additionally, this metric
+Act," 3 October 2017, Retrieved from                             has been updated to include both violent and non-violent felony
+http://goccp.maryland.gov/governor-larry-hogan-announces-        offenses, measuring "referrals" instead of "arrests," based on how the
+implementation-justice-reinvestment-act/                         Department of Juvenile Services now collects and tracks this data.
+
+                                                                                                                             22 | P a g e
+cessation programs, media messages promoting the                      Exhibit 5.7 Maryland and U.S. Cancer Mortality Rate (per
+availability of cessation assistance and the health benefits               100,000 Persons), Calendar Years 2015 - 2019
+of cessation generally, surveillance (tobacco surveys) of
+under-age tobacco use behaviors, and ongoing evaluation                       160
+of programmatic efforts."36 Other strategies that
+contribute to reduced tobacco use include restrictions on                     155
+smoking in public places and increases in excise or sales
+taxes on tobacco products.37                                                  150
+
+Data for the second measure comes from the Maryland                           145
+Youth Risk Behavior Survey (YRBS) which is part of the
+Youth Risk Behavior Surveillance System (YRBSS)                               140
+developed by the Centers for Disease Control to monitor                               2015 2016 2017 2018 2019
+health-risk behaviors among youth. Starting in 2005, the                                         MD US
+survey is administered every two years.
+                                                                            *National data not yet available for calendar year 2019.
+Early use of alcohol is associated with later drug use and
+the prevalence of high-risk behaviors by youth. Alcohol is         In September 2016, the Hogan Administration announced
+the most commonly used drug among Maryland youth.38                the update and signing of Maryland's Comprehensive Cancer
+The percentage of high school students drinking alcohol is         Control Plan which is a "valuable roadmap for Marylanders
+in decline, down to 24.1% in report year 2021, a decrease          involved in cancer prevention and treatment at every level."40
+of nearly 35% since 2009.
+                                                                   The Maryland Comprehensive Cancer Control Plan is a
+Indicator 5.29: Overall cancer mortality rate per                  guide for professionals to reduce the burden of cancer in
+100,000 persons (age adjusted to 2000 U.S. Standard                Maryland and is updated every four years by the Maryland
+Population)                                                        Department of Health with input from 83 public and private
+                                                                   stakeholders. The Cancer Plan is far-reaching and encourages
+Cancer is the second leading cause of death in Maryland            any individual or organization--whether they are involved in
+and the nation and accounted for 21.6% of all deaths in            planning, directing, implementing, evaluating, or performing
+Maryland in calendar year 2018.39 The overall cancer               research on cancer control--to apply best practices and the
+mortality rate in Maryland declined by 6.7% from calendar          appropriate strategies for better cancer control in Maryland.
+year 2015 to 2019, a reduction of ten deaths per 100,000
+persons.                                                           Primary strategies to address cancer mortality include
+                                                                   continuing strong public health surveillance, education,
+Maryland's cancer mortality rate has largely remained below        prevention, screening, diagnosis and treatment efforts, and
+the national rate since 2010, with the exception of 2016 and       strong cancer research.
+2018. Exhibit 5.7 shows trends through time for both
+Maryland and the nation as a whole.                                Indicator 5.30: Heart disease mortality rate for all
+                                                                   races per 100,000 population (age adjusted)
+
+                                                                   Heart disease mortality refers to the death of an individual
+                                                                   by acute rheumatic fever, chronic rheumatic heart disease,
+                                                                   hypertensive heart disease, hypertensive heart and renal
+                                                                   disease, or ischaemic heart disease.41 Heart disease
+                                                                   continued to be the leading cause of death in Maryland in
+                                                                   calendar year 2018, accounting for 23.1% of all deaths. The
+                                                                   age adjusted heart disease mortality rate was 156.8 per
+                                                                   100,000 population in 2019, 7.4% below the rate five years
+                                                                   ago. Exhibit 5.8 shows trends through time for heart
+                                                                   disease mortality in Maryland.
+
+36 Strategies and Discussion of Program Performance, FY 2015 MFR   38 Maryland's Results for Child Well-Being 2011
+submission, Cigarette Restitution Fund­Tobacco Use Prevention and  39 Maryland Vital Statistics Annual Report 2018, Vital Statistics
+Cessation Program - Family Health Administration.                  Administration, Maryland Department of Health.
+37 Strategies and Discussion of Program Performance, FY 2015 MFR   40 "Governor Larry Hogan Reaffirms State's Commitment to Fighting
+submission, Cigarette Restitution Fund­Tobacco Use Prevention and  Cancer, Hosts Blood Drive," Press Release September 15, 2016.
+Cessation Program­Prevention and Health Promotion Administration,  41 Fiscal year 2012 MFR Data Definition and Control Procedures,
+Maryland Department of Health.                                     Family Health Administration, Maryland Department of Health.
+
+                                                                                                                               23 | P a g e
+    Exhibit 5.8 Heart Disease Mortality Chart (per 100,000               Exhibit 5.9 Rate of New HIV Diagnoses (per 100,000
+             population), Calendar Years 2008-2019                               population), Calendar Years 2008-2019
+
+200                                                                   45
+                                                                      40
+190                                                                   35
+                                                                      30
+180                                                                   25
+                                                                      20
+170                                                                   15
+                                                                      10
+160                                                                     5
+                                                                        0
+150
+                                                                    Indicator 5.32: Rate of primary/secondary syphilis
+Public health efforts contribute to Maryland's                      incidence (cases per 100,000 population)
+comprehensive approach in addressing heart disease
+mortality, including surveillance, screening, diagnosis, and        Syphilis causes significant complications if untreated and
+treatment efforts.                                                  facilitates the transmission of HIV. Cases of syphilis tend
+                                                                    to be under reported as the disease goes undiagnosed in
+Indicator 5.31: Rate of diagnoses and the percent                   some individuals and unreported by some providers.43
+change from the prior year level in the number of age               Maryland's rate of primary/secondary syphilis cases per
+adjusted new HIV diagnoses (per 100,000                             100,000 population historically exceeded the national rate
+population)                                                         over the past decade. Maryland currently ranks the twelfth
+                                                                    highest state in terms of the syphilis cases rate, down from
+The rate of HIV diagnoses declined by 64.5% from                    fifth place in 2013.44
+calendar years 2008 through 2019, as seen in Exhibit 5.9.
+Strategies to reduce the rate of new HIV diagnoses include:         The rate of syphilis incidence in Maryland increased 69.4%
+                                                                    since calendar year 2015. From 2015 to 2016 the rate
+ increased collaboration among State agencies and                   remained stable but has increased each year since, reflective
+    community-based organizations to enhance access to              of national trends. Maryland continues to focus on
+    and use of needed prevention services by                        collaborative public health efforts to expand the
+    disproportionately affected populations;                        infrastructure and expertise of Sexually Transmitted
+                                                                    Infection (STI) prevention staff and to connect patients to
+ reduced drug and alcohol use associated with HIV risk              timely treatment to interrupt the spread of the infection
+    behaviors among adults and youth by expanding work              and contribute to the long-term reduction of the syphilis
+    with substance abuse providers;                                 epidemic.
+
+ among the current providers, increased skills and                  Indicator 5.35: Maryland prevalence of household-
+    support to deliver quality HIV interventions;                   level very low food security (3-year average)
+
+ increased supply of free and sterile needles among                 Very low food security is defined as households in which
+    injection drug users; and                                       food intake of one member or more was reduced and
+                                                                    eating patterns were disrupted because of insufficient
+ access to condoms among sexually active youth and                  money and other resources for food. Data for this
+    adults engaging in HIV risk behaviors.42
+
+42 Fiscal year 2017 MFR Strategies and Discussion of Program        Maryland Department of Health; CDC Sexually Transmitted Diseases
+Performance, Infectious Disease and Environmental Health Services­  in the United States, 2008, November 2009
+Prevention and Health Promotion Administration, Maryland            44 Centers for Disease Control and Prevention, 2018 Sexually
+Department of Health                                                Transmitted Diseases Surveillance
+43 Fiscal year 2013 MFR Data Definitions and Control Procedures,
+Infectious Disease and Environmental Health Administration,                                                                     24 | P a g e
+indicator are derived from responses to a survey conducted           and 19 years of age compared favorably to the U.S. rate for
+by the U.S. Census Bureau.45 In most households with very            each year in the last decade. In the last five years, the
+low food security, the survey respondent reported that they          Maryland rate declined by 20.8%, mirroring a national
+were hungry at some time during the previous twelve                  trend.
+months but did not eat because there was not enough
+money for food. Prevalence rates of food insecurity vary             Maryland uses a multifaceted approach to prevent teen
+widely from state-to-state. Therefore, a 3-year average is           pregnancy including health education and counseling,
+used to provide more reliable statistics at the state level.         access to health care, outreach, and public awareness.
+
+Over the past decade, Maryland's prevalence of                       Indicator 5.41: Heroin overdose-related deaths in
+household-level very low food security was equal to or               Maryland
+below the U.S. level, in 2018 this trend reversed, and in
+2019 Maryland's rate exceeded the U.S. level by 0.7%. The            The heroin epidemic in the U.S. gained increasing media
+recession was a significant factor contributing to                   and policy attention over the past several years, and
+household level food insecurity, but Maryland continues to           Maryland is no exception. At the peak level in calendar year
+maintain food insecurity rates below peak recession levels.          2016 the number of heroin overdose-related deaths in
+Since 2011 the prevalence of household-level food                    Maryland was 1,212 or 209% more deaths than calendar
+insecurity declined by 12%.                                          year 2013.
+
+Over the last several years, Maryland identified and                 Governor Hogan issued Executive Orders 01.01.2015.12
+implemented successful strategies to connect children and            and 01.01.2015.13, and State resources are devoted to
+families to the School Breakfast and Summer Food Service             confronting this heroin and opioid epidemic through a
+Programs, and other programs, while drawing down                     comprehensive approach that includes education,
+millions of additional dollars in federal funding.                   treatment, improvements to quality of care, law
+                                                                     enforcement, alternatives to incarceration, and overdose
+Governor Hogan charged his Children's Cabinet with four              prevention.
+major initiatives, one of which is to continue efforts to
+reduce the incidence of child hunger. In May of 2017 the             A Heroin & Opioid Emergency Task Force was convened,
+Governor signed the Hunger-Free Schools Act, extending               chaired by Lieutenant Governor Rutherford, and the Task
+a provision to allow high-need schools in Maryland to                Force held six regional summits throughout the State to
+provide free school breakfast and lunch to all students46.           hear testimony from those with substance use disorders,
+During the 2018-2019 school year, nearly 390,000 students            family members, educators, faith leaders, elected officials,
+received free or reduced meals throughout Maryland47.                law enforcement, addiction treatment professionals, and
+Further, the Governor's fiscal 2022 budget includes $1.2             other stakeholders. The Task Force issued its final report
+billion in federal Supplemental Nutrition Assistance                 in December 2015, including contributions from 431
+Program (SNAP) benefits to serve more than 341,000                   stakeholders and 33 recommendations. It is a major
+households.                                                          priority of the Hogan Administration to implement these
+                                                                     recommendations.
+Indicator 5.36: Rate of live births to adolescents
+between 15 and 19 years of age (per 1,000 women)                     In January 2019, the Governor signed Executive Order
+                                                                     01.01.2019.02 establishing the Commission to Study
+Adolescent mothers are more likely to drop out of high               Mental and Behavioral Health in Maryland. The
+school, experience unemployment, or, if employed, earn               Commission is chaired by the Lieutenant Governor and
+lower wages than women who begin childbearing after age              includes representatives from each branch of state
+20. Children born to teen mothers face increased risks of            government, representatives from the state departments of
+low birth weight and being pre-term, having                          Health, Public Safety and Correctional Services, and
+developmental problems, and experiencing poverty.48                  Human Services, as well as the Maryland State Police, the
+Maryland's rate of live births to adolescents between 15             Maryland Insurance Administration, the Opioid
+
+45 The Economic Research Service, U.S. Department of Agriculture,    47 "Free and Reduced Price Meal Statistics" SY 2018-2019 Retrieved
+compiles and analyzes data for this indicator from an annual survey  from: http://marylandpublicschools.org/programs/pages/school-
+conducted by the U.S. Census Bureau as a supplement to the monthly   community-nutrition/freereducedpricemealstatistics.aspx
+Current Population Survey (CPS).                                     48 Maryland's Results for Child Well Being 2009; State Profiles of Child
+46 "Governor Larry Hogan Signs Hunger-Free Schools Act of 2017"      Well-being, 2011 Kids Count Data Book, The Annie E. Casey
+Retrieved From: http://www.mdhungersolutions.org/press/governor-     Foundation
+hogan-signs-hunger-free-schools-act-of-2017/
+                                                                                                                                 25 | P a g e
+Operational Command Center, and six members of the                        Report Card. The data presented is for both the Maryland
+public with experience related to mental health. The                      portion50 of the Chesapeake Bay and the Bay-wide number.
+Commission is tasked with studying mental health in                       From calendar year 2013 to calendar year 2017, the Bay
+Maryland, including access to mental health services and                  Health Index showed steady progress, but the calendar
+the link between mental health issues and substance use                   year 2018 score decreased and the 2019 score slightly
+disorders.                                                                decreased. Maryland's score fell from 40% to 39% for the
+                                                                          2021 report. The score for the entire Chesapeake Bay also
+The Governor's fiscal 2022 budget continues to                            decreased in report year 2021, from 47% to 44%. Maryland
+demonstrate a strong commitment to combating the                          and Bay-wide scores can vary widely from year to year
+opioid crisis with record level spending on mental health                 depending on trends in weather, among other factors.
+and substance use disorders. In fiscal 2022, more than $978
+million in direct state support is dedicated to various                   In calendar year 2019, the greatest improvement of the
+mental health services and initiatives, including $296                    fifteen regions scored in the Bay Health Index was in the
+million for substance use disorder services, a $35 million                Upper Western Shore, Elizabeth, Patapsco and Back, and
+(or 13%) increase over FY 2021.                                           Potomac rivers.51 While there is still improvement to be
+                                                                          made, the implementation of Enhanced Nutrient
+Governor Hogan declared a State of Emergency in March                     Reduction (ENR) technologies at wastewater treatment
+2017 in response to the heroin and opioid crisis and                      facilities along the rivers and elsewhere in Maryland will
+established the Opioid Operational Command Center                         make the process of nutrient removal more effective going
+(OOCC) to lead the State's response and coordinate                        forward.52
+directly with all 24 local jurisdictions. The OOCC launched
+Before It's Too Late, the State's effort to bring awareness               As Maryland continues implementing the Phase III
+to the heroin and opioid epidemic-and to mobilize                         Watershed Implementation Plan (WIP), it will continue to
+resources for effective prevention, treatment, and                        strategize how best to reduce nutrient loads into the
+recovery.                                                                 Chesapeake Bay. In addition to fully funding the 2010
+                                                                          Chesapeake and Atlantic Coastal Bays Trust Fund, the
+In keeping with the Governor's five-year $50 million                      Hogan Administration is also continuing to dedicate
+commitment, the FY 2022 budget includes the fifth                         funding from the Bay Restoration Fund for septic system
+installment of $10 million to fund activities of the OOCC.                upgrades. These funds replace older septic systems with
+The Governor's continued commitment for funding the                       upgrades containing nitrogen-removal technology, which
+OCCC and mental health and substance use programs has                     prevent the discharge of nitrogen from septic systems to
+contributed to the 40.1% decline in heroin overdose-                      the Chesapeake Bay.
+related deaths since 2016. Marylanders grappling with a
+substance use disorder can find help at                                   Indicator 5.43: Acres of submerged aquatic vegetation
+BeforeItsTooLateMD.org and 1-800-422-0009, the State                      (SAV)
+crisis hotline.
+                                                                          Restoring underwater grasses to the rivers, streams, and
+Significant Performance Trends ­ Environment                              shallow waters of the Chesapeake Bay will dramatically
+                                                                          improve the Bay ecosystem. Grass beds provide food and
+Indicator 5.42: Chesapeake Bay Habitat Health                             shelter to fish, crustaceans and other species, add oxygen
+Index ­ Maryland                                                          to the water, absorb nutrient pollution, reduce shoreline
+                                                                          erosion, and help suspended particles of sediment settle to
+The Chesapeake Bay Habitat Health Index (Bay Health                       the bottom. In report year 2021, aquatic grasses covered
+Index) measures the progress of seven indicators49 against                39,151 acres across the Bay. This is a 31% decrease from
+scientifically derived ecological thresholds or goals. The                2020, and a 27% decrease from the 2017 acreage total of
+seven indicators are combined into one overarching Bay                    53,783 (Exhibit 5.10).
+Health Index. The health of the Chesapeake Bay is
+reported annually in the Chesapeake Bay Watershed
+
+49 The Chesapeake Bay Indicators are dissolved oxygen, nitrogen,          Maryland Center for Environmental Science, in the broad scheme,
+phosphorus, chlorophyll a, water clarity, aquatic grasses, and benthic    Maryland data is not affected much by including data for parts of
+community.                                                                Virginia.
+50 It is not possible to completely separate Maryland data from Bay       51 UMCES. 2020. Chesapeake Bay Report Card 2020.
+reporting regions. Three of the regions include parts of Virginia: Lower  52 Maryland Department of the Environment. 2017. The Evolution to
+Eastern Shore, Mid Bay, and Potomac River. Per the University of          Enhanced Nutrient Removal Technology
+
+                                                                                                                                      26 | P a g e
+  Exhibit 5.10 Acres of Submerged Aquatic Vegetation (SAV)      Although the abundance of adult female crabs decreased
+                    Report Years 2017 - 2021                    in 2020, it remained above the threshold. Variations in
+                                                                abundance are a characteristic of the blue crab species and
+ 70,000                                                         not unexpected. Based on analysis of the 2020 winter
+                                                                dredge survey results, the Chesapeake Bay Stock
+ 60,000                                                         Assessment Committee (CBSAC) concluded that
+                                                                substantial changes in management are not necessary.
+ 50,000
+                                                                As Exhibit 5.11 shows, the blue crab population can vary
+ 40,000                                                         dramatically from year to year. Crabs are vulnerable to
+                                                                extreme cold, particularly prolonged winter temperatures.
+ 30,000
+                                                                      Exhibit 5.11 Dredge Survey Index - Crab Stock Size,
+ 20,000                                                                             Report Years 2017-2021
+
+ 10,000                                                                    30
+                                                                           25
+        0                                                                  20
+               2017 2018 2019 2020 2021                                    15
+                                                                           10
+The Chesapeake Bay Program, an organization committed                       5
+to tracking progress toward the goals and outcomes of the                   0
+Chesapeake Bay Watershed Agreement, attributes the
+recent decline in SAVs to the loss of Widgeon grass.                              2017 2018 2019 2020 2021
+Widgeon grass is a species whose numbers increase and
+decrease year to year. Although it is unknown why this          Indicator 5.47: Acres of cover crops planted
+occurs, it is predicted that the reduction of water quality by
+higher than average river flows may be causing their            In 2010, the U.S. Environmental Protection Agency
+decline.53                                                      established nutrient and sediment limits for the
+                                                                Chesapeake Bay known as the Total Maximum Daily Load
+Indicator 5.44: Female Dredge Survey Index of stock             (TMDL). Cover crops are one of the most cost-effective
+size (crabs) ­ estimated                                        strategies to meet nutrient and sediment TMDL reduction
+                                                                targets outlined in Maryland's Watershed Implementation
+Female stock size refers to the number of female crabs of       Plan to protect and restore the Chesapeake Bay by 2025.
+all sizes in the over-wintering crab population within a        Through the Cover Crop Program, farmers plant non-
+1,000 metered square area (i.e. crab density). The data is      harvested cereal crops on agricultural land to control soil
+derived from the annual Bay-wide winter female dredge           erosion and absorb unused nitrogen and phosphorus
+survey conducted by the Maryland Department of Natural          remaining in the soil following the fall harvest. The Cover
+Resources and the Virginia Institute of Marine Science.         Crop Program provides cost share assistance to farmers to
+Indices of stock size are average catches per tow, after the    implement this best management practice.55
+catches have been corrected for the efficiency of the
+dredge gear and overwintering mortality.54                      In report year 2021 the number of acres planted reached
+                                                                its highest point since 2017, with 490,000 cover crop acres
+Total blue crab abundance estimated by the 2020 Bay Wide        planted. This is a 36.2% increase over last year. Over the
+Winter Dredge Survey decreased 32% from calendar year           past decade, the number of acres planted has increased
+2019 to 405 million crabs. The abundance of spawning age        dramatically. From 2011 to 2021, the number of acres of
+females decreased from calendar year 2019 to about 141          cover crops planted has increased by 161%, from 187,479
+million crabs, which is below the target 215 million, but       acres to 490,000 acres.
+still above the 70 million threshold. Despite these
+population decreases, the percentage of female crabs            55 Cost-share support is administered through Maryland Agricultural
+removed by fishing was 17%, which is below the target of        Water Quality Cost-Share (MACS) program.
+25.5% and the threshold of 34% for the 12th consecutive
+year since 2008. This means overfishing is not occurring. 7                                                                 27 | P a g e
+
+53 Chesapeake Bay Program. 2021. Submerged Aquatic Vegetation
+(SAV).
+54 Maryland Department of Natural Resources, 2015 Fishery
+Management Plans.
+Indicator 5.49: Percent of Marylanders served by               However, prior to report year 2021, there was an increase
+public water systems in significant compliance with            in days of 8-hour ozone standard exceedances, which
+all new and existing regulations                               MDE attributes to air pollution transported into Maryland
+                                                               from states west of the Maryland border. To address this
+Water systems are evaluated for compliance with technical      issue of out-of-state air pollution impacting Marylanders,
+and health-based rules, as well as compliance with health-     Maryland is pushing the EPA to require large coal-fired
+based drinking water standards. Technical violations           power plants in other states to reduce their emissions
+include items such as monitoring and reporting of              through legal means provided under the federal Clean Air
+compliance reports, failure to issue public notification, and  Act. Maryland also continues to work with other states on
+failure to complete corrective actions for treatment           efforts to reduce the amount of pollution that blows
+technique requirements. Health-based standards are             upwind from other states, which impacts Maryland's ozone
+established for over eighty regulated contaminants such as     performance.56
+bacteria, nitrates, arsenic, lead and copper, disinfection
+byproducts, and radionuclides.                                 Indicator 5.56: Number of children under 6 years of
+                                                               age with elevated blood lead levels (>5ug/dl)
+Performance in this category has fallen slightly from 96%
+in FY 2014 to 94% in FY 2020. However, 94% is an               The major source of child exposure to lead is paint dust
+increase over last year's 92% of Marylanders served by         from deteriorated lead paint or from home renovation.
+public water systems in significant compliance. This           Elevated blood lead levels are associated with a number of
+decrease is due to several large water systems, which each     detrimental effects including behavioral and neuro-
+serve over 10,000 people, experiencing violations during       developmental effects in childhood such as learning and
+FY 2020. As of the end of FY 2020, most of the violations      behavioral problems and lowered intelligence, and seizures
+that caused this decrease in compliance for community          and death depending on the levels of blood lead. The
+water systems have been resolved. The majority of the          number of children with elevated blood lead levels (above
+violations were technical violations for monitoring and        5 ug/dl) declined sharply from report year 2017 to 2021,
+reporting that do not impact public health.                    dropping by 29.5% (Exhibit 5.12).
+
+Indicator 5.50: Three-year average of days the eight             Exhibit 5.12 Number of Children Under 6 Years of Age with
+hour ozone standard was exceeded                                            Elevated Blood Lead Levels (>5ug/dl),
+                                                                                  Report Years 2017 ­ 2021
+Breathing in ozone, a primary component of smog, can
+trigger a variety of health problems. Other impacts of air      3,000
+pollution are reduced visibility; damaged crops, forests and
+buildings; and acidified lakes and streams. Emissions from      2,500
+industrial facilities and electric utilities, motor vehicle
+exhaust, gasoline vapors, and chemical solvents are some        2,000
+of the causes of ozone forming pollutants. Maryland's
+ozone levels are not only due to ozone-forming pollutants       1,500
+being emitted by sources within Maryland, but from ozone
+formed in other states that is delivered to Maryland by         1,000
+prevailing winds.                                                            2017 2018 2019 2020 2021
+
+Maryland is doing its part locally to meet National Ambient    The number of children with elevated blood levels is at its
+Air Quality Standards (NAAQS) for ozone and fine               lowest level since data began being collected in 1993. The
+particulate matter through the Maryland Healthy Air Act        decline in blood lead levels is expected to continue due to
+(HAA) enacted in July 2007, at the time the toughest power     the multitude of intervention strategies as well as the
+plant emission law on the east coast. Additionally,            gradual reduction in the number of residences with lead
+Maryland has had three coal-fired power plants retire in the   paint hazards.
+past three years and four more coal-fired power plants are
+scheduled to retire between 2020 and 2027. In report year                                                                  28 | P a g e
+2021, the three-year average of days the eight-hour ozone
+standard was exceeded was 15.7 days, its lowest average
+since report year 2018.
+
+56 MDE. Maryland Clean Air 2019 Progress Report.
+A primary prevention strategy that is responsible for much
+of the past decline in blood lead levels is the
+implementation and enforcement of Maryland's
+"Reduction of Lead Risk in Housing" law.57 A recent
+change in Maryland's lead law - requiring the agency to
+notify parents, guardians and owners of properties where
+children who have elevated levels of lead reside ­ took
+effect in 2019.58 Also part of the changes to Maryland's
+lead laws, starting in 2020 children identified with blood
+levels of 5 micrograms per deciliter or more now receive
+case management.
+
+57 Maryland Department of the Environment, Lead Poisoning          58 Lead poisoning numbers in Maryland's children continue to drop as
+Prevention Program Childhood Blood Lead Surveillance in Maryland,  new state law takes effect in October to accelerate the decline. Maryland
+Annual Report 2019.                                                Department of the Environment. October 2019.
+
+                                                                                                                               29 | P a g e
+Performance Detail ­ Improved Quality of Life
+
+Key Performance Area 5 ­ Data by Report Year
+
+         Indicator               Agency/    2017     2018     2019     2020     2021    4 Year Specific
+                               Data Source   45.2%    42.7%    45.0%    47.2%           Change Target
+Education                      MSDE
+                                             62.0%    63.5%    65.4%    66.8%   46.7%   3.3% Annual
+5.1. Percent of students       MSDE          31,868   32,088   30,422   30,947                    increase
+entering Kindergarten          MSDE         86.98%   87.61%   87.67%   87.12%                        from
+demonstrating Full             MSDE          8.08%    7.97%    8.21%    8.38%                         2015
+Readiness on the               MSDE           2,785    2,818    3,056   3,328*
+Kindergarten Readiness         MSDE          97.2%    97.5%    96.5%    96.3%   69.4%   12.0% Annual
+Assessment (AY 2017-           IAC                                              32,203             increase
+2020) ­ test new in 2015                     66.1%    65.5%    67.0%    68.8%
+5.2. AP Exams ­ Percent        MHEC          39.3%    40.0%    41.3%    42.8%           1.1%  N/A
+receiving grade 3, 4, or 5
+(AY 2016 - 2020)               MHEC                                             86.86%  -0.1% 88.49%
+5.3. Prekindergarten                                                             8.42%             by 2020
+enrollment (AY 2016 -
+2020)                                                                                   4.2%  N/A
+5.4. High School
+Graduation Rate (AY                                                             3,328+ 19.5%  N/A
+2015- 2019)
+5.5. Percent of children in                                                     96.4%   -0.8% Annual
+grades 9 through 12 who                                                                            increase
+drop out of school in an
+academic year (AY 2015 -                                                        71.1%   7.6% 67% by
+2019)                                                                                                 2018
+5.6. Number of teachers
+with National Board for                                                         44.4% 12.9%   N/A
+Professional Teaching
+Standards Certification
+(AY 2016 - 2020)
+5.7. Average percentage
+of schools surveyed by
+the Interagency
+Commission on School
+Construction in the past
+six years that received
+Superior, Good, or
+Adequate ratings for
+school maintenance (FY
+2016- 2020)
+5.8. Six year graduation
+rate of first-time, full-time
+students at public four-
+year colleges and
+universities (all groups)
+(FY 2016 - 2020)
+5.9. Percent of bachelor's
+degrees awarded to
+racial/ethnic minorities at
+public and private
+Maryland colleges and
+universities (FY 2016 -
+2020)
+
+                                                                                        30 | P a g e
+         Indicator             Agency/     2017      2018      2019      2020      2021   4 Year Specific
+                             Data Source    33.1%     35.8%     37.0%     38.8%           Change Target
+5.10. Four-year transfer     MHEC           11.5%     12.0%     11.5%     11.5%
+and graduation rate of                                                             39.6% 19.8%    N/A
+first-time community         MHEC             6.0%      6.0%      5.5%      5.4%
+college students (FY 2016                   15,039    15,923    16,378    18,076   11.7%  1.7% Below
+- 2020)                      MHEC                                                                       10%
+5.11. Percent of Maryland                   45.2%     46.0%     47.3%     48.4%
+median family income         MHEC               9.2       9.6       9.7       9.3  5.6%   -6.7%   Below
+required to cover tuition                       4.9       5.5       4.8       3.9                    4%
+and fees at Maryland         MHEC
+public four-year                           0.90909   0.88514   0.93001   0.86000   18,780 24.9% Above
+institutions (FY 2016 -      State Police    2,652     2,801     2,762    2,518*                             13,000
+2020)                        Governor's     20,274    19,604    18,869    18,535
+5.12. Percent of Maryland    Office of        32%       31%       32%      31%*    49.5% 9.5%     N/A
+median family income         Crime
+required to cover tuition    Prevention,                                                 9 -2.2%  N/A
+and fees at Maryland         Youth, and
+community colleges (FY       Victim                                                5.0 2.0%       N/A
+2016 - 2020)                 Services
+5.13. Number of              State Police                                          0.88300 -2.9%  N/A
+graduates in science,        State Police
+technology, engineering,                                                           2,412  -9.0%   Below
+and math (STEM) from         DPSCS                                                                 4,800
+Maryland's public and
+private higher educational   DPSCS                                                 18,036 -11.0%  N/A
+institutions (FY 2016 -
+2020)                                                                              31% -3.4% At least
+5.14. Post-secondary                                                                                         31%
+degree attainment rate for
+Marylanders ages 25 to 64
+(FY 2016 - 2020)
+
+Public Safety
+
+5.15. Homicide rate per
+100,000 (FY 2016 - 2020)
+5.16. Rate of homicide
+deaths of children and
+youth ages 0 to 19 (per
+100,000 population) (CY
+2015 - 2019)
+
+5.17. Traffic fatality rate
+per 100 million miles
+traveled (CY 2015 - 2019)
+5.18. Part I crime rate
+(offenses per 100,000
+population) (CY 2015 -
+2019)
+5.19. Offenders under
+Department of Public
+Safety & Correctional
+Services jurisdiction (FY
+2016 ­ FY 2020)
+
+5.20. Percent of all cases
+released from supervision
+where the offender was
+employed at closing (FY
+2016 - FY 2020)
+
+                                                                                          31 | P a g e
+         Indicator              Agency/     2017      2018     2019     2020     2021   4 Year Specific
+                              Data Source       927       931      825      727         Change Target
+5.21. Rate of referral for    DJS
+non-violent and violent                      20.3%    19.0%    19.2%     19.2%   640 -31.0%     N/A
+felony offenses per           DJS
+100,000 youth between                        66.9%    67.8%    69.6%    70.0%*   19.2% -5.4% 23.5%
+ages 11 and 17 (CY 2015                          6.7      6.5     6.5*     6.1*
+- 2019)                                                          6.6%     7.0%
+5.22. Youth Recidivism:                       7.5%      7.5%
+Percent of youth re-                         72.5%       70%   73.9%     73.5%
+adjudicated within one                     -49.89%    -53.7%   -62.2%   -64.4%
+year after release from all
+residential (FY 2015 ­                       34.8%    31.2%    26.1%     25.5%
+2019, 2020 and 2021 est.)                     155.0     156.6    151.5   150.0*
+                                              169.3     164.5    164.8    154.3
+Health and Human Services
+
+5.23. Percent of live         MDH                                                73% 9.1% At least
+births for which prenatal     MDH                                                                       78% by
+care was initiated during                                                                             CY 2021
+the first trimester (CY
+2015-2019)                                                                         5.9  -11.9%       No
+5.24. Infant mortality rate                                                      6.0%     -20%     more
+for all races (per 1,000                                                                        than 5.7
+live births) (CY 2015-                                                                           by CY
+2019)                                                                                              2021
+                                                                                                   N/A
+5.25. Maryland's average      MDH
+annual uninsured rate         CDC                                                72.3% -0.3%    N/A
+among the nonelderly          MDH
+(under age 65; estimated)                                                        -66.5% 7.0%    N/A
+(CY 2015-2019)                CDC
+5.26. Percent of two-year-    MDH                                                24.1% -34.9%   N/A
+old children with up-to-      MDH
+date immunization (Birth                                                         144.6  -6.7%         No
+Year 2013-2017)**                                                                156.8              more
+5.27. Cumulative percent                                                                             than
+change from the calendar                                                                        140.7 by
+year 2000 baseline for                                                                          CY 2021
+underage high school
+students smoking                                                                        -7.4%         No
+cigarettes (CY 2010, 2012,                                                                          more
+2014, 2016, 2018)                                                                                    than
+(biannual)                                                                                      142.4 by
+5.28. Percent of public                                                                         CY 2021
+school students in grades
+nine through twelve who
+are current drinkers (AY
+2011, 2013, 2015, 2017,
+2019 (biannual)
+5.29. Overall cancer
+mortality rate per 100,000
+persons (age adjusted to
+2000 U.S. Standard
+Population) (CY 2015-
+2019)
+5.30. Heart disease
+mortality rate for all races
+per 100,000 population
+(age adjusted) (CY 2015-
+2019)
+
+                                                                                        32 | P a g e
+         Indicator              Agency/    2017      2018      2019      2020      2021      4 Year Specific
+                              Data Source     20.2      18.7     17.8*     17.4*             Change Target
+5.31. Rate of age adjusted    MDH               8.5       8.5       9.5     12.2
+new HIV diagnoses (per        MDH                               89.8%     90.2%    15.7 -22.3 %      N/A
+100,000 population) (CY       DHS           87.6%     90.1%     11.7%
+2015 - 2019 estimated)                      12.9%     12.4%              11.2%*    14.4 69.4%        N/A
+5.32. Rate of                 U.S. Census                        4.3%
+primary/secondary                            3.8%      3.9%                5.2%    93.8%     7.1% 90.9%
+syphilis incidence (cases     USDA                                15.9                                 or more
+per 100,000 population)                       17.8      16.9   68.73%       14.2                         by FY
+(CY 2015-2019)                MDH          68.98%    68.74%              68.99%                            2020
+5.33. Percent of children     DHS                                   6.7
+with no recurrence of                           7.5       5.3     36%         7.1  11.7% -9.3%       N/A
+maltreatment within 6                         31%       39%      N/A        36%
+months of first                              N/A       N/A                 N/A     5.0% 31.6%        N/A
+occurrence (FY 2016 -                                            1,078
+2020)                                          748     1,212                 830      14.1   -20.8%       No
+5.34. Percent of related                                                           68.85%     -0.2%     more
+children and youth under                                                                       3.6%  than 13
+age 18 whose families                                                                   7.8           by CY
+have incomes below the                                                                                  2021
+poverty level (estimated)
+(CY 2015-2019)                                                                                            1%
+5.35. Maryland                                                                                       increase
+prevalence of household-
+level very low food                                                                                      each
+security (3 year average)                                                                                year
+(CY 2013-2015                                                                                           N/A
+to 2017-2019)
+5.36. Rate of live births to
+adolescents between 15
+and 19 years of age (per
+1,000 women) (CY 2015-
+2019)
+5.37. Statewide percent of
+current child support paid
+(FFY 2016- FFY 2020)
+
+5.38. Rate of children        Children's                                           36%+      16.5% 40% or
+placed in out-of-home         Cab. Inter-                                                               more by
+care (per 100,000             agency Fund                                                              FY 2020
+children) (2015 ­ 2019)       MDH
+5.39. Percent increase in                                                          18.3% N/A         N/A
+employment of adults at       MDH
+completion of substance                                                            726 -2.9%         N/A
+abuse treatment (2016-        MDH
+2020)
+5.40. Percent of Public
+Behavioral Health System
+(PBHS) service recipients
+who are readmitted to the
+same or different mental
+health inpatient treatment
+facility within 30 days of
+discharge (FY 2020)**
+5.41. Heroin overdose-
+related deaths in
+Maryland (CY 2015-2019)
+
+                                                                                             33 | P a g e
+Environment                   UMCES     48%    50%      50%    40%      39% -18.8%               N/A
+                              EcoCheck
+5.42. Chesapeake Bay          DNR       53,783 29,277*  62,356 56,994*  39,151  -27.2%           114,034
+Habitat Health Index-         DNR                                           14  -28.9%           acres of
+MD (CY 2016 - 2020)           DNR       20     26       17     20
+5.43. Acres of submerged      DNR                                                                   SAV
+aquatic vegetation (CY                                                                              N/A
+2014 - 2018)                  MDA
+5.44. Female dredge           MDE         1.8    1.4      1.4    1.8      1.7   -4.0%               10
+survey index of stock size              55.45  54.22    52.75  52.50    50.00   -9.8%            45.48
+- crabs (2015 - 2019)**       MDE
+5.45. Oyster biomass                    499,531 558,918 359,873 359,702 490,000 -1.9%            N/A
+index (2015 - 2019)           MDE
+5.46. Estimated nitrogen      MDE       7      7        8      8        8 14.3%                  N/A
+load to the Chesapeake        MDP
+Bay from Maryland (in         DGS       98%    99%      90%    92%      94% -4.1% At least
+million lbs.) (FY 2015 -
+2019)                         MEA                                                                97%
+5.47. Acres of cover          MVA
+crops planted (CY 2015 -                7      13       17     20       16 114.1%                0
+2019)
+5.48. Waters impaired by                42.9% 44.1% 44.7% 45.3% 45.9% 7.0%                       N/A
+nutrients per the
+Integrated Report of                    1,605,637 1,640,830 1,667,185 1,680,318 1,773,458 10.5%  N/A
+Surface Water Quality
+(2015 - 2019) ­ note report             11.54  11.40    11.77  11.67    11.70 1.4%               N/A
+done biannually
+5.49. Percent of                        11.0   10.7     10.5   10.7     10.5 -4.3%               N/A
+Marylanders served by
+public water systems in                 11.9% 11.9% 12.0% 13.0% 13.0% 9.2%                       N/A
+significant compliance
+with all new and existing
+regulations (FY 2015 -
+2019)
+5.50. 3 year average of
+days the 8 hour ozone
+standard was exceeded
+(CY 2015- 2019)
+5.51. Maryland's recycling
+rate (CY 2015- 2019)
+5.52. Total acres
+preserved by all land
+preservation programs
+(CY 2015 - 2019)*
+5.53. Energy
+consumption by all State
+government facilities
+(millions of MMBTU's)
+(owned and
+leased) (CY 2015 - 2019)
+5.54. Maryland per capita
+electricity consumption in
+megawatt hours (CY 2014
+- 2018)
+5.55. Percent of vehicles
+registered in the State that
+are alternative fuel,
+electric or hybrid-electric
+(FY 2015 -2019)*
+
+                                                                                34 | P a g e
+5.56. Number of children    MDE   2,166  2,084 2,049* 1,825*                             1,527 -29.5%  N/A
+under 6 years of age with   MDoT
+elevated blood lead levels        263,771 248,281 237,881* 225,290 226,964 -14.0%                      N/A
+(CY 2014 - 2018)
+5.57. Maryland rapid
+transit trips (including
+Maryland Transit
+Administration,
+Washington Metropolitan
+Area Transit Authority,
+and Locally Operated
+Transit Systems)
+(thousands) (CY 2015 -
+2019)
+
+* Numbers have been updated since last year's report.
+** New replacement measure for 2021 report year. Historical data reported if available.
++ Data was not available for 2021 report year.
+
+                                                                                         35 | P a g e
+

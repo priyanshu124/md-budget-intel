@@ -1,0 +1,41 @@
+{
+  "built_at": "2026-04-22T01:50:23.539Z",
+  "node_version": "v24.14.1",
+  "sources": [
+    {
+      "id": "md_operating_budget",
+      "status": "error",
+      "error": "md_operating_budget: HTTP 404 — https://opendata.maryland.gov/resource/8j7g-p8ex.json?%24limit=50000"
+    },
+    {
+      "id": "md_revenue_estimates",
+      "status": "error",
+      "error": "md_revenue_estimates: HTTP 404 — https://opendata.maryland.gov/resource/qsfv-z23w.json?%24limit=50000"
+    },
+    {
+      "id": "md_rainy_day_fund",
+      "status": "error",
+      "error": "md_rainy_day_fund: HTTP 404 — https://opendata.maryland.gov/resource/iksz-x54x.json?%24limit=2000"
+    },
+    {
+      "id": "jcr_2025_highlights",
+      "status": "ok",
+      "hash": "e18de0dd9a39",
+      "ms": 13
+    },
+    {
+      "id": "acfr_2025_reserve",
+      "status": "ok",
+      "hash": "c14cdf294fab",
+      "ms": 4
+    },
+    {
+      "id": "legacy_it_inventory",
+      "status": "ok",
+      "hash": "ba2bed037578",
+      "ms": 5
+    }
+  ],
+  "ok": 3,
+  "errors": 3
+}
