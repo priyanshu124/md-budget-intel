@@ -78,12 +78,6 @@ const NXT_PILLARS = [
     how: "The KPIs, threshold colors, and red/amber/green triggers are designed so a non-finance reader can tell in five seconds whether something is on track or breaking down.",
     color: "#6321a5",
   },
-  {
-    name: "Industry Led",
-    motto: "Domain expertise from day one.",
-    how: "Built in collaboration with Senate Budget and Taxation Committee staff and the iSchool capstone team. Public finance literacy is embedded in the product design, not added afterward.",
-    color: "#551c8e",
-  },
 ];
 
 const NIST_ITEMS = [
