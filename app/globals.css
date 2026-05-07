@@ -140,3 +140,18 @@ body {
   letter-spacing: 0.6px;
   margin-bottom: 6px;
 }
+
+/* Scroll reveal — elements start hidden and animate in when entering viewport */
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.scroll-reveal.scroll-in-view {
+  animation: revealUp 0.5s ease both;
+}

@@ -34,7 +34,7 @@ const SLIDES: Slide[] = [
   {
     title: "Maryland's Fiscal Journey",
     insight:
-      "Eight-year spending trend from FY2019 to FY2026 — from $43.8B to $67.3B. Filter by fiscal year to see categorical breakdowns and the strategic priorities driving each budget.",
+      "Eight-year spending trend from FY2019 to FY2026, rising from $43.8B to $67.3B. Filter by fiscal year to see categorical breakdowns and the strategic priorities driving each budget.",
     source: "MD DBM · FY2021–FY2026 Budget Highlights (each year's PDF, pp.6–10)",
     citations: [
       { label: "FY2026 Maryland State Budget Highlights · pp.6–7", url: "https://dbm.maryland.gov/budget/Documents/operbudget/2026/proposed/FY2026MarylandStateBudgetHighlights.pdf#page=6" },
@@ -49,9 +49,9 @@ const SLIDES: Slide[] = [
     fullWidth: true,
   },
   {
-    title: "Budget Flow — Revenue to Agency",
+    title: "Budget Flow: Revenue to Agency",
     insight:
-      "Maryland's $70.8B FY2027 budget flows from 6 revenue streams through 3 fund types into 30+ agencies. Federal grants alone account for $17.7B — the largest single source.",
+      "Maryland's $70.8B FY2027 budget flows from 6 revenue streams through 3 fund types into 30+ agencies. Federal grants alone account for $17.7B, the largest single source.",
     source: "MD DBM Sankey_Data.xlsx — FY2025 / FY2026 / FY2027 revenue → fund type → agency",
     citations: [
       { label: "FY2027 Budget Highlights · pp.17–24 — Revenue by Fund Type & Agency Allocations", url: "https://dbm.maryland.gov/budget/Documents/operbudget/2027/proposed/FY2027MarylandStateBudgetHighlights.pdf#page=17" },
@@ -60,7 +60,7 @@ const SLIDES: Slide[] = [
     accentColor: "#6B3FA0",
   },
   {
-    title: "Dept. of Commerce — $27.5M Cut",
+    title: "Dept. of Commerce: $27.5M Cut",
     insight:
       "The largest percentage reduction among major agencies. Economic Development took the biggest hit at −$15M, followed by Supplemental No. 1 Programs at −$4.3M. The combined cut totals $27.69M across six program areas. Regular Budget Cut $23.2M + Supplemental No.1 $4.3M.",
     source: "JCR 2025  |  p.265 — Dept. of Commerce budget analysis (PDF p.365)",
@@ -73,7 +73,7 @@ const SLIDES: Slide[] = [
   {
     title: "One Agency Caused 77¢ of Every Dollar in Maryland's Budget Shortfall",
     insight:
-      "FY2025 deficiency appropriations totaled $2.9B — MDH (Medicaid + DDA + Behavioral Health) accounted for $2,250M, more than all other agencies combined.",
+      "FY2025 deficiency appropriations totaled $2.9B. MDH (Medicaid + DDA + Behavioral Health) accounted for $2,250M, more than all other agencies combined.",
     source: "FY2026 Budget Vol 2  ·  pp.486–487 (PDF pp.487–488)",
     citations: [
       { label: "FY2026 Maryland State Budget Volume 2 · pp.486–487 — Summary of FY2025 Deficiency Appropriations", url: "https://dbm.maryland.gov/budget/Documents/operbudget/2026/proposed/FY2026-Volume2.pdf#page=487" },
@@ -84,7 +84,7 @@ const SLIDES: Slide[] = [
   {
     title: "Spending Is Growing 4× Faster Than Revenue",
     insight:
-      "Post-ARPA: expenditures +$2.5B/yr vs. revenue +$0.6B/yr — gap projected to exceed −$5B by FY2030. Expenditure overtook revenue in FY2025, creating the widest structural gap since ARPA funds ended.",
+      "Post-ARPA: expenditures +$2.5B/yr vs. revenue +$0.6B/yr; the gap is projected to exceed -$5B by FY2030. Expenditure overtook revenue in FY2025, creating the widest structural gap since ARPA funds ended.",
     source: "ACFR 2025  ·  Statistical Section  ·  pp.231–233 (PDF p.247)  |  Changes in Fund Balances, Governmental Funds, Last Ten Fiscal Years (audited)  |  Projection: FY2023–2025 slope extended to FY2030",
     citations: [
       { label: "ACFR 2025 · Statistical Section · pp.231–233 — Changes in Fund Balances, Governmental Funds, Last Ten Fiscal Years (audited)", url: "https://www.marylandcomptroller.gov/content/dam/mdcomp/md/reports/financial/2025-acfr-accessible.pdf#page=247" },
@@ -95,7 +95,7 @@ const SLIDES: Slide[] = [
   {
     title: "A $65M Cut Creates a Permanent ~$1B Annual Compliance Deficit",
     insight:
-      "Blueprint mandate grows each year — the JCR starting-line cut means Maryland never catches up even at historical growth rates. Mandated spending: $12.9B → $18.3B by FY2030.",
+      "Blueprint mandate grows each year. The JCR starting-line cut means Maryland never catches up even at historical growth rates. Mandated spending: $12.9B to $18.3B by FY2030.",
     source: "Actual K-12: ACFR 2025  ·  p.225  |  JCR cuts: JCR 2025  ·  pp.xxxiii–xxxiv + p.233  |  Blueprint: SB 1372",
     citations: [
       { label: "ACFR 2025 · Statistical Section · p.225 — Expenses by Function, Last Ten Fiscal Years (Education row, audited)", url: "https://www.marylandcomptroller.gov/content/dam/mdcomp/md/reports/financial/2025-acfr-accessible.pdf#page=241" },
@@ -106,9 +106,9 @@ const SLIDES: Slide[] = [
     accentColor: "#C4820A",
   },
   {
-    title: "Federal Cut Calculator — Interactive",
+    title: "Federal Cut Calculator (Interactive)",
     insight:
-      "Drag the slider from 0% to 20% (1% increments — pick 1, 3, 13, etc.) and the chart re-renders with the new cut amount. Dollar impact per agency at the chosen reduction in federal grants — based on ACFR 2025 verified federal dependency percentages.",
+      "Drag the slider from 0% to 20% (pick 1, 3, 13, etc.) and the chart re-renders with the new cut amount. Dollar impact per agency at the chosen reduction in federal grants, based on ACFR 2025 verified federal dependency percentages.",
     source: "ACFR 2025  ·  pp.45–46 (PDF p.61)",
     citations: [
       { label: "ACFR 2025 · pp.45–46 — Statement of Activities, Year Ended June 30, 2025 (audited)", url: "https://www.marylandcomptroller.gov/content/dam/mdcomp/md/reports/financial/2025-acfr-accessible.pdf#page=61" },
@@ -117,9 +117,9 @@ const SLIDES: Slide[] = [
     accentColor: "#1D4F91",
   },
   {
-    title: "Maryland's Two Fiscal Safety Nets — Both in Collapse",
+    title: "Maryland's Two Fiscal Safety Nets: Both in Decline",
     insight:
-      "Maryland's Rainy Day Fund dropped 96% in just 3 years — from $3.6B (FY2022) to $132M (FY2025). The General Fund balance turned negative (−$905M) for the first time in modern history.",
+      "Maryland's Rainy Day Fund dropped 96% in three years, from $3.6B (FY2022) to $132M (FY2025). The General Fund balance turned negative (-$905M) for the first time in modern history.",
     source: "Reserve Fund: ACFR 2023 p.20  |  ACFR 2024 pp.18–19  |  ACFR 2025 pp.17–22",
     citations: [
       { label: "ACFR 2025 · pp.17–22 — Balance Sheet, Governmental Funds — Reserve Fund balance (audited)", url: "https://www.marylandcomptroller.gov/content/dam/mdcomp/md/reports/financial/2025-acfr-accessible.pdf#page=33" },
@@ -132,7 +132,7 @@ const SLIDES: Slide[] = [
   {
     title: "Health Spending Grew Twice as Fast as Every Other Agency Combined",
     insight:
-      "The Maryland Department of Health grew 84% over 10 years at a 7% compound annual rate — driven by Medicaid enrollment, DDA caseloads, and behavioral health demand that outpaced any other state function.",
+      "The Maryland Department of Health grew 84% over 10 years at a 7% compound annual rate, driven by Medicaid enrollment, DDA caseloads, and behavioral health demand that outpaced any other state function.",
     source: "ACFR 2025  ·  p.165  |  Expenses by Function — Last Ten Fiscal Years (audited)",
     citations: [
       { label: "ACFR 2025 · p.165 — Expenses by Function, Last Ten Fiscal Years — Health row (audited)", url: "https://www.marylandcomptroller.gov/content/dam/mdcomp/md/reports/financial/2025-acfr-accessible.pdf#page=181" },
@@ -141,9 +141,9 @@ const SLIDES: Slide[] = [
     accentColor: "#C41230",
   },
   {
-    title: "The Legislature's $1.1 Billion Response — Where the Cuts Fell",
+    title: "The Legislature's $1.1 Billion Response: Where the Cuts Fell",
     insight:
-      "The Joint Chairmen's Report cut $1.27B to partially close FY2025 shortfalls. The largest single cut: −$469M to the State Reserve Fund itself — leaving almost nothing in the rainy day account.",
+      "The Joint Chairmen's Report cut $1.27B to partially close FY2025 shortfalls. The largest single cut: -$469M to the State Reserve Fund itself, leaving almost nothing in the rainy day account.",
     source: "JCR 2025  ·  p.33  |  Statewide Reductions Summary",
     citations: [
       { label: "JCR 2025 · p.33 — Statewide Reductions Summary, FY2025 Deficiency & FY2026 Budget Reductions", url: "https://dls.maryland.gov/pubs/prod/RecurRpt/Joint-Chairmens-Report_2025.pdf#page=33" },
@@ -178,7 +178,7 @@ function CitationBlock({ citations }: { citations: CitationLink[] }) {
           textTransform: "uppercase",
         }}
       >
-        {multi ? "SOURCES — Click any tile to open the PDF at the correct page" : "SOURCE — Click to open the PDF at the correct page"}
+        {multi ? "SOURCES" : "SOURCE"}
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
         {citations.map((c, idx) => (
@@ -448,21 +448,6 @@ export default function Carousel() {
                 <div style={{ height: 860 }}>
                   {s.viz}
                 </div>
-                {/* Citations below full-width slide — no sidebar available */}
-                <div style={{ fontFamily: "Georgia,serif", background: "#FAF6EE", borderTop: "3px double #0A0A0A", padding: "14px 18px 12px" }}>
-                  <div style={{ fontFamily: "var(--mono)", fontSize: 10, letterSpacing: "2px", color: "#8A1538", fontWeight: 700, marginBottom: 8, textTransform: "uppercase" as const }}>
-                    {s.citations.length > 1 ? "SOURCES — Click any tile to open the PDF at the correct page" : "SOURCE — Click to open the PDF at the correct page"}
-                  </div>
-                  <div style={{ display: "flex", flexDirection: "column" as const, gap: 5 }}>
-                    {s.citations.map((c, idx) => (
-                      <a key={idx} href={c.url} target="_blank" rel="noopener noreferrer"
-                        style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "9px 13px", background: "#fff", color: "#1a1a1a", border: "1px solid #1a1a1a", textDecoration: "none", fontFamily: "var(--mono)", fontSize: 11, fontWeight: 700 }}>
-                        <span>📄 {c.label}</span>
-                        <span style={{ opacity: 0.65, marginLeft: 12 }}>↗</span>
-                      </a>
-                    ))}
-                  </div>
-                </div>
               </div>
             ) : (
               /* Two-column: chart + commentary sidebar */
@@ -483,7 +468,7 @@ export default function Carousel() {
                   }}
                 >
                   <div className="mono-label">
-                    Chart {i + 1} of {SLIDES.length} · MBIS Insight
+                    Chart {i + 1} of {SLIDES.length} · MBIT Insight
                   </div>
                   <h4
                     style={{

@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import KpiRow from "@/components/KpiRow";
 import Carousel from "@/components/Carousel";
 import BudgetMapEmbed from "@/components/BudgetMapEmbed";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const TICKER = [
   "FY2027 Operating Budget: $70.8B",
@@ -10,38 +11,11 @@ const TICKER = [
   "Structural Deficit Ahead: $2.3B projected for FY2028",
   "Budget Surplus: $250M",
   "Rainy Day Fund: 8% of General Fund revenues",
-  "DDA Cut: −$126M from Developmental Disabilities Admin",
+  "DDA Cut: -$126M from Developmental Disabilities Admin",
   "SEIF Transfer: $292M moved to General Fund",
   "Retirement Cost Shift: $39.3M to local governments",
   "Implementation: New budget begins July 1",
-  "Gap-closing Mix: Cuts · Transfers · Bond swaps",
-];
-
-const INSIGHT_CARDS = [
-  {
-    tag: "KEY FINDING",
-    title: "The Health Spiral",
-    body: "Maryland's Dept. of Health grew 84% over 10 years — now consuming 37% of the entire state budget. MDH drove $2.25B of $2.9B in emergency deficiency appropriations in FY2025 alone.",
-    href: "#",
-    color: "var(--red)",
-    icon: "🏥",
-  },
-  {
-    tag: "RISK FACTOR",
-    title: "The Federal Cliff",
-    body: "Maryland receives $19.4B in federal funds annually — 33% of the entire budget. DHS is 79% federally funded, MDH 55%. With reserves at $132M, any federal cut creates an immediate service delivery crisis.",
-    href: "#",
-    color: "var(--amber)",
-    icon: "⚠️",
-  },
-  {
-    tag: "MANDATE",
-    title: "The Blueprint Bind",
-    body: "The Blueprint for Maryland's Future legally mandates education spending to grow from $12.9B to $18.3B by FY2030 — a $5.4B increase — while the state simultaneously faces a $2.7B structural deficit.",
-    href: "/methodology",
-    color: "var(--nxt-purple)",
-    icon: "📚",
-  },
+  "Gap-closing Mix: Cuts, Transfers, Bond swaps",
 ];
 
 export default function HomePage() {
@@ -62,35 +36,35 @@ export default function HomePage() {
               textTransform: "uppercase",
             }}
           >
-          Maryland Budget Intelligence System · MBIS
-        </div>
-        <h2
-          style={{
-            fontFamily: "Georgia, serif",
-            fontSize: 36,
-            fontWeight: 900,
-            color: "var(--nxt-deep)",
-            letterSpacing: "-0.9px",
-            marginBottom: 10,
-            lineHeight: 1.08,
-          }}
-        >
-          FY2027 Fiscal Intelligence Dashboard
-        </h2>
-        <p
-          style={{
-            fontFamily: "Georgia, serif",
-            fontStyle: "italic",
-            fontSize: 14,
-            color: "#666",
-            maxWidth: 740,
-            lineHeight: 1.6,
-          }}
-        >
-          Ten interactive visualizations, one county map, and six key indicators — explaining where Maryland&apos;s
-          proposed $70.8B operating budget goes, how the $1.5B shortfall was closed, and what&apos;s ahead for
-          every agency.
-        </p>
+            Maryland Budget Intel Tool · MBIT
+          </div>
+          <h2
+            style={{
+              fontFamily: "Georgia, serif",
+              fontSize: 36,
+              fontWeight: 900,
+              color: "var(--nxt-deep)",
+              letterSpacing: "-0.9px",
+              marginBottom: 10,
+              lineHeight: 1.08,
+            }}
+          >
+            FY2027 Fiscal Intelligence Dashboard
+          </h2>
+          <p
+            style={{
+              fontFamily: "Georgia, serif",
+              fontStyle: "italic",
+              fontSize: 14,
+              color: "#666",
+              maxWidth: 740,
+              lineHeight: 1.6,
+            }}
+          >
+            Ten interactive visualizations, one county map, and six key indicators — explaining where Maryland&apos;s
+            proposed $70.8B operating budget goes, how the $1.5B shortfall was closed, and what&apos;s ahead for
+            every agency.
+          </p>
         </div>
       </div>
 
@@ -129,155 +103,68 @@ export default function HomePage() {
       {/* ── KPI cards ─────────────────────────────────────────── */}
       <KpiRow />
 
-      {/* ── Insight cards ─────────────────────────────────────── */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gap: 14,
-          marginBottom: 30,
-        }}
-      >
-        {INSIGHT_CARDS.map((card) => (
-          <a
-            key={card.tag}
-            href={card.href}
+      {/* ── Carousel section header ────────────────────────────── */}
+      <ScrollReveal>
+        <div
+          style={{
+            marginBottom: 12,
+            display: "flex",
+            alignItems: "baseline",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: 6,
+          }}
+        >
+          <h3
             style={{
-              textDecoration: "none",
-              background: "#fff",
-              border: "1px solid var(--line)",
-              borderTop: `3px solid ${card.color}`,
-              borderRadius: 10,
-              padding: "18px 20px 16px",
-              display: "block",
-              transition: "transform 0.2s, box-shadow 0.2s",
-            }}
-            onMouseEnter={(e) => {
-              const el = e.currentTarget as HTMLAnchorElement;
-              el.style.transform = "translateY(-3px)";
-              el.style.boxShadow = `0 8px 24px ${card.color}28`;
-            }}
-            onMouseLeave={(e) => {
-              const el = e.currentTarget as HTMLAnchorElement;
-              el.style.transform = "translateY(0)";
-              el.style.boxShadow = "none";
+              fontFamily: "Georgia, serif",
+              fontSize: 21,
+              fontWeight: 800,
+              color: "var(--nxt-deep)",
+              letterSpacing: "-0.3px",
             }}
           >
-            <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
-              <span style={{ fontSize: 18 }}>{card.icon}</span>
-              <div
-                style={{
-                  fontFamily: "var(--mono)",
-                  fontSize: 9,
-                  letterSpacing: "0.15em",
-                  color: card.color,
-                  fontWeight: 700,
-                }}
-              >
-                {card.tag}
-              </div>
-            </div>
-            <div
-              style={{
-                fontFamily: "Georgia, serif",
-                fontSize: 18,
-                fontWeight: 800,
-                color: "var(--nxt-deep)",
-                marginBottom: 8,
-                lineHeight: 1.2,
-              }}
-            >
-              {card.title}
-            </div>
-            <div style={{ fontSize: 12, color: "var(--text-soft)", lineHeight: 1.6 }}>{card.body}</div>
-          </a>
-        ))}
-      </div>
-
-      {/* ── Carousel section header ────────────────────────────── */}
-      <div
-        style={{
-          marginBottom: 12,
-          display: "flex",
-          alignItems: "baseline",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-          gap: 6,
-        }}
-      >
-        <h3
-          style={{
-            fontFamily: "Georgia, serif",
-            fontSize: 21,
-            fontWeight: 800,
-            color: "var(--nxt-deep)",
-            letterSpacing: "-0.3px",
-          }}
-        >
-          Top Insights and Trends from MD State&apos;s Budget
-        </h3>
-      </div>
+            Top Insights and Trends from MD State&apos;s Budget
+          </h3>
+        </div>
+      </ScrollReveal>
 
       {/* ── Main carousel ─────────────────────────────────────── */}
-      <Carousel />
+      <ScrollReveal delay={60}>
+        <Carousel />
+      </ScrollReveal>
 
       {/* ── Budget Map section ────────────────────────────────── */}
-      <div
-        id="map"
-        style={{
-          marginTop: 40,
-          marginBottom: 12,
-          display: "flex",
-          alignItems: "baseline",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-          gap: 6,
-        }}
-      >
-        <h3
+      <ScrollReveal>
+        <div
+          id="map"
           style={{
-            fontFamily: "Georgia, serif",
-            fontSize: 21,
-            fontWeight: 800,
-            color: "var(--nxt-deep)",
-            letterSpacing: "-0.3px",
+            marginTop: 40,
+            marginBottom: 12,
+            display: "flex",
+            alignItems: "baseline",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: 6,
           }}
         >
-          County Budget &amp; Outcomes Map
-        </h3>
-      </div>
-      <BudgetMapEmbed />
-
-      {/* ── Minimal bottom ────────────────────────────────────── */}
-      <div
-        style={{
-          marginTop: 36,
-          paddingTop: 24,
-          borderTop: "1px solid var(--line-soft)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-          gap: 12,
-        }}
-      >
-        <div style={{ fontFamily: "var(--mono)", fontSize: 9, color: "var(--text-mute)", letterSpacing: "0.06em" }}>
-          MBIS · Maryland Budget Intelligence System · Data through FY2025 actuals, FY2027 proposed
+          <h3
+            style={{
+              fontFamily: "Georgia, serif",
+              fontSize: 21,
+              fontWeight: 800,
+              color: "var(--nxt-deep)",
+              letterSpacing: "-0.3px",
+            }}
+          >
+            County Budget &amp; Outcomes Map
+          </h3>
         </div>
-        <a
-          href="/methodology"
-          style={{
-            fontFamily: "var(--mono)",
-            fontSize: 10,
-            color: "var(--nxt-purple)",
-            fontWeight: 700,
-            textDecoration: "none",
-            letterSpacing: "0.04em",
-          }}
-        >
-          Methodology &amp; Sources ↗
-        </a>
-      </div>
+      </ScrollReveal>
+      <ScrollReveal delay={60}>
+        <BudgetMapEmbed />
+      </ScrollReveal>
+
     </div>
   );
 }
