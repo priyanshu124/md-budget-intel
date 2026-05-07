@@ -54,7 +54,7 @@ export default function Header() {
               lineHeight: 1.1,
             }}
           >
-            Maryland Budget Intelligence
+            Maryland Budget Intel Tool
           </span>
           <span
             style={{
@@ -65,7 +65,7 @@ export default function Header() {
               lineHeight: 1.2,
             }}
           >
-            MBIS · Fiscal Analysis System
+            Fiscal Analysis Tool
           </span>
         </div>
 
