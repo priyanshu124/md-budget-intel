@@ -47,7 +47,7 @@ const AGENCY_COLORS = [
 interface RevRow { year: number; category: string; gf: number; sf: number; ff: number; }
 interface AgenRow { year: number; agency: string; gf: number; sf: number; ff: number; total: number; }
 
-function parseCsv<T extends Record<string, string | number>>(text: string): T[] {
+function parseCsv<T>(text: string): T[] {
   const lines = text.trim().split("\n");
   const headers = lines[0].split(",").map(h => h.trim());
   return lines.slice(1).map(line => {
