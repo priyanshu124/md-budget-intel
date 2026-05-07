@@ -19,7 +19,7 @@ const PROBLEMS = [
   },
   {
     num: "03",
-    problem: "Budget flows were invisible — no one could see how revenue became agency spending",
+    problem: "Budget flows were invisible: no one could see how revenue became agency spending",
     solution: "We mapped Maryland's full $70.8B budget as a Sankey diagram: revenue source to fund type to agency. The chart uses FY2025/FY2026/FY2027 data from the DBM Sankey dataset and is the only publicly available tool that shows this three-layer flow in a single interactive view.",
     tag: "FLOW VISUALIZATION",
     color: "#551c8e",

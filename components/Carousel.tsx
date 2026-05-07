@@ -468,7 +468,7 @@ export default function Carousel() {
                   }}
                 >
                   <div className="mono-label">
-                    Chart {i + 1} of {SLIDES.length} · MBIT Insight
+                    Chart {i + 1} of {SLIDES.length}
                   </div>
                   <h4
                     style={{

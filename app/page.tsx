@@ -7,7 +7,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const TICKER = [
   "FY2027 Operating Budget: $70.8B",
-  "Shortfall Closed: $1.5B — No new taxes or fees",
+  "Shortfall Closed: $1.5B, No new taxes or fees",
   "Structural Deficit Ahead: $2.3B projected for FY2028",
   "Budget Surplus: $250M",
   "Rainy Day Fund: 8% of General Fund revenues",
@@ -36,7 +36,7 @@ export default function HomePage() {
               textTransform: "uppercase",
             }}
           >
-            Maryland Budget Intel Tool · MBIT
+            Maryland Budget Intel Tool
           </div>
           <h2
             style={{
@@ -49,7 +49,7 @@ export default function HomePage() {
               lineHeight: 1.08,
             }}
           >
-            FY2027 Fiscal Intelligence Dashboard
+            Maryland&apos;s Budget, Visualized
           </h2>
           <p
             style={{
@@ -61,9 +61,8 @@ export default function HomePage() {
               lineHeight: 1.6,
             }}
           >
-            Ten interactive visualizations, one county map, and six key indicators — explaining where Maryland&apos;s
-            proposed $70.8B operating budget goes, how the $1.5B shortfall was closed, and what&apos;s ahead for
-            every agency.
+            Ten interactive visualizations, one county map, and a deep-dive agency dashboard. All data
+            sourced directly from Maryland&apos;s official budget documents.
           </p>
         </div>
       </div>

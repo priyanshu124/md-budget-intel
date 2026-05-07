@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "Maryland Budget Intel Tool | MBIT",
+  title: "Maryland Budget Intel Tool",
   description:
     "Interactive fiscal analysis of Maryland's FY2027 proposed budget: revenues, expenditures, federal exposure, structural trends, and legislative impacts.",
 };
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         >
           <p className="source-cite">
-            Maryland Budget Intel Tool · FY2027 fiscal analysis
+            Maryland Budget Intel Tool
           </p>
           <div style={{ fontFamily: "var(--mono)", fontSize: 9, color: "var(--text-mute)", letterSpacing: "0.05em", textAlign: "right" }}>
             Created by Aarushi Singh, Nadvi Haque, Priyanshu Gupta, and James Van Doorn

@@ -65,7 +65,7 @@ export default function Header() {
               lineHeight: 1.2,
             }}
           >
-            MBIT · Fiscal Analysis Tool
+            Fiscal Analysis Tool
           </span>
         </div>
 
