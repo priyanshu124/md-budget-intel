@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* === Embedded mode: hide Evidence chrome when inside iframe === */
+.embedded-mode header,
+.embedded-mode [class*="header"],
+.embedded-mode footer {
+    display: none !important;
+}
+.embedded-mode body {
+    background: transparent !important;
+}
+
+/* Override Evidence/DaisyUI theme tokens directly */
+:root,
+[data-theme],
+[data-theme='light'] {
+    /* Fonts */
+    --ui-font-family: 'IBM Plex Sans', system-ui, sans-serif !important;
+    --monospace-font-family: 'JetBrains Mono', monospace !important;
+
+    /* Base colors — these feed DaisyUI's base-100/200/300 system */
+    --color-base-100: #fbf9ff;
+    --color-base-200: #f2ebfb;
+    --color-base-300: #e7def5;
+    --color-base-content: #1A1A2E;
+    --color-base-heading: #211030;
+    --color-base-content-muted: #6B7280;
+
+    /* Primary — feeds DaisyUI btn-primary, text-primary etc */
+    --color-primary: #802cd7;
+    --color-primary-content: #ffffff;
+
+    /* Secondary */
+    --color-secondary: #6321a5;
+    --color-secondary-content: #ffffff;
+
+    /* Accent */
+    --color-accent: #b376f6;
+    --color-accent-content: #211030;
+
+    /* NXT custom */
+    --nxt-dark:        #211030;
+    --nxt-grape:       #6321a5;
+    --nxt-blue-violet: #802cd7;
+    --nxt-lavender:    #b376f6;
+    --nxt-pink:        #ede5f8;
+    --nxt-surface:     #fbf9ff;
+    --nxt-border:      #e7def5;
+    --nxt-text:        #1A1A2E;
+    --nxt-muted:       #6B7280;
+}
+
+/* Force the light purple background on the full viewport */
+html,
+body {
+    background:
+        radial-gradient(ellipse 1100px 750px at -5% 0%,   rgba(179,118,246,0.08) 0%, transparent 54%),
+        radial-gradient(ellipse 800px 600px  at 105% 0%,  rgba(128,44,215,0.05) 0%, transparent 52%),
+        radial-gradient(ellipse 600px 500px  at 50%  95%, rgba(99,33,165,0.04) 0%, transparent 58%),
+        linear-gradient(160deg, #f5f0fb 0%, #f8f5fe 28%, #fbf9ff 60%, #fdfdff 100%) !important;
+    background-attachment: fixed !important;
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 !important;
+}
+
+/* Sidebar — slightly darker than page */
+nav.sidebar,
+[class*="sidebar"] nav,
+aside[class*="sidebar"] {
+    background-color: #e8dff5 !important;
+    border-right: 1px solid #d4bef0 !important;
+}
+
+/* Sidebar links readable dark text */
+[class*="sidebar"] a {
+    color: #3a1f5a !important;
+    font-weight: 500 !important;
+}
+
+[class*="sidebar"] a:hover {
+    background: rgba(128, 44, 215, 0.10) !important;
+    color: #6321a5 !important;
+}
+
+[class*="sidebar"] a[aria-current="page"] {
+    background: #802cd7 !important;
+    color: #ffffff !important;
+    border-left: 3px solid #b376f6 !important;
+    font-weight: 600 !important;
+}
+
+/* Header — light purple, dark readable text */
+header {
+    background-color: #ede5f8 !important;
+    border-bottom: 2px solid #c9a8f0 !important;
+    color: #211030 !important;
+}
+
+header a {
+    color: #6321a5 !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f6f2fb; }
+::-webkit-scrollbar-thumb { background: #b376f6; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #6321a5; }
+
+/* Blockquote */
+blockquote.markdown {
+    border-left-color: #802cd7 !important;
+    background: #ede5f8 !important;
+}
+
+/* Table header */
+th.markdown {
+    border-bottom-color: #6321a5 !important;
+    background: #ede5f8 !important;
+}
+
+/* Links */
+article.markdown a.markdown {
+    color: #6321a5 !important;
+}
+
+/* Toggle buttons — active state */
+button[style*="background: #802cd7"],
+button[style*="background:#802cd7"] {
+    background: #802cd7 !important;
+    color: #ffffff !important;
+}
+
+/* Footer */
+footer {
+    background: #ede5f8 !important;
+    border-top: 1px solid #e2d9f3 !important;
+    color: #6B7280 !important;
+}
+
+.chart-container,
+.chart-container [role='status'],
+.chart-container [role='status'] > div,
+.chart-container canvas,
+.chart-container svg {
+    background: transparent !important;
+}
+
+.chart-container [role='status'] > div {
+    border: 1px solid rgba(231, 222, 245, 0.9) !important;
+    background: linear-gradient(160deg, rgba(251,249,255,0.98), rgba(242,235,251,0.95)) !important;
+}
+
+.chart-container {
+    border-radius: 12px;
+}
+
+/* Evidence-generated chrome that still defaults to white boxes */
+[class*='bg-base-100'][class*='sticky'][class*='top-0'],
+[class*='bg-base-100'][class*='shadow-base-100'][class*='sticky'],
+[class*='bg-base-100'][class*='shadow-base-100'][class*='mb-2'],
+[class*='bg-base-100'][class*='shadow-base-100'][class*='font-medium'],
+[class*='bg-base-100'][class*='shadow-base-100'][class*='font-semibold'],
+[class*='bg-base-100'][class*='text-base-heading'] {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+[class*='chart-container'] canvas,
+[class*='chart-container'] svg,
+.echarts-for-react,
+.echarts-for-react > div,
+.echarts-for-react canvas,
+.echarts-for-react svg {
+    background: transparent !important;
+}

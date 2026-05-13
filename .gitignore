@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Evidence dashboard
+dashboard/node_modules
+dashboard/build
+dashboard/.svelte-kit
+dashboard/.evidence/template/.svelte-kit
+dashboard/.evidence/template/node_modules
+dashboard/.evidence/template/src
+dashboard/.evidence/template/package.json
+dashboard/.evidence/template/package-lock.json
+dashboard/.evidence/template/*.config.*
