@@ -107,23 +107,6 @@ export default function Header() {
             );
           })}
         </nav>
-
-        <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 16 }}>
-          <span
-            style={{
-              background: "var(--nxt-pink)",
-              color: "var(--nxt-deep)",
-              padding: "4px 10px",
-              borderRadius: 6,
-              fontSize: 10,
-              fontWeight: 700,
-              fontFamily: "var(--mono)",
-              letterSpacing: "0.04em",
-            }}
-          >
-            FY2027
-          </span>
-        </div>
       </div>
 
       {/* Maryland flag stripe */}

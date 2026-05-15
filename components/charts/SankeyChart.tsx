@@ -324,17 +324,8 @@ body{background:#fff}
 .back-btn{border:1.5px solid #C41230;background:#fff;color:#C41230;border-radius:6px;padding:5px 14px;font-size:12px;cursor:pointer;font-weight:700;display:none;margin-left:10px}
 .back-btn.show{display:inline-block}
 .back-btn:hover{background:#C41230;color:#fff}
-.layout{display:flex;height:900px}
-.chart-area{flex:1;min-width:0}
-.right-panel{width:260px;border-left:1px solid #ddd;display:flex;flex-direction:column;background:#FAFAFA;overflow:hidden}
-.panel-top{padding:10px;border-bottom:1px solid #eee}
-.panel-lbl{font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#999;margin-bottom:8px}
-.chip-list{display:flex;flex-direction:column;gap:4px;overflow-y:auto;max-height:860px}
-.chip{display:flex;align-items:center;justify-content:space-between;width:100%;text-align:left;cursor:pointer;padding:7px 9px;font-size:11.5px;border-radius:4px;border:1px solid #ddd;background:white;transition:all .12s;color:#1a1a1a;line-height:1.3;font-family:Georgia,serif}
-.chip:hover{background:#EFF6FF;border-color:#1D4F91;color:#1D4F91}
-.chip.active-chip{background:#1D4F91;color:white;border-color:#1D4F91;font-weight:700}
-.chip-count{font-size:10px;color:#999;font-weight:400;background:#f0f0f0;padding:1px 6px;border-radius:10px;white-space:nowrap}
-.chip.active-chip .chip-count{background:rgba(255,255,255,0.25);color:rgba(255,255,255,0.9)}
+.layout{height:560px}
+.chart-area{width:100%;height:100%}
 .hint{padding:8px 14px;font-size:11px;color:#888;font-style:italic;border-top:1px solid #eee}
 </style></head><body>
 <div class="ctrl">
@@ -348,46 +339,21 @@ body{background:#fff}
 </div>
 <div class="layout">
   <div class="chart-area" id="sankey-chart"></div>
-  <div class="right-panel">
-    <div class="panel-top">
-      <div class="panel-lbl" id="panel-title">Click agency to drill in</div>
-      <div class="chip-list" id="chip-list"></div>
-    </div>
-  </div>
 </div>
-<div class="hint" id="hint">Click any agency (chip at right, or Sankey node) to see Revenue → Fund → Agency → Programs.</div>
+<div class="hint" id="hint">Click any agency node in the Sankey to drill down: Revenue → Fund → Agency → Programs.</div>
 <script>
 const DATA = JSON.parse('__DATA__');
 let yr = '2026';
 let mode = 'overview';
 let selectedAgency = null;
 
-function buildChips(){
-  const box = document.getElementById('chip-list');
-  box.innerHTML = '';
-  const agencies = DATA[yr].overview.agencies;
-  const drills = DATA[yr].drilldown;
-  agencies.forEach(name => {
-    const d = drills[name];
-    const btn = document.createElement('button');
-    btn.className = 'chip' + (selectedAgency === name ? ' active-chip' : '');
-    const count = d ? d.prog_count : 0;
-    btn.innerHTML = '<span>'+name+'</span><span class="chip-count">'+(count ? count+' prog' : '—')+'</span>';
-    btn.onclick = () => { if (d) selectAgency(name); };
-    if (!d) btn.style.opacity = '0.45';
-    box.appendChild(btn);
-  });
-}
-
 function selectAgency(name){
   selectedAgency = name;
   mode = 'drilldown';
   document.getElementById('mode-label').textContent = 'DRILL-DOWN: ' + name.toUpperCase();
   document.getElementById('back-btn').classList.add('show');
-  document.getElementById('panel-title').textContent = 'Viewing: ' + name;
-  document.getElementById('hint').textContent = 'Revenue → Fund Type → ' + name + ' → Top programs. Click “Back” to return.';
+  document.getElementById('hint').textContent = 'Revenue → Fund Type → ' + name + ' → Top programs. Click Back to return.';
   renderChart();
-  buildChips();
 }
 
 function resetOverview(){
@@ -395,10 +361,8 @@ function resetOverview(){
   selectedAgency = null;
   document.getElementById('mode-label').textContent = 'OVERVIEW MODE';
   document.getElementById('back-btn').classList.remove('show');
-  document.getElementById('panel-title').textContent = 'Click agency to drill in';
-  document.getElementById('hint').textContent = 'Click any agency (chip at right, or Sankey node) to see Revenue → Fund → Agency → Programs.';
+  document.getElementById('hint').textContent = 'Click any agency node in the Sankey to drill down: Revenue → Fund → Agency → Programs.';
   renderChart();
-  buildChips();
 }
 
 function makeSankeySpec(d, title){
@@ -412,7 +376,7 @@ function makeSankeySpec(d, title){
       title:{text:'<b>'+title+'<\/b>  <span style="font-size:11px;color:#888">'+DATA[yr].label+'<\/span>', x:0.02, xanchor:'left', font:{size:13,color:'#121212',family:'Georgia,serif'}},
       paper_bgcolor:'#fff', plot_bgcolor:'#fff',
       font:{color:'#333',size:11,family:'Georgia,serif'},
-      height:900, margin:{t:50,l:6,r:6,b:16}
+      height:560, margin:{t:50,l:6,r:6,b:16}
     },
     config:{responsive:true,displayModeBar:true,modeBarButtonsToRemove:['select2d','lasso2d'],displaylogo:false}
   };
@@ -443,11 +407,10 @@ function setYear(y){
   document.getElementById('btn-2026').className = 'yr-btn'+(y==='2026'?' active':'');
   document.getElementById('btn-2027').className = 'yr-btn'+(y==='2027'?' active':'');
   if (mode === 'drilldown' && !DATA[yr].drilldown[selectedAgency]) resetOverview();
-  else { renderChart(); buildChips(); }
+  else renderChart();
 }
 
 renderChart();
-buildChips();
 <\/script></body></html>`;
 
 export default function SankeyChart() {
@@ -503,10 +466,36 @@ export default function SankeyChart() {
   }
 
   return (
-    <iframe
-      srcDoc={srcDoc}
-      style={{ width: "100%", height: 980, border: "none", borderRadius: 8 }}
-      title="Maryland Budget Flow"
-    />
+    <div style={{ padding: "16px 20px 0" }}>
+      <h3
+        style={{
+          fontFamily: "Georgia, serif",
+          fontSize: 18,
+          fontWeight: 800,
+          color: "var(--nxt-deep)",
+          lineHeight: 1.25,
+          margin: 0,
+          marginBottom: 4,
+        }}
+      >
+        Budget Flow: Revenue to Agency
+      </h3>
+      <p
+        style={{
+          fontSize: 12,
+          color: "var(--text-soft)",
+          lineHeight: 1.5,
+          margin: 0,
+          marginBottom: 10,
+        }}
+      >
+        Maryland&apos;s budget flows from 6 revenue streams through 3 types of funds into 30+ agencies.
+      </p>
+      <iframe
+        srcDoc={srcDoc}
+        style={{ width: "100%", height: 640, border: "none", borderRadius: 8 }}
+        title="Maryland Budget Flow"
+      />
+    </div>
   );
 }

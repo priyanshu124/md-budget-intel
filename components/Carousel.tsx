@@ -53,19 +53,18 @@ const SLIDES: Slide[] = [
     insight:
       "Maryland's budget flows from 6 revenue streams through 3 types of funds into 30+ agencies.",
     source: "",
-    citations: [
-      { label: "FY2027 Budget Highlights · pp.17–24 — Revenue by Fund Type & Agency Allocations", url: "https://dbm.maryland.gov/budget/Documents/operbudget/2027/proposed/FY2027MarylandStateBudgetHighlights.pdf#page=17" },
-    ],
+    citations: [],
     viz: <SankeyChart />,
     accentColor: "#6B3FA0",
+    fullWidth: true,
   },
   {
     title: "Dept. of Commerce: $27.5M Cut",
     insight:
       "The largest percentage reduction among major agencies. Economic Development took the biggest hit at −$15M, followed by Supplemental No. 1 Programs at −$4.3M. The combined cut totals $27.69M across six program areas. Regular Budget Cut $23.2M + Supplemental No.1 $4.3M.",
-    source: "JCR 2025  |  p.34 — Dept. of Commerce budget analysis",
+    source: "JCR 2025  |  p.265 — Dept. of Commerce budget analysis (PDF p.365)",
     citations: [
-      { label: "Joint Chairmen’s Report 2025 · p.34 — Dept. of Commerce budget analysis (T00)", url: "https://dls.maryland.gov/pubs/prod/RecurRpt/Joint-Chairmens-Report_2025.pdf#page=34" },
+      { label: "Joint Chairmen’s Report 2025 · p.265 — Dept. of Commerce budget analysis (T00)", url: "https://dls.maryland.gov/pubs/prod/RecurRpt/Joint-Chairmens-Report_2025.pdf#page=365" },
     ],
     viz: <JcrCommerceChart />,
     accentColor: "#C41230",
@@ -443,9 +442,9 @@ export default function Carousel() {
             }}
           >
             {s.fullWidth ? (
-              /* Full-width layout — MD Fiscal Journey (iframe is 860px tall) */
+              /* Full-width layout — chart fills its own natural height */
               <div style={{ background: "#FAF6EE" }}>
-                <div style={{ height: 860 }}>
+                <div style={{ minHeight: 460 }}>
                   {s.viz}
                 </div>
               </div>
