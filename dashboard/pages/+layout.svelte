@@ -63,9 +63,6 @@
             {/each}
         </nav>
         <div style="margin-left:auto; display:flex; align-items:center; gap:16px;">
-            <span style="background:var(--nxt-pink); color:var(--nxt-deep); padding:4px 10px; border-radius:6px; font-size:10px; font-weight:700; font-family:var(--mono); letter-spacing:0.04em;">
-                FY2027
-            </span>
         </div>
     </div>
     <!-- Maryland flag stripe -->

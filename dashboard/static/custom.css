@@ -168,7 +168,29 @@ footer {
     background: transparent !important;
 }
 
-/* Hide the sticky sidebar home link (duplicate of unified header nav) */
-aside a.sticky {
+/* Push content below the sticky unified header */
+.layout,
+main,
+aside {
+    padding-top: 70px !important;
+}
+
+aside > div > div.fixed {
+    top: 80px !important;
+}
+
+/* Hide "agencies" and "project details" sub-items in sidebar */
+aside span.group.inline-block.py-1.capitalize {
     display: none !important;
+}
+
+/* Hide the duplicate "budget office" section (2nd section) */
+aside > div > div.flex.flex-col:nth-child(2) {
+    display: none !important;
+}
+
+/* Remove extra padding from Technology and IT Projects sections */
+aside > div > div.flex.flex-col:nth-child(3),
+aside > div > div.flex.flex-col:nth-child(4) {
+    padding-bottom: 0 !important;
 }
