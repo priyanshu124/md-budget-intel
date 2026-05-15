@@ -2,7 +2,7 @@
 
 A public, source-cited dashboard for Maryland's FY2027 operating budget. Every figure deep-links to its source at the exact page. All sources trace back to a published audited document.
 
-**Live:** https://mdbudgettool.netlify.app
+**Live:** https://mdbudgetintel.netlify.app
 
 Built for the iSchool capstone in partnership with NXT and Senate Budget & Taxation Committee staff.
 
