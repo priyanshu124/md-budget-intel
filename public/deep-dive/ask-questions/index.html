@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/deep-dive/favicon.ico" sizes="32x32" />
+		<link rel="icon" href="/deep-dive/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/deep-dive/apple-touch-icon.png" />
+		<link rel="manifest" href="/deep-dive/manifest.webmanifest" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			try {
+				/** @type {'light' | 'dark' | 'system'} */
+				const savedTheme = localStorage.getItem('evidence-theme') ?? 'system';
+				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				const theme = savedTheme === 'system' ? (prefersDark ? 'dark' : 'light') : savedTheme;
+				document.documentElement.setAttribute('data-theme', theme);
+			} catch (e) {}
+		</script>
+		
+		<link href="/deep-dive/_app/immutable/assets/0.DdhSd0yv.css" rel="stylesheet">
+		<link href="/deep-dive/_app/immutable/assets/VennDiagram.BCpuTJYF.css" rel="stylesheet">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/entry/start.DTWNAc7V.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/entry.DbBysj1Y.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/scheduler.Z7x_RWPH.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/entry/app.DveMMR8c.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/preload-helper.0ABhHtKy.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/index.DBfziG1F.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/nodes/0.DMAUjbF-.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/index.rV6zwFgL.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/VennDiagram.svelte_svelte_type_style_lang.Q3Wydblk.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/profile.BW8tN6E9.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/setTrackProxy.Cyfckp0w.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/stores.Bf35I9D8.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/index.vXK-ja-i.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/scroll.BLTnfBgL.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/button.DtYmus6X.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/AccordionItem.8Y5y5aTz.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/checkRequiredProps.o_C_V3S5.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/nodes/6.B2GL6zdV.js">
+		<link rel="modulepreload" href="/deep-dive/_app/immutable/chunks/Grid.DWsHgeQC.js"><title>Ask Questions</title><!-- HEAD_svelte-ul56n9_START --><link rel="stylesheet" href="/deep-dive/custom.css"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"><style data-svelte-h="svelte-1wnkbhc">:root {
+            --nxt-deep: #211030;
+            --nxt-purple: #6321a5;
+            --nxt-tint: #802CD7;
+            --nxt-pink: #ede5f8;
+            --nxt-lavender: #b376f6;
+            --text-mute: #6B7280;
+            --line: #E5E7EB;
+            --mono: 'JetBrains Mono', monospace;
+            --font: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+        }</style><!-- HEAD_svelte-ul56n9_END --><!-- HEAD_svelte-2igo1p_START --> <meta property="og:title" content="Ask Questions"> <meta name="twitter:title" content="Ask Questions"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@evidence_dev"> <!-- HEAD_svelte-2igo1p_END -->
+	</head>
+	<body>
+		<script>
+			
+		</script>
+		<div>
+			<!-- SvelteKit Hydrated Content -->
+			    <header class="unified-header svelte-1pciij7"><div class="header-inner svelte-1pciij7"><img src="/deep-dive/logo.png" alt="Maryland state crest" width="38" height="42" style="flex-shrink:0; display:block;"> <div style="display:flex; flex-direction:column; gap:0;" data-svelte-h="svelte-rgu3yr"><span style="font-size:15px; font-weight:900; letter-spacing:-0.4px; color:var(--nxt-deep); font-family:Georgia,serif; line-height:1.1;">Maryland Budget Intel Tool</span> <span style="font-family:var(--mono); font-size:9px; color:var(--text-mute); letter-spacing:0.06em; line-height:1.2;">Fiscal Analysis Tool</span></div> <nav style="display:flex; gap:2px; margin-left:24px;">  <a href="/" style="font-size:13px; font-weight:600; color:var(--text-mute); text-decoration:none; padding:7px 14px; border-radius:8px; background:transparent; border-bottom:2px solid transparent; transition:all 0.18s; white-space:nowrap;">Home </a>  <a href="/deep-dive/ask-questions/" style="font-size:13px; font-weight:600; color:var(--nxt-deep); text-decoration:none; padding:7px 14px; border-radius:8px; background:var(--nxt-pink); border-bottom:2px solid var(--nxt-purple); transition:all 0.18s; white-space:nowrap;">Deep-Dive </a>  <a href="/methodology" style="font-size:13px; font-weight:600; color:var(--text-mute); text-decoration:none; padding:7px 14px; border-radius:8px; background:transparent; border-bottom:2px solid transparent; transition:all 0.18s; white-space:nowrap;">Methodology </a>  <a href="/guardrails" style="font-size:13px; font-weight:600; color:var(--text-mute); text-decoration:none; padding:7px 14px; border-radius:8px; background:transparent; border-bottom:2px solid transparent; transition:all 0.18s; white-space:nowrap;">Guardrails </a></nav> <div style="margin-left:auto; display:flex; align-items:center; gap:16px;" data-svelte-h="svelte-1bdjhyl"><span style="background:var(--nxt-pink); color:var(--nxt-deep); padding:4px 10px; border-radius:6px; font-size:10px; font-weight:700; font-family:var(--mono); letter-spacing:0.04em;">FY2027</span></div></div>  <div style="display:flex; height:4px; width:100%;" data-svelte-h="svelte-1q1ey8n"><div style="flex:1; background:#CE1126;"></div> <div style="flex:1; background:#E8A317;"></div> <div style="flex:1; background:#000000;"></div> <div style="flex:1; background:#ffffff; border-bottom:1px solid var(--line);"></div></div></header>  <div class="z-[1] fixed right-0 bottom-0 mx-10 my-6 w-80"></div> <div data-sveltekit-preload-data="hover" class="antialiased">  <div class="print:w-[650px] print:md:w-[841px] mx-auto print:md:px-0 print:px-0 px-6 sm:px-8 md:px-12 flex justify-start" style="max-width:1200pxpx;"><div class="print:hidden">  <aside class="w-48 flex-none hidden md:flex"><div class="hidden: md:block fixed w-48 top-20 bottom-8 overflow-y-auto flex-1 text-sm pretty-scrollbar top-8"><div class="flex flex-col pb-6"><a class="sticky top-0 bg-base-100 shadow shadow-base-100 font-semibold pb-1 mb-1 group inline-block capitalize hover:underline text-base-heading" href="/deep-dive/">Budget Office</a>  <a class="group inline-block py-1 capitalize transition-all duration-100 text-base-content-muted hover:text-base-content" href="/deep-dive/budget-office">budget office  </a> <a class="group inline-block py-1 capitalize transition-all duration-100 text-base-content-muted hover:text-base-content" href="/deep-dive/ask-questions">Ask Questions  </a> <a class="group inline-block py-1 capitalize transition-all duration-100 text-base-content-muted hover:text-base-content" href="/deep-dive/technology">Technology  </a> <a class="group inline-block py-1 capitalize transition-all duration-100 text-base-content-muted hover:text-base-content" href="/deep-dive/variance-analysis">variance analysis  </a> <a class="group inline-block py-1 capitalize transition-all duration-100 text-base-content-muted hover:text-base-content" href="/deep-dive/anomaly-detection">Anomaly Detection  </a></div> </div> <div class="fixed bottom-0 text-xs py-2" data-svelte-h="svelte-fworv4"><a href="https://www.evidence.dev" class="bg-gradient-to-r inline-block antialiased font-medium">Built with Evidence</a></div></aside></div> <main class="md:pl-8 md:pr-8  mt-4 sm:mt-8 flex-grow overflow-x-hidden print:px-0 print:mt-8"><div class="print:hidden"><div class="flex items-start mt-0 whitespace-nowrap overflow-auto"><div class="inline-flex items-center text-sm capitalize gap-1 text-base-content-muted mb-2 sm:mb-4"><a href="/deep-dive/" class="hover:underline">Home </a><svg class="icon icon-tabler icon-tabler-chevron-right" width="12px" height="12px" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 6l6 6l-6 6"></path></svg> <a href="/deep-dive/ask-questions" class="hover:underline">Ask Questions</a></div></div></div> <article id="evidence-main-article" class="select-text markdown pb-10">  <h1 class="title">Ask Questions</h1>    <div style="background: linear-gradient(135deg, #802cd7 0%, #211030 100%); padding: 28px 36px; border-radius: 12px; border-bottom: 4px solid #b376f6; margin-bottom: 24px;" data-svelte-h="svelte-1ok1wvu"><h1 style="color: white; font-family: 'DM Sans', sans-serif; font-size: 1.7rem; font-weight: 700; margin: 0;">💬 Ask Questions</h1> <p style="color: #b376f6; font-size: 0.95rem; margin: 4px 0 0 0;">AI-Powered Conversational Budget Analysis</p></div> <blockquote class="markdown" data-svelte-h="svelte-lpxg1r"><p class="markdown">Ask anything about Maryland&#39;s budget in plain English. The AI agent writes SQL, runs it, and returns narrative answers with charts. No technical knowledge required.</p></blockquote> <div class="grid grid-cols-1 sm:grid-cols-2 gap-4"><div style="background: #f3ecfd; border-radius: 8px; padding: 16px; border-left: 4px solid #802cd7;" data-svelte-h="svelte-oqpoq2"><p class="markdown"><strong class="markdown">For analysts</strong></p> <ul class="markdown"><li class="markdown">Variance for Dept of Health between FY2026 and FY2027?</li> <li class="markdown">Which agencies had biggest budget increases?</li> <li class="markdown">All programs funded by ARPA</li> <li class="markdown">Special Funds breakdown by category</li></ul></div> <div style="background: #f3ecfd; border-radius: 8px; padding: 16px; border-left: 4px solid #b376f6;" data-svelte-h="svelte-1rf474h"><p class="markdown"><strong class="markdown">For executives</strong></p> <ul class="markdown"><li class="markdown">What percentage of budget is federal funds?</li> <li class="markdown">How has education budget changed over 8 years?</li> <li class="markdown">Top 10 IT programs by budget</li> <li class="markdown">Compare MITDP vs ITIF budget</li></ul></div></div> <hr class="markdown"> <div class="embed-wrapper relative overflow-hidden rounded-md border border-gray-300 shadow-sm ml-0" style="width: 1200px; height: 700px;"><iframe src="http://localhost:8501" title="AI Budget Query Agent" class="absolute inset-0 w-full h-full" loading="lazy" frameborder="0" allowfullscreen></iframe></div> <hr class="markdown"> <p style="font-size: 0.75rem; color: #888; font-style: italic; text-align: center;" data-svelte-h="svelte-1pd2gy7">Powered by Claude AI</p></article></main> <div class="print:hidden"><aside class="hidden lg:block w-48"><div class="fixed w-48 top-20 bottom-20 pl-4 px-3 overflow-auto pretty-scrollbar top-8"></div></aside></div></div></div>  
+			<script type="application/json" data-sveltekit-fetched data-url="/deep-dive/api/customFormattingSettings.json/GET.json">{"status":200,"statusText":"","headers":{},"body":"{\"customFormattingSettings\":{\"version\":\"1.0\",\"customFormats\":[{\"formatTag\":\"usd2compact\",\"formatCode\":\"auto\",\"valueType\":\"number\",\"_autoFormat\":{\"autoFormatCode\":\"$#,##0.00\",\"truncateUnits\":true}},{\"formatTag\":\"usd2compactviz\",\"formatCode\":\"[>=1000000000]$#,##0.00,,,\\\"B\\\";[>=1000000]$#,##0.00,,\\\"M\\\";[>=1000]$#,##0.00,\\\"K\\\";$#,##0.00\",\"valueType\":\"number\"},{\"formatTag\":\"usd2compactvizsigned\",\"formatCode\":\"auto\",\"valueType\":\"number\",\"_autoFormat\":{\"autoFormatCode\":\"$#,##0.00;-$#,##0.00\",\"truncateUnits\":true}}]}}"}</script>
+			<script type="application/json" data-sveltekit-fetched data-url="/deep-dive/api/pagesManifest.json">{"status":200,"statusText":"","headers":{},"body":"{\"label\":\"Home\",\"href\":\"/\",\"children\":{\"anomaly-detection\":{\"label\":\"anomaly detection\",\"href\":\"/anomaly-detection\",\"children\":{},\"frontMatter\":{\"title\":\"Anomaly Detection\",\"sidebar_position\":5},\"isTemplated\":false,\"isPage\":true},\"ask-questions\":{\"label\":\"ask questions\",\"href\":\"/ask-questions\",\"children\":{},\"frontMatter\":{\"title\":\"Ask Questions\",\"sidebar_position\":2},\"isTemplated\":false,\"isPage\":true},\"budget-office\":{\"label\":\"budget office\",\"href\":\"/budget-office\",\"children\":{},\"frontMatter\":{\"sidebar_position\":1},\"isTemplated\":false,\"isPage\":true},\"technology\":{\"label\":\"technology\",\"href\":\"/technology\",\"children\":{},\"frontMatter\":{\"title\":\"Technology\",\"sidebar_position\":3},\"isTemplated\":false,\"isPage\":true},\"variance-analysis\":{\"label\":\"variance analysis\",\"href\":\"/variance-analysis\",\"children\":{},\"frontMatter\":{\"title\":null,\"sidebar_position\":4},\"isTemplated\":false,\"isPage\":true}},\"frontMatter\":{\"title\":\"Deep-Dive\",\"sidebar_link\":false},\"isTemplated\":false,\"isPage\":true}"}</script>
+			<script type="application/json" data-sveltekit-fetched data-url="/deep-dive/api//ask-questions/evidencemeta.json">{"status":200,"statusText":"","headers":{},"body":"{\"queries\":[]}"}</script>
+			<script>
+				{
+					__sveltekit_1shbprr = {
+						base: "/deep-dive",
+						assets: "/deep-dive"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("/deep-dive/_app/immutable/entry/start.DTWNAc7V.js"),
+						import("/deep-dive/_app/immutable/entry/app.DveMMR8c.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+
+			<!-- SplashScreen -->
+			<div
+				aria-disabled
+				id="__evidence_project_splash"
+				data-test-id="__evidence_project_splash"
+				style="visibility: hidden"
+			>
+				<svg width="100" height="100" viewBox="-8 -8 588 588" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M7.19462e-05 74.3583C109.309 74.3583 195.795 86.2578 286.834 37.825C377.872 -10.6077 466.416 1.29174 573.667 1.29175L573.667 126.549C466.416 126.549 377.373 114.91 286.834 163.082C196.294 211.254 109.309 199.615 6.11417e-05 199.615L7.19462e-05 74.3583Z"
+						class="draw-path"
+					/>
+					<path
+						d="M573.669 499.31C464.36 499.31 377.874 487.411 286.835 535.843C195.797 584.276 107.252 572.377 0.0014801 572.377V447.12C107.252 447.12 196.295 458.758 286.835 410.586C377.375 362.415 464.36 374.053 573.669 374.053V499.31Z"
+						class="draw-path"
+					/>
+					<path
+						d="M452.896 186.499C395.028 187.686 341.581 194.947 286.835 224.074C211.396 264.212 136.995 262.826 52.2355 261.247C35.2696 260.931 17.8887 260.608 0.0014801 260.608V385.865C18.1032 385.865 35.6721 386.204 52.81 386.534C137.212 388.162 211.162 389.589 286.835 349.331C341.838 320.07 395.18 312.831 452.896 311.685V186.499Z"
+						class="draw-path"
+					/>
+				</svg>
+			</div>
+		</div>
+	</body>
+</html>
+
+<style>
+	#__evidence_project_splash {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: #ffffff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 9999;
+	}
+
+	[data-theme='dark'] #__evidence_project_splash {
+		background-color: #000000;
+	}
+
+	.draw-path {
+		fill: #000000;
+		animation: blinking-logo 2s;
+		animation-fill-mode: both;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+
+	[data-theme='dark'] .draw-path {
+		fill: #ffffff;
+	}
+
+	@keyframes blinking-logo {
+		0% {
+			fill-opacity: 1;
+		}
+		50% {
+			fill-opacity: 0.2;
+		}
+		100% {
+			fill-opacity: 1;
+		}
+	}
+</style>
