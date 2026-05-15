@@ -5,22 +5,22 @@ import ScrollReveal from "@/components/ScrollReveal";
 const PROBLEMS = [
   {
     num: "01",
-    problem: "Maryland's budget data lived in separate, disconnected PDFs",
-    solution: "We built a single ingestion pipeline that reads the ACFR, JCR, MFR, and DBM budget highlights in parallel, normalizes figures to a consistent fund-year-agency schema, and feeds every chart from the same source of truth.",
+    problem: "Maryland's fiscal data was scattered across four official document types with no common schema",
+    solution: "We built a single ingestion pipeline that reads all four source document types in parallel, normalizes every figure to a consistent fund-year-agency schema, and feeds both the home page charts and the Deep-Dive dashboard from the same reconciled data.",
     tag: "DATA INTEGRATION",
     color: "#6321a5",
   },
   {
     num: "02",
     problem: "Narrative claims in official reports could not be verified against audited numbers",
-    solution: "For the first time, we cross-referenced the narrative sections of the Annual Comprehensive Financial Report (ACFR), Monthly Fiscal Report (MFR), and Joint Chairmen's Report (JCR) against their corresponding financial statements. Where a narrative claim diverged from audited figures, we flagged it rather than republishing it. This reconciliation layer has not been built into a public-facing Maryland budget tool before.",
+    solution: "We systematically cross-referenced the narrative sections of all four source document types against their corresponding audited financial statements. Where a narrative claim diverged from the underlying figures, we surfaced the divergence rather than republishing the claim. Where the legislative, executive, and audit perspectives converged, we treated that as a confirmed finding.",
     tag: "NARRATIVE RECONCILIATION",
     color: "#802CD7",
   },
   {
     num: "03",
     problem: "Budget flows were invisible: no one could see how revenue became agency spending",
-    solution: "We mapped Maryland's full $70.8B budget as a Sankey diagram: revenue source to fund type to agency. The chart uses FY2025/FY2026/FY2027 data from the DBM Sankey dataset and is the only publicly available tool that shows this three-layer flow in a single interactive view.",
+    solution: "We mapped Maryland's full $70.8B FY2027 enacted budget as a three-layer Sankey diagram: revenue source to fund type to agency. The chart draws from the DBM dataset across FY2025, FY2026, and FY2027 and is the only interactive public tool to show this complete flow path in a single view.",
     tag: "FLOW VISUALIZATION",
     color: "#551c8e",
   },
@@ -40,8 +40,8 @@ const PROBLEMS = [
   },
   {
     num: "06",
-    problem: "The Deep Dive Dashboard needed its own data layer beyond what the ACFR provided",
-    solution: "The Deep Dive Dashboard (separate application) pulls from the DBM open data API, ingest-opendata.mjs, and the state aid breakdown files. It supports program-level drill-downs within agencies, vacancy and workforce data from VSP impact schedules, and county-level allocation modeling based on agency program distributions and Census data.",
+    problem: "Agency- and program-level analysis needed a richer data layer than the ACFR alone could provide",
+    solution: "The Deep-Dive dashboard runs against a separate analytical warehouse built with DBT on DuckDB. It ingests from the DBM open data portal and the state aid disclosure files, then layers in cached Claude-powered classifications that map every line item into TBM cost pools and IT towers. The result is program-level drill-downs within agencies, IT spend breakouts, year-over-year variance analysis, anomaly detection, and MITDP project drill-downs across 83 Maryland agencies for FY2017–FY2027.",
     tag: "DEEP DIVE METHODOLOGY",
     color: "#551c8e",
   },
@@ -87,7 +87,7 @@ const NIST_ITEMS = [
     summary: "Accountability and transparency in every design decision",
     detail: "Source documents, methodology, and projection assumptions are public and version-controlled. Every claim carries a citation. Disagreements with the underlying data are tracked and disclosed rather than suppressed. The pipeline is deterministic: given the same source PDFs, it produces identical outputs.",
     compliant: true,
-    notes: "Fully compliant. The tool contains no generative AI in its data path. All outputs are reproducible from publicly available government documents.",
+    notes: "Source documents, methodology, and editorial constraints are public. All outputs are reproducible from published government documents.",
   },
   {
     id: "MAP",
@@ -95,7 +95,7 @@ const NIST_ITEMS = [
     summary: "Context is preserved at every level of the data",
     detail: "Budget is mapped at three levels: revenue to fund type to agency (Sankey), agency to program (drill-downs in the Deep Dive Dashboard), and county to outcome (choropleth map). No figure is presented without its fund type, fiscal year, and source document. The ACFR, MFR, and JCR narrative layers are cross-referenced against financial statement figures before publication.",
     compliant: true,
-    notes: "Fully compliant. The tool's primary contribution is adding narrative context to audited financial data, not removing it.",
+    notes: "The tool adds narrative context to audited financial data. No figure is presented without its fund type, fiscal year, and source document.",
   },
   {
     id: "MEASURE",
@@ -103,7 +103,7 @@ const NIST_ITEMS = [
     summary: "Every KPI has a stated baseline, source, and threshold",
     detail: "Six KPI cards use red/amber/green thresholds defined in advance, not retroactively. Trends span eight to ten years where audited data exists. No measurement is presented without a stated baseline year. Projections display the slope, base period, and the audited actuals that anchor them.",
     compliant: true,
-    notes: "Fully compliant. Threshold definitions are documented in the Guardrails page and in source comments.",
+    notes: "Threshold definitions are documented in the Guardrails page. Projections state their base period and slope on each chart.",
   },
   {
     id: "MANAGE",
@@ -111,7 +111,7 @@ const NIST_ITEMS = [
     summary: "Explicit limits on what the tool will and will not do",
     detail: "The Guardrails page documents the tool's hard limits: no invented agency-level data, no projections beyond FY2030, no answers to hypothetical political questions. Every modeled figure is labeled as modeled. The tool does not generate policy recommendations or attribute blame.",
     compliant: true,
-    notes: "Fully compliant. Hard limits are enforced at the data pipeline level, not just stated as policy. If a figure cannot be sourced, it does not appear.",
+    notes: "Hard limits are enforced at the pipeline level, not stated as policy. If a figure cannot be sourced, it does not appear on the dashboard.",
   },
 ];
 
@@ -174,7 +174,7 @@ function NistAccordion() {
                   <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                     <span style={{ width: 8, height: 8, borderRadius: "50%", background: item.compliant ? "#15803D" : "#DC2626", display: "inline-block", flexShrink: 0 }} />
                     <span style={{ fontFamily: "var(--mono)", fontSize: 9, color: item.compliant ? "#15803D" : "#DC2626", fontWeight: 700, letterSpacing: "0.1em" }}>
-                      {item.compliant ? "COMPLIANT" : "NON-COMPLIANT"}
+                      {item.compliant ? "ADDRESSED" : "NOT ADDRESSED"}
                     </span>
                   </div>
                 </div>
@@ -205,21 +205,21 @@ const PIPELINE = [
   {
     label: "INPUT",
     title: "Source Documents",
-    body: "ACFR 2023-2025 (audited), MFR 2015-2026 (monthly fiscal), JCR 2025 (legislative), FY2026-FY2027 DBM operating budgets (executive). Every figure on this dashboard originates from one of these documents.",
+    body: "ACFR 2023-2025 (audited), MFR 2015-2026 (monthly fiscal), JCR 2025 (legislative), FY2026-FY2027 DBM operating budgets (executive), and the DBM open data portal (live agency-level appropriations). Every figure on this dashboard and in the Deep-Dive originates from these official sources.",
     color: "#b376f6",
     num: "01",
   },
   {
     label: "PIPELINE",
     title: "Deterministic Processing",
-    body: "Python notebooks and Node.js scripts parse, clean, and aggregate. No language model in the data path. Every figure is reproducible: download the source PDFs, run the notebooks, rebuild the site.",
+    body: "Python scripts and DBT transformations parse, clean, and aggregate the raw data. Every figure is reproducible: download the source PDFs, run the processing scripts, rebuild the site.",
     color: "#6321a5",
     num: "02",
   },
   {
     label: "OUTPUT",
     title: "This Dashboard",
-    body: "10 visualizations, one county map, and 6 KPI cards. Every citation deep-links to the source PDF at the exact page. Nothing is invented.",
+    body: "10 home page visualizations, 6 KPI cards, one county allocation map, and a Deep-Dive agency dashboard covering 80+ agencies. Every citation deep-links to the source PDF at the exact page.",
     color: "#211030",
     num: "03",
   },
@@ -264,12 +264,10 @@ export default function MethodologyPage() {
             How This Tool Works
           </h1>
           <p style={{ fontSize: 16, color: "rgba(255,255,255,0.78)", maxWidth: 700, lineHeight: 1.75 }}>
-            Every number on this dashboard originates from a published, audited government document.
-            No language model touches the data. Every chart shows its source,
-            and that source links directly to the exact PDF page.
+            Every number on this dashboard originates from a published, audited Maryland government document. The data pipeline is fully deterministic. Every chart cites its source, and every citation links directly to the exact page in the source PDF.
           </p>
           <div style={{ display: "flex", gap: 32, marginTop: 28, flexWrap: "wrap" }}>
-            {[["4", "Report types"], ["10", "Visualizations"], ["0", "LLM calls in data path"], ["100%", "Reproducible"]].map(([val, label]) => (
+            {[["4", "Official report types"], ["10", "Home page visualizations"], ["80+", "Agencies in Deep-Dive"], ["100%", "Source-cited to exact PDF page"]].map(([val, label]) => (
               <div key={label}>
                 <div style={{ fontSize: 30, fontWeight: 900, color: "#b376f6", lineHeight: 1 }}>{val}</div>
                 <div style={{ fontSize: 11, color: "rgba(255,255,255,0.6)", fontFamily: "var(--mono)", letterSpacing: "0.08em", marginTop: 4 }}>{label}</div>
@@ -288,14 +286,14 @@ export default function MethodologyPage() {
               What Makes This Different
             </div>
             <h2 style={{ fontSize: 26, fontWeight: 900, color: "var(--nxt-dark)", marginBottom: 16, letterSpacing: "-0.3px" }}>
-              Visualizing the Narrative Layer
+              Cross-Document Reconciliation
             </h2>
             <div style={{ background: "linear-gradient(135deg, #f3eeff, #ede5f8)", borderRadius: 14, padding: "28px 32px", borderLeft: "4px solid var(--nxt-purple)" }}>
               <p style={{ fontSize: 14, color: "var(--nxt-dark)", lineHeight: 1.75, marginBottom: 12 }}>
-                Maryland publishes its budget story across three separate report types: the ACFR (Annual Comprehensive Financial Report), the MFR (Monthly Fiscal Report), and the JCR (Joint Chairmen&apos;s Report). Each contains narrative interpretations of the numbers, but no existing public tool has pulled those narratives together and checked them against the underlying audited financial statements.
+                Maryland publishes its fiscal story across four official report types: the ACFR (Annual Comprehensive Financial Report), the MFR (Monthly Fiscal Report), the JCR (Joint Chairmen&apos;s Report), and the DBM operating budget books. Each document contains narrative interpretations of the numbers, but until this tool, no public-facing interactive resource had systematically checked those narratives against the underlying audited financial statements.
               </p>
               <p style={{ fontSize: 14, color: "var(--nxt-dark)", lineHeight: 1.75 }}>
-                This tool does that. Where the narrative in one document claims an outcome that the financial data does not support, we flag it. Where narratives across the three report types converge, we present that convergence as a finding. This reconciliation layer is the core methodological contribution of this project.
+                This tool does that. Where a narrative claim in one document diverges from what the audited figures show, we surface the divergence rather than republishing the claim. Where findings converge across the legislative, executive, and audit perspectives, we treat that convergence as a confirmed data point. The Deep-Dive dashboard extends this with live API queries against the DBM open data portal, covering 80+ agencies across FY2017 to FY2027.
               </p>
             </div>
           </div>
@@ -401,7 +399,7 @@ export default function MethodologyPage() {
               NXT DNA
             </div>
             <h2 style={{ fontSize: 26, fontWeight: 900, color: "var(--nxt-dark)", marginBottom: 6, letterSpacing: "-0.3px" }}>
-              Built on NXT&apos;s Six Pillars
+              Built on NXT&apos;s Five Pillars
             </h2>
             <p style={{ fontSize: 13, color: "var(--text-soft)", lineHeight: 1.7, marginBottom: 28, maxWidth: 680 }}>
               Each pillar maps to a concrete design or data decision in this tool.
@@ -440,13 +438,13 @@ export default function MethodologyPage() {
               Risk Framework
             </div>
             <h2 style={{ fontSize: 26, fontWeight: 900, color: "var(--nxt-dark)", marginBottom: 6, letterSpacing: "-0.3px" }}>
-              NIST AI Risk Management Framework
+              Governance Framework
             </h2>
             <p style={{ fontSize: 13, color: "var(--text-soft)", lineHeight: 1.7, marginBottom: 8, maxWidth: 720 }}>
-              This tool is structured around the NIST AI RMF 1.0 core functions even though the system is fully deterministic. The framework keeps every design decision accountable. Click any function to expand the compliance assessment.
+              We applied the governance and transparency dimensions of the NIST AI Risk Management Framework (RMF 1.0) to every design decision. Any public-facing tool that interprets government financial data carries accountability obligations. Click any function to expand the assessment.
             </p>
             <p style={{ fontSize: 12, color: "var(--text-soft)", lineHeight: 1.7, marginBottom: 24, maxWidth: 720, fontStyle: "italic" }}>
-              Note: Because no generative AI or probabilistic model is used in the data pipeline, traditional AI risk categories (hallucination, bias amplification, model drift) do not apply. Compliance is assessed on the governance and transparency dimensions of the framework.
+              The system is fully deterministic, so traditional AI risk categories (hallucination, bias amplification, model drift) do not apply. The framework is applied to the governance and transparency dimensions only.
             </p>
             <NistAccordion />
           </div>
@@ -462,7 +460,7 @@ export default function MethodologyPage() {
               All Data from Official Sources
             </h2>
             <p style={{ fontSize: 13, color: "var(--text-soft)", lineHeight: 1.7, marginBottom: 20, maxWidth: 680 }}>
-              All data on this dashboard comes from Maryland&apos;s official government publications. The primary source for all budget data is the Maryland Department of Budget and Management official website.
+              All data on this dashboard and in the Deep-Dive comes from Maryland&apos;s official government publications. The four primary source types are the ACFR (audited actuals from the Comptroller, editions 2023-2025), the JCR (legislative appropriations analysis, 2025 edition), the MFR (executive in-year tracking, 2015-2026), and the DBM Operating Budget Books (proposed and enacted, FY2026-FY2027). No third-party estimates or news-reported figures appear on this dashboard.
             </p>
             <a
               href="https://dbm.maryland.gov"

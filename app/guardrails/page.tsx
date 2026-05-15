@@ -4,11 +4,11 @@ import ScrollReveal from "@/components/ScrollReveal";
 const HARD_LIMITS = [
   {
     title: "Invent agency-level data",
-    detail: "If a number is not in a published, audited source document, it does not appear on this dashboard. County allocation figures that we model are clearly labeled as modeled estimates and are not presented alongside audited actuals.",
+    detail: "If a number is not in a published, audited source document, it does not appear on this dashboard. County-level allocation estimates are modeled from agency program distributions and Census data. These are labeled as modeled wherever they appear and are never shown alongside audited actuals without that distinction.",
   },
   {
     title: "Project beyond stated horizons",
-    detail: "Projections extend only to FY2030 and only along the slope derived from audited actuals. The base period and growth rate are stated on each chart. We do not extend projections further based on assumption.",
+    detail: "Projections on the home page extend only to FY2030, using the slope derived from ACFR audited actuals. The growth rate and base period are labeled on each chart. We do not extend projections beyond FY2030, and we do not introduce assumptions beyond the stated slope. The Deep-Dive displays sourced historical data only and carries no projections.",
   },
   {
     title: "Answer hypothetical political questions",
@@ -24,14 +24,14 @@ const HARD_LIMITS = [
   },
   {
     title: "Personalize political actors",
-    detail: "This dashboard is built for any reader: legislator, journalist, or member of the public. Numbers are not framed as wins or losses for specific individuals or parties. The same data is presented regardless of who is reading it.",
+    detail: "This dashboard is built for any reader: legislator, staffer, journalist, policy analyst, or member of the public. Numbers are not framed as wins or losses for specific individuals, parties, or administrations. The same data is presented to every reader.",
   },
 ];
 
 const COMMITMENTS = [
   {
     title: "All data comes from official sources",
-    detail: "Every figure on this dashboard originates from a Maryland state government publication: the ACFR, JCR, MFR, or DBM operating budget documents. No third-party estimates, no academic projections, no news reporting. The data is what Maryland's own auditors and budget officials published.",
+    detail: "Every figure on this dashboard and in the Deep-Dive originates from a Maryland state government publication: the ACFR, JCR, MFR, or DBM operating budget documents. No third-party estimates, no academic projections, no news reporting. The data is what Maryland's own auditors, budget officials, and legislators published.",
   },
   {
     title: "Methodology follows established best practices",
@@ -133,13 +133,13 @@ export default function GuardrailsPage() {
               Data Integrity Statement
             </div>
             <p style={{ fontSize: 15, color: "rgba(255,255,255,0.9)", lineHeight: 1.75, marginBottom: 12, maxWidth: 760 }}>
-              All data on this dashboard comes from Maryland&apos;s official state government publications. No data has been altered, estimated, or sourced from unofficial channels. Where figures required aggregation or projection, the method is documented and the source figures are cited.
+              All data on this dashboard and in the Deep-Dive agency dashboard comes from Maryland&apos;s official state government publications. No figure has been altered, estimated, or sourced from unofficial channels. Where aggregation or projection was required, the method is documented on the Methodology page and the source figures are cited on the chart.
             </p>
             <p style={{ fontSize: 15, color: "rgba(255,255,255,0.9)", lineHeight: 1.75, maxWidth: 760 }}>
-              This tool uses <strong style={{ color: "#b376f6" }}>no language model in its data pipeline</strong>. Numbers come from published government documents. Projections are deterministic and visible on each chart. Every figure traces back to the page in the source document where it was first stated.
+              The data pipeline is fully deterministic. Numbers come from published government documents. Projections are visible on each chart with their base period and slope stated. Every figure traces back to the page in the source document where it was first stated.
             </p>
             <div style={{ display: "flex", gap: 24, marginTop: 24, flexWrap: "wrap" }}>
-              {[["0", "LLM calls in data path"], ["4", "Official report types"], ["100%", "Traceable to page"]].map(([val, lbl]) => (
+              {[["4", "Official report types"], ["10", "Source-cited visualizations"], ["80+", "Agencies in Deep-Dive"], ["100%", "Traceable to exact page"]].map(([val, lbl]) => (
                 <div key={lbl} style={{ borderLeft: "2px solid #b376f6", paddingLeft: 14 }}>
                   <div style={{ fontSize: 24, fontWeight: 900, color: "#b376f6" }}>{val}</div>
                   <div style={{ fontSize: 10, color: "rgba(255,255,255,0.55)", fontFamily: "var(--mono)", letterSpacing: "0.06em", marginTop: 3 }}>{lbl}</div>
@@ -156,7 +156,7 @@ export default function GuardrailsPage() {
               Hard Limits
             </div>
             <h2 style={{ fontSize: 26, fontWeight: 900, color: "var(--nxt-dark)", marginBottom: 6, letterSpacing: "-0.3px" }}>
-              Six Things This Tool Will Not Do
+              What This Tool Will Not Do
             </h2>
             <p style={{ fontSize: 13, color: "var(--text-soft)", lineHeight: 1.7, marginBottom: 28, maxWidth: 680 }}>
               These constraints are not policy statements. They are built into the data pipeline and the editorial process. A figure that cannot meet these standards does not appear on the dashboard.
@@ -319,7 +319,7 @@ export default function GuardrailsPage() {
           >
             <div>
               <div style={{ fontWeight: 800, fontSize: 15, color: "#fff", marginBottom: 4 }}>Want to understand the full pipeline?</div>
-              <div style={{ fontSize: 12, color: "rgba(255,255,255,0.65)" }}>How numbers flow from PDF to notebook to dashboard</div>
+              <div style={{ fontSize: 12, color: "rgba(255,255,255,0.65)" }}>How numbers flow from source document to dashboard</div>
             </div>
             <a
               href="/methodology"
