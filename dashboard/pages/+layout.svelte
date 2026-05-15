@@ -85,6 +85,7 @@
     neverShowQueries={true}
     maxWidth="1200px"
     hideHeader={true}
+    builtWithEvidence={false}
 >
     <slot slot="content" />
     <div slot="footer">
