@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 
 const NAV = [
   { label: "Home",         href: "/" },
-  { label: "Deep-Dive",    href: "https://deep-dive-stage-budget.netlify.app/" },
+  { label: "Deep-Dive",    href: "https://md-budget-intel-deep-dive.netlify.app/" },
   { label: "Methodology",  href: "/methodology" },
   { label: "Guardrails",   href: "/guardrails" },
 ];

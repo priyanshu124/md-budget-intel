@@ -1,8 +1,8 @@
 [build]
+  base = "dashboard"
   command = "npm run build"
+  publish = "dashboard/build"
 
 [build.environment]
   NODE_VERSION = "20"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+"@

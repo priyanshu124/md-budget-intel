@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/deep-dive/:path*",
-        destination: "https://deep-dive-stage-budget.netlify.app/",
+        destination: "https://md-budget-intel-deep-dive.netlify.app/",
         permanent: false,
       },
     ];
